@@ -1,0 +1,20 @@
+.button {
+	height: 55px;
+	cursor: pointer;
+	font-weight: 400;
+	border-radius: 4px;
+	color: $brand-text-default;
+	box-shadow: 0 10px 20px rgba(208, 208, 208, 0.19), 0 4px 5px rgba(171, 167, 167, 0.23);
+	font-size: 18px;
+
+	&.button--primary {
+		background: $brand-primary;
+	}
+
+	&.button--link {
+		background: $brand-default;
+		color: $brand-primary;
+		box-shadow: none;
+		height: 30px;
+	}
+}

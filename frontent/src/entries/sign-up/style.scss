@@ -1,0 +1,32 @@
+.sign-up-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+
+	.title {
+		text-align: center;
+		margin: 0px 0px 50px 0px;
+		color: $brand-text-dark;
+	}
+
+	.info-container {
+		text-align: center;
+		margin: 25px 0px 0px 0px;
+	}
+
+	.form-container {
+		.inputs-container {
+			width: 300px;
+
+			.input-text {
+				margin-top: 7px;
+				margin-bottom: 7px;
+			}
+
+			.button {
+				margin-top: 35px;
+			}
+		}
+	}
+}
