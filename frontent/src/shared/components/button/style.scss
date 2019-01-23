@@ -10,15 +10,27 @@
 	&.button--primary {
 		transition: all .5s ease;
 		background: $brand-primary;
-		
+
+		.spinner > div {
+			background: $brand-default;
+		}
+
 		&:hover {
 			background: $brand-default;
 			color: $brand-text-primary;
+
+			.spinner > div {
+				background: $brand-primary;
+			}
 		}
 
 		&:active {
 			background: $brand-primary;
 			color: $brand-text-default;
+
+			.spinner > div {
+				background: $brand-default;
+			}
 		}
 	}
 

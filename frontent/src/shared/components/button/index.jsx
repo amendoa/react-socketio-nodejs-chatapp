@@ -3,6 +3,10 @@ import React, {
 } from 'react';
 import classNames from 'classnames';
 
+import {
+	SpinnerComponent
+} from 'shared/components';
+
 export default class ButtonComponent extends Component {
 	render () {
 		const {
@@ -33,7 +37,9 @@ export default class ButtonComponent extends Component {
 				type={type}
 			>
 				{
-					text
+					isFetching ? (
+						<SpinnerComponent />
+					) : text
 				}
 			</button>
 		);
