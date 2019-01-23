@@ -59,7 +59,6 @@ export default class SignUpEntry extends Component {
 							primary
 							marginTop={35}
 							width={280}
-							isFetching
 						/>
 					</div>
 					<div className="info-container">

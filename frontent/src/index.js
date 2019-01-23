@@ -3,8 +3,8 @@ import {
 	render
 } from 'react-dom';
 import { Provider } from 'react-redux';
-import { BrowserRouter } from 'react-router-dom';
-import { getRoutes } from 'routes';
+import { BrowserRouter as Router } from 'react-router-dom';
+import RoutesContainer from 'routes';
 import configureStore from 'store';
 import 'styles/index.scss';
 // import 'react-toastify/dist/ReactToastify.css';
@@ -17,11 +17,9 @@ const store = configureStore();
 
 render(
 	<Provider store={store}>
-		<BrowserRouter>
-			{
-				getRoutes(store)
-			}
-		</BrowserRouter>
+		<Router>
+			<RoutesContainer />
+		</Router>
 	</Provider>,
 	document.getElementById('app')
 );

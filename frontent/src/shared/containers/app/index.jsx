@@ -2,18 +2,12 @@ import React, {
 	Component
 } from 'react';
 
-import {
-	Switch,
-	Route
-} from 'react-router-dom';
-
-import {
-	SignUpEntry,
-	SignInEntry
-} from 'entries';
-
 export default class AppContainer extends Component {
 	render () {
+		const {
+			children
+		} = this.props;
+
 		return (
 			<div
 				className="app-wrapper"
@@ -22,16 +16,9 @@ export default class AppContainer extends Component {
 				<div
 					className="app-container"
 				>
-					<Switch>
-						<Route
-							path='/signin'
-							component={SignInEntry}
-						/>
-						<Route
-							path='/signup'
-							component={SignUpEntry}
-						/>
-					</Switch>
+					{
+						children
+					}
 				</div>
 			</div>
 		);

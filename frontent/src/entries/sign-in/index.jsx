@@ -20,7 +20,7 @@ export default class SignInEntry extends Component {
 
 	render () {
 		return (
-			<section className="sign-up-wrapper">
+			<section className="sign-in-wrapper">
 				<div className="form-container">
 					<h1
 						className="title"
