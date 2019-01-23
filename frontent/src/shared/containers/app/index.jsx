@@ -24,8 +24,8 @@ export default class AppContainer extends Component {
 				>
 					<Switch>
 						<Route
-							path='/'
-							component={SignUpEntry}
+							path='/signin'
+							component={SignInEntry}
 						/>
 						<Route
 							path='/signup'
