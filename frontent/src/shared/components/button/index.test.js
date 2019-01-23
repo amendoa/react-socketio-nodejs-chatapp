@@ -9,14 +9,14 @@ import {
 describe('<ButtonComponent />', () => {
 	const onButtonClick = sinon.spy();
 
-	const buttonModelI = {
+	const modelI = {
 		text: 'TesteButton',
 		type: 'Submit',
 		isFetching: true,
 		onClick: onButtonClick
 	};
 
-	const buttonModelII = {
+	const modelII = {
 		text: 'TesteButton',
 		type: 'Submit',
 		isFetching: false,
@@ -30,27 +30,27 @@ describe('<ButtonComponent />', () => {
 	};
 
 	it('renders correctly', () => {
-		const wrapper = getWrapper(buttonModelI);
+		const wrapper = getWrapper(modelI);
 		expect(toJson(wrapper)).toMatchSnapshot();
 	});
 
 	it('has a button component', () => {
-		const wrapper = getWrapper(buttonModelI);
+		const wrapper = getWrapper(modelI);
 		expect(wrapper.find('button').length).toBe(1);
 	});
 
 	it('has a spinner with isFetching param === true', () => {
-		// const wrapper = getWrapper(buttonModelI);
-		// expect(wrapper.find('SpinnerComponent').length).toBe(1);
+		const wrapper = getWrapper(modelI);
+		expect(wrapper.find('SpinnerComponent').length).toBe(1);
 	});
 
 	it('has no spinner with isFetching param === false', () => {
-		// const wrapper = getWrapper(buttonModelII);
-		// expect(wrapper.find('SpinnerComponent').length).toBe(0);
+		const wrapper = getWrapper(modelII);
+		expect(wrapper.find('SpinnerComponent').length).toBe(0);
 	});
 
 	it('onclick button is working', () => {
-		const wrapper = getWrapper(buttonModelI);
+		const wrapper = getWrapper(modelI);
 		wrapper.simulate('click');
 		expect(onButtonClick.called).toBe(true);
 	});

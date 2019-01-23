@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LabelComponent /> renders correctly 1`] = `
+<span
+  className="label danger"
+  style={
+    Object {
+      "fontSize": 10,
+    }
+  }
+>
+  Label teste
+</span>
+`;

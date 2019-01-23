@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<InputComponent /> renders correctly 1`] = `
+<div
+  className="input-wrapper"
+  style={
+    Object {
+      "marginBottom": undefined,
+      "marginTop": undefined,
+      "maxWidth": undefined,
+    }
+  }
+>
+  <input
+    className="input"
+    id="nickname"
+    onBlur={[Function]}
+    onChange={[Function]}
+    placeholder="Nickname"
+    style={
+      Object {
+        "width": undefined,
+      }
+    }
+    type="text"
+    value="value"
+  />
+  <LabelComponent
+    danger={true}
+    style={
+      Object {
+        "fontSize": 16,
+        "fontWeight": 400,
+      }
+    }
+    text="erro teste"
+  />
+</div>
+`;
