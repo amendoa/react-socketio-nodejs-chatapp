@@ -10,9 +10,17 @@ import {
 } from 'shared/components';
 
 import constants from 'modules/constants';
-// import * as participationActions from '../../actions/participation';
+import * as testeActions from 'actions/teste';
 
 class SignInFormContainer extends Component {
+	testesagas = () => {
+		const {
+			dispatch
+		} = this.props;
+
+		dispatch(testeActions.requestAction())
+	}
+	
 	render () {
 		const {
 			values,
@@ -62,6 +70,7 @@ class SignInFormContainer extends Component {
 					disabled={false}
 					marginTop={35}
 					width={280}
+					onClick={this.testesagas}
 				/>
 			</form>
 		);
@@ -136,13 +145,11 @@ const formikComponent = withFormik({
 	displayName: 'SignInForm'
 })(SignInFormContainer);
 
-export default formikComponent;
-
-// const mapStateToProps = (state) => {
-// 	return {
-// 		data: state.participations,
-// 	};
-// };
+const mapStateToProps = (state) => {
+	return {
+		data: state.participations,
+	};
+};
 //
 // const mapDispatchToProps = (dispatch) => {
 // 	return {
@@ -150,4 +157,4 @@ export default formikComponent;
 // 	};
 // };
 //
-// export default connect(mapStateToProps, mapDispatchToProps)(formikComponent);
+export default connect(mapStateToProps)(formikComponent);

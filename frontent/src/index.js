@@ -14,6 +14,7 @@ import * as serviceWorker from 'serviceWorker';
 // import 'core-js/modules/es7.promise.finally';
 
 const store = configureStore();
+// store.runSaga(rootSaga);
 
 render(
 	<Provider store={store}>
