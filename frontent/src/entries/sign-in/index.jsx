@@ -3,7 +3,8 @@ import React, {
 } from 'react';
 
 import {
-	ButtonComponent
+	ButtonComponent,
+	LabelComponent
 } from 'shared/components';
 
 import {
@@ -27,18 +28,15 @@ export default class SignInEntry extends Component {
 
 	render () {
 		return (
-
 			<AuthContainer
 				title={constants.LABELS.AUTH.SIGNIN}
 				formContainer={(
 					<SignInFormContainer />
 				)}
 				footerInfo={(
-					<span>
-						{
-							constants.LABELS.AUTH.DONT_HAVE_AN_ACCOUNT
-						}
-					</span>
+					<LabelComponent
+						text={constants.LABELS.AUTH.DONT_HAVE_AN_ACCOUNT}
+					/>
 				)}
 				footerInfoLink={(
 					<ButtonComponent

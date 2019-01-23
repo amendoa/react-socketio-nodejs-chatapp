@@ -18,8 +18,8 @@ export default class InputComponent extends Component {
 			value,
 			onChange,
 			onBlur,
-			err,
-			label
+			label,
+			err
 		} = this.props;
 
 		return (
@@ -43,14 +43,18 @@ export default class InputComponent extends Component {
 						width
 					}}
 				/>
-				<LabelComponent
-					text={label}
-					danger
-					style={{
-						fontSize: 16,
-						fontWeight: 400
-					}}
-				/>
+				{
+					err ? (
+						<LabelComponent
+							text={label}
+							danger
+							style={{
+								fontSize: 16,
+								fontWeight: 400
+							}}
+						/>
+					) : null
+				}
 			</div>
 		);
 	}

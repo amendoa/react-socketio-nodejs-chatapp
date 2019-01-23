@@ -18,11 +18,9 @@ class SignUpFormContainer extends Component {
 			values,
 			touched,
 			errors,
-			isSubmitting,
 			handleChange,
 			handleBlur,
 			handleSubmit,
-			isFetchingPost
 		} = this.props;
 
 		return (
@@ -148,7 +146,7 @@ const formikComponent = withFormik({
 
 		setSubmitting(false);
 	},
-	displayName: 'ParticipationForm'
+	displayName: 'SignUpForm'
 })(SignUpFormContainer);
 
 export default formikComponent;
