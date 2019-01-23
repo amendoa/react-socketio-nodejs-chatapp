@@ -17,7 +17,8 @@ export default class ButtonComponent extends Component {
 			marginTop,
 			onClick,
 			type,
-			isFetching
+			isFetching,
+			disabled
 		} = this.props;
 
 		const buttonStyles = classNames({
@@ -35,6 +36,7 @@ export default class ButtonComponent extends Component {
 					marginTop
 				}}
 				type={type}
+				disabled={disabled}
 			>
 				{
 					isFetching ? (

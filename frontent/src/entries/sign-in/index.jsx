@@ -3,9 +3,16 @@ import React, {
 } from 'react';
 
 import {
-	ButtonComponent,
-	InputComponent
+	ButtonComponent
 } from 'shared/components';
+
+import {
+	AuthContainer
+} from 'shared/containers';
+
+import {
+	SignInFormContainer
+} from 'entries/sign-in/containers';
 
 import constants from 'modules/constants';
 
@@ -20,55 +27,28 @@ export default class SignInEntry extends Component {
 
 	render () {
 		return (
-			<section className="sign-in-wrapper">
-				<div className="form-container">
-					<h1
-						className="title"
-					>
-						{
-							constants.LABELS.AUTH.SIGNIN
-						}
-					</h1>
 
-					<div
-						className="inputs-container"
-					>
-						<InputComponent
-							placeholder={constants.LABELS.AUTH.USERNAME}
-							marginTop={7}
-							marginBottom={7}
-							width={280}
-							type="text"
-						/>
-						<InputComponent
-							placeholder={constants.LABELS.AUTH.PASSWORD}
-							marginTop={7}
-							marginBottom={7}
-							width={280}
-							type="password"
-						/>
-						<ButtonComponent
-							text={constants.LABELS.AUTH.SIGNIN}
-							primary
-							marginTop={35}
-							width={280}
-						/>
-					</div>
-					<div className="info-container">
-						<span>
-							{
-								constants.LABELS.AUTH.DONT_HAVE_AN_ACCOUNT
-							}
-						</span>
-						<ButtonComponent
-							text={constants.LABELS.AUTH.SIGNUP}
-							link
-							width={80}
-							onClick={this.handleClickSignInButton}
-						/>
-					</div>
-				</div>
-			</section>
+			<AuthContainer
+				title={constants.LABELS.AUTH.SIGNIN}
+				formContainer={(
+					<SignInFormContainer />
+				)}
+				footerInfo={(
+					<span>
+						{
+							constants.LABELS.AUTH.DONT_HAVE_AN_ACCOUNT
+						}
+					</span>
+				)}
+				footerInfoLink={(
+					<ButtonComponent
+						text={constants.LABELS.AUTH.SIGNUP}
+						link
+						width={80}
+						onClick={this.handleClickSignInButton}
+					/>
+				)}
+			/>
 		);
 	}
 }

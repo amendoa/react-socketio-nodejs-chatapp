@@ -1,13 +1,15 @@
 {
 	"LABELS": {
 		"AUTH": {
-			"USERNAME": "Username",
+			"NICKNAME": "Nickname",
 			"PASSWORD": "Password",
 			"CONFIRM_PASSWORD": "Confirm password",
 			"ALREADY_HAVE_ACCOUNT": "Already have an account?",
 			"DONT_HAVE_AN_ACCOUNT": "Don't have an account?",
 			"SIGNIN": "Sign In",
-			"SIGNUP": "Sign Up"
+			"SIGNUP": "Sign Up",
+			"PLEASE_ENTER_YOUR_PASSWORD": "Please, enter your password",
+			"PLEASE_ENTER_YOUR_NICKNAME": "Please, enter your nickname"
 		}
 	}
 }

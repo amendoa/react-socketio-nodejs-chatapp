@@ -3,9 +3,16 @@ import React, {
 } from 'react';
 
 import {
-	ButtonComponent,
-	InputComponent
+	ButtonComponent
 } from 'shared/components';
+
+import {
+	AuthContainer
+} from 'shared/containers';
+
+import {
+	SignUpFormContainer
+} from 'entries/sign-up/containers';
 
 import constants from 'modules/constants';
 
@@ -20,62 +27,27 @@ export default class SignUpEntry extends Component {
 
 	render () {
 		return (
-			<section className="sign-up-wrapper">
-				<div className="form-container">
-					<h1
-						className="title"
-					>
+			<AuthContainer
+				title={constants.LABELS.AUTH.SIGNUP}
+				formContainer={(
+					<SignUpFormContainer />
+				)}
+				footerInfo={(
+					<span>
 						{
-							constants.LABELS.AUTH.SIGNUP
+							constants.LABELS.AUTH.ALREADY_HAVE_ACCOUNT
 						}
-					</h1>
-
-					<div
-						className="inputs-container"
-					>
-						<InputComponent
-							placeholder={constants.LABELS.AUTH.USERNAME}
-							marginTop={7}
-							marginBottom={7}
-							width={280}
-							type="text"
-						/>
-						<InputComponent
-							placeholder={constants.LABELS.AUTH.PASSWORD}
-							marginTop={7}
-							marginBottom={7}
-							width={280}
-							type="password"
-						/>
-						<InputComponent
-							placeholder={constants.LABELS.AUTH.CONFIRM_PASSWORD}
-							marginTop={7}
-							marginBottom={7}
-							width={280}
-							type="password"
-						/>
-						<ButtonComponent
-							text={constants.LABELS.AUTH.SIGNUP}
-							primary
-							marginTop={35}
-							width={280}
-						/>
-					</div>
-					<div className="info-container">
-						<span>
-							{
-								constants.LABELS.AUTH.ALREADY_HAVE_ACCOUNT
-							}
-						</span>
-						<ButtonComponent
-							text={constants.LABELS.AUTH.SIGNIN}
-							link
-							width={80}
-							onClick={this.handleClickSignInButton}
-						/>
-					</div>
-				</div>
-			</section>
+					</span>
+				)}
+				footerInfoLink={(
+					<ButtonComponent
+						text={constants.LABELS.AUTH.SIGNIN}
+						link
+						width={80}
+						onClick={this.handleClickSignInButton}
+					/>
+				)}
+			/>
 		);
 	}
 }
