@@ -1,7 +1,7 @@
 import ButtonComponent from './button';
-import InputTextComponent from './input-text';
+import InputComponent from './input';
 
 export {
 	ButtonComponent,
-	InputTextComponent
+	InputComponent
 };

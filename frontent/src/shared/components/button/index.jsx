@@ -9,7 +9,11 @@ export default class ButtonComponent extends Component {
 			text,
 			primary,
 			link,
-			width
+			width,
+			marginTop,
+			onClick,
+			type,
+			isFetching
 		} = this.props;
 
 		const buttonStyles = classNames({
@@ -20,8 +24,13 @@ export default class ButtonComponent extends Component {
 
 		return (
 			<button
+				onClick={onClick}
 				className={buttonStyles}
-				style={{ width }}
+				style={{
+					width,
+					marginTop
+				}}
+				type={type}
 			>
 				{
 					text

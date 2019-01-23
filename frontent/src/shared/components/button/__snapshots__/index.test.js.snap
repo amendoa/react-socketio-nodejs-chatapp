@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ButtonComponent /> renders correctly 1`] = `
+<button
+  className="button"
+  onClick={[Function]}
+  style={
+    Object {
+      "marginTop": undefined,
+      "width": undefined,
+    }
+  }
+  type="Submit"
+>
+  TesteButton
+</button>
+`;

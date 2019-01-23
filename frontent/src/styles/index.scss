@@ -1,6 +1,8 @@
 @import "./utils/_variables";
 @import "./base/_base";
 @import "../shared/containers/app/style.scss";
+@import "../shared/containers/auth/style.scss";
 @import "../shared/components/button/style.scss";
-@import "../shared/components/input-text/style.scss";
+@import "../shared/components/input/style.scss";
 @import "../entries/sign-up/style.scss";
+@import "../entries/sign-in/style.scss";

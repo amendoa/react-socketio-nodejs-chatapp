@@ -1,4 +1,4 @@
-.input-text {
+.input {
 	border: none;
 	background: $brand-secondary;
 	border-radius: 4px;
@@ -6,7 +6,7 @@
 	color: $brand-text;
 	padding: 0px 20px 0px 20px;
 	font-size: 16px;
-	font-weight: 400;
+	font-weight: 600;
 
 	&::-webkit-input-placeholder {
 		color: $brand-text;

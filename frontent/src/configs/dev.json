@@ -1,0 +1,12 @@
+{
+	"LABELS": {
+		"AUTH": {
+			"USERNAME": "Username",
+			"PASSWORD": "Password",
+			"CONFIRM_PASSWORD": "Confirm password",
+			"ALREADY_HAVE_ACCOUNT": "Already have an account?",
+			"SIGNIN": "Sign In",
+			"SIGNUP": "Sign Up"
+		}
+	}
+}

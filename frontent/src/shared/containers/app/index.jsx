@@ -1,10 +1,15 @@
 import React, {
 	Component
 } from 'react';
-import { Switch, Route } from 'react-router-dom';
 
 import {
-	SignUpEntry
+	Switch,
+	Route
+} from 'react-router-dom';
+
+import {
+	SignUpEntry,
+	SignInEntry
 } from 'entries';
 
 export default class AppContainer extends Component {
@@ -20,6 +25,10 @@ export default class AppContainer extends Component {
 					<Switch>
 						<Route
 							path='/'
+							component={SignUpEntry}
+						/>
+						<Route
+							path='/signup'
 							component={SignUpEntry}
 						/>
 					</Switch>

@@ -1,14 +1,25 @@
 .button {
 	height: 55px;
 	cursor: pointer;
-	font-weight: 400;
+	font-weight: 500;
 	border-radius: 4px;
 	color: $brand-text-default;
-	box-shadow: 0 10px 20px rgba(208, 208, 208, 0.19), 0 4px 5px rgba(171, 167, 167, 0.23);
+	box-shadow: 0 10px 20px rgba(101, 101, 101, 0.19), 0 5px 5px rgba(148, 148, 148, 0.23);
 	font-size: 18px;
 
 	&.button--primary {
+		transition: all .5s ease;
 		background: $brand-primary;
+		
+		&:hover {
+			background: $brand-default;
+			color: $brand-text-primary;
+		}
+
+		&:active {
+			background: $brand-primary;
+			color: $brand-text-default;
+		}
 	}
 
 	&.button--link {

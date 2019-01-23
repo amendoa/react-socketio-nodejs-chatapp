@@ -4,59 +4,78 @@ import React, {
 
 import {
 	ButtonComponent,
-	InputTextComponent
+	InputComponent
 } from 'shared/components';
 
+import constants from 'modules/constants';
+
 export default class SignUpEntry extends Component {
+	handleClickSignInButton = () => {
+		const {
+			history
+		} = this.props;
+
+		history.push('/signin');
+	}
+
 	render () {
 		return (
-			<div className="sign-up-wrapper">
+			<section className="sign-up-wrapper">
 				<div className="form-container">
 					<h1
 						className="title"
 					>
 						{
-							'Sign Up'
+							constants.LABELS.AUTH.SIGNUP
 						}
 					</h1>
 
 					<div
 						className="inputs-container"
 					>
-						<InputTextComponent
-							placeholder="Username"
-							width={300}
+						<InputComponent
+							placeholder={constants.LABELS.AUTH.USERNAME}
+							marginTop={7}
+							marginBottom={7}
+							width={280}
+							type="text"
 						/>
-						<InputTextComponent
-							placeholder="Password"
-							width={300}
+						<InputComponent
+							placeholder={constants.LABELS.AUTH.PASSWORD}
+							marginTop={7}
+							marginBottom={7}
+							width={280}
+							type="password"
 						/>
-						<InputTextComponent
-							placeholder="Confirm password"
-							width={300}
+						<InputComponent
+							placeholder={constants.LABELS.AUTH.CONFIRM_PASSWORD}
+							marginTop={7}
+							marginBottom={7}
+							width={280}
+							type="password"
 						/>
-
 						<ButtonComponent
-							text="Sign Up"
+							text={constants.LABELS.AUTH.SIGNUP}
 							primary
-							width={300}
+							marginTop={35}
+							width={280}
 						/>
 					</div>
-
 					<div className="info-container">
 						<span>
 							{
-								'Already have an account?'
+								constants.LABELS.AUTH.ALREADY_HAVE_ACCOUNT
 							}
 						</span>
 						<ButtonComponent
-							text="Sign In"
+							text={constants.LABELS.AUTH.SIGNIN}
 							link
 							width={80}
+							onClick={this.handleClickSignInButton}
 						/>
 					</div>
 				</div>
-			</div>
+			</section>
 		);
 	}
 }

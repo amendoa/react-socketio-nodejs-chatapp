@@ -4,29 +4,24 @@
 	align-items: center;
 	height: 100%;
 
-	.title {
-		text-align: center;
-		margin: 0px 0px 50px 0px;
-		color: $brand-text-dark;
-	}
-
-	.info-container {
-		text-align: center;
-		margin: 25px 0px 0px 0px;
-	}
-
 	.form-container {
+		.title {
+			text-align: center;
+			margin: 0px 0px 50px 0px;
+			color: $brand-text-dark;
+		}
+
 		.inputs-container {
-			width: 300px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
 
-			.input-text {
-				margin-top: 7px;
-				margin-bottom: 7px;
-			}
-
-			.button {
-				margin-top: 35px;
-			}
+		.info-container {
+			text-align: center;
+			margin: 25px 0px 0px 0px;
+			font-weight: 500;
 		}
 	}
 }
