@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AppContainer /> renders correctly 1`] = `
+<div
+  className="app-wrapper"
+>
+  <span
+    className="header-thing"
+  />
+  <div
+    className="app-container"
+  >
+    <div>
+      <h1>
+         teste h1 
+      </h1>
+      <span>
+         teste span 
+      </span>
+    </div>
+  </div>
+</div>
+`;

@@ -27,7 +27,6 @@ describe('<LabelComponent />', () => {
 
 	it('has a span component', () => {
 		const wrapper = getWrapper(modelI);
-		console.log(wrapper.find('span').text());
 		expect(wrapper.find('span').length).toBe(1);
 	});
 
