@@ -582,3 +582,445 @@
 [32minfo[39m: [32mMongoose: Started[39m
 [32minfo[39m: [32mMongoose: Connection is open[39m
 [32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32m{ success: true, errors: [] }[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32m{ success: true, errors: [] }[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32m{ success: true, errors: [] }[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32m{ success: true, errors: [] }[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32m{ success: false,[39m
+[32m  errors:[39m
+[32m   [ { location: 'body',[39m
+[32m       param: 'nickname',[39m
+[32m       value: 'tPVIVRkjJoPBWjDa',[39m
+[32m       msg: 'The Nickname must have between 2 and 15 characters' },[39m
+[32m     { location: 'body',[39m
+[32m       param: 'password',[39m
+[32m       value: 'ZefOZAuXSBWegddH',[39m
+[32m       msg: 'The Password must have between 5 and 15 characters' } ] }[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32m{ success: true, errors: [] }[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32m{ success: false,[39m
+[32m  errors:[39m
+[32m   [ { location: 'body',[39m
+[32m       param: 'nickname',[39m
+[32m       value: 'gNLnTKtxxoiukayZ',[39m
+[32m       msg: 'The Nickname must have between 2 and 15 characters' },[39m
+[32m     { location: 'body',[39m
+[32m       param: 'password',[39m
+[32m       value: 'HlqddpziXvsLhqeQ',[39m
+[32m       msg: 'The Password must have between 5 and 15 characters' } ] }[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32m{ success: true, errors: [] }[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32m{ success: false,[39m
+[32m  errors:[39m
+[32m   [ { location: 'body',[39m
+[32m       param: 'nickname',[39m
+[32m       value: 'TOaGjWrdYIvKkwMq',[39m
+[32m       msg: 'The Nickname must have between 2 and 15 characters' },[39m
+[32m     { location: 'body',[39m
+[32m       param: 'password',[39m
+[32m       value: 'raZhZslNLPqusugi',[39m
+[32m       msg: 'The Password must have between 5 and 15 characters' } ] }[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32m{ success: true, errors: [] }[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32m{ success: false,[39m
+[32m  errors:[39m
+[32m   [ { location: 'body',[39m
+[32m       param: 'nickname',[39m
+[32m       value: 'YaUjEEPEOQFFPUAF',[39m
+[32m       msg: 'The Nickname must have between 2 and 15 characters' },[39m
+[32m     { location: 'body',[39m
+[32m       param: 'password',[39m
+[32m       value: 'KxYaLeMswFbOzNeN',[39m
+[32m       msg: 'The Password must have between 5 and 15 characters' } ] }[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32m{ success: true, errors: [] }[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32m{ success: true, errors: [] }[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[31merror[39m: [31m{ success: false,[39m
+[31m  errors:[39m
+[31m   [ { location: 'body',[39m
+[31m       param: 'nickname',[39m
+[31m       value: 'AwZfCEkRLrpynPun',[39m
+[31m       msg: 'The Nickname must have between 2 and 15 characters' },[39m
+[31m     { location: 'body',[39m
+[31m       param: 'password',[39m
+[31m       value: 'GEdbQeQvKDxnMESU',[39m
+[31m       msg: 'The Password must have between 5 and 15 characters' } ] }[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32m{ success: true, errors: [] }[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32m{ success: false,[39m
+[32m  errors:[39m
+[32m   [ { location: 'body',[39m
+[32m       param: 'nickname',[39m
+[32m       value: 'nqVZExeUccTIUGGC',[39m
+[32m       msg: 'The Nickname must have between 2 and 15 characters' },[39m
+[32m     { location: 'body',[39m
+[32m       param: 'password',[39m
+[32m       value: 'tdRrBHnpvBncCsSD',[39m
+[32m       msg: 'The Password must have between 5 and 15 characters' } ] }[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32m{ success: true, errors: [] }[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32m{ success: false,[39m
+[32m  errors:[39m
+[32m   [ { location: 'body',[39m
+[32m       param: 'nickname',[39m
+[32m       value: 'VabeXMhXAXdXryPp',[39m
+[32m       msg: 'The Nickname must have between 2 and 15 characters' },[39m
+[32m     { location: 'body',[39m
+[32m       param: 'password',[39m
+[32m       value: 'THEAriZVFLzaLxpk',[39m
+[32m       msg: 'The Password must have between 5 and 15 characters' } ] }[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32m/n[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32m{ success: true, errors: [] }[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32m{ success: false,[39m
+[32m  errors:[39m
+[32m   [ { location: 'body',[39m
+[32m       param: 'nickname',[39m
+[32m       value: 'FZhVHUGVKnXuUEEQ',[39m
+[32m       msg: 'The Nickname must have between 2 and 15 characters' },[39m
+[32m     { location: 'body',[39m
+[32m       param: 'password',[39m
+[32m       value: 'blqbYNtTecOIyWUb',[39m
+[32m       msg: 'The Password must have between 5 and 15 characters' } ] }[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32m[39m
+[32m[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32m{ success: true, errors: [] }[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32m{ success: false,[39m
+[32m  errors:[39m
+[32m   [ { location: 'body',[39m
+[32m       param: 'nickname',[39m
+[32m       value: 'hszwaGSTRpglOcdM',[39m
+[32m       msg: 'The Nickname must have between 2 and 15 characters' },[39m
+[32m     { location: 'body',[39m
+[32m       param: 'password',[39m
+[32m       value: 'rhcGruXSpFTHjYAN',[39m
+[32m       msg: 'The Password must have between 5 and 15 characters' } ] }[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32m{ success: true, errors: [] }[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32m{ success: false,[39m
+[32m  errors:[39m
+[32m   [ { location: 'body',[39m
+[32m       param: 'nickname',[39m
+[32m       value: 'XELreElPmmabxCBJ',[39m
+[32m       msg: 'The Nickname must have between 2 and 15 characters' },[39m
+[32m     { location: 'body',[39m
+[32m       param: 'password',[39m
+[32m       value: 'VEQLeLIocJjqgBkI',[39m
+[32m       msg: 'The Password must have between 5 and 15 characters' } ] }[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32m{ success: true, errors: [] }[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32m{ success: false,[39m
+[32m  errors:[39m
+[32m   [ { location: 'body',[39m
+[32m       param: 'nickname',[39m
+[32m       value: 'jvJFwfKIaWJgcuuz',[39m
+[32m       msg: 'The Nickname must have between 2 and 15 characters' },[39m
+[32m     { location: 'body',[39m
+[32m       param: 'password',[39m
+[32m       value: 'UnGmenSNBFRCDfhk',[39m
+[32m       msg: 'The Password must have between 5 and 15 characters' } ] }[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32m{ success: true, errors: [] }[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32m{ success: false,[39m
+[32m  errors:[39m
+[32m   [ { location: 'body',[39m
+[32m       param: 'nickname',[39m
+[32m       value: 'DhwKvLaAUzQUJKpW',[39m
+[32m       msg: 'The Nickname must have between 2 and 15 characters' },[39m
+[32m     { location: 'body',[39m
+[32m       param: 'password',[39m
+[32m       value: 'lFfqOSauTYcJSJYW',[39m
+[32m       msg: 'The Password must have between 5 and 15 characters' } ] }[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32m{ success: true, errors: [] }[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
