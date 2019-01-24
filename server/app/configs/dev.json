@@ -6,7 +6,10 @@
 		"JWTEXPIRES_IN": 86400
 	},
 	"ENDPOINTS": {
-		"PARTICIPATION": "/participation"
+		"AUTH": {
+			"SIGNIN": "/auth/signin",
+			"SIGNUP": "/auth/signup"
+		}
 	},
 	"EXPRESS_VALIDATION_MESSAGES": {
 		"FIRSTNAME_BETWEEN_LENGTH_1_AND_15": "The First name must be between 2 and 15 characters",
@@ -15,24 +18,15 @@
 		"PARTICIPATION_MAX_VALUE_EXCEEDED": "The sum of all participants cannot exceed 100%"
 	},
 	"WINSTON": {
-		"LEVELS": {
-			"error": 0,
-			"debug": 1,
-			"warn": 2,
-			"data": 3,
-			"info": 4,
-			"verbose": 5,
-			"silly": 6
-		},
-		"COLORS": {
-			"error": "red",
-			"debug": "blue",
-			"warn": "yellow",
-			"data": "grey",
-			"info": "green",
-			"verbose": "cyan",
-			"silly": "magenta"
-		},
 		"LOGFILE": "./logs/dev.log"
+	},
+	"MONGOOSE": {
+		"URI": "mongodb://127.0.0.1:27017/",
+		"DB": "chatapp"
+	},
+	"CRYPTO": {
+		"SECRET": "j2onfullstackchallendsecret",
+		"HASH": "sha256",
+		"DIGEST": "hex"
 	}
 }
