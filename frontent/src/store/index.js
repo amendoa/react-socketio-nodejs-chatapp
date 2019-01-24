@@ -5,7 +5,6 @@ import rootReducer from 'reducers';
 import * as utils from 'modules/utils';
 import rootSaga from 'sagas';
 
-
 function configureStore (initialState) {
 	const loggerMiddleware = createLogger();
 	const sagaMiddleware = createSagaMiddleware();

@@ -10,7 +10,7 @@ import {
 } from 'shared/components';
 
 import constants from 'modules/constants';
-import * as testeActions from 'actions/teste';
+import * as authActions from 'actions/auth';
 
 class SignInFormContainer extends Component {
 	testesagas = () => {
@@ -18,9 +18,9 @@ class SignInFormContainer extends Component {
 			dispatch
 		} = this.props;
 
-		dispatch(testeActions.requestAction())
+		dispatch(authActions.signInPostFetch())
 	}
-	
+
 	render () {
 		const {
 			values,
