@@ -1,0 +1,68 @@
+{
+	"name": "chatappserver",
+	"version": "0.0.1",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "nodemon server.js",
+		"start": "forever server.js",
+		"test": "mocha --timeout 10000"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"body-parser": "^1.18.3",
+		"compression": "^1.7.3",
+		"cors": "^2.8.5",
+		"express": "^4.16.4",
+		"express-validator": "^5.3.1",
+		"forever": "^0.15.3",
+		"helmet": "^3.15.0",
+		"jsonwebtoken": "^8.4.0",
+		"morgan": "^1.9.1",
+		"querystring": "^0.2.0",
+		"socket.io": "^2.2.0",
+		"winston": "^3.1.0"
+	},
+	"_moduleAliases": {
+		"@config": "config",
+		"@appconfig": "app/config",
+		"@controllers": "app/controllers",
+		"@middlewares": "app/middlewares",
+		"@models": "app/models",
+		"@modules": "app/modules",
+		"@repositories": "app/repositories",
+		"@routes": "app/routes",
+		"@validators": "app/validators"
+	},
+	"devDependencies": {
+		"chai": "^4.2.0",
+		"chai-http": "^4.2.1",
+		"chai-things": "^0.2.0",
+		"eslint": "^5.12.1",
+		"eslint-config-airbnb": "^17.1.0",
+		"eslint-config-airbnb-base": "^13.1.0",
+		"eslint-plugin-import": "^2.15.0",
+		"eslint-plugin-jsx-a11y": "^6.1.2",
+		"eslint-plugin-react": "^7.12.4",
+		"mocha": "^5.2.0",
+		"supertest": "^3.4.2"
+	},
+	"eslintConfig": {
+		"settings": {
+			"import/resolver": {
+				"node": {
+					"paths": [
+						"./app",
+						"@modules/constants"
+					],
+					"moduleDirectory": [
+						"node_modules",
+						"./app",
+						"@modules/constants"
+					]
+				}
+			}
+		}
+	}
+}
