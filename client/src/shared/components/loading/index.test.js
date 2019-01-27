@@ -2,15 +2,15 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import {
-	SpinnerComponent
+	LoadingComponent
 } from 'shared/components';
 
-describe('<SpinnerComponent />', () => {
+describe('<LoadingComponent />', () => {
 	const modelI = {};
 
 	const getWrapper = (model) => {
 		return shallow((
-			<SpinnerComponent {...model} />
+			<LoadingComponent {...model} />
 		));
 	};
 

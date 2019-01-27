@@ -41,12 +41,12 @@ describe('<ButtonComponent />', () => {
 
 	it('has a spinner with isFetching param === true', () => {
 		const wrapper = getWrapper(modelI);
-		expect(wrapper.find('SpinnerComponent').length).toBe(1);
+		expect(wrapper.find('LoadingComponent').length).toBe(1);
 	});
 
 	it('has no spinner with isFetching param === false', () => {
 		const wrapper = getWrapper(modelII);
-		expect(wrapper.find('SpinnerComponent').length).toBe(0);
+		expect(wrapper.find('LoadingComponent').length).toBe(0);
 	});
 
 	it('onclick button is working', () => {

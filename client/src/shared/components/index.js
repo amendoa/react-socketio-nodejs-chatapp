@@ -1,11 +1,13 @@
 import ButtonComponent from './button';
 import InputComponent from './input';
-import SpinnerComponent from './spinner';
+import LoadingComponent from './loading';
 import LabelComponent from './label';
+import FormComponent from './form';
 
 export {
 	ButtonComponent,
 	InputComponent,
-	SpinnerComponent,
-	LabelComponent
+	LoadingComponent,
+	LabelComponent,
+	FormComponent
 };

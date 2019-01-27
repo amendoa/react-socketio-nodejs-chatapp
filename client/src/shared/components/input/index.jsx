@@ -17,9 +17,12 @@ export default class InputComponent extends Component {
 			id,
 			value,
 			onChange,
+			onFocus,
 			onBlur,
-			label,
-			err
+			errorMessage,
+			hasError,
+			name,
+			iconComponent
 		} = this.props;
 
 		return (
@@ -31,28 +34,39 @@ export default class InputComponent extends Component {
 					maxWidth: width
 				}}
 			>
-				<input
-					id={id}
-					className="input"
-					type={type}
-					placeholder={placeholder}
-					value={value}
-					onChange={onChange}
-					onBlur={onBlur}
-					style={{
-						width
-					}}
-				/>
+				<div className="input-container">
+					<input
+						id={id}
+						className="input"
+						type={type}
+						placeholder={placeholder}
+						value={value}
+						onChange={onChange}
+						onFocus={onFocus}
+						onBlur={onBlur}
+						style={{
+							width
+						}}
+						name={name}
+					/>
+					<div className="input-icon-container">
+						{
+							iconComponent ? iconComponent() : null
+						}
+					</div>
+				</div>
 				{
-					err ? (
-						<LabelComponent
-							text={label}
-							danger
-							style={{
-								fontSize: 16,
-								fontWeight: 400
-							}}
-						/>
+					hasError ? (
+						<div className="input-label-container">
+							<LabelComponent
+								text={errorMessage}
+								danger
+								style={{
+									fontSize: 16,
+									fontWeight: 400
+								}}
+							/>
+						</div>
 					) : null
 				}
 			</div>

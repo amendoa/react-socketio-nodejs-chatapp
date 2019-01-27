@@ -4,7 +4,7 @@ import React, {
 import classNames from 'classnames';
 
 import {
-	SpinnerComponent
+	LoadingComponent
 } from 'shared/components';
 
 export default class ButtonComponent extends Component {
@@ -23,7 +23,8 @@ export default class ButtonComponent extends Component {
 
 		const buttonStyles = classNames({
 			button: true,
-			'button--primary': primary,
+			'button--primary': primary && !disabled,
+			'button--disabled': disabled,
 			'button--link': link
 		});
 
@@ -39,8 +40,10 @@ export default class ButtonComponent extends Component {
 				disabled={disabled}
 			>
 				{
-					isFetching ? (
-						<SpinnerComponent />
+					isFetching && !disabled ? (
+						<LoadingComponent
+							type='spinner'
+						/>
 					) : text
 				}
 			</button>

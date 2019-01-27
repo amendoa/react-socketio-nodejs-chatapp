@@ -14,11 +14,11 @@ import * as authActions from 'actions/auth';
 
 class SignInFormContainer extends Component {
 	testesagas = () => {
-		const {
-			dispatch
-		} = this.props;
-
-		dispatch(authActions.signInPostFetch())
+		// const {
+		// 	dispatch
+		// } = this.props;
+		//
+		// dispatch(authActions.signInPostFetch())
 	}
 
 	render () {

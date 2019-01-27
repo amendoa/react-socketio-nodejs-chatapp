@@ -1,8 +1,9 @@
+@import "../../node_modules/react-toastify/dist/ReactToastify.css";
 @import "./utils/_variables";
 @import "./base/_base";
 @import "../shared/containers/app/style.scss";
 @import "../shared/containers/auth/style.scss";
 @import "../shared/components/button/style.scss";
 @import "../shared/components/input/style.scss";
-@import "../shared/components/spinner/style.scss";
+@import "../shared/components/loading/style.scss";
 @import "../shared/components/label/style.scss";

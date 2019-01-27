@@ -1,4 +1,5 @@
 .input-wrapper {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 
@@ -6,44 +7,63 @@
 		margin-top: 5px;
 	}
 
-	.input {
-		border: none;
-		background: $brand-secondary;
-		border-radius: 4px;
-		height: 55px;
-		color: $brand-text;
-		padding: 0px 20px 0px 20px;
-		font-size: 16px;
-		font-weight: 600;
+	.input-container {
+		position: relative;
 
-		&::-webkit-input-placeholder {
+		.input {
+			border: none;
+			background: $brand-secondary;
+			border-radius: 4px;
+			height: 55px;
 			color: $brand-text;
-			font-weight: 400;
+			padding: 0px 20px 0px 20px;
+			font-size: 16px;
+			font-weight: 600;
+
+			&::-webkit-input-placeholder {
+				color: $brand-text;
+				font-weight: 400;
+			}
+
+			&:-moz-placeholder {
+				color: $brand-text;
+				font-weight: 400;
+			}
+
+			&::-moz-placeholder {
+				color: $brand-text;
+				font-weight: 400;
+			}
+
+			&:-ms-input-placeholder {
+				color: $brand-text;
+				font-weight: 400;
+			}
+
+			&::-ms-input-placeholder {
+				color: $brand-text;
+				font-weight: 400;
+			}
+
+			&::placeholder {
+				color: $brand-text;
+				font-weight: 400;
+			}
 		}
 
-		&:-moz-placeholder {
-			color: $brand-text;
-			font-weight: 400;
+		.input-icon-container {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: absolute;
+			top: 0;
+			right: 0;
+			height: 100%;
+			padding: 15px;
 		}
+	}
 
-		&::-moz-placeholder {
-			color: $brand-text;
-			font-weight: 400;
-		}
-
-		&:-ms-input-placeholder {
-			color: $brand-text;
-			font-weight: 400;
-		}
-
-		&::-ms-input-placeholder {
-			color: $brand-text;
-			font-weight: 400;
-		}
-
-		&::placeholder {
-			color: $brand-text;
-			font-weight: 400;
-		}
+	.input-label-container {
+		margin-top: 5px;
 	}
 }

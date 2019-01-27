@@ -9,7 +9,23 @@
 			"SIGNIN": "Sign In",
 			"SIGNUP": "Sign Up",
 			"PLEASE_ENTER_YOUR_PASSWORD": "Please, enter your password",
-			"PLEASE_ENTER_YOUR_NICKNAME": "Please, enter your nickname"
+			"PLEASE_ENTER_YOUR_NICKNAME": "Please, enter your nickname",
+			"PLEASE_CONFIRM_PASSWORD": "Please, confirm your password",
+			"NICKNAME_LENGHT_BETWEEN_2_AND_15": "The Nickname must have between 2 and 15 characters",
+			"PASSWORD_LENGHT_BETWEEN_5_AND_15": "The Password must have between 5 and 15 characters",
+			"PASSWORD_DOESNT_MATCH": "Password and confirm password must match"
+		}
+	},
+	"API": {
+		"ROOT": "http://0.0.0.0:7070",
+		"ACTIONS": {
+			"AUTH_SIGNUP": "/auth/signup",
+			"VERIFY_NICKNAME": "/auth/verify-nickname"
+		},
+		"METHODS": {
+			"GET": "GET",
+			"POST": "POST",
+			"DELETE": "DELETE"
 		}
 	}
 }

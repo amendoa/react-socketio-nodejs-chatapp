@@ -34,6 +34,14 @@
 		}
 	}
 
+	&.button--disabled {
+		transition: all .5s ease;
+		background: $brand-secondary;
+		color: $brand-text-dark;
+		box-shadow: none;
+		cursor: not-allowed;
+	}
+
 	&.button--link {
 		background: $brand-default;
 		color: $brand-primary;
