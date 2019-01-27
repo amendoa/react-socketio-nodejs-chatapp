@@ -5,13 +5,18 @@ import * as formActions from 'actions/form';
 import constants from 'modules/constants';
 import { toast } from 'react-toastify';
 import {
+	serverErrorsToFrontFormat
+} from 'modules/utils';
+
+import {
 	POST_SIGNUP,
 	GET_VERIFY_NICKNAME
 } from 'redux-constants/auth';
 
 function* signUpPostFetch (props) {
 	const {
-		params
+		params,
+		formName
 	} = props;
 
 	const {
@@ -19,18 +24,24 @@ function* signUpPostFetch (props) {
 	} = params;
 
 	try {
-		const props = yield fetch(`${constants.API.ROOT}${constants.API.ACTIONS.AUTH_SIGNUP}`, {
+		const response = yield fetch(`${constants.API.ROOT}${constants.API.ACTIONS.AUTH_SIGNUP}`, {
 			method: constants.API.METHODS.POST,
 			headers: {
 				'Content-Type': 'application/x-www-form-urlencoded'
 			},
 			body: queryString.stringify(body)
 		})
-			.then(props => props.json());
+			.then(response => response.json());
 
-		if (!props.success && props.errors.length > 0) {
+		// TODO SET TOKEN AND LOGIN
+		if (!response.success && response.errors.length > 0) {
 			// toast.error("TESTE");
+			// TODO SET GLOBAL ERRORS;
 		}
+
+		yield put(formActions.setFormError(formName, {
+			errors: serverErrorsToFrontFormat(response.errors)
+		}));
 
 		yield put(authActions.postSignUpReceived());
 	} catch (e) {
@@ -48,25 +59,22 @@ function* verifyNicknameGetFetch (props) {
 		formName
 	} = params;
 
-	const errors = {};
-
 	try {
-		const props = yield fetch(`${constants.API.ROOT}${constants.API.ACTIONS.VERIFY_NICKNAME}?${queryString.stringify(body)}`, {
+		const response = yield fetch(`${constants.API.ROOT}${constants.API.ACTIONS.VERIFY_NICKNAME}?${queryString.stringify(body)}`, {
 			method: constants.API.METHODS.GET,
 			headers: {
 				'Content-Type': 'application/x-www-form-urlencoded'
 			}
 		})
-			.then(props => props.json());
-
-		props.errors.forEach(item => {
-			errors[item.param] = item.msg;
-		});
+			.then(response => response.json());
 
 		yield put(formActions.setFormError(formName, {
-			errors
+			errors: serverErrorsToFrontFormat(response.errors)
 		}));
-		yield put(authActions.getVerifyNicknameReceived());
+
+		yield put(authActions.getVerifyNicknameReceived({
+			errors: response.errors
+		}));
 	} catch (e) {
 		yield put(authActions.getVerifyNicknameReceived());
 	}

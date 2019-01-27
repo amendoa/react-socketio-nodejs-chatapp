@@ -12,6 +12,8 @@ exports[`<ButtonComponent /> renders correctly 1`] = `
   }
   type="Submit"
 >
-  <LoadingComponent />
+  <LoadingComponent
+    type="spinner"
+  />
 </button>
 `;

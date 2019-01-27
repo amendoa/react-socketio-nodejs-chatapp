@@ -5,6 +5,7 @@ import React, {
 import {
 	LabelComponent
 } from 'shared/components';
+import classNames from 'classnames';
 
 export default class InputComponent extends Component {
 	render () {
@@ -22,8 +23,14 @@ export default class InputComponent extends Component {
 			errorMessage,
 			hasError,
 			name,
-			iconComponent
+			iconComponent,
+			autoComplete
 		} = this.props;
+
+		const inputStyles = classNames({
+			input: true,
+			'input--error': hasError
+		});
 
 		return (
 			<div
@@ -37,7 +44,7 @@ export default class InputComponent extends Component {
 				<div className="input-container">
 					<input
 						id={id}
-						className="input"
+						className={inputStyles}
 						type={type}
 						placeholder={placeholder}
 						value={value}
@@ -48,6 +55,7 @@ export default class InputComponent extends Component {
 							width
 						}}
 						name={name}
+						autoComplete={autoComplete}
 					/>
 					<div className="input-icon-container">
 						{

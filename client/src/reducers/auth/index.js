@@ -22,16 +22,18 @@ const initialState = {
 function authReducer (state = initialState, action) {
 	switch (action.type) {
 		case POST_SIGNUP:
-			// return Object.assign({}, state, {
-			// 	isFetching: true
-			// });
-			return state;
+			return Object.assign({}, state, {
+				signUp: Object.assign({}, state.signUp, {
+					isFetching: true
+				})
+			});
 
 		case POST_SIGNUP_RECEIVED:
-			// return Object.assign({}, state, {
-			// 	isFetching: false
-			// });
-			return state;
+			return Object.assign({}, state, {
+				signUp: Object.assign({}, state.signUp, {
+					isFetching: false
+				})
+			});
 
 		case GET_VERIFY_NICKNAME:
 			return Object.assign({}, state, {

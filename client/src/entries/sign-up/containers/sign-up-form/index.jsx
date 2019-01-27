@@ -5,7 +5,8 @@ import {
 	ButtonComponent,
 	InputComponent,
 	FormComponent,
-	LoadingComponent
+	LoadingComponent,
+	IconComponent
 } from 'shared/components';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
@@ -15,6 +16,21 @@ import * as authActions from 'actions/auth';
 
 class SignUpFormContainer extends Component {
 	render () {
+		const {
+			authActions,
+			authData
+		} = this.props;
+
+		const {
+			getVerifyNickname,
+			postSignUp
+		} = authActions;
+
+		const {
+			verifyNickname,
+			signUp
+		} = authData;
+
 		return (
 			<FormComponent
 				formName='SignUpForm'
@@ -23,16 +39,14 @@ class SignUpFormContainer extends Component {
 					password: '',
 					confirmPassword: ''
 				}}
-				handleSubmit={() => {
-					console.log('handleSubmit >>>>>>>');
+				handleSubmit={(values, formName) => {
+					const params = {
+						body: values
+					};
+
+					postSignUp(params, formName);
 				}}
 				customErrors={() => {
-					const {
-						authData
-					} = this.props;
-					const {
-						verifyNickname
-					} = authData;
 					const {
 						errors
 					} = verifyNickname;
@@ -86,14 +100,6 @@ class SignUpFormContainer extends Component {
 				}}
 				validateAsync={(key, value, formName) => {
 					if (key === 'nickname') {
-						const {
-							authActions
-						} = this.props;
-
-						const {
-							getVerifyNickname
-						} = authActions;
-
 						const params = {
 							body: {
 								nickname: value
@@ -118,15 +124,9 @@ class SignUpFormContainer extends Component {
 				}) => {
 					const {
 						touched,
-						errors
+						errors,
+						values
 					} = form;
-
-					const {
-						authData
-					} = this.props;
-					const {
-						verifyNickname
-					} = authData;
 
 					return (
 						<form onSubmit={handleSubmit}>
@@ -136,6 +136,7 @@ class SignUpFormContainer extends Component {
 								type='text'
 								hasError={touched.nickname && errors.nickname}
 								errorMessage={errors.nickname}
+								autoComplete='off'
 								onChange={handleChange}
 								onFocus={handleFocus}
 								onBlur={handleBlur}
@@ -143,19 +144,48 @@ class SignUpFormContainer extends Component {
 								marginBottom={13}
 								width={280}
 								iconComponent={() => {
-									if (verifyNickname.isFetching) {
-										return (
-											<LoadingComponent
-												type='donut'
-											/>
-										);
+									if (values.nickname) {
+										if (values.nickname.length > 0) {
+											if (verifyNickname.isFetching) {
+												return (
+													<LoadingComponent
+														type='donut'
+													/>
+												);
+											}
+
+											if (verifyNickname.errors.length > 0) {
+												return (
+													<IconComponent
+														fill="#da7079"
+														icon="alert"
+														width={26}
+														height={26}
+													/>
+												);
+											}
+
+											if (!(touched.nickname && errors.nickname)) {
+												return (
+													<IconComponent
+														fill="#55c37c"
+														icon="checked"
+														width={24}
+														height={24}
+													/>
+												);
+											}
+										}
 									}
+
+									return null;
 								}}
 							/>
 							<InputComponent
 								id='password'
 								placeholder={constants.LABELS.AUTH.PASSWORD}
 								type='password'
+								autoComplete='off'
 								hasError={touched.password && errors.password}
 								errorMessage={errors.password}
 								onChange={handleChange}
@@ -169,6 +199,7 @@ class SignUpFormContainer extends Component {
 								id='confirmPassword'
 								placeholder={constants.LABELS.AUTH.CONFIRM_PASSWORD}
 								type='password'
+								autoComplete='off'
 								hasError={touched.confirmPassword && errors.confirmPassword}
 								errorMessage={errors.confirmPassword}
 								onChange={handleChange}
@@ -182,7 +213,7 @@ class SignUpFormContainer extends Component {
 								type="submit"
 								primary
 								text={constants.LABELS.AUTH.SIGNUP}
-								isFetching={false}
+								isFetching={signUp.isFetching}
 								disabled={verifyNickname.isFetching}
 								marginTop={35}
 								width={280}

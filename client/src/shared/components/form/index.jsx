@@ -187,14 +187,15 @@ class FormComponent extends Component {
 		} = formData;
 
 		const {
-			handleSubmit
+			handleSubmit,
+			formName
 		} = this.props;
 
 		this.validateForm(false, _.keys(values));
 		this.setTouched(_.keys(values));
 
 		if (_.isEmpty(errors)) {
-			handleSubmit(values);
+			handleSubmit(values, formName);
 		}
 	};
 

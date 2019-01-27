@@ -45,6 +45,7 @@ class SignInFormContainer extends Component {
 					onBlur={handleBlur}
 					err={errors.nickname && touched.nickname}
 					label={errors.nickname}
+					autoComplete='off'
 					marginTop={7}
 					marginBottom={7}
 					width={280}
@@ -58,6 +59,7 @@ class SignInFormContainer extends Component {
 					onBlur={handleBlur}
 					err={errors.password && touched.password}
 					label={errors.password}
+					autoComplete='off'
 					marginTop={7}
 					marginBottom={7}
 					width={280}

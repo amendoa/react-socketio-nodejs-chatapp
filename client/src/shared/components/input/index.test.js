@@ -17,8 +17,8 @@ describe('<InputComponent />', () => {
 		value: 'value',
 		onChange,
 		onBlur,
-		err: true,
-		label: 'erro teste'
+		hasError: true,
+		errorMessage: 'erro teste'
 	};
 
 	const modelII = {
@@ -28,7 +28,7 @@ describe('<InputComponent />', () => {
 		value: 'value',
 		onChange,
 		onBlur,
-		err: false
+		hasError: false
 	};
 
 	const getWrapper = (model) => {

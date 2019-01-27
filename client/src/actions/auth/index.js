@@ -6,10 +6,11 @@ import {
 	RESET_VERIFY_NICKNAME
 } from 'redux-constants/auth';
 
-export function postSignUp (params) {
+export function postSignUp (params, formName) {
 	return {
 		type: POST_SIGNUP,
-		params
+		params,
+		formName
 	};
 }
 
