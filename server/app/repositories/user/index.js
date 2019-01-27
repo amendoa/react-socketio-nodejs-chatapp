@@ -15,3 +15,5 @@ exports.addUser = (model) => {
 
 	return user.save();
 };
+
+exports.findUser = params => UserModel.find(params);

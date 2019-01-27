@@ -11,17 +11,21 @@ const UserSchema = new Schema({
 	nickname: {
 		type: String,
 		default: '',
-		trim: true
+		trim: true,
+		unique: true,
+		required: true
 	},
 	password: {
 		type: String,
 		default: '',
-		trim: true
+		trim: true,
+		required: true
 	},
 	profileColor: {
 		type: String,
 		default: '',
-		trim: true
+		trim: true,
+		required: true
 	}
 });
 

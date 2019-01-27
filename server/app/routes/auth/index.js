@@ -11,5 +11,6 @@ const {
 const route = Router();
 
 route.post('/auth/signup', signupValidator(), authController.postSignup);
+route.get('/auth/verify-nickname', authController.getVerifyNickname);
 
 module.exports = route;
