@@ -41,8 +41,25 @@ describe('AUTH \n', () => {
 				logger.info(res.body);
 				res.should.have.status(200);
 				res.body.should.have.property('success').eql(true);
-				// res.body.should.have.property('token').eql(true); TODO RETURN TOKEN TO LOGIN
+				res.body.should.have.property('token');
+				done();
+			});
+	});
 
+	it('SIGNIN - Should return STATUS 200 | SUCCESS FIELD TRUE | TOKEN', (done) => {
+		request(`http://${constants.GENERAL.SERVER_HTTP_IP}:${constants.GENERAL.SERVER_HTTP_PORT}`)
+			.post(constants.ENDPOINTS.AUTH.SIGNIN)
+			.set('x-access-token', token)
+			.type('form')
+			.send({
+				nickname: 'amendoa',
+				password: 'coxinha123'
+			})
+			.end((err, res) => {
+				logger.info(res.body);
+				res.should.have.status(200);
+				res.body.should.have.property('success').eql(true);
+				res.body.should.have.property('token');
 				done();
 			});
 	});
@@ -77,7 +94,6 @@ describe('AUTH \n', () => {
 			})}`)
 			.set('x-access-token', token)
 			.end((err, res) => {
-				console.log(">>>>>>>>.")
 				logger.info(res.body);
 				res.should.have.status(200);
 				res.body.should.have.property('success').eql(true);

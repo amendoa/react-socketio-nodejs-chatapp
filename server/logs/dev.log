@@ -2582,3 +2582,510 @@
 [32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=testeeeeeee[39m
 [32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=testeeeeeeee[39m
 [32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=testeeeeeeeee[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=asd[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=asdasd[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=asdasd[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=rs[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=asdasd[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=testes[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=dd[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=tested[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=te[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=tes[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=te[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=tt[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=ttt[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=ttttes[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=ttttest[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=ttttes[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=tttte[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=tttt[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=ttt[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=tt[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=dd[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=ddddddd[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=ddddddddd[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=dddddddddd[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste2[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=te[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=tes[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=test[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=testes[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=testet[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=testets[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=testetsd[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=testetsdd[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=testetsddd[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=testetsddda[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=testetsdddas[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=testetsdddasa[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=testetsdddasas[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=testetsdddasasd[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=testea[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=testeas[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=testeasd[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=testeasda[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=testeasdas[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=testeasdasd[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=testeasdasda[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=testeasdasdaa[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=testeasdasda[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=testeasdasd[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=testeasdasdf[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=testeasdasdff[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=testeasdasdffd[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=testeasdasdffdc[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=testeasdasdffdc[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=testeasdasdffd[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=testeasdasdff[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=testeasdasdf[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=testeasdasd[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=testeasdas[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=testeasda[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=te[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=asdasd[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=dasdasd[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=ddasdasd[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=testee[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=testeed[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=testeedd[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=testeedde[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=testeeddef[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=testeeddefe[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=testeeddefef[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=testeeddefeff[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=testeeddefefff[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=testeeddefeffff[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=ddd[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=dddd[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=ddddd[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=dddddd[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=ddddddd[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=dddddddd[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=ddddddddd[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=dddddddddd[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=ddddddddddd[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=dddddddddddd[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=ddddddddddddd[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=dddddddddddddd[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=ddddddddddddddd[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=ddddddddddddddd[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=dddddddddddddd[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=ddddddddddddd[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=dddddddddddd[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=ddddddddddd[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=dddddddddd[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=ddddddddd[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=gg[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=gg[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=ggg[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=gggg[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=ggggg[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=gggggg[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=ggggggg[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=ted[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=testeted[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=testetted[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=testeteted[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=testetesdted[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=testetesdated[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=testetesdasted[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=testetesdasdted[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=testetesdasddt[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=dd[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=ddd[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=dddd[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=ddddd[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=dddddd[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=ddddddd[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=dddddddddd[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste333[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste3[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste4[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste45[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste456666[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=dasdasd[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste44[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste5[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste55[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste555[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=testedd[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=testeddd[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste4[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste44[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste444[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teasdasd[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=testeasdasd[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste3[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste33[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste33[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste333[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste33[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste33f[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste3[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste33[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=asdasda[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=testeasdasd[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=te[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teasdasd[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=amendowin[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=amendowins[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=das[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=dasas[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=tes[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=tesc[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=tescas[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=ccvast[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=te[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste3[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste33[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste333[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste4[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste44[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste444[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste4444[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=amendoa[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=asdasdasdasdasd[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=amendoa[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signin[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signin[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signin[39m
+[32minfo[39m: [32m{ success: true }[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signin[39m
+[32minfo[39m: [32m{ success: true }[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signin[39m
+[32minfo[39m: [32m{ success: true }[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signin[39m
+[32minfo[39m: [32m{ success: true }[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signin[39m
+[32minfo[39m: [32m{ success: true }[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signin[39m
+[32minfo[39m: [32m{ success: true }[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signin[39m
+[32minfo[39m: [32m{ success: true,[39m
+[32m  token:[39m
+[32m   'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuaWNrbmFtZSI6ImFtZW5kb2EiLCJfaWQiOiI1YzRlNDI0ZjZlY2UzYzJmZmI4MTIzODIiLCJpYXQiOjE1NDg2Nzg1NjQsImV4cCI6MTU0ODc2NDk2NH0.9f55jSMuB5GxJmxD2IiNXHpvExFKZAGv7UCsUgXnPzU' }[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32m{ success: true, errors: [] }[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32m{ success: true, errors: [] }[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32m{ success: true,[39m
+[32m  errors: [],[39m
+[32m  token:[39m
+[32m   'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuaWNrbmFtZSI6Im5ydmxuQWVKZnRCQiIsIl9pZCI6IjVjNGVmNjA0OTFkMDI4MjkyZDA2NWMzYSIsImlhdCI6MTU0ODY3ODY2MCwiZXhwIjoxNTQ4NzY1MDYwfQ.Hv0EWssldP2DnJJVF-davxxU6CJ1763e1O0DYyzt_ys' }[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32m{ success: true,[39m
+[32m  errors: [],[39m
+[32m  token:[39m
+[32m   'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuaWNrbmFtZSI6IkdmWXVUd2RGUHJOayIsIl9pZCI6IjVjNGVmNjE4YmI0NDFiMjljNGVhOGVlOCIsImlhdCI6MTU0ODY3ODY4MCwiZXhwIjoxNTQ4NzY1MDgwfQ.ucYJ60LTuwfhfqpfIWqspLb0DQUYwk71M6Vq1bCsn2Q' }[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32m{ success: true,[39m
+[32m  errors: [],[39m
+[32m  token:[39m
+[32m   'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuaWNrbmFtZSI6IlFtZ0tzdFhIVGRWSCIsIl9pZCI6IjVjNGVmNjFiYjdiMzk5MmEwNDI1MzcwNCIsImlhdCI6MTU0ODY3ODY4MywiZXhwIjoxNTQ4NzY1MDgzfQ.wr2EcZxK0b42R0ezHriC4jUf9TOODdXcqXdKA52dGLM' }[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32m{ success: true,[39m
+[32m  errors: [],[39m
+[32m  token:[39m
+[32m   'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuaWNrbmFtZSI6IkpBSnhjWmNDT0txZSIsIl9pZCI6IjVjNGVmNjFlOWY4NmE4MmE0MzllYjM0ZCIsImlhdCI6MTU0ODY3ODY4NiwiZXhwIjoxNTQ4NzY1MDg2fQ.Fa77m2hWQY0YAYiW3tffT5mfSw9vjP_GS-Cs-j6r6Nk' }[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signin[39m
+[32minfo[39m: [32m{ success: true,[39m
+[32m  token:[39m
+[32m   'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuaWNrbmFtZSI6ImFtZW5kb2EiLCJfaWQiOiI1YzRlNDI0ZjZlY2UzYzJmZmI4MTIzODIiLCJpYXQiOjE1NDg2Nzg3MTcsImV4cCI6MTU0ODc2NTExN30.ydJIdmqReP7uWXm3tKlaOziqC1DWd2cZFvXq2i7yizU' }[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m

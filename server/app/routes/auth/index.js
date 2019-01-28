@@ -10,7 +10,8 @@ const {
 
 const route = Router();
 
-route.post('/auth/signup', signupValidator(), authController.postSignup);
+route.post('/auth/signup', signupValidator(), authController.postSignUp);
+route.post('/auth/signin', authController.postSignIn);
 route.get('/auth/verify-nickname', authController.getVerifyNickname);
 
 module.exports = route;
