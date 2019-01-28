@@ -24,7 +24,8 @@ export default class InputComponent extends Component {
 			hasError,
 			name,
 			iconComponent,
-			autoComplete
+			autoComplete,
+			maxLength
 		} = this.props;
 
 		const inputStyles = classNames({
@@ -56,6 +57,7 @@ export default class InputComponent extends Component {
 						}}
 						name={name}
 						autoComplete={autoComplete}
+						maxLength={maxLength}
 					/>
 					<div className="input-icon-container">
 						{

@@ -141,6 +141,7 @@ class SignUpFormContainer extends Component {
 								onFocus={handleFocus}
 								onBlur={handleBlur}
 								marginTop={13}
+								maxLength={15}
 								marginBottom={13}
 								width={280}
 								iconComponent={() => {
@@ -191,6 +192,7 @@ class SignUpFormContainer extends Component {
 								onChange={handleChange}
 								onFocus={handleFocus}
 								onBlur={handleBlur}
+								maxLength={15}
 								marginTop={13}
 								marginBottom={13}
 								width={280}
@@ -205,6 +207,7 @@ class SignUpFormContainer extends Component {
 								onChange={handleChange}
 								onFocus={handleFocus}
 								onBlur={handleBlur}
+								maxLength={15}
 								marginTop={13}
 								marginBottom={13}
 								width={280}

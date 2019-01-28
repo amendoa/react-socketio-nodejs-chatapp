@@ -47,6 +47,7 @@ class SignInFormContainer extends Component {
 					label={errors.nickname}
 					autoComplete='off'
 					marginTop={7}
+					maxLength={15}
 					marginBottom={7}
 					width={280}
 				/>
@@ -61,6 +62,7 @@ class SignInFormContainer extends Component {
 					label={errors.password}
 					autoComplete='off'
 					marginTop={7}
+					maxLength={15}
 					marginBottom={7}
 					width={280}
 				/>
