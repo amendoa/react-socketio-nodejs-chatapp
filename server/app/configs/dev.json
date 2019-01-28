@@ -15,7 +15,8 @@
 	"EXPRESS_VALIDATION_MESSAGES": {
 		"NICKNAME_LENGHT_BETWEEN_2_AND_15": "The Nickname must have between 2 and 15 characters",
 		"PASSWORD_LENGHT_BETWEEN_5_AND_15": "The Password must have between 5 and 15 characters",
-		"THIS_NICKNAME_IS_ALREADY_TAKEN": "This Nickname is already taken"
+		"THIS_NICKNAME_IS_ALREADY_TAKEN": "This Nickname is already taken",
+		"INCORRECT_PASSWORD_OR_USERNAME": "Incorrect nickname or password"
 	},
 	"WINSTON": {
 		"LOGFILE": "./logs/dev.log"

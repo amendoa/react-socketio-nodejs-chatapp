@@ -88,20 +88,30 @@ exports.postSignIn = async (req, res) => {
 				.status(200)
 				.json({
 					success: true,
-					token
+					token,
+					errors: []
 				});
 		} else {
 			res
 				.status(400)
 				.json({
-					success: false
+					success: false,
+					errors: [
+						{
+							location: 'body',
+							param: 'nickname',
+							value: nickname,
+							msg: constants.EXPRESS_VALIDATION_MESSAGES.INCORRECT_PASSWORD_OR_USERNAME
+						}
+					]
 				});
 		}
 	} catch (e) {
 		res
 			.status(500)
 			.json({
-				success: false
+				success: false,
+				errors: []
 			});
 	}
 };
