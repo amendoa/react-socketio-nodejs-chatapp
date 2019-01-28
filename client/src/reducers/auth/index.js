@@ -1,17 +1,22 @@
 import {
 	POST_SIGNUP,
 	POST_SIGNUP_RECEIVED,
+	POST_SIGNIN,
+	POST_SIGNIN_RECEIVED,
 	GET_VERIFY_NICKNAME,
 	GET_VERIFY_NICKNAME_RECEIVED,
-	RESET_VERIFY_NICKNAME
+	RESET_VERIFY_NICKNAME,
+	RESET_SIGNIN
 } from 'redux-constants/auth';
 
 const initialState = {
 	signIn: {
-		isFetching: false
+		isFetching: false,
+		errors: []
 	},
 	signUp: {
-		isFetching: false
+		isFetching: false,
+		errors: []
 	},
 	verifyNickname: {
 		isFetching: false,
@@ -21,6 +26,29 @@ const initialState = {
 
 function authReducer (state = initialState, action) {
 	switch (action.type) {
+		case POST_SIGNIN:
+			return Object.assign({}, state, {
+				signIn: Object.assign({}, state.signIn, {
+					isFetching: true
+				})
+			});
+
+		case POST_SIGNIN_RECEIVED:
+			return Object.assign({}, state, {
+				signIn: Object.assign({}, state.signIn, {
+					isFetching: false,
+					...action.params
+				})
+			});
+
+		case RESET_SIGNIN:
+			return Object.assign({}, state, {
+				signIn: Object.assign({}, state.signIn, {
+					isFetching: false,
+					errors: []
+				})
+			});
+
 		case POST_SIGNUP:
 			return Object.assign({}, state, {
 				signUp: Object.assign({}, state.signUp, {

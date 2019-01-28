@@ -97,7 +97,7 @@ class FormComponent extends Component {
 		} = formData;
 
 		this.updateFormData({
-			errors: validate(values, errors, resetErrors, keys)
+			errors: validate ? validate(values, errors, resetErrors, keys) : {}
 		});
 	}
 

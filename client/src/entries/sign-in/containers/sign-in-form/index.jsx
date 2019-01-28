@@ -1,164 +1,132 @@
 import React, {
 	Component
 } from 'react';
-import { withFormik } from 'formik';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
 import {
 	ButtonComponent,
-	InputComponent
+	InputComponent,
+	FormComponent,
+	FlashMessageComponent
 } from 'shared/components';
-
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
 import constants from 'modules/constants';
 import * as authActions from 'actions/auth';
+import {
+	serverErrorsToFrontFormat
+} from 'modules/utils';
 
 class SignInFormContainer extends Component {
-	testesagas = () => {
-		// const {
-		// 	dispatch
-		// } = this.props;
-		//
-		// dispatch(authActions.signInPostFetch())
+	onCloseFlashMessage = () => {
+		const {
+			authActions
+		} = this.props;
+
+		const {
+			resetSignIn
+		} = authActions;
+
+		resetSignIn();
 	}
 
 	render () {
 		const {
-			values,
-			touched,
-			errors,
-			handleChange,
-			handleBlur,
-			handleSubmit,
+			authActions,
+			authData
 		} = this.props;
 
+		const {
+			postSignIn
+		} = authActions;
+
+		const {
+			signIn
+		} = authData;
+
+		const errors = serverErrorsToFrontFormat(signIn.errors);
+
 		return (
-			<form
-				onSubmit={handleSubmit}
-				className='inputs-container'
-			>
-				<InputComponent
-					id='nickname'
-					placeholder={constants.LABELS.AUTH.NICKNAME}
-					type='text'
-					value={values.nickname}
-					onChange={handleChange}
-					onBlur={handleBlur}
-					err={errors.nickname && touched.nickname}
-					label={errors.nickname}
-					autoComplete='off'
-					marginTop={7}
-					maxLength={15}
-					marginBottom={7}
-					width={280}
-				/>
-				<InputComponent
-					id='password'
-					placeholder={constants.LABELS.AUTH.PASSWORD}
-					type='password'
-					value={values.password}
-					onChange={handleChange}
-					onBlur={handleBlur}
-					err={errors.password && touched.password}
-					label={errors.password}
-					autoComplete='off'
-					marginTop={7}
-					maxLength={15}
-					marginBottom={7}
-					width={280}
-				/>
-				<ButtonComponent
-					type="submit"
-					primary
-					text={constants.LABELS.AUTH.SIGNIN}
-					isFetching={false}
-					disabled={false}
-					marginTop={35}
-					width={280}
-					onClick={this.testesagas}
-				/>
-			</form>
+			<FormComponent
+				formName='SignInForm'
+				values={{
+					nickname: '',
+					password: ''
+				}}
+				handleSubmit={(values) => {
+					const params = {
+						body: values
+					};
+
+					if (!signIn.isFetching) {
+						postSignIn(params);
+					}
+				}}
+				render={({
+					handleChange,
+					handleSubmit,
+					form
+				}) => {
+					return (
+						<form onSubmit={handleSubmit}>
+							{
+								errors.nickname ? (
+									<FlashMessageComponent
+										width={280}
+										message={errors.nickname}
+										onClose={this.onCloseFlashMessage}
+									/>
+								) : null
+							}
+							<InputComponent
+								id='nickname'
+								placeholder={constants.LABELS.AUTH.NICKNAME}
+								type='text'
+								autoComplete='off'
+								onChange={handleChange}
+								marginTop={13}
+								maxLength={15}
+								marginBottom={13}
+								width={280}
+							/>
+							<InputComponent
+								id='password'
+								placeholder={constants.LABELS.AUTH.PASSWORD}
+								type='password'
+								autoComplete='off'
+								onChange={handleChange}
+								maxLength={15}
+								marginTop={13}
+								marginBottom={13}
+								width={280}
+							/>
+							<ButtonComponent
+								type="submit"
+								primary
+								text={constants.LABELS.AUTH.SIGNUP}
+								isFetching={signIn.isFetching}
+								marginTop={35}
+								width={280}
+							/>
+						</form>
+					);
+				}}
+			/>
 		);
 	}
 }
 
-const formikComponent = withFormik({
-	mapPropsToValues: () => ({
-		nickname: '',
-		password: ''
-	}),
-	validate: values => {
-		const errors = {};
-
-		if (!values.nickname) {
-			errors.nickname = constants.LABELS.AUTH.PLEASE_ENTER_YOUR_NICKNAME;
-		}
-
-		if (!values.password) {
-			errors.password = constants.LABELS.AUTH.PLEASE_ENTER_YOUR_PASSWORD;
-		}
-
-		return errors;
-	},
-	handleSubmit: (values, { props, setSubmitting, resetForm }) => {
-		console.log('on submit');
-
-		// const {
-		// 	participationActions,
-		// 	data
-		// } = props;
-		//
-		// const {
-		// 	isFetchingPost
-		// } = data;
-		//
-		// const {
-		// 	firstName,
-		// 	lastName,
-		// 	participation
-		// } = values;
-		//
-		// const body = {
-		// 	firstName,
-		// 	lastName,
-		// 	participation
-		// };
-		//
-		// if (!isFetchingPost) {
-		// 	participationActions.requestPostParticipation(body)
-		// 		.then((result) => {
-		// 			const {
-		// 				success,
-		// 				errors
-		// 			} = result;
-		//
-		// 			if (success) {
-		// 				resetForm();
-		// 			} else {
-		// 				errors.forEach((error) => {
-		// 					toast.error(`${error.param.toInperCase()}: ${error.msg}`);
-		// 				});
-		// 			}
-		// 		})
-		// 		.catch(() => {
-		// 			toast.error(constants.MESSAGES.CATCH_ON_REQUEST);
-		// 		});
-		// }
-
-		setSubmitting(false);
-	},
-	displayName: 'SignInForm'
-})(SignInFormContainer);
-
 const mapStateToProps = (state) => {
 	return {
-		data: state.participations,
+		authData: state.auth
 	};
 };
-//
-// const mapDispatchToProps = (dispatch) => {
-// 	return {
-// 		participationActions: bindActionCreators(participationActions, dispatch)
-// 	};
-// };
-//
-export default connect(mapStateToProps)(formikComponent);
+
+const mapDispatchToProps = (dispatch) => {
+	return {
+		authActions: bindActionCreators(authActions, dispatch)
+	};
+};
+
+export default connect(
+	mapStateToProps,
+	mapDispatchToProps
+)(SignInFormContainer);

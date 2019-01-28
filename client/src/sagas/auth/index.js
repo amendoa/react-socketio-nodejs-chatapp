@@ -10,8 +10,43 @@ import {
 
 import {
 	POST_SIGNUP,
+	POST_SIGNIN,
 	GET_VERIFY_NICKNAME
 } from 'redux-constants/auth';
+
+function* signInPostFetch (props) {
+	const {
+		params
+	} = props;
+
+	const {
+		body
+	} = params;
+
+	try {
+		const response = yield fetch(`${constants.API.ROOT}${constants.API.ACTIONS.AUTH_SIGNIN}`, {
+			method: constants.API.METHODS.POST,
+			headers: {
+				'Content-Type': 'application/x-www-form-urlencoded'
+			},
+			body: queryString.stringify(body)
+		})
+			.then(response => response.json());
+
+		if (response.success && response.token) {
+			console.log(response.token);
+			// TODO SET TOKEN AND LOGIN
+		}
+		//toast.error('Incorrect nickname or password');
+		yield put(authActions.postSignInReceived({
+			errors: response.errors
+		}));
+	} catch (e) {
+		yield put(authActions.postSignInReceived());
+		// toast.error("TESTE");
+		// SET GLOBAL ERROR;
+	}
+}
 
 function* signUpPostFetch (props) {
 	const {
@@ -33,10 +68,9 @@ function* signUpPostFetch (props) {
 		})
 			.then(response => response.json());
 
-		// TODO SET TOKEN AND LOGIN
-		if (!response.success && response.errors.length > 0) {
-			// toast.error("TESTE");
-			// TODO SET GLOBAL ERRORS;
+		if (response.success && response.token) {
+			console.log(response.token);
+			// TODO SET TOKEN AND LOGIN
 		}
 
 		yield put(formActions.setFormError(formName, {
@@ -46,6 +80,8 @@ function* signUpPostFetch (props) {
 		yield put(authActions.postSignUpReceived());
 	} catch (e) {
 		yield put(authActions.postSignUpReceived());
+		// toast.error("TESTE");
+		// SET GLOBAL ERROR;
 	}
 }
 
@@ -77,10 +113,13 @@ function* verifyNicknameGetFetch (props) {
 		}));
 	} catch (e) {
 		yield put(authActions.getVerifyNicknameReceived());
+		// toast.error("TESTE");
+		// SET GLOBAL ERROR;
 	}
 }
 
 const authSagas = [
+	takeLatest(POST_SIGNIN, signInPostFetch),
 	takeLatest(POST_SIGNUP, signUpPostFetch),
 	takeLatest(GET_VERIFY_NICKNAME, verifyNicknameGetFetch)
 ];

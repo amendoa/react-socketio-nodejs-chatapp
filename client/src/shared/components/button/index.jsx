@@ -18,7 +18,8 @@ export default class ButtonComponent extends Component {
 			onClick,
 			type,
 			isFetching,
-			disabled
+			disabled,
+			children
 		} = this.props;
 
 		const buttonStyles = classNames({
@@ -45,6 +46,9 @@ export default class ButtonComponent extends Component {
 							type='spinner'
 						/>
 					) : text
+				}
+				{
+					children
 				}
 			</button>
 		);

@@ -1,5 +1,6 @@
 @import "../../node_modules/react-toastify/dist/ReactToastify.css";
 @import "./utils/_variables";
+@import "./base/_animations";
 @import "./base/_base";
 @import "../shared/containers/app/style.scss";
 @import "../shared/containers/auth/style.scss";
@@ -7,3 +8,4 @@
 @import "../shared/components/input/style.scss";
 @import "../shared/components/loading/style.scss";
 @import "../shared/components/label/style.scss";
+@import "../shared/components/flash-message/style.scss";

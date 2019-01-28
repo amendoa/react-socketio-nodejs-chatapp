@@ -33,19 +33,3 @@
 .spinner .rect4 {
 	animation-delay: -0.9s;
 }
-
-@keyframes sk-stretchdelay {
-	0%, 40%, 100% {
-		transform: scaleY(0.4);
-	}
-
-	20% {
-		transform: scaleY(1.0);
-	}
-}
-
-@keyframes spin {
-	to {
-		transform: rotate(360deg);
-	}
-}

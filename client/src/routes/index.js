@@ -22,7 +22,9 @@ import {
 function RoutesContainer ({ location }) {
 	return (
 		<AppContainer>
-			<TransitionGroup>
+			<TransitionGroup
+				className="transition-group-container"
+			>
 				<CSSTransition
 					key={location.key}
 					timeout={{ enter: 300, exit: 200 }}

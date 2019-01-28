@@ -1,0 +1,32 @@
+.flash-message-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	border-radius: 4px;
+	cursor: pointer;
+	font-weight: 500;
+	font-size: 16px;
+	padding: 20px;
+
+	background: $brand-danger;
+	color: $brand-text-default;
+
+	animation: fadeIn 1s;
+
+	&.closed {
+		display: none;
+	}
+
+	.flash-message {
+		display: block;
+		padding: 0;
+		border: 0;
+	}
+
+	.button-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}

@@ -95,6 +95,12 @@ button {
 	transition: opacity 300ms ease-in;
 }
 
+.transition-group-container {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
 // .Toastify__toast--error {
 // 	background: $brand-danger;
 // }
