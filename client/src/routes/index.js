@@ -2,7 +2,8 @@ import React from 'react';
 import {
 	Route,
 	Switch,
-	withRouter
+	withRouter,
+	Redirect
 } from 'react-router-dom';
 
 import {
@@ -16,10 +17,15 @@ import {
 
 import {
 	SignUpEntry,
-	SignInEntry
+	SignInEntry,
+	HomeEntry
 } from 'entries';
 
 function RoutesContainer ({ location }) {
+	const Workaround = ({ action, children }) => (
+		action === 'REPLACE' ? null : children
+	);
+
 	return (
 		<AppContainer>
 			<TransitionGroup
@@ -32,6 +38,26 @@ function RoutesContainer ({ location }) {
 				>
 					<section className="route-section">
 						<Switch location={location}>
+							<Route
+								exact
+								path='/'
+								render={props => {
+									const {
+										history
+									} = props;
+
+									return (
+										<Workaround action={history.action}>
+											<Redirect
+												to={{
+													pathname: 'signin',
+													state: { from: props.location }
+												}}
+											/>
+										</Workaround>
+									);
+								}}
+							/>
 							<Route
 								path='/signin'
 								component={SignInEntry}

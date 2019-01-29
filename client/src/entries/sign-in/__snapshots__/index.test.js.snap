@@ -15,7 +15,7 @@ exports[`<SignInEntry /> renders correctly 1`] = `
       width={80}
     />
   }
-  formContainer={<Connect(WithFormik(SignInFormContainer)) />}
+  formContainer={<Connect(SignInFormContainer) />}
   title="Sign In"
 />
 `;

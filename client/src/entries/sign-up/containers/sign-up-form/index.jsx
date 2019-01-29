@@ -218,7 +218,7 @@ class SignUpFormContainer extends Component {
 								text={constants.LABELS.AUTH.SIGNUP}
 								isFetching={signUp.isFetching}
 								disabled={verifyNickname.isFetching}
-								marginTop={35}
+								marginTop={24}
 								width={280}
 							/>
 						</form>

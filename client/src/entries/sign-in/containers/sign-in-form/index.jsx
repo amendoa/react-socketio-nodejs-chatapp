@@ -103,7 +103,7 @@ class SignInFormContainer extends Component {
 								primary
 								text={constants.LABELS.AUTH.SIGNUP}
 								isFetching={signIn.isFetching}
-								marginTop={35}
+								marginTop={24}
 								width={280}
 							/>
 						</form>

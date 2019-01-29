@@ -7,8 +7,8 @@
 	width: 100%;
 	height: 100%;
 	padding: 2% 5% 5% 5%;
-	min-width: 500px;
-	min-height: 768px;
+	// min-width: 500px;
+	// min-height: 768px;
 
 	.header-thing {
 		background-color: $brand-primary;
@@ -28,6 +28,7 @@
 			height: 5%;
 			margin-bottom: 24px;
 			display: flex;
+			min-height: 35px;
 		}
 
 		.app-content {

@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FlashMessageComponent /> renders correctly 1`] = `
+<div
+  className="flash-message-wrapper"
+  style={
+    Object {
+      "maxWidth": undefined,
+    }
+  }
+>
+  <span
+    className="flash-message"
+  >
+    teste message
+  </span>
+  <div
+    className="button-container"
+  >
+    <ButtonComponent
+      height={26}
+      link={true}
+      onClick={[Function]}
+      type="button"
+      width={26}
+    >
+      <IconComponent
+        fill="#ffffff"
+        height={26}
+        icon="close"
+        width={26}
+      />
+    </ButtonComponent>
+  </div>
+</div>
+`;

@@ -4,19 +4,69 @@ exports[`<AppContainer /> renders correctly 1`] = `
 <div
   className="app-wrapper"
 >
+  <ToastContainer
+    autoClose={10000}
+    bodyClassName={null}
+    className={null}
+    closeButton={
+      <CloseButton
+        ariaLabel="close"
+      />
+    }
+    closeOnClick={false}
+    draggable={false}
+    draggablePercent={80}
+    hideProgressBar={false}
+    newestOnTop={false}
+    pauseOnFocusLoss={true}
+    pauseOnHover={true}
+    pauseOnVisibilityChange={true}
+    position="top-right"
+    progressClassName={null}
+    progressStyle={null}
+    rtl={false}
+    style={null}
+    toastClassName={null}
+    transition={[Function]}
+  />
   <span
     className="header-thing"
   />
   <div
     className="app-container"
   >
-    <div>
-      <h1>
-         teste h1 
-      </h1>
-      <span>
-         teste span 
-      </span>
+    <section
+      className="logo-container"
+    >
+      <IconComponent
+        fill="#ffffff"
+        height={40}
+        icon="message-text"
+        width={40}
+      />
+      <LabelComponent
+        defaultLabel={true}
+        style={
+          Object {
+            "fontSize": 22,
+            "fontWeight": 600,
+            "marginLeft": 18,
+          }
+        }
+        text="ChatApp"
+      />
+    </section>
+    <div
+      className="app-content"
+    >
+      <div>
+        <h1>
+           teste h1 
+        </h1>
+        <span>
+           teste span 
+        </span>
+      </div>
     </div>
   </div>
 </div>
