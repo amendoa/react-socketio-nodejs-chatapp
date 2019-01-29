@@ -7,7 +7,7 @@ import {
 	GET_VERIFY_NICKNAME_RECEIVED,
 	RESET_VERIFY_NICKNAME,
 	RESET_SIGNIN
-} from 'redux-constants/auth';
+} from 'redux/constants/auth';
 
 const initialState = {
 	signIn: {

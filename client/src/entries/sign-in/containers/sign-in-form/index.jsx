@@ -10,7 +10,7 @@ import {
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import constants from 'modules/constants';
-import * as authActions from 'actions/auth';
+import * as authActions from 'redux/actions/auth';
 import {
 	serverErrorsToFrontFormat
 } from 'modules/utils';

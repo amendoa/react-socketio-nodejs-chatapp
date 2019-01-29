@@ -1,7 +1,7 @@
 import { put, takeLatest } from 'redux-saga/effects';
 import queryString from 'querystring';
-import * as authActions from 'actions/auth';
-import * as formActions from 'actions/form';
+import * as authActions from 'redux/actions/auth';
+import * as formActions from 'redux/actions/form';
 import constants from 'modules/constants';
 import { push } from 'connected-react-router';
 import { toast } from 'react-toastify';
@@ -14,7 +14,7 @@ import {
 	POST_SIGNUP,
 	POST_SIGNIN,
 	GET_VERIFY_NICKNAME
-} from 'redux-constants/auth';
+} from 'redux/constants/auth';
 
 function* signInPostFetch (props) {
 	const {

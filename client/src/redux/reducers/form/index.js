@@ -2,7 +2,7 @@ import {
 	INIT_FORM,
 	UPDATE_FORM,
 	SET_FORM_ERROR
-} from 'redux-constants/form';
+} from 'redux/constants/form';
 
 const initialState = {};
 

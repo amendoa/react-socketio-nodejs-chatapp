@@ -4,8 +4,8 @@ import {
 } from 'react-dom';
 import { Provider } from 'react-redux';
 import { ConnectedRouter } from 'connected-react-router';
-import RoutesContainer from 'routes';
-import configureStore, { history } from 'store';
+import RoutesContainer from 'react-router/routes';
+import configureStore, { history } from 'redux/store';
 import 'styles/index.scss';
 // import 'react-toastify/dist/ReactToastify.css';
 import * as serviceWorker from 'serviceWorker';
