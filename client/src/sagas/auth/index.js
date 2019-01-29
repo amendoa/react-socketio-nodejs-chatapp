@@ -3,9 +3,11 @@ import queryString from 'querystring';
 import * as authActions from 'actions/auth';
 import * as formActions from 'actions/form';
 import constants from 'modules/constants';
+import { push } from 'connected-react-router';
 import { toast } from 'react-toastify';
 import {
-	serverErrorsToFrontFormat
+	serverErrorsToFrontFormat,
+	setToken
 } from 'modules/utils';
 
 import {
@@ -34,10 +36,10 @@ function* signInPostFetch (props) {
 			.then(response => response.json());
 
 		if (response.success && response.token) {
-			console.log(response.token);
-			// TODO SET TOKEN AND LOGIN
+			setToken(response.token);
+			yield put(push('/'));
 		}
-		//toast.error('Incorrect nickname or password');
+
 		yield put(authActions.postSignInReceived({
 			errors: response.errors
 		}));

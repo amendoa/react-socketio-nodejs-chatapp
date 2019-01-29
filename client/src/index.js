@@ -3,9 +3,9 @@ import {
 	render
 } from 'react-dom';
 import { Provider } from 'react-redux';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { ConnectedRouter } from 'connected-react-router';
 import RoutesContainer from 'routes';
-import configureStore from 'store';
+import configureStore, { history } from 'store';
 import 'styles/index.scss';
 // import 'react-toastify/dist/ReactToastify.css';
 import * as serviceWorker from 'serviceWorker';
@@ -18,9 +18,9 @@ const store = configureStore();
 
 render(
 	<Provider store={store}>
-		<Router>
+		<ConnectedRouter history={history}>
 			<RoutesContainer />
-		</Router>
+		</ConnectedRouter>
 	</Provider>,
 	document.getElementById('app')
 );

@@ -21,10 +21,59 @@ import {
 	HomeEntry
 } from 'entries';
 
+import {
+	getToken
+} from 'modules/utils';
+
 function RoutesContainer ({ location }) {
 	const Workaround = ({ action, children }) => (
 		action === 'REPLACE' ? null : children
 	);
+
+	const CustomRoute = ({ protectedRoute, component: Component, ...rest }) => {
+		return (
+			<Route
+				{...rest}
+				render={props => {
+					const {
+						history
+					} = props;
+
+					const token = getToken();
+
+					if (!token && protectedRoute) {
+						return (
+							<Workaround action={history.action}>
+								<Redirect
+									to={{
+										pathname: 'signin',
+										state: { from: props.location }
+									}}
+								/>
+							</Workaround>
+						);
+					}
+
+					if (token && !protectedRoute) {
+						return (
+							<Workaround action={history.action}>
+								<Redirect
+									to={{
+										pathname: '/',
+										state: { from: props.location }
+									}}
+								/>
+							</Workaround>
+						);
+					}
+
+					return (
+						<Component {...props} />
+					);
+				}}
+			/>
+		);
+	};
 
 	return (
 		<AppContainer>
@@ -38,31 +87,19 @@ function RoutesContainer ({ location }) {
 				>
 					<section className="route-section">
 						<Switch location={location}>
-							<Route
+							<CustomRoute
 								exact
 								path='/'
-								render={props => {
-									const {
-										history
-									} = props;
-
-									return (
-										<Workaround action={history.action}>
-											<Redirect
-												to={{
-													pathname: 'signin',
-													state: { from: props.location }
-												}}
-											/>
-										</Workaround>
-									);
-								}}
+								component={HomeEntry}
+								protectedRoute
 							/>
-							<Route
+							<CustomRoute
+								exact
 								path='/signin'
 								component={SignInEntry}
 							/>
-							<Route
+							<CustomRoute
+								exact
 								path='/signup'
 								component={SignUpEntry}
 							/>
