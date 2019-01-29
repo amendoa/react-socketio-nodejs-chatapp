@@ -78,6 +78,29 @@ export default class IconComponent extends Component {
 		);
 	}
 
+	renderMessageText = () => {
+		const {
+			fill,
+			width,
+			height
+		} = this.props;
+
+		return (
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				version="1.1"
+				width={width}
+				height={height}
+				viewBox="0 0 24 24"
+			>
+				<path
+					d="M20,2H4A2,2 0 0,0 2,4V22L6,18H20A2,2 0 0,0 22,16V4A2,2 0 0,0 20,2M6,9H18V11H6M14,14H6V12H14M18,8H6V6H18"
+					fill={fill}
+				/>
+			</svg>
+		);
+	}
+
 	render () {
 		const {
 			icon
@@ -92,6 +115,9 @@ export default class IconComponent extends Component {
 
 			case 'close':
 				return this.renderCloseIcon();
+
+			case 'message-text':
+				return this.renderMessageText();
 
 			default:
 				return this.renderCheckedIcon();

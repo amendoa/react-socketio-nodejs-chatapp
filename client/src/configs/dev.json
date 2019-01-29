@@ -1,5 +1,8 @@
 {
 	"LABELS": {
+		"MAIN": {
+			"APP_NAME": "ChatApp"
+		},
 		"AUTH": {
 			"NICKNAME": "Nickname",
 			"PASSWORD": "Password",

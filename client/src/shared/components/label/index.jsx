@@ -9,12 +9,14 @@ export default class LabelComponent extends Component {
 		const {
 			text,
 			danger,
-			style
+			style,
+			defaultLabel
 		} = this.props;
 
 		const spanClassName = classNames({
 			label: true,
-			danger
+			danger,
+			default: defaultLabel
 		});
 
 		return (
