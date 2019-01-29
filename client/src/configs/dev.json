@@ -5,7 +5,8 @@
 	},
 	"LABELS": {
 		"MAIN": {
-			"APP_NAME": "ChatApp"
+			"APP_NAME": "ChatApp",
+			"GLOBAL_ERROR": "Sorry, we've run into a problem :( try again later"
 		},
 		"AUTH": {
 			"NICKNAME": "Nickname",

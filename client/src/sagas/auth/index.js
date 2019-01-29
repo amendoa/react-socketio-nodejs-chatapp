@@ -45,8 +45,7 @@ function* signInPostFetch (props) {
 		}));
 	} catch (e) {
 		yield put(authActions.postSignInReceived());
-		// toast.error("TESTE");
-		// SET GLOBAL ERROR;
+		toast.error(constants.LABELS.MAIN.GLOBAL_ERROR);
 	}
 }
 
@@ -71,8 +70,8 @@ function* signUpPostFetch (props) {
 			.then(response => response.json());
 
 		if (response.success && response.token) {
-			console.log(response.token);
-			// TODO SET TOKEN AND LOGIN
+			setToken(response.token);
+			yield put(push('/'));
 		}
 
 		yield put(formActions.setFormError(formName, {
@@ -82,8 +81,7 @@ function* signUpPostFetch (props) {
 		yield put(authActions.postSignUpReceived());
 	} catch (e) {
 		yield put(authActions.postSignUpReceived());
-		// toast.error("TESTE");
-		// SET GLOBAL ERROR;
+		toast.error(constants.LABELS.MAIN.GLOBAL_ERROR);
 	}
 }
 
@@ -115,8 +113,7 @@ function* verifyNicknameGetFetch (props) {
 		}));
 	} catch (e) {
 		yield put(authActions.getVerifyNicknameReceived());
-		// toast.error("TESTE");
-		// SET GLOBAL ERROR;
+		toast.error(constants.LABELS.MAIN.GLOBAL_ERROR);
 	}
 }
 
