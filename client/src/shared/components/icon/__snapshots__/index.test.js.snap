@@ -2,6 +2,11 @@
 
 exports[`<IconComponent /> renders correctly 1`] = `
 <svg
+  style={
+    Object {
+      "margin": undefined,
+    }
+  }
   version="1.1"
   viewBox="0 0 78.369 78.369"
   x="0px"

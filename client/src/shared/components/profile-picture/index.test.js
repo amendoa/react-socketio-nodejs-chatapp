@@ -1,14 +1,22 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
-import RoutesContainer from 'react-router/routes';
+import {
+	ProfilePictureComponent
+} from 'shared/components';
 
-describe('<RoutesContainer />', () => {
-	const modelI = {};
+describe('<ProfilePictureComponent />', () => {
+	const modelI = {
+		color: 'white',
+		backgroundColor: 'red',
+		label: 'teste',
+		width: 60,
+		height: 60
+	};
 
 	const getWrapper = (model) => {
 		return shallow((
-			<RoutesContainer {...model} />
+			<ProfilePictureComponent {...model} />
 		));
 	};
 

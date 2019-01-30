@@ -6,7 +6,7 @@ exports[`<ButtonComponent /> renders correctly 1`] = `
   onClick={[Function]}
   style={
     Object {
-      "marginTop": undefined,
+      "margin": undefined,
       "width": undefined,
     }
   }

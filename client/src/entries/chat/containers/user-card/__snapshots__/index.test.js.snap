@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<UserCardContainer /> renders correctly 1`] = `
+<div
+  className="user-card-wrapper"
+>
+  <div
+    className="user-card-container"
+  >
+    <ProfilePictureComponent
+      backgroundColor="red"
+      color="white"
+      height={40}
+      label="AM"
+      labelFontSize={12}
+      width={40}
+    />
+    <div
+      className="card-info-container"
+    >
+      <LabelComponent
+        breakWord={true}
+        dark={true}
+        fontSemiBold={true}
+        fontSize={14}
+        margin="0px 0px 0px 14px"
+        maxWidth={100}
+        text="teste"
+      />
+      <LabelComponent
+        breakWord={true}
+        dark={true}
+        fontRegular={true}
+        fontSize={13}
+        margin="0px 0px 0px 14px"
+        maxWidth={100}
+        text="Hey there! how are you"
+      />
+    </div>
+  </div>
+</div>
+`;

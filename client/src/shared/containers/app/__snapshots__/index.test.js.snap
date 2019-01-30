@@ -46,13 +46,9 @@ exports[`<AppContainer /> renders correctly 1`] = `
       />
       <LabelComponent
         defaultLabel={true}
-        style={
-          Object {
-            "fontSize": 22,
-            "fontWeight": 600,
-            "marginLeft": 18,
-          }
-        }
+        fontSemiBold={true}
+        fontSize={22}
+        margin="0px 0px 0px 20px"
         text="ChatApp"
       />
     </section>

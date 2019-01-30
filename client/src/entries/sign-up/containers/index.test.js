@@ -1,14 +1,16 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
-import RoutesContainer from 'react-router/routes';
+import {
+	SignUpFormContainer
+} from 'entries/sign-up/containers';
 
-describe('<RoutesContainer />', () => {
+describe('<SignUpFormContainer />', () => {
 	const modelI = {};
 
 	const getWrapper = (model) => {
 		return shallow((
-			<RoutesContainer {...model} />
+			<SignUpFormContainer {...model} />
 		));
 	};
 

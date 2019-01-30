@@ -5,8 +5,7 @@ exports[`<InputComponent /> renders correctly 1`] = `
   className="input-wrapper"
   style={
     Object {
-      "marginBottom": undefined,
-      "marginTop": undefined,
+      "margin": undefined,
       "maxWidth": undefined,
     }
   }
@@ -37,12 +36,8 @@ exports[`<InputComponent /> renders correctly 1`] = `
   >
     <LabelComponent
       danger={true}
-      style={
-        Object {
-          "fontSize": 16,
-          "fontWeight": 400,
-        }
-      }
+      fontRegular={true}
+      fontSize={16}
       text="erro teste"
     />
   </div>

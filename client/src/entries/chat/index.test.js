@@ -2,15 +2,15 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import {
-	HomeEntry
+	ChatEntry
 } from 'entries';
 
-describe('<HomeEntry />', () => {
+describe('<ChatEntry />', () => {
 	const modelI = {};
 
 	const getWrapper = (model) => {
 		return shallow((
-			<HomeEntry {...model} />
+			<ChatEntry {...model} />
 		));
 	};
 

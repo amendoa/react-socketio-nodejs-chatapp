@@ -5,7 +5,9 @@ exports[`<LabelComponent /> renders correctly 1`] = `
   className="label danger"
   style={
     Object {
-      "fontSize": 10,
+      "fontSize": undefined,
+      "margin": undefined,
+      "maxWidth": undefined,
     }
   }
 >

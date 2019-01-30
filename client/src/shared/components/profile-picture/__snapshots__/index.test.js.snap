@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProfilePictureComponent /> renders correctly 1`] = `
+<div
+  className="profile-picture"
+  style={
+    Object {
+      "backgroundColor": "red",
+      "color": "white",
+      "height": 60,
+      "width": 60,
+    }
+  }
+>
+  <LabelComponent
+    fontBold={true}
+    text="teste"
+  />
+</div>
+`;
