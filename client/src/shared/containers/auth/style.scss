@@ -16,7 +16,7 @@
 		.title {
 			text-align: center;
 			margin: 0px 0px 40px 0px;
-			color: $brand-text-dark;
+			color: $brand-text;
 		}
 
 		.inputs-container {
@@ -27,6 +27,9 @@
 		}
 
 		.info-container {
+			justify-content: center;
+			align-items: center;
+			display: flex;
 			text-align: center;
 			margin: 25px 0px 0px 0px;
 			font-weight: 500;

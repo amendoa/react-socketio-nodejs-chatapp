@@ -9,20 +9,30 @@ export default class LabelComponent extends Component {
 		const {
 			text,
 			danger,
-			style,
-			defaultLabel
+			fontSize,
+			defaultLabel,
+			dark,
+			fontBold,
+			fontMedium,
+			margin
 		} = this.props;
 
 		const spanClassName = classNames({
 			label: true,
 			danger,
+			dark,
+			'font-bold': fontBold,
+			'font-medium': fontMedium,
 			default: defaultLabel
 		});
 
 		return (
 			<span
 				className={spanClassName}
-				style={style}
+				style={{
+					margin,
+					fontSize
+				}}
 			>
 				{
 					text

@@ -37,7 +37,7 @@
 	&.button--disabled {
 		transition: all .5s ease;
 		background: $brand-secondary;
-		color: $brand-text-dark;
+		color: $brand-text;
 		box-shadow: none;
 		cursor: not-allowed;
 	}

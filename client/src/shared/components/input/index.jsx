@@ -12,8 +12,7 @@ export default class InputComponent extends Component {
 		const {
 			placeholder,
 			width,
-			marginTop,
-			marginBottom,
+			margin,
 			type,
 			id,
 			value,
@@ -25,20 +24,31 @@ export default class InputComponent extends Component {
 			name,
 			iconComponent,
 			autoComplete,
-			maxLength
+			maxLength,
+			defaultButton,
+			searchButton,
+			iconLeft,
+			iconRight
 		} = this.props;
 
 		const inputStyles = classNames({
 			input: true,
+			default: defaultButton,
+			search: searchButton,
 			'input--error': hasError
+		});
+
+		const iconContainerStyles = classNames({
+			'input-icon-container': true,
+			'icon-left': iconLeft,
+			'icon-right': iconRight
 		});
 
 		return (
 			<div
 				className="input-wrapper"
 				style={{
-					marginTop,
-					marginBottom,
+					margin,
 					maxWidth: width
 				}}
 			>
@@ -59,7 +69,7 @@ export default class InputComponent extends Component {
 						autoComplete={autoComplete}
 						maxLength={maxLength}
 					/>
-					<div className="input-icon-container">
+					<div className={iconContainerStyles}>
 						{
 							iconComponent ? iconComponent() : null
 						}
@@ -71,10 +81,8 @@ export default class InputComponent extends Component {
 							<LabelComponent
 								text={errorMessage}
 								danger
-								style={{
-									fontSize: 16,
-									fontWeight: 400
-								}}
+								fontSize={16}
+								fontMedium
 							/>
 						</div>
 					) : null

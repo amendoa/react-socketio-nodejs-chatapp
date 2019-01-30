@@ -1,9 +1,9 @@
 import SignUpEntry from './sign-up';
 import SignInEntry from './sign-in';
-import HomeEntry from './home';
+import ChatEntry from './chat';
 
 export {
 	SignUpEntry,
 	SignInEntry,
-	HomeEntry
+	ChatEntry
 };

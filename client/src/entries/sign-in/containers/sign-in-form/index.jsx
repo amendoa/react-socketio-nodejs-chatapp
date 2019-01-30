@@ -82,10 +82,10 @@ class SignInFormContainer extends Component {
 								type='text'
 								autoComplete='off'
 								onChange={handleChange}
-								marginTop={13}
 								maxLength={15}
-								marginBottom={13}
+								margin="13px 0px 13px 0px"
 								width={280}
+								defaultButton
 							/>
 							<InputComponent
 								id='password'
@@ -94,16 +94,16 @@ class SignInFormContainer extends Component {
 								autoComplete='off'
 								onChange={handleChange}
 								maxLength={15}
-								marginTop={13}
-								marginBottom={13}
+								margin="13px 0px 13px 0px"
 								width={280}
+								defaultButton
 							/>
 							<ButtonComponent
 								type="submit"
 								primary
 								text={constants.LABELS.AUTH.SIGNUP}
 								isFetching={signIn.isFetching}
-								marginTop={24}
+								margin="24px 0px 0px 0px"
 								width={280}
 							/>
 						</form>

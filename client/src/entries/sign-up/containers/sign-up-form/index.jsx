@@ -140,10 +140,11 @@ class SignUpFormContainer extends Component {
 								onChange={handleChange}
 								onFocus={handleFocus}
 								onBlur={handleBlur}
-								marginTop={13}
+								margin="13px 0px 13px 0px"
 								maxLength={15}
-								marginBottom={13}
 								width={280}
+								defaultButton
+								iconRight
 								iconComponent={() => {
 									if (values.nickname) {
 										if (values.nickname.length > 0) {
@@ -193,9 +194,9 @@ class SignUpFormContainer extends Component {
 								onFocus={handleFocus}
 								onBlur={handleBlur}
 								maxLength={15}
-								marginTop={13}
-								marginBottom={13}
+								margin="13px 0px 13px 0px"
 								width={280}
+								defaultButton
 							/>
 							<InputComponent
 								id='confirmPassword'
@@ -208,9 +209,9 @@ class SignUpFormContainer extends Component {
 								onFocus={handleFocus}
 								onBlur={handleBlur}
 								maxLength={15}
-								marginTop={13}
-								marginBottom={13}
+								margin="13px 0px 13px 0px"
 								width={280}
+								defaultButton
 							/>
 							<ButtonComponent
 								type="submit"
@@ -218,7 +219,7 @@ class SignUpFormContainer extends Component {
 								text={constants.LABELS.AUTH.SIGNUP}
 								isFetching={signUp.isFetching}
 								disabled={verifyNickname.isFetching}
-								marginTop={24}
+								margin="24px 0px 0px 0px"
 								width={280}
 							/>
 						</form>

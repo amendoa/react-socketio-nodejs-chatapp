@@ -1,8 +1,23 @@
 .label {
+	display: block;
+
 	&.danger {
 		color: $brand-danger;
 	}
+
 	&.default {
 		color: $brand-default;
+	}
+
+	&.dark {
+		color: $brand-text-dark;
+	}
+
+	&.font-bold {
+		font-weight: 600;
+	}
+
+	&.font-medium {
+		font-weight: 400;
 	}
 }

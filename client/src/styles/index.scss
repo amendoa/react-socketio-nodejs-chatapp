@@ -4,6 +4,7 @@
 @import "./base/_base";
 @import "./base/_global-styles";
 @import "./base/_toastify";
+@import "../entries/chat/style.scss";
 @import "../shared/containers/app/style.scss";
 @import "../shared/containers/auth/style.scss";
 @import "../shared/components/button/style.scss";
@@ -11,3 +12,4 @@
 @import "../shared/components/loading/style.scss";
 @import "../shared/components/label/style.scss";
 @import "../shared/components/flash-message/style.scss";
+@import "../shared/components/profile-picture/style.scss";

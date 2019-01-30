@@ -5,6 +5,7 @@ import LabelComponent from './label';
 import FormComponent from './form';
 import IconComponent from './icon';
 import FlashMessageComponent from './flash-message';
+import ProfilePictureComponent from './profile-picture';
 
 export {
 	ButtonComponent,
@@ -13,5 +14,6 @@ export {
 	LabelComponent,
 	FormComponent,
 	IconComponent,
-	FlashMessageComponent
+	FlashMessageComponent,
+	ProfilePictureComponent
 };

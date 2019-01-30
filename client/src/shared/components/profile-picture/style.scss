@@ -1,0 +1,10 @@
+.profile-picture {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+
+	.label {
+		font-weight: 600;
+	}
+}

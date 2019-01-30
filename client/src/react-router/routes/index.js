@@ -18,7 +18,7 @@ import {
 import {
 	SignUpEntry,
 	SignInEntry,
-	HomeEntry
+	ChatEntry
 } from 'entries';
 
 import {
@@ -90,7 +90,7 @@ function RoutesContainer ({ location }) {
 							<CustomRoute
 								exact
 								path='/'
-								component={HomeEntry}
+								component={ChatEntry}
 								protectedRoute
 							/>
 							<CustomRoute

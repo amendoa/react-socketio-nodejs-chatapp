@@ -14,12 +14,12 @@ export default class ButtonComponent extends Component {
 			primary,
 			link,
 			width,
-			marginTop,
 			onClick,
 			type,
 			isFetching,
 			disabled,
-			children
+			children,
+			margin
 		} = this.props;
 
 		const buttonStyles = classNames({
@@ -35,7 +35,7 @@ export default class ButtonComponent extends Component {
 				className={buttonStyles}
 				style={{
 					width,
-					marginTop
+					margin
 				}}
 				type={type}
 				disabled={disabled}
