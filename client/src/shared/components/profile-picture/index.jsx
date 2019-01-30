@@ -2,6 +2,9 @@ import React, {
 	Component
 } from 'react';
 import classNames from 'classnames';
+import {
+	LabelComponent
+} from 'shared/components';
 
 export default class ProfilePictureComponent extends Component {
 	render () {
@@ -10,7 +13,8 @@ export default class ProfilePictureComponent extends Component {
 			backgroundColor,
 			label,
 			width,
-			height
+			height,
+			labelFontSize
 		} = this.props;
 
 		const profilePictureStyles = classNames({
@@ -27,11 +31,11 @@ export default class ProfilePictureComponent extends Component {
 					height
 				}}
 			>
-				<span className='label'>
-					{
-						label
-					}
-				</span>
+				<LabelComponent
+					fontBold
+					text={label}
+					fontSize={labelFontSize}
+				/>
 			</div>
 		);
 	}

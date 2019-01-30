@@ -43,7 +43,7 @@ export default class AppContainer extends Component {
 						<LabelComponent
 							text={constants.LABELS.MAIN.APP_NAME}
 							defaultLabel
-							fontBold
+							fontSemiBold
 							fontSize={22}
 							margin="0px 0px 0px 20px"
 						/>

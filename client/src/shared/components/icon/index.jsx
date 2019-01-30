@@ -7,7 +7,8 @@ export default class IconComponent extends Component {
 		const {
 			fill,
 			width,
-			height
+			height,
+			margin
 		} = this.props;
 
 		return (
@@ -19,6 +20,9 @@ export default class IconComponent extends Component {
 				width={width}
 				height={height}
 				viewBox="0 0 78.369 78.369"
+				style={{
+					margin
+				}}
 			>
 				<g>
 					<path
@@ -36,7 +40,8 @@ export default class IconComponent extends Component {
 		const {
 			fill,
 			width,
-			height
+			height,
+			margin
 		} = this.props;
 
 		return (
@@ -46,6 +51,9 @@ export default class IconComponent extends Component {
 				width={width}
 				height={height}
 				viewBox="0 0 24 24"
+				style={{
+					margin
+				}}
 			>
 				<path
 					d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"
@@ -59,7 +67,8 @@ export default class IconComponent extends Component {
 		const {
 			fill,
 			width,
-			height
+			height,
+			margin
 		} = this.props;
 
 		return (
@@ -69,6 +78,9 @@ export default class IconComponent extends Component {
 				width={width}
 				height={height}
 				viewBox="0 0 24 24"
+				style={{
+					margin
+				}}
 			>
 				<path
 					d="M13,13H11V7H13M13,17H11V15H13M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"
@@ -82,7 +94,8 @@ export default class IconComponent extends Component {
 		const {
 			fill,
 			width,
-			height
+			height,
+			margin
 		} = this.props;
 
 		return (
@@ -92,6 +105,9 @@ export default class IconComponent extends Component {
 				width={width}
 				height={height}
 				viewBox="0 0 24 24"
+				style={{
+					margin
+				}}
 			>
 				<path
 					d="M20,2H4A2,2 0 0,0 2,4V22L6,18H20A2,2 0 0,0 22,16V4A2,2 0 0,0 20,2M6,9H18V11H6M14,14H6V12H14M18,8H6V6H18"
@@ -105,7 +121,8 @@ export default class IconComponent extends Component {
 		const {
 			fill,
 			width,
-			height
+			height,
+			margin
 		} = this.props;
 
 		return (
@@ -115,6 +132,9 @@ export default class IconComponent extends Component {
 				width={width}
 				height={height}
 				viewBox="0 0 24 24"
+				style={{
+					margin
+				}}
 			>
 				<path
 					d="M15,14C12.33,14 7,15.33 7,18V20H23V18C23,15.33 17.67,14 15,14M6,10V7H4V10H1V12H4V15H6V12H9V10M15,12A4,4 0 0,0 19,8A4,4 0 0,0 15,4A4,4 0 0,0 11,8A4,4 0 0,0 15,12Z"
@@ -128,7 +148,8 @@ export default class IconComponent extends Component {
 		const {
 			fill,
 			width,
-			height
+			height,
+			margin
 		} = this.props;
 
 		return (
@@ -138,6 +159,9 @@ export default class IconComponent extends Component {
 				width={width}
 				height={height}
 				viewBox="0 0 24 24"
+				style={{
+					margin
+				}}
 			>
 				<path
 					d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"

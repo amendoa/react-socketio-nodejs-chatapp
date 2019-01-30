@@ -82,7 +82,7 @@ export default class InputComponent extends Component {
 								text={errorMessage}
 								danger
 								fontSize={16}
-								fontMedium
+								fontRegular
 							/>
 						</div>
 					) : null

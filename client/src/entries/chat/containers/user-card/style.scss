@@ -1,0 +1,11 @@
+.user-card-wrapper {
+	.user-card-container {
+		display: flex;
+
+		.card-info-container {
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+		}
+	}
+}

@@ -10,8 +10,51 @@ import {
 	InputComponent
 } from 'shared/components';
 
+import {
+	UserCardContainer
+} from 'entries/chat/containers';
+
 export default class HomeEntry extends Component {
 	render () {
+		const conversations = [
+			{
+				color: '#1461ff'
+			},
+			{
+				color: '#dbcc86'
+			},
+			{
+				color: '#d89389'
+			},
+			{
+				color: '#1461ff'
+			},
+			{
+				color: '#dbcc86'
+			},
+			{
+				color: '#d89389'
+			},
+			{
+				color: '#1461ff'
+			},
+			{
+				color: '#dbcc86'
+			},
+			{
+				color: '#d89389'
+			},
+			{
+				color: '#1461ff'
+			},
+			{
+				color: '#dbcc86'
+			},
+			{
+				color: '#d89389'
+			}
+		];
+
 		return (
 			<div className='chat-wrapper'>
 				<div className='actions-container'>
@@ -60,7 +103,7 @@ export default class HomeEntry extends Component {
 						</div>
 
 						<LabelComponent
-							fontBold
+							fontSemiBold
 							dark
 							text='Amendowins'
 							fontSize={16}
@@ -83,12 +126,60 @@ export default class HomeEntry extends Component {
 										icon="search"
 										width={28}
 										height={28}
+										margin="0px 0px 0px 2px"
 									/>
 								);
 							}}
 						/>
 					</div>
 					<div className='conversations-container'>
+						{
+							conversations.map((item, key) => {
+								return (
+									<div key={key}>
+										<div className='card'>
+											<UserCardContainer
+												profile={{
+													label: 'AM',
+													width: 40,
+													height: 40,
+													backgroundColor: item.color,
+													color: 'white',
+													labelFontSize: 12
+												}}
+												title={{
+													text: '123456789123456',
+													fontSize: 14,
+													maxWidth: 100,
+													margin: '0px 0px 0px 14px'
+												}}
+												desc={{
+													text: 'Hey there! how are you',
+													fontSize: 13,
+													maxWidth: 100,
+													margin: '0px 0px 0px 14px'
+												}}
+											/>
+											<LabelComponent
+												fontRegular
+												text='Yesterday'
+												fontSize={13}
+												margin="0px 0px 0px 0px"
+											/>
+										</div>
+										<span className='card-division' />
+									</div>
+								);
+							})
+						}
+
+						{/* <LabelComponent
+							fontRegular
+							text='No conversations to show'
+							alignCenter
+							fontSize={16}
+							margin="50px 0px 0px 0px"
+						/> */}
 
 					</div>
 				</div>
