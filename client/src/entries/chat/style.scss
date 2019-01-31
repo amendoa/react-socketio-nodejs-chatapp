@@ -7,8 +7,10 @@
 
 	.actions-container {
 		display: flex;
+		position: relative;
 		flex-direction: column;
 		justify-content: space-between;
+		overflow: hidden;
 		width: 30%;
 		height: 100%;
 		border-radius: 4px 0px 0px 4px;
@@ -29,21 +31,10 @@
 		.conversations-container {
 			height: 100%;
 			max-height: 100%;
-			padding: 25px;
+			// padding: 25px;
 			overflow: auto;
 
-			.card {
-				display: flex;
-				justify-content: space-between;
-			}
 
-			.card-division {
-				display: block;
-				background: $brand-secondary;
-				width: 100%;
-				margin: 20px 0px 20px 20px;
-				height: 1px;
-			}
 		}
 	}
 

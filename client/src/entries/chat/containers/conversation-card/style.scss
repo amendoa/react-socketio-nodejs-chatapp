@@ -1,0 +1,30 @@
+.conversation-card {
+	padding-left: 18px;
+	transition: all .5s ease;
+	cursor: pointer;
+
+	&:hover {
+		background: $brand-secondary;
+	}
+
+	&:active {
+		background: $brand-secondary;
+	}
+
+	.conversation-card--container {
+		padding: 18px 18px 18px 0px;
+		border-top: 1px solid #f2f2f2;
+		display: flex;
+		justify-content: space-between;
+
+		.user-info-container {
+			display: flex;
+
+			.-info-content {
+				display: flex;
+				justify-content: center;
+				flex-direction: column;
+			}
+		}
+	}
+}

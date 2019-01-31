@@ -1,5 +1,5 @@
-import UserCardContainer from 'entries/chat/containers/user-card';
+import ConversationCardContainer from 'entries/chat/containers/conversation-card';
 
 export {
-	UserCardContainer
+	ConversationCardContainer
 };
