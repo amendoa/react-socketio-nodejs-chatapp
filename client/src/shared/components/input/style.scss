@@ -61,6 +61,10 @@
 				padding: 0px 40px 0px 60px;
 			}
 
+			&.clean {
+				border-radius: 0;
+			}
+
 			&.input--error {
 				border: #dcb2b2 solid 2px;
 			}

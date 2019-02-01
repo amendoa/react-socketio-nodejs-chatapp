@@ -1,0 +1,559 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ActionsContainer /> renders correctly 1`] = `
+<div
+  className="actions-container"
+>
+  <header
+    className="header-container"
+  >
+    <div
+      className="header-content"
+    >
+      <div>
+        <ProfilePictureComponent
+          backgroundColor="#1461ff"
+          color="white"
+          height={60}
+          label="AM"
+          width={60}
+        />
+      </div>
+      <div>
+        <ButtonComponent
+          height={26}
+          link={true}
+          onClick={[Function]}
+          type="button"
+          width={26}
+        >
+          <IconComponent
+            fill="#555657"
+            height={26}
+            icon="account-plus"
+            width={26}
+          />
+        </ButtonComponent>
+        <ButtonComponent
+          height={26}
+          link={true}
+          margin="0px 0px 0px 20px"
+          onClick={[Function]}
+          type="button"
+          width={26}
+        >
+          <IconComponent
+            fill="#555657"
+            height={26}
+            icon="message-text"
+            width={26}
+          />
+        </ButtonComponent>
+      </div>
+    </div>
+    <LabelComponent
+      dark={true}
+      fontSemiBold={true}
+      fontSize={16}
+      margin="10px 0px 0px 0px"
+      text="Amendowins"
+    />
+  </header>
+  <div>
+    <InputComponent
+      autoComplete="off"
+      iconComponent={[Function]}
+      maxLength={15}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      search={true}
+      type="text"
+    />
+  </div>
+  <div
+    className="conversations-container"
+  >
+    <ConversationCardComponent
+      desc={
+        Object {
+          "fontSize": 13,
+          "margin": "0px 0px 0px 14px",
+          "maxWidth": 100,
+          "text": "Hey there! how are you",
+        }
+      }
+      key="0"
+      onClick={[Function]}
+      profile={
+        Object {
+          "backgroundColor": "#1461ff",
+          "color": "white",
+          "height": 40,
+          "label": "AM",
+          "labelFontSize": 12,
+          "width": 40,
+        }
+      }
+      rightLabel="Yesterday"
+      title={
+        Object {
+          "fontSize": 14,
+          "margin": "0px 0px 0px 14px",
+          "maxWidth": 100,
+          "text": "123456789123456",
+        }
+      }
+    />
+    <ConversationCardComponent
+      desc={
+        Object {
+          "fontSize": 13,
+          "margin": "0px 0px 0px 14px",
+          "maxWidth": 100,
+          "text": "Hey there! how are you",
+        }
+      }
+      key="1"
+      onClick={[Function]}
+      profile={
+        Object {
+          "backgroundColor": "#dbcc86",
+          "color": "white",
+          "height": 40,
+          "label": "AM",
+          "labelFontSize": 12,
+          "width": 40,
+        }
+      }
+      rightLabel="Yesterday"
+      title={
+        Object {
+          "fontSize": 14,
+          "margin": "0px 0px 0px 14px",
+          "maxWidth": 100,
+          "text": "123456789123456",
+        }
+      }
+    />
+    <ConversationCardComponent
+      desc={
+        Object {
+          "fontSize": 13,
+          "margin": "0px 0px 0px 14px",
+          "maxWidth": 100,
+          "text": "Hey there! how are you",
+        }
+      }
+      key="2"
+      onClick={[Function]}
+      profile={
+        Object {
+          "backgroundColor": "#d89389",
+          "color": "white",
+          "height": 40,
+          "label": "AM",
+          "labelFontSize": 12,
+          "width": 40,
+        }
+      }
+      rightLabel="Yesterday"
+      title={
+        Object {
+          "fontSize": 14,
+          "margin": "0px 0px 0px 14px",
+          "maxWidth": 100,
+          "text": "123456789123456",
+        }
+      }
+    />
+    <ConversationCardComponent
+      desc={
+        Object {
+          "fontSize": 13,
+          "margin": "0px 0px 0px 14px",
+          "maxWidth": 100,
+          "text": "Hey there! how are you",
+        }
+      }
+      key="3"
+      onClick={[Function]}
+      profile={
+        Object {
+          "backgroundColor": "#1461ff",
+          "color": "white",
+          "height": 40,
+          "label": "AM",
+          "labelFontSize": 12,
+          "width": 40,
+        }
+      }
+      rightLabel="Yesterday"
+      title={
+        Object {
+          "fontSize": 14,
+          "margin": "0px 0px 0px 14px",
+          "maxWidth": 100,
+          "text": "123456789123456",
+        }
+      }
+    />
+    <ConversationCardComponent
+      desc={
+        Object {
+          "fontSize": 13,
+          "margin": "0px 0px 0px 14px",
+          "maxWidth": 100,
+          "text": "Hey there! how are you",
+        }
+      }
+      key="4"
+      onClick={[Function]}
+      profile={
+        Object {
+          "backgroundColor": "#dbcc86",
+          "color": "white",
+          "height": 40,
+          "label": "AM",
+          "labelFontSize": 12,
+          "width": 40,
+        }
+      }
+      rightLabel="Yesterday"
+      title={
+        Object {
+          "fontSize": 14,
+          "margin": "0px 0px 0px 14px",
+          "maxWidth": 100,
+          "text": "123456789123456",
+        }
+      }
+    />
+    <ConversationCardComponent
+      desc={
+        Object {
+          "fontSize": 13,
+          "margin": "0px 0px 0px 14px",
+          "maxWidth": 100,
+          "text": "Hey there! how are you",
+        }
+      }
+      key="5"
+      onClick={[Function]}
+      profile={
+        Object {
+          "backgroundColor": "#d89389",
+          "color": "white",
+          "height": 40,
+          "label": "AM",
+          "labelFontSize": 12,
+          "width": 40,
+        }
+      }
+      rightLabel="Yesterday"
+      title={
+        Object {
+          "fontSize": 14,
+          "margin": "0px 0px 0px 14px",
+          "maxWidth": 100,
+          "text": "123456789123456",
+        }
+      }
+    />
+    <ConversationCardComponent
+      desc={
+        Object {
+          "fontSize": 13,
+          "margin": "0px 0px 0px 14px",
+          "maxWidth": 100,
+          "text": "Hey there! how are you",
+        }
+      }
+      key="6"
+      onClick={[Function]}
+      profile={
+        Object {
+          "backgroundColor": "#1461ff",
+          "color": "white",
+          "height": 40,
+          "label": "AM",
+          "labelFontSize": 12,
+          "width": 40,
+        }
+      }
+      rightLabel="Yesterday"
+      title={
+        Object {
+          "fontSize": 14,
+          "margin": "0px 0px 0px 14px",
+          "maxWidth": 100,
+          "text": "123456789123456",
+        }
+      }
+    />
+    <ConversationCardComponent
+      desc={
+        Object {
+          "fontSize": 13,
+          "margin": "0px 0px 0px 14px",
+          "maxWidth": 100,
+          "text": "Hey there! how are you",
+        }
+      }
+      key="7"
+      onClick={[Function]}
+      profile={
+        Object {
+          "backgroundColor": "#dbcc86",
+          "color": "white",
+          "height": 40,
+          "label": "AM",
+          "labelFontSize": 12,
+          "width": 40,
+        }
+      }
+      rightLabel="Yesterday"
+      title={
+        Object {
+          "fontSize": 14,
+          "margin": "0px 0px 0px 14px",
+          "maxWidth": 100,
+          "text": "123456789123456",
+        }
+      }
+    />
+    <ConversationCardComponent
+      desc={
+        Object {
+          "fontSize": 13,
+          "margin": "0px 0px 0px 14px",
+          "maxWidth": 100,
+          "text": "Hey there! how are you",
+        }
+      }
+      key="8"
+      onClick={[Function]}
+      profile={
+        Object {
+          "backgroundColor": "#d89389",
+          "color": "white",
+          "height": 40,
+          "label": "AM",
+          "labelFontSize": 12,
+          "width": 40,
+        }
+      }
+      rightLabel="Yesterday"
+      title={
+        Object {
+          "fontSize": 14,
+          "margin": "0px 0px 0px 14px",
+          "maxWidth": 100,
+          "text": "123456789123456",
+        }
+      }
+    />
+    <ConversationCardComponent
+      desc={
+        Object {
+          "fontSize": 13,
+          "margin": "0px 0px 0px 14px",
+          "maxWidth": 100,
+          "text": "Hey there! how are you",
+        }
+      }
+      key="9"
+      onClick={[Function]}
+      profile={
+        Object {
+          "backgroundColor": "#1461ff",
+          "color": "white",
+          "height": 40,
+          "label": "AM",
+          "labelFontSize": 12,
+          "width": 40,
+        }
+      }
+      rightLabel="Yesterday"
+      title={
+        Object {
+          "fontSize": 14,
+          "margin": "0px 0px 0px 14px",
+          "maxWidth": 100,
+          "text": "123456789123456",
+        }
+      }
+    />
+    <ConversationCardComponent
+      desc={
+        Object {
+          "fontSize": 13,
+          "margin": "0px 0px 0px 14px",
+          "maxWidth": 100,
+          "text": "Hey there! how are you",
+        }
+      }
+      key="10"
+      onClick={[Function]}
+      profile={
+        Object {
+          "backgroundColor": "#dbcc86",
+          "color": "white",
+          "height": 40,
+          "label": "AM",
+          "labelFontSize": 12,
+          "width": 40,
+        }
+      }
+      rightLabel="Yesterday"
+      title={
+        Object {
+          "fontSize": 14,
+          "margin": "0px 0px 0px 14px",
+          "maxWidth": 100,
+          "text": "123456789123456",
+        }
+      }
+    />
+    <ConversationCardComponent
+      desc={
+        Object {
+          "fontSize": 13,
+          "margin": "0px 0px 0px 14px",
+          "maxWidth": 100,
+          "text": "Hey there! how are you",
+        }
+      }
+      key="11"
+      onClick={[Function]}
+      profile={
+        Object {
+          "backgroundColor": "#d89389",
+          "color": "white",
+          "height": 40,
+          "label": "AM",
+          "labelFontSize": 12,
+          "width": 40,
+        }
+      }
+      rightLabel="Yesterday"
+      title={
+        Object {
+          "fontSize": 14,
+          "margin": "0px 0px 0px 14px",
+          "maxWidth": 100,
+          "text": "123456789123456",
+        }
+      }
+    />
+  </div>
+  <DrawerComponent
+    className="add-friend-drawer-wrapper"
+    handleGoBack={[Function]}
+    isOpen={false}
+    title="Add friend"
+  >
+    <div
+      className="form-container"
+    >
+      <InputComponent
+        autoComplete="off"
+        defaultButton={true}
+        margin="0px 0px 15px 0px"
+        maxLength={15}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="Nickname"
+        type="text"
+      />
+      <ButtonComponent
+        primary={true}
+        text="Add"
+        type="button"
+        width="100%"
+      />
+    </div>
+  </DrawerComponent>
+  <DrawerComponent
+    handleGoBack={[Function]}
+    isOpen={false}
+    title="New conversation"
+  >
+    <div>
+      <InputComponent
+        autoComplete="off"
+        iconComponent={[Function]}
+        maxLength={15}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        search={true}
+        type="text"
+      />
+    </div>
+    <div>
+      <ConversationCardComponent
+        onClick={[Function]}
+        profile={
+          Object {
+            "backgroundColor": "#1461ff",
+            "color": "white",
+            "height": 40,
+            "label": "AM",
+            "labelFontSize": 12,
+            "width": 40,
+          }
+        }
+        title={
+          Object {
+            "fontSize": 14,
+            "margin": "0px 0px 0px 14px",
+            "text": "123456789123456",
+          }
+        }
+      />
+      <ConversationCardComponent
+        onClick={[Function]}
+        profile={
+          Object {
+            "backgroundColor": "#dbcc86",
+            "color": "white",
+            "height": 40,
+            "label": "AM",
+            "labelFontSize": 12,
+            "width": 40,
+          }
+        }
+        title={
+          Object {
+            "fontSize": 14,
+            "margin": "0px 0px 0px 14px",
+            "text": "123456789123456",
+          }
+        }
+      />
+      <ConversationCardComponent
+        onClick={[Function]}
+        profile={
+          Object {
+            "backgroundColor": "#d89389",
+            "color": "white",
+            "height": 40,
+            "label": "AM",
+            "labelFontSize": 12,
+            "width": 40,
+          }
+        }
+        title={
+          Object {
+            "fontSize": 14,
+            "margin": "0px 0px 0px 14px",
+            "text": "123456789123456",
+          }
+        }
+      />
+    </div>
+  </DrawerComponent>
+</div>
+`;

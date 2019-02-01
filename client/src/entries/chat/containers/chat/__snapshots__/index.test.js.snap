@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ChatContainer /> renders correctly 1`] = `
+<div
+  className="chat-container"
+>
+  <header
+    className="header-container"
+  />
+  <section
+    className="chat-content"
+  />
+  <footer
+    className="footer-container"
+  />
+</div>
+`;

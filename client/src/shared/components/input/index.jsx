@@ -26,7 +26,8 @@ export default class InputComponent extends Component {
 			autoComplete,
 			maxLength,
 			defaultButton,
-			searchButton,
+			search,
+			clean,
 			iconLeft,
 			iconRight
 		} = this.props;
@@ -34,7 +35,8 @@ export default class InputComponent extends Component {
 		const inputStyles = classNames({
 			input: true,
 			default: defaultButton,
-			search: searchButton,
+			search,
+			clean,
 			'input--error': hasError
 		});
 

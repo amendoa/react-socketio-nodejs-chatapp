@@ -4,10 +4,19 @@
 	width: 100%;
 	position: absolute;
 	z-index: 1;
-	transform: translateX(-100%);
+	transform: translateX(-101%);
 	transition: all .2s ease-in-out;
 
 	&.open {
 		transform: translateX(0%);
+	}
+
+	.header {
+		display: flex;
+		align-items: flex-end;
+		padding: 20px;
+		background: $brand-primary-ligth;
+		width: 100%;
+		height: 140px;
 	}
 }

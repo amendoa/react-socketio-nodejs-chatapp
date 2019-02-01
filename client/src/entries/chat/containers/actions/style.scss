@@ -1,0 +1,35 @@
+.actions-container {
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	justify-content: space-between;
+	overflow: hidden;
+	width: 30%;
+	height: 100%;
+	border-radius: 4px 0px 0px 4px;
+	min-width: 285px;
+
+	.header-container {
+		height: 140px;
+		width: 100%;
+		border-radius: 4px 0px 0px 0px;
+		padding: 20px;
+
+		.header-content {
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+
+	.conversations-container {
+		height: 100%;
+		max-height: 100%;
+		overflow: auto;
+	}
+
+	.add-friend-drawer-wrapper {
+		.form-container {
+			padding: 20px;
+		}
+	}
+}

@@ -7,17 +7,14 @@ import {
 	LabelComponent
 } from 'shared/components';
 
-export default class ConversationCardContainer extends Component {
-	teste = () => {
-
-	}
-
+export default class ConversationCardComponent extends Component {
 	render () {
 		const {
 			profile,
 			title,
 			desc,
-			onClick
+			onClick,
+			rightLabel
 		} = this.props;
 
 		return (
@@ -58,7 +55,7 @@ export default class ConversationCardContainer extends Component {
 					</div>
 					<LabelComponent
 						fontRegular
-						text='Yesterday'
+						text={rightLabel}
 						fontSize={13}
 						margin="0px 0px 0px 0px"
 					/>

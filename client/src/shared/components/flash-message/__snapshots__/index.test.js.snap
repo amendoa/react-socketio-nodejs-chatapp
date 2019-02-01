@@ -5,6 +5,7 @@ exports[`<FlashMessageComponent /> renders correctly 1`] = `
   className="flash-message-wrapper"
   style={
     Object {
+      "margin": undefined,
       "maxWidth": undefined,
     }
   }

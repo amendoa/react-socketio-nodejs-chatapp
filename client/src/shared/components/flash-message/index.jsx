@@ -33,7 +33,8 @@ export default class FlashMessageComponent extends Component {
 	render () {
 		const {
 			width,
-			message
+			message,
+			margin
 		} = this.props;
 
 		const {
@@ -49,7 +50,8 @@ export default class FlashMessageComponent extends Component {
 			<div
 				className={flashMessageStyles}
 				style={{
-					maxWidth: width
+					maxWidth: width,
+					margin
 				}}
 			>
 				<span className='flash-message'>

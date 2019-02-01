@@ -2,10 +2,10 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import {
-	UserCardContainer
-} from 'entries/chat/containers';
+	ConversationCardComponent
+} from 'entries/chat/components';
 
-describe('<UserCardContainer />', () => {
+describe('<ConversationCardComponent />', () => {
 	const modelI = {
 		profile: {
 			label: 'AM',
@@ -31,7 +31,7 @@ describe('<UserCardContainer />', () => {
 
 	const getWrapper = (model) => {
 		return shallow((
-			<UserCardContainer {...model} />
+			<ConversationCardComponent {...model} />
 		));
 	};
 

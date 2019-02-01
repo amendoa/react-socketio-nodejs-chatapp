@@ -171,6 +171,33 @@ export default class IconComponent extends Component {
 		);
 	}
 
+	renderArrowLeft = () => {
+		const {
+			fill,
+			width,
+			height,
+			margin
+		} = this.props;
+
+		return (
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				version="1.1"
+				width={width}
+				height={height}
+				style={{
+					margin
+				}}
+				viewBox="0 0 24 24"
+			>
+				<path
+					d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"
+					fill={fill}
+				/>
+			</svg>
+		);
+	}
+
 	render () {
 		const {
 			icon
@@ -194,6 +221,9 @@ export default class IconComponent extends Component {
 
 			case 'search':
 				return this.renderSearchIcon();
+
+			case 'arrow-left':
+				return this.renderArrowLeft();
 
 			default:
 				return this.renderCheckedIcon();
