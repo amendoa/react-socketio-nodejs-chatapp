@@ -14,11 +14,12 @@ export default class ProfilePictureComponent extends Component {
 			label,
 			width,
 			height,
-			labelFontSize
+			labelFontSize,
 		} = this.props;
 
 		const profilePictureStyles = classNames({
-			'profile-picture': true
+			'profile-picture': true,
+			fadeIn: true
 		});
 
 		return (

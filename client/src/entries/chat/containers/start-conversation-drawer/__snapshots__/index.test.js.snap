@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<StartConversationDrawer /> renders correctly 1`] = `
+<div
+  className="start-conversation-drawer-wrapper"
+>
+  <div>
+    <InputComponent
+      autoComplete="off"
+      iconComponent={[Function]}
+      maxLength={15}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      search={true}
+      type="text"
+    />
+  </div>
+  <ConversationsList
+    emptyMessage="No contacts to show"
+    isFetching={false}
+    items={
+      Array [
+        Object {
+          "color": "#1461ff",
+        },
+        Object {
+          "color": "#dbcc86",
+        },
+        Object {
+          "color": "#d89389",
+        },
+        Object {
+          "color": "#1461ff",
+        },
+        Object {
+          "color": "#dbcc86",
+        },
+        Object {
+          "color": "#d89389",
+        },
+        Object {
+          "color": "#1461ff",
+        },
+        Object {
+          "color": "#dbcc86",
+        },
+        Object {
+          "color": "#d89389",
+        },
+        Object {
+          "color": "#1461ff",
+        },
+        Object {
+          "color": "#dbcc86",
+        },
+        Object {
+          "color": "#d89389",
+        },
+      ]
+    }
+    onClickItem={[Function]}
+  />
+</div>
+`;

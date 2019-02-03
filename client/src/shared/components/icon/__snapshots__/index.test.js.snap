@@ -2,6 +2,7 @@
 
 exports[`<IconComponent /> renders correctly 1`] = `
 <svg
+  className="fadeIn"
   style={
     Object {
       "margin": undefined,

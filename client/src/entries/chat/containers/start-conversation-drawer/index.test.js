@@ -2,15 +2,21 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import {
-	ActionsContainer
+	StartConversationDrawer
 } from 'entries/chat/containers';
 
-describe('<ActionsContainer />', () => {
-	const modelI = {};
+describe('<StartConversationDrawer />', () => {
+	const modelI = {
+		items: [
+			{
+				color: 'red'
+			}
+		]
+	};
 
 	const getWrapper = (model) => {
 		return shallow((
-			<ActionsContainer {...model} />
+			<StartConversationDrawer {...model} />
 		));
 	};
 

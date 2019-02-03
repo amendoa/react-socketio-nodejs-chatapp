@@ -1,4 +1,4 @@
-.actions-container {
+.actions-wrapper {
 	display: flex;
 	position: relative;
 	flex-direction: column;
@@ -18,18 +18,6 @@
 		.header-content {
 			display: flex;
 			justify-content: space-between;
-		}
-	}
-
-	.conversations-container {
-		height: 100%;
-		max-height: 100%;
-		overflow: auto;
-	}
-
-	.add-friend-drawer-wrapper {
-		.form-container {
-			padding: 20px;
 		}
 	}
 }

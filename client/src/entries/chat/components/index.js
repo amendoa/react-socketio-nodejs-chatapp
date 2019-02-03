@@ -1,5 +1,9 @@
-import ConversationCardComponent from 'entries/chat/components/conversation-card';
+import {
+	ConversationCardComponent,
+	ConversationCardSketch
+} from 'entries/chat/components/conversation-card';
 
 export {
-	ConversationCardComponent
+	ConversationCardComponent,
+	ConversationCardSketch
 };

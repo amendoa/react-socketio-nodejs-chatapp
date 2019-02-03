@@ -1,7 +1,6 @@
 import React, {
 	Component
 } from 'react';
-
 import classNames from 'classnames';
 
 export default class LabelComponent extends Component {
@@ -24,6 +23,7 @@ export default class LabelComponent extends Component {
 
 		const spanClassName = classNames({
 			label: true,
+			fadeIn: true,
 			danger,
 			dark,
 			'font-bold': fontBold,

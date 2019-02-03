@@ -20,6 +20,7 @@ export default class IconComponent extends Component {
 				width={width}
 				height={height}
 				viewBox="0 0 78.369 78.369"
+				className='fadeIn'
 				style={{
 					margin
 				}}
@@ -51,6 +52,7 @@ export default class IconComponent extends Component {
 				width={width}
 				height={height}
 				viewBox="0 0 24 24"
+				className='fadeIn'
 				style={{
 					margin
 				}}
@@ -78,6 +80,7 @@ export default class IconComponent extends Component {
 				width={width}
 				height={height}
 				viewBox="0 0 24 24"
+				className='fadeIn'
 				style={{
 					margin
 				}}
@@ -105,6 +108,7 @@ export default class IconComponent extends Component {
 				width={width}
 				height={height}
 				viewBox="0 0 24 24"
+				className='fadeIn'
 				style={{
 					margin
 				}}
@@ -132,6 +136,7 @@ export default class IconComponent extends Component {
 				width={width}
 				height={height}
 				viewBox="0 0 24 24"
+				className='fadeIn'
 				style={{
 					margin
 				}}
@@ -159,6 +164,7 @@ export default class IconComponent extends Component {
 				width={width}
 				height={height}
 				viewBox="0 0 24 24"
+				className='fadeIn'
 				style={{
 					margin
 				}}
@@ -185,10 +191,11 @@ export default class IconComponent extends Component {
 				version="1.1"
 				width={width}
 				height={height}
+				className='fadeIn'
+				viewBox="0 0 24 24"
 				style={{
 					margin
 				}}
-				viewBox="0 0 24 24"
 			>
 				<path
 					d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"

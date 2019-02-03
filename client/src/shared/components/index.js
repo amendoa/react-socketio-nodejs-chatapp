@@ -6,6 +6,7 @@ import FormComponent from './form';
 import IconComponent from './icon';
 import FlashMessageComponent from './flash-message';
 import ProfilePictureComponent from './profile-picture';
+import SketchComponent from './sketch';
 import DrawerComponent from './drawer';
 
 export {
@@ -17,5 +18,6 @@ export {
 	IconComponent,
 	FlashMessageComponent,
 	ProfilePictureComponent,
-	DrawerComponent
+	DrawerComponent,
+	SketchComponent
 };

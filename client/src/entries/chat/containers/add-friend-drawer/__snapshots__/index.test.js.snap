@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AddFriendDrawer /> renders correctly 1`] = `
+<div
+  className="add-friend-drawer-wrapper"
+>
+  <div
+    className="form-container"
+  >
+    <InputComponent
+      autoComplete="off"
+      defaultButton={true}
+      margin="0px 0px 15px 0px"
+      maxLength={15}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      placeholder="Nickname"
+      type="text"
+    />
+    <ButtonComponent
+      primary={true}
+      text="Add"
+      type="button"
+      width="100%"
+    />
+  </div>
+</div>
+`;

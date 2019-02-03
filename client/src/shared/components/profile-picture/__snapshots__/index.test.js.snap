@@ -2,7 +2,7 @@
 
 exports[`<ProfilePictureComponent /> renders correctly 1`] = `
 <div
-  className="profile-picture"
+  className="profile-picture fadeIn"
   style={
     Object {
       "backgroundColor": "red",

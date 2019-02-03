@@ -2,7 +2,7 @@
 
 exports[`<LabelComponent /> renders correctly 1`] = `
 <span
-  className="label danger"
+  className="label fadeIn danger"
   style={
     Object {
       "fontSize": undefined,

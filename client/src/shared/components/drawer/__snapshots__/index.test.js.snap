@@ -2,30 +2,34 @@
 
 exports[`<DrawerComponent /> renders correctly 1`] = `
 <div
-  className="drawer open undefined"
+  className="drawer open"
 >
-  <header
-    className="header"
+  <div
+    className="drawer-container"
   >
-    <ButtonComponent
-      height={26}
-      link={true}
-      type="button"
-      width={26}
+    <header
+      className="header"
     >
-      <IconComponent
-        fill="#ffffff"
+      <ButtonComponent
         height={26}
-        icon="arrow-left"
+        link={true}
+        type="button"
         width={26}
+      >
+        <IconComponent
+          fill="#ffffff"
+          height={26}
+          icon="arrow-left"
+          width={26}
+        />
+      </ButtonComponent>
+      <LabelComponent
+        defaultLabel={true}
+        fontSemiBold={true}
+        fontSize={16}
+        margin="0px 0px 3px 15px"
       />
-    </ButtonComponent>
-    <LabelComponent
-      defaultLabel={true}
-      fontSemiBold={true}
-      fontSize={16}
-      margin="0px 0px 3px 15px"
-    />
-  </header>
+    </header>
+  </div>
 </div>
 `;

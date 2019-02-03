@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ActionHeaderUserInfo /> renders correctly 1`] = `
+<div>
+  <ProfilePictureComponent
+    backgroundColor="#1461ff"
+    color="white"
+    height={60}
+    label="AM"
+    width={60}
+  />
+  <LabelComponent
+    dark={true}
+    fontSemiBold={true}
+    fontSize={16}
+    margin="10px 0px 0px 0px"
+    text="Amendowins"
+  />
+</div>
+`;

@@ -14,6 +14,10 @@
 @import "../shared/components/flash-message/style.scss";
 @import "../shared/components/profile-picture/style.scss";
 @import "../shared/components/drawer/style.scss";
+@import "../shared/components/sketch/style.scss";
 @import "../entries/chat/components/conversation-card/style.scss";
-@import "../entries/chat/containers/actions/style.scss";
-@import "../entries/chat/containers/chat/style.scss";
+@import "../entries/chat/containers/conversations-list/style.scss";
+@import "../entries/chat/containers/add-friend-drawer/style.scss";
+@import "../entries/chat/containers/start-conversation-drawer/style.scss";
+@import "../entries/chat/wrappers/chat/style.scss";
+@import "../entries/chat/wrappers/actions/style.scss";
