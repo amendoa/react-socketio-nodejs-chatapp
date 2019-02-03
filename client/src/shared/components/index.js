@@ -8,6 +8,7 @@ import FlashMessageComponent from './flash-message';
 import ProfilePictureComponent from './profile-picture';
 import SketchComponent from './sketch';
 import DrawerComponent from './drawer';
+import DropDownMenuComponent from './drop-down-menu';
 
 export {
 	ButtonComponent,
@@ -19,5 +20,6 @@ export {
 	FlashMessageComponent,
 	ProfilePictureComponent,
 	DrawerComponent,
-	SketchComponent
+	SketchComponent,
+	DropDownMenuComponent
 };

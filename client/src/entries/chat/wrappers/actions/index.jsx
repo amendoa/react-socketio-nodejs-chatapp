@@ -6,7 +6,8 @@ import {
 	IconComponent,
 	InputComponent,
 	ButtonComponent,
-	DrawerComponent
+	DrawerComponent,
+	DropDownMenuComponent
 } from 'shared/components';
 
 import {
@@ -79,6 +80,8 @@ export default class ActionsWrapper extends Component {
 
 		return (
 			<div className='actions-wrapper'>
+
+
 				<header className='header-container'>
 					<div className='header-content'>
 						<ActionHeaderUserInfo
@@ -127,27 +130,16 @@ export default class ActionsWrapper extends Component {
 									height={26}
 								/>
 							</ButtonComponent>
-							<ButtonComponent
-								type='button'
-								width={26}
-								height={26}
-								margin="0px 0px 0px 20px"
-								link
-								onClick={() => {
-									this.setState({
-										startConversationDrawer: {
-											isOpen: true
+							<DropDownMenuComponent
+								options={[
+									{
+										text: 'Logout',
+										event: () => {
+											console.log('logout');
 										}
-									});
-								}}
-							>
-								<IconComponent
-									fill="#555657"
-									icon="message-text"
-									width={26}
-									height={26}
-								/>
-							</ButtonComponent>
+									}
+								]}
+							/>
 						</div>
 					</div>
 				</header>
