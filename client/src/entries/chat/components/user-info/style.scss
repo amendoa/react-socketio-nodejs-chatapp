@@ -1,0 +1,19 @@
+.user-info-wrapper {
+	display: flex;
+	flex-direction: row;
+
+	.user-info-container {
+		display: flex;
+		flex-direction: row;
+
+		&.column {
+			flex-direction: column;
+		}
+
+		.labels-container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+	}
+}

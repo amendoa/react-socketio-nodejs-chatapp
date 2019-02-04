@@ -4,13 +4,16 @@
 	width: 70%;
 	height: 100%;
 	border-radius: 4px;
-	background: red;
+	min-width: 285px;
 
 	.header-container {
-		height: 90px;
+		display: flex;
+		align-items: center;
+		padding: 25px;
+		height: 65px;
 		width: 100%;
-		background: black;
 		border-radius: 0px 4px 0px 0px;
+		background: $brand-tertiary;
 	}
 
 	.chat-content {
@@ -19,9 +22,12 @@
 	}
 
 	.footer-container {
-		height: 90px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		width: 100%;
 		border-radius: 0px 0px 4px 0px;
-		background: green;
+		background: $brand-tertiary;
+		padding: 15px 25px 15px 25px;
 	}
 }

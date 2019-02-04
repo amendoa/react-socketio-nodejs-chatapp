@@ -26,7 +26,7 @@ body {
 	height: 100%;
 }
 
-input {
+input, textarea {
 	font-size: $font-size-base;
 	font-family: $font-family;
 	font-smoothing: antialiased;
@@ -62,4 +62,5 @@ button {
 	line-height: normal;
 	overflow: visible;
 	padding: 0;
+	// outline: none;
 }

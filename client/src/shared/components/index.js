@@ -9,6 +9,7 @@ import ProfilePictureComponent from './profile-picture';
 import SketchComponent from './sketch';
 import DrawerComponent from './drawer';
 import DropDownMenuComponent from './drop-down-menu';
+import ContentEditableComponent from './content-editable';
 
 export {
 	ButtonComponent,
@@ -21,5 +22,6 @@ export {
 	ProfilePictureComponent,
 	DrawerComponent,
 	SketchComponent,
-	DropDownMenuComponent
+	DropDownMenuComponent,
+	ContentEditableComponent
 };

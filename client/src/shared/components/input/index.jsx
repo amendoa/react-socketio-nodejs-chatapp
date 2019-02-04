@@ -12,6 +12,7 @@ export default class InputComponent extends Component {
 		const {
 			placeholder,
 			width,
+			height,
 			margin,
 			type,
 			id,
@@ -65,7 +66,8 @@ export default class InputComponent extends Component {
 						onFocus={onFocus}
 						onBlur={onBlur}
 						style={{
-							width
+							width,
+							height
 						}}
 						name={name}
 						autoComplete={autoComplete}

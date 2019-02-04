@@ -17,14 +17,9 @@
 		display: flex;
 		justify-content: space-between;
 
-		.user-info-container {
+		.user-info-sketch-container {
 			display: flex;
-
-			.user-info-content {
-				display: flex;
-				justify-content: center;
-				flex-direction: column;
-			}
+			align-items: center;
 		}
 	}
 }

@@ -59,8 +59,8 @@ export default class ConversationsList extends Component {
 									labelFontSize: 12
 								}}
 								title={{
-									text: '123456789123456',
-									fontSize: 14,
+									text: 'Amendowins',
+									fontSize: 13,
 									maxWidth: 100,
 									margin: '0px 0px 0px 14px'
 								}}

@@ -13,21 +13,21 @@ export default class ConversationCardSketch extends Component {
 				className='conversation-card'
 			>
 				<div className='conversation-card--container'>
-					<div className='user-info-container'>
+					<div className='user-info-sketch-container'>
 						<SketchComponent
 							width={40}
 							height={40}
 							circle
 						/>
-						<div className='user-info-content'>
+						<div>
 							<SketchComponent
 								width={90}
-								height={10}
+								height={8}
 								margin='0px 0px 0px 14px'
 							/>
 							<SketchComponent
 								width={70}
-								height={10}
+								height={8}
 								margin='8px 0px 0px 14px'
 							/>
 						</div>

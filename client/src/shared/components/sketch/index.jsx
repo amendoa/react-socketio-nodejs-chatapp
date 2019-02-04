@@ -9,23 +9,27 @@ export default class SketchComponent extends Component {
 			width,
 			height,
 			margin,
-			circle
+			circle,
+			dark
 		} = this.props;
 
 		const sketchStyles = classNames({
 			sketch: true,
-			circle
+			circle,
+			dark
 		});
 
 		return (
-			<div
-				className={sketchStyles}
-				style={{
-					width,
-					height,
-					margin
-				}}
-			>
+			<div className='sketch-wrapper'>
+				<div
+					className={sketchStyles}
+					style={{
+						width,
+						height,
+						margin
+					}}
+				>
+				</div>
 			</div>
 		);
 	}

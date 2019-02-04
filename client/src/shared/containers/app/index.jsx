@@ -37,14 +37,14 @@ export default class AppContainer extends Component {
 						<IconComponent
 							fill="#ffffff"
 							icon="message-text"
-							width={40}
-							height={40}
+							width={35}
+							height={35}
 						/>
 						<LabelComponent
 							text={constants.LABELS.MAIN.APP_NAME}
 							defaultLabel
 							fontSemiBold
-							fontSize={22}
+							fontSize={20}
 							margin="0px 0px 0px 20px"
 						/>
 					</section>

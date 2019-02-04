@@ -28,7 +28,8 @@
 			"ADD_FRIEND": "Add friend",
 			"NO_CONVERSATIONS_TO_SHOW": "No conversations to show",
 			"NO_CONTACTS_TO_SHOW": "No contacts to show",
-			"ADD": "Add"
+			"ADD": "Add",
+			"LOGOUT": "Logout"
 		}
 	},
 	"API": {

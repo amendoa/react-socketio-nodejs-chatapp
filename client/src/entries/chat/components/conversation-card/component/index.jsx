@@ -3,9 +3,8 @@ import React, {
 } from 'react';
 
 import {
-	ProfilePictureComponent,
-	LabelComponent
-} from 'shared/components';
+	UserInfoComponent
+} from 'entries/chat/components';
 
 export default class ConversationCardComponent extends Component {
 	render () {
@@ -28,36 +27,15 @@ export default class ConversationCardComponent extends Component {
 				onKeyPress={onClick}
 			>
 				<div className='conversation-card--container'>
-					<div className='user-info-container'>
-						<ProfilePictureComponent
-							{
-							...profile
-							}
-						/>
-						<div className='user-info-content'>
-							<LabelComponent
-								fontSemiBold
-								dark
-								breakWord
-								{
-								...title
-								}
-							/>
-							<LabelComponent
-								fontRegular
-								dark
-								breakWord
-								{
-								...desc
-								}
-							/>
-						</div>
-					</div>
-					<LabelComponent
-						fontRegular
-						text={rightLabel}
-						fontSize={13}
-						margin="0px 0px 0px 0px"
+					<UserInfoComponent
+						profile={profile}
+						title={title}
+						desc={desc}
+						rightLabel={rightLabel}
+						wrapperStyle={{
+							width: '100%',
+							justifyContent: 'space-between'
+						}}
 					/>
 				</div>
 			</div>

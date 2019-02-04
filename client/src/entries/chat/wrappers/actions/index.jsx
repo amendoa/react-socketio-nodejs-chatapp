@@ -13,11 +13,21 @@ import {
 import {
 	ConversationsList,
 	AddFriendDrawer,
-	StartConversationDrawer,
-	ActionHeaderUserInfo
+	StartConversationDrawer
 } from 'entries/chat/containers';
 
+import {
+	UserInfoComponent
+} from 'entries/chat/components';
+
+import { push } from 'connected-react-router';
+import { connect } from 'react-redux';
+
 import constants from 'modules/constants';
+
+import {
+	removeToken
+} from 'modules/utils';
 
 const conversations = [
 	{
@@ -58,7 +68,7 @@ const conversations = [
 	}
 ];
 
-export default class ActionsWrapper extends Component {
+class ActionsWrapper extends Component {
 	constructor (props) {
 		super(props);
 
@@ -72,6 +82,14 @@ export default class ActionsWrapper extends Component {
 		};
 	}
 
+	handleLogout = () => {
+		const {
+			dispatch
+		} = this.props;
+		removeToken();
+		dispatch(push('signin'));
+	}
+
 	render () {
 		const {
 			addFriendDrawer,
@@ -80,12 +98,24 @@ export default class ActionsWrapper extends Component {
 
 		return (
 			<div className='actions-wrapper'>
-
-
 				<header className='header-container'>
 					<div className='header-content'>
-						<ActionHeaderUserInfo
+						<UserInfoComponent
 							isFetching={false}
+							column
+							profile={{
+								label: 'AM',
+								width: 60,
+								height: 60,
+								backgroundColor: '#1863ff',
+								color: 'white',
+								labelFontSize: 16
+							}}
+							title={{
+								text: 'Amendowins',
+								fontSize: 16,
+								margin: '10px 0px 0px 0px'
+							}}
 						/>
 						<div>
 							<ButtonComponent
@@ -133,10 +163,8 @@ export default class ActionsWrapper extends Component {
 							<DropDownMenuComponent
 								options={[
 									{
-										text: 'Logout',
-										event: () => {
-											console.log('logout');
-										}
+										text: constants.LABELS.CHAT.LOGOUT,
+										event: this.handleLogout
 									}
 								]}
 							/>
@@ -201,3 +229,20 @@ export default class ActionsWrapper extends Component {
 		);
 	}
 }
+
+const mapStateToProps = (state) => {
+	return {
+
+	};
+};
+
+const mapDispatchToProps = (dispatch) => {
+	return {
+		dispatch
+	};
+};
+
+export default connect(
+	mapStateToProps,
+	mapDispatchToProps
+)(ActionsWrapper);

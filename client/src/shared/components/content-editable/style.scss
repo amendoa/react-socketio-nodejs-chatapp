@@ -1,0 +1,15 @@
+.content-editable {
+	background: $brand-secondary;
+	border-radius: 4px;
+	color: $brand-text;
+	// height: 40px;
+	width: 100%;
+	padding: 10px 20px 10px 20px;
+	max-height: 100px;
+	min-height: 20px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	position: relative;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
