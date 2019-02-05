@@ -1,53 +1,35 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<ConversationCardComponent /> renders correctly 1`] = `
-<div
-  className="conversation-card"
-  role="button"
-  tabIndex="-1"
->
-  <div
-    className="conversation-card--container"
-  >
-    <div
-      className="user-info-container"
-    >
-      <ProfilePictureComponent
-        backgroundColor="red"
-        color="white"
-        height={40}
-        label="AM"
-        labelFontSize={12}
-        width={40}
-      />
-      <div
-        className="user-info-content"
-      >
-        <LabelComponent
-          breakWord={true}
-          dark={true}
-          fontSemiBold={true}
-          fontSize={14}
-          margin="0px 0px 0px 14px"
-          maxWidth={100}
-          text="teste"
-        />
-        <LabelComponent
-          breakWord={true}
-          dark={true}
-          fontRegular={true}
-          fontSize={13}
-          margin="0px 0px 0px 14px"
-          maxWidth={100}
-          text="Hey there! how are you"
-        />
-      </div>
-    </div>
-    <LabelComponent
-      fontRegular={true}
-      fontSize={13}
-      margin="0px 0px 0px 0px"
-    />
-  </div>
+<div>
+  <ConversationCardComponent
+    desc={
+      Object {
+        "fontSize": 13,
+        "margin": "0px 0px 0px 14px",
+        "maxWidth": 100,
+        "text": "Hey there! how are you",
+      }
+    }
+    profile={
+      Object {
+        "backgroundColor": "red",
+        "color": "white",
+        "height": 40,
+        "label": "AM",
+        "labelFontSize": 12,
+        "width": 40,
+      }
+    }
+    title={
+      Object {
+        "fontSize": 14,
+        "margin": "0px 0px 0px 14px",
+        "maxWidth": 100,
+        "text": "teste",
+      }
+    }
+  />
+  <ConversationCardSketch />
 </div>
 `;

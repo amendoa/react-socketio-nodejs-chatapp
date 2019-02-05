@@ -21,6 +21,7 @@ exports[`<InputComponent /> renders correctly 1`] = `
       placeholder="Nickname"
       style={
         Object {
+          "height": undefined,
           "width": undefined,
         }
       }

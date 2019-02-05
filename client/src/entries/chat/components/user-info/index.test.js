@@ -2,11 +2,10 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import {
-	ConversationCardComponent,
-	ConversationCardSketch
+	UserInfoComponent
 } from 'entries/chat/components';
 
-describe('<ConversationCardComponent />', () => {
+describe('<UserInfoComponent />', () => {
 	const modelI = {
 		profile: {
 			label: 'AM',
@@ -17,8 +16,8 @@ describe('<ConversationCardComponent />', () => {
 			labelFontSize: 12
 		},
 		title: {
-			text: 'teste',
-			fontSize: 14,
+			text: 'Amendowins',
+			fontSize: 13,
 			maxWidth: 100,
 			margin: '0px 0px 0px 14px'
 		},
@@ -27,15 +26,17 @@ describe('<ConversationCardComponent />', () => {
 			fontSize: 13,
 			maxWidth: 100,
 			margin: '0px 0px 0px 14px'
+		},
+		rightLabel: 'right label',
+		wrapperStyle: {
+			width: '100%',
+			justifyContent: 'space-between'
 		}
 	};
 
 	const getWrapper = (model) => {
 		return shallow((
-			<div>
-				<ConversationCardComponent {...model} />
-				<ConversationCardSketch />
-			</div>
+			<UserInfoComponent {...model} />
 		));
 	};
 

@@ -6,12 +6,44 @@ exports[`<ChatWrapper /> renders correctly 1`] = `
 >
   <header
     className="header-container"
-  />
+  >
+    <UserInfoComponent
+      desc={
+        Object {
+          "fontSize": 13,
+          "margin": "0px 0px 0px 14px",
+          "maxWidth": 100,
+          "text": "typing...",
+        }
+      }
+      isFetching={false}
+      profile={
+        Object {
+          "backgroundColor": "#1863ff",
+          "color": "white",
+          "height": 40,
+          "label": "AM",
+          "labelFontSize": 14,
+          "width": 40,
+        }
+      }
+      sketchDark={true}
+      title={
+        Object {
+          "fontSize": 13,
+          "margin": "0px 0px 0px 14px",
+          "text": "Amendowins",
+        }
+      }
+    />
+  </header>
   <section
     className="chat-content"
   />
   <footer
     className="footer-container"
-  />
+  >
+    <ContentEditableComponent />
+  </footer>
 </div>
 `;

@@ -6,7 +6,13 @@ import {
 } from 'shared/components';
 
 describe('<DropDownMenuComponent />', () => {
-	const modelI = {};
+	const modelI = {
+		options: [
+			{
+				text: 'teste'
+			}
+		]
+	};
 
 	const getWrapper = (model) => {
 		return shallow((

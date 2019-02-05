@@ -2,13 +2,17 @@
 
 exports[`<SketchComponent /> renders correctly 1`] = `
 <div
-  className="sketch circle"
-  style={
-    Object {
-      "height": 40,
-      "margin": undefined,
-      "width": 40,
+  className="sketch-wrapper"
+>
+  <div
+    className="sketch circle"
+    style={
+      Object {
+        "height": 40,
+        "margin": undefined,
+        "width": 40,
+      }
     }
-  }
-/>
+  />
+</div>
 `;

@@ -28,10 +28,10 @@ exports[`<ConversationsList /> renders correctly 1`] = `
       rightLabel="Yesterday"
       title={
         Object {
-          "fontSize": 14,
+          "fontSize": 13,
           "margin": "0px 0px 0px 14px",
           "maxWidth": 100,
-          "text": "123456789123456",
+          "text": "Amendowins",
         }
       }
     />

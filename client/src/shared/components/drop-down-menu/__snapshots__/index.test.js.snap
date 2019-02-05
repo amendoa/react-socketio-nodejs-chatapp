@@ -1,7 +1,46 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<DropDownMenuComponent /> renders correctly 1`] = `
-<div>
-  teste
+<div
+  className="drop-down-menu-wrapper"
+>
+  <ButtonComponent
+    height={26}
+    link={true}
+    margin="0px 0px 0px 20px"
+    onClick={[Function]}
+    type="button"
+    width={26}
+  >
+    <IconComponent
+      fill="#555657"
+      height={26}
+      icon="dots-vertical"
+      width={26}
+    />
+  </ButtonComponent>
+  <div
+    className="drop-down-menu"
+  >
+    <ul>
+      <li
+        key="0"
+      >
+        <ButtonComponent
+          link={true}
+          onClick={[Function]}
+          width={80}
+        >
+          <LabelComponent
+            breakWord={true}
+            dark={true}
+            fontSize={14}
+            regular={true}
+            text="teste"
+          />
+        </ButtonComponent>
+      </li>
+    </ul>
+  </div>
 </div>
 `;
