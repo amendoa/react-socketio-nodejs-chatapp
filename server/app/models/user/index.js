@@ -1,11 +1,12 @@
 const mongoose = require('mongoose');
+const {
+	ContactSchema
+} = absoluteRequire('models/contact');
 
 const {
 	Schema,
-	model
+	model: Model
 } = mongoose;
-
-const Model = model;
 
 const UserSchema = new Schema({
 	nickname: {
@@ -26,7 +27,10 @@ const UserSchema = new Schema({
 		default: '',
 		trim: true,
 		required: true
-	}
+	},
+	contacts: [
+		ContactSchema
+	]
 });
 
 const UserModel = new Model('User', UserSchema);

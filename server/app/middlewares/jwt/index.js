@@ -1,5 +1,6 @@
 const jwt = require('jsonwebtoken');
 const constants = absoluteRequire('modules/constants');
+const userRepository = absoluteRequire('repositories/user');
 
 module.exports = (req, res, next) => {
 	const token = (
@@ -10,16 +11,7 @@ module.exports = (req, res, next) => {
 		|| null
 	);
 
-	if (!token) {
-		res.status(401)
-			.json({
-				success: false,
-				errors: [],
-				result: []
-			});
-	}
-
-	jwt.verify(token, constants.GENERAL.JWT_SECRET, (err, decodedData) => {
+	jwt.verify(token, constants.GENERAL.JWT_SECRET, async (err, decodedData) => {
 		if (err) {
 			res.status(401)
 				.json({
@@ -30,27 +22,31 @@ module.exports = (req, res, next) => {
 		} else {
 			const {
 				nickname,
-				_id,
 			} = decodedData;
 
-			// mongo verify
+			try {
+				const user = await userRepository.findOneUser({
+					nickname
+				});
 
-			next();
-
-			// if (
-			// 	name === constants.GENERAL.JWT_ADMIN_NAME
-			// 	&& username === constants.GENERAL.JWT_ADMIN_USERNAME
-			// 	&& password === constants.GENERAL.JWT_ADMIN_PASSWORD
-			// ) {
-			// 	next();
-			// } else {
-			// 	res.status(401)
-			// 		.json({
-			// 			success: false,
-			// 			errors: [],
-			// 			result: []
-			// 		});
-			// }
+				if (user) {
+					req.currentUser = user;
+					next();
+				} else {
+					res.status(401).json({
+						success: false,
+						errors: [],
+						result: []
+					});
+				}
+			} catch (e) {
+				res.status(500)
+					.json({
+						success: false,
+						errors: [],
+						result: []
+					});
+			}
 		}
 	});
 };
