@@ -10,6 +10,10 @@ import {
 	UserInfoComponent
 } from 'entries/chat/components';
 
+import {
+	MessageListContainer
+} from 'entries/chat/containers';
+
 export default class ChatWrapper extends Component {
 	render () {
 		return (
@@ -40,6 +44,9 @@ export default class ChatWrapper extends Component {
 					/>
 				</header>
 				<section className='chat-content'>
+					<MessageListContainer
+						isFetching={false}
+					/>
 				</section>
 				<footer className='footer-container'>
 					<ContentEditableComponent />

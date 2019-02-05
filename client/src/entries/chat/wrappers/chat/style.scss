@@ -19,6 +19,8 @@
 	.chat-content {
 		height: 100%;
 		background: $brand-secondary;
+		padding: 0px 25px 25px 25px;
+		overflow: auto;
 	}
 
 	.footer-container {

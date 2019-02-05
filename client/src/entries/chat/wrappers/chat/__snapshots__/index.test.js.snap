@@ -39,7 +39,11 @@ exports[`<ChatWrapper /> renders correctly 1`] = `
   </header>
   <section
     className="chat-content"
-  />
+  >
+    <MessageListContainer
+      isFetching={false}
+    />
+  </section>
   <footer
     className="footer-container"
   >

@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ContentEditableComponent /> renders correctly 1`] = `
+<div>
+  <ContentEditableComponent
+    isFetching={false}
+  />
+</div>
+`;
