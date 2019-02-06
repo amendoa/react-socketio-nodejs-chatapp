@@ -11,5 +11,6 @@ const {
 const route = Router();
 
 route.post('/secured/contact', addContactValidator(), contactController.postAddContact);
+route.get('/secured/contact', contactController.getContact);
 
 module.exports = route;

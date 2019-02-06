@@ -30,7 +30,7 @@ exports.postSignUp = async (req, res) => {
 
 			if (result) {
 				const token = createJwtToken({
-					nickname: result.nickname,
+					nickname: result.nickname.toLowerCase(),
 					// eslint-disable-next-line
 					_id: result._id
 				});
@@ -74,12 +74,12 @@ exports.postSignIn = async (req, res) => {
 	try {
 		const result = await userRepository.findOneUser({
 			password: encryptPassword(password),
-			nickname
+			nickname: nickname.toLowerCase()
 		});
 
 		if (result) {
 			const token = createJwtToken({
-				nickname: result.nickname,
+				nickname: result.nickname.toLowerCase(),
 				// eslint-disable-next-line
 				_id: result._id
 			});
@@ -100,7 +100,7 @@ exports.postSignIn = async (req, res) => {
 						{
 							location: 'body',
 							param: 'nickname',
-							value: nickname,
+							value: nickname.toLowerCase(),
 							msg: constants.EXPRESS_VALIDATION_MESSAGES.INCORRECT_PASSWORD_OR_USERNAME
 						}
 					]
@@ -123,7 +123,7 @@ exports.getVerifyNickname = async (req, res) => {
 
 	try {
 		const result = await userRepository.findUser({
-			nickname
+			nickname: nickname.toLowerCase()
 		});
 
 		const errors = [];
@@ -132,7 +132,7 @@ exports.getVerifyNickname = async (req, res) => {
 			errors.push({
 				location: 'body',
 				param: 'nickname',
-				value: nickname,
+				value: nickname.toLowerCase(),
 				msg: constants.EXPRESS_VALIDATION_MESSAGES.THIS_NICKNAME_IS_ALREADY_TAKEN
 			});
 		}

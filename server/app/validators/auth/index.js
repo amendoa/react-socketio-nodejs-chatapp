@@ -9,7 +9,7 @@ module.exports.signupValidator = () => [
 		.custom(async (nickname) => {
 			try {
 				const user = await userRepository.findUser({
-					nickname
+					nickname: nickname.toLowerCase()
 				});
 
 				if (user.length > 0) {

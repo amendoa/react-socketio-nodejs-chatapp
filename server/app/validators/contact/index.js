@@ -6,10 +6,22 @@ const {
 
 module.exports.addContactValidator = () => [
 	check('nickname')
+		.custom((contactUserNickname, { req }) => {
+			const {
+				nickname
+			} = req.currentUser;
+
+			if (contactUserNickname.toLowerCase() === nickname.toLowerCase()) {
+				return false;
+			}
+
+			return true;
+		})
+		.withMessage(constants.EXPRESS_VALIDATION_MESSAGES.YOU_CANT_ADD_YOURSELF)
 		.custom(async (contactUserNickname) => {
 			try {
 				const result = await findOneUser({
-					nickname: contactUserNickname
+					nickname: contactUserNickname.toLowerCase()
 				});
 
 				if (!result) {
@@ -32,7 +44,7 @@ module.exports.addContactValidator = () => [
 					_id: contactOwnerId,
 					contacts: {
 						$elemMatch: {
-							contactUserNickname
+							contactUserNickname: contactUserNickname.toLowerCase()
 						}
 					}
 				});

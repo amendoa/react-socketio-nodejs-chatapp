@@ -20,7 +20,8 @@
 		"THIS_NICKNAME_IS_ALREADY_TAKEN": "This Nickname is already taken",
 		"THIS_NICKNAME_IS_ALREADY_ADDED": "This Nickname is already added",
 		"THIS_NICKNAME_DO_NOT_EXISTS": "This Nickname doesn't exist",
-		"INCORRECT_PASSWORD_OR_USERNAME": "Incorrect nickname or password"
+		"INCORRECT_PASSWORD_OR_USERNAME": "Incorrect nickname or password",
+		"YOU_CANT_ADD_YOURSELF": "You can't add yourself"
 	},
 	"WINSTON": {
 		"LOGFILE": "./logs/dev.log"
