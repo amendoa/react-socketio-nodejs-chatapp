@@ -62,60 +62,58 @@ exports.postSignUp = async (req, res) => {
 };
 
 exports.postSignIn = async (req, res) => {
-	setTimeout(async () => {
-		const {
-			body
-		} = req;
+	const {
+		body
+	} = req;
 
-		const {
-			password,
-			nickname
-		} = body;
+	const {
+		password,
+		nickname
+	} = body;
 
-		try {
-			const result = await userRepository.findOneUser({
-				password: encryptPassword(password),
-				nickname: nickname.toLowerCase()
+	try {
+		const result = await userRepository.findOneUser({
+			password: encryptPassword(password),
+			nickname: nickname.toLowerCase()
+		});
+
+		if (result) {
+			const token = createJwtToken({
+				nickname: result.nickname.toLowerCase(),
+				// eslint-disable-next-line
+				_id: result._id
 			});
 
-			if (result) {
-				const token = createJwtToken({
-					nickname: result.nickname.toLowerCase(),
-					// eslint-disable-next-line
-					_id: result._id
-				});
-
-				res
-					.status(200)
-					.json({
-						success: true,
-						token,
-						errors: []
-					});
-			} else {
-				res
-					.status(400)
-					.json({
-						success: false,
-						errors: [
-							{
-								location: 'body',
-								param: 'nickname',
-								value: nickname.toLowerCase(),
-								msg: constants.EXPRESS_VALIDATION_MESSAGES.INCORRECT_PASSWORD_OR_USERNAME
-							}
-						]
-					});
-			}
-		} catch (e) {
 			res
-				.status(500)
+				.status(200)
 				.json({
-					success: false,
+					success: true,
+					token,
 					errors: []
 				});
+		} else {
+			res
+				.status(400)
+				.json({
+					success: false,
+					errors: [
+						{
+							location: 'body',
+							param: 'nickname',
+							value: nickname.toLowerCase(),
+							msg: constants.EXPRESS_VALIDATION_MESSAGES.INCORRECT_PASSWORD_OR_USERNAME
+						}
+					]
+				});
 		}
-	},3000)
+	} catch (e) {
+		res
+			.status(500)
+			.json({
+				success: false,
+				errors: []
+			});
+	}
 };
 
 exports.getVerifyNickname = async (req, res) => {
