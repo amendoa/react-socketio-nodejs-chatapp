@@ -62,58 +62,60 @@ exports.postSignUp = async (req, res) => {
 };
 
 exports.postSignIn = async (req, res) => {
-	const {
-		body
-	} = req;
+	setTimeout(async () => {
+		const {
+			body
+		} = req;
 
-	const {
-		password,
-		nickname
-	} = body;
+		const {
+			password,
+			nickname
+		} = body;
 
-	try {
-		const result = await userRepository.findOneUser({
-			password: encryptPassword(password),
-			nickname: nickname.toLowerCase()
-		});
-
-		if (result) {
-			const token = createJwtToken({
-				nickname: result.nickname.toLowerCase(),
-				// eslint-disable-next-line
-				_id: result._id
+		try {
+			const result = await userRepository.findOneUser({
+				password: encryptPassword(password),
+				nickname: nickname.toLowerCase()
 			});
 
-			res
-				.status(200)
-				.json({
-					success: true,
-					token,
-					errors: []
+			if (result) {
+				const token = createJwtToken({
+					nickname: result.nickname.toLowerCase(),
+					// eslint-disable-next-line
+					_id: result._id
 				});
-		} else {
+
+				res
+					.status(200)
+					.json({
+						success: true,
+						token,
+						errors: []
+					});
+			} else {
+				res
+					.status(400)
+					.json({
+						success: false,
+						errors: [
+							{
+								location: 'body',
+								param: 'nickname',
+								value: nickname.toLowerCase(),
+								msg: constants.EXPRESS_VALIDATION_MESSAGES.INCORRECT_PASSWORD_OR_USERNAME
+							}
+						]
+					});
+			}
+		} catch (e) {
 			res
-				.status(400)
+				.status(500)
 				.json({
 					success: false,
-					errors: [
-						{
-							location: 'body',
-							param: 'nickname',
-							value: nickname.toLowerCase(),
-							msg: constants.EXPRESS_VALIDATION_MESSAGES.INCORRECT_PASSWORD_OR_USERNAME
-						}
-					]
+					errors: []
 				});
 		}
-	} catch (e) {
-		res
-			.status(500)
-			.json({
-				success: false,
-				errors: []
-			});
-	}
+	},3000)
 };
 
 exports.getVerifyNickname = async (req, res) => {

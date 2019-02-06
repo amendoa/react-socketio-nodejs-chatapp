@@ -2147,3 +2147,124 @@
 [32m       profileColor: '#0f5fff',[39m
 [32m       _id: '5c5adbc3c10fa431ce935534',[39m
 [32m       __v: 0 } ] }[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=amendoa[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=orelha[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=padilha[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=boroga[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=vasculha[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signin[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signin[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signin[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signin[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signin[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signin[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signin[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signin[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signin[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signin[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signin[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signin[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signin?[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signin?[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signin?[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signin?[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signin?[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signin?[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signin?[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signin?[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signin?[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signin?[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signin?[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signin?[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signin?[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signin?[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signin?[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signin?[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signin?[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signin?[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signin?[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signin?[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signin?[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signin?[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signin?[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signin?[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signin?[39m
