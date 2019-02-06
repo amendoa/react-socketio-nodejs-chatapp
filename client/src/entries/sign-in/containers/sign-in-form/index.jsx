@@ -78,7 +78,7 @@ class SignInFormContainer extends Component {
 								) : null
 							}
 							<InputComponent
-								id='nickname'
+								name='nickname'
 								placeholder={constants.LABELS.AUTH.NICKNAME}
 								type='text'
 								autoComplete='off'
@@ -89,7 +89,7 @@ class SignInFormContainer extends Component {
 								defaultButton
 							/>
 							<InputComponent
-								id='password'
+								name='password'
 								placeholder={constants.LABELS.AUTH.PASSWORD}
 								type='password'
 								autoComplete='off'

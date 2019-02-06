@@ -131,7 +131,7 @@ class SignUpFormContainer extends Component {
 					return (
 						<form onSubmit={handleSubmit}>
 							<InputComponent
-								id='nickname'
+								name='nickname'
 								placeholder={constants.LABELS.AUTH.NICKNAME}
 								type='text'
 								hasError={touched.nickname && errors.nickname}
@@ -184,7 +184,7 @@ class SignUpFormContainer extends Component {
 								}}
 							/>
 							<InputComponent
-								id='password'
+								name='password'
 								placeholder={constants.LABELS.AUTH.PASSWORD}
 								type='password'
 								autoComplete='off'
@@ -199,7 +199,7 @@ class SignUpFormContainer extends Component {
 								defaultButton
 							/>
 							<InputComponent
-								id='confirmPassword'
+								name='confirmPassword'
 								placeholder={constants.LABELS.AUTH.CONFIRM_PASSWORD}
 								type='password'
 								autoComplete='off'

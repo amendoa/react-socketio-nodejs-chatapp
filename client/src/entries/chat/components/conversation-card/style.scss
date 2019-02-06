@@ -1,14 +1,16 @@
 .conversation-card {
 	padding-left: 25px;
-	transition: all .5s ease;
+	transition: background .5s ease;
 	cursor: pointer;
+	outline: none;
 
 	&:hover {
 		background: $brand-secondary;
 	}
 
 	&:active {
-		background: $brand-secondary;
+		background: $brand-tertiary;
+		transform: translateY(2px);
 	}
 
 	.conversation-card--container {

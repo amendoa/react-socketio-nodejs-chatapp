@@ -8,7 +8,7 @@
 	font-size: 18px;
 
 	&.button--primary {
-		transition: all .5s ease;
+		transition: background .5s ease, color .5s ease;
 		background: $brand-primary;
 
 		.spinner > div {
@@ -21,15 +21,6 @@
 
 			.spinner > div {
 				background: $brand-primary;
-			}
-		}
-
-		&:active {
-			background: $brand-primary;
-			color: $brand-text-default;
-
-			.spinner > div {
-				background: $brand-default;
 			}
 		}
 	}
@@ -47,5 +38,9 @@
 		color: $brand-primary;
 		box-shadow: none;
 		height: 30px;
+	}
+
+	&:active {
+		transform: translateY(2px);
 	}
 }

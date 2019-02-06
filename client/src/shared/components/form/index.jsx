@@ -130,7 +130,7 @@ class FormComponent extends Component {
 		event.preventDefault();
 
 		const {
-			id: key,
+			name: key,
 			value
 		} = event.target;
 
@@ -160,7 +160,7 @@ class FormComponent extends Component {
 	handleFocus = (event) => {
 		event.preventDefault();
 		const {
-			id: key,
+			name: key,
 		} = event.target;
 
 		this.validateForm(false, [key]);
@@ -170,7 +170,7 @@ class FormComponent extends Component {
 		event.preventDefault();
 
 		const {
-			id: key,
+			name: key,
 		} = event.target;
 
 		this.setTouched([key]);

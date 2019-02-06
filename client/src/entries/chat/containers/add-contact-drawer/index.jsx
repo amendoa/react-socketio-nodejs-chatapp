@@ -82,6 +82,7 @@ class AddContactDrawer extends Component {
 												width={280}
 												message={successMessages.nickname}
 												margin='0px 0px 15px 0px'
+												onClose={this.onCloseFlashMessage}
 												success
 											/>
 										) : null
@@ -98,7 +99,7 @@ class AddContactDrawer extends Component {
 										) : null
 									}
 									<InputComponent
-										id='nickname'
+										name='nickname'
 										type='text'
 										autoComplete='off'
 										placeholder={constants.LABELS.AUTH.NICKNAME}
