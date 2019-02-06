@@ -7,7 +7,8 @@ import { push } from 'connected-react-router';
 import { toast } from 'react-toastify';
 import {
 	serverErrorsToFrontFormat,
-	setToken
+	setToken,
+	sendRequest
 } from 'modules/utils';
 
 import {
@@ -15,6 +16,10 @@ import {
 	POST_SIGNIN,
 	GET_VERIFY_NICKNAME
 } from 'redux/constants/auth';
+
+function* teste () {
+	yield put(push('/sadasdasd'));
+}
 
 function* signInPostFetch (props) {
 	const {
@@ -26,23 +31,45 @@ function* signInPostFetch (props) {
 	} = params;
 
 	try {
-		const response = yield fetch(`${constants.API.ROOT}${constants.API.ACTIONS.AUTH_SIGNIN}`, {
+		const response = yield sendRequest({
+			url: `${constants.API.ROOT}${constants.API.ACTIONS.AUTH_SIGNIN}`,
 			method: constants.API.METHODS.POST,
-			headers: {
-				'Content-Type': 'application/x-www-form-urlencoded'
-			},
-			body: queryString.stringify(body)
-		})
-			.then(response => response.json());
+			body,
+			onUnauthorized: teste
+		});
 
-		if (response.success && response.token) {
-			setToken(response.token);
-			yield put(push('/'));
-		}
+		console.log(response);
 
-		yield put(authActions.postSignInReceived({
-			errors: response.errors
-		}));
+
+		// const response = yield fetch(`${constants.API.ROOT}${constants.API.ACTIONS.AUTH_SIGNIN}`, {
+		// 	method: constants.API.METHODS.POST,
+		// 	headers: {
+		// 		'Content-Type': 'application/x-www-form-urlencoded'
+		// 	},
+		// 	body: queryString.stringify(body)
+		// })
+		// 	.then(response => {
+		// 		switch (response.status) {
+		// 			case 401:
+		// 				// removeToken();
+		// 				// yield put(push('/'));
+		// 				break;
+		// 			default:
+		// 				break;
+		// 		}
+		//
+		// 		console.log(response.status);
+		// 		return response.json();
+		// 	});
+
+		// if (response.success && response.token) {
+		// 	setToken(response.token);
+		// 	yield put(push('/'));
+		// }
+		//
+		// yield put(authActions.postSignInReceived({
+		// 	errors: response.errors
+		// }));
 	} catch (e) {
 		yield put(authActions.postSignInReceived());
 		toast.error(constants.LABELS.MAIN.GLOBAL_ERROR);

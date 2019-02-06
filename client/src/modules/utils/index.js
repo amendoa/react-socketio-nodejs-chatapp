@@ -1,5 +1,9 @@
 import Cookies from 'js-cookie';
 import constants from 'modules/constants';
+import { fetch } from 'whatwg-fetch';
+import queryString from 'querystring';
+import { toast } from 'react-toastify';
+import { push } from 'connected-react-router';
 
 export function isDevelopmentEnv () {
 	return process.env.NODE_ENV.toLowerCase() === 'development';
@@ -45,4 +49,45 @@ export function removeToken () {
 
 export function createAcronym (param) {
 	return param.toUpperCase().slice(0, 2);
+}
+
+export async function sendRequest ({
+	url,
+	method,
+	body,
+	query,
+	onUnauthorized
+}) {
+	const token = getToken();
+	const fetchParams = {
+		method,
+		headers: {
+			'Content-Type': 'application/x-www-form-urlencoded',
+			token
+		},
+	};
+
+	if (body) {
+		fetchParams.body = queryString.stringify(body);
+	}
+
+	const result = await fetch(query ? url : `${url}?${queryString.stringify(query)}`, fetchParams);
+
+	console.log(onUnauthorized)
+	onUnauthorized();
+
+	switch (result.status) {
+		case 401:
+			removeToken();
+			break;
+
+		case 500:
+			toast.error(constants.LABELS.MAIN.GLOBAL_ERROR);
+			break;
+
+		default:
+			break;
+	}
+
+	return result.json();
 }

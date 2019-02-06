@@ -4,7 +4,8 @@ import * as contactActions from 'redux/actions/contact';
 import constants from 'modules/constants';
 import { toast } from 'react-toastify';
 import {
-	getToken
+	getToken,
+	removeToken
 } from 'modules/utils';
 
 import {
