@@ -73,7 +73,10 @@ class StartConversationDrawer extends Component {
 					items={items}
 					isFetching={getContacts.isFetching}
 					emptyMessage={constants.LABELS.CHAT.NO_CONTACTS_TO_SHOW}
-					onClickItem={() => { console.log('onClickItem'); }}
+					onClickItem={(item) => {
+						console.log('onClickItemdddddddddddd');
+						console.log(item);
+					}}
 				/>
 			</div>
 		);

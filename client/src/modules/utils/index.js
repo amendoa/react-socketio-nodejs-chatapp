@@ -3,7 +3,7 @@ import constants from 'modules/constants';
 import { fetch } from 'whatwg-fetch';
 import queryString from 'querystring';
 import { toast } from 'react-toastify';
-import history from 'redux/history';
+import history from 'react-router/history';
 import _ from 'lodash';
 
 export function isDevelopmentEnv () {

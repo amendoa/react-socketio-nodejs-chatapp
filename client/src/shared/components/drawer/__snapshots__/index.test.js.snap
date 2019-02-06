@@ -1,35 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<DrawerComponent /> renders correctly 1`] = `
-<div
-  className="drawer open"
->
-  <div
-    className="drawer-container"
-  >
-    <header
-      className="header"
-    >
-      <ButtonComponent
-        height={26}
-        link={true}
-        type="button"
-        width={26}
-      >
-        <IconComponent
-          fill="#ffffff"
-          height={26}
-          icon="arrow-left"
-          width={26}
-        />
-      </ButtonComponent>
-      <LabelComponent
-        defaultLabel={true}
-        fontSemiBold={true}
-        fontSize={16}
-        margin="0px 0px 3px 15px"
-      />
-    </header>
-  </div>
-</div>
+<ContextConsumer>
+  <Component />
+</ContextConsumer>
 `;

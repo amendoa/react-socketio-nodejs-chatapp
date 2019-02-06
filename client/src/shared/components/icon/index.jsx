@@ -177,7 +177,7 @@ export default class IconComponent extends Component {
 		);
 	}
 
-	renderArrowLeft = () => {
+	renderArrowLeftIcon = () => {
 		const {
 			fill,
 			width,
@@ -205,7 +205,7 @@ export default class IconComponent extends Component {
 		);
 	}
 
-	renderDotsVertical = () => {
+	renderDotsVerticalIcon = () => {
 		const {
 			fill,
 			width,
@@ -229,6 +229,84 @@ export default class IconComponent extends Component {
 					d="M12,16A2,2 0 0,1 14,18A2,2 0 0,1 12,20A2,2 0 0,1 10,18A2,2 0 0,1 12,16M12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12A2,2 0 0,1 12,10M12,4A2,2 0 0,1 14,6A2,2 0 0,1 12,8A2,2 0 0,1 10,6A2,2 0 0,1 12,4Z"
 					fill={fill}
 				/>
+			</svg>
+		);
+	}
+
+	renderChatEmojiIcon = () => {
+		const {
+			width,
+			height,
+			margin
+		} = this.props;
+
+		return (
+			<svg
+				version="1.1"
+				xmlns="http://www.w3.org/2000/svg"
+				width={width}
+				height={height}
+				viewBox='0 0 356.206 356.206'
+				margin={margin}
+			>
+				<g>
+					<g>
+						<circle
+							fill="#dbcd81"
+							cx="102.271"
+							cy="197.522"
+							r="102.271"
+						/>
+						<circle
+							fill="#545556"
+							cx="37.347"
+							cy="176.268"
+							r="12.026"
+						/>
+						<path
+							fill="#545556"
+							d="M155.168,176.269c0-6.64,5.387-12.024,12.029-12.024c6.639,0,12.024,5.384,12.024,12.024
+							c0,6.643-5.385,12.029-12.024,12.029C160.555,188.297,155.168,182.911,155.168,176.269z"
+						/>
+						<g>
+							<path
+								fill="#988441"
+								d="M158.788,197.523c0,31.213-25.302,56.518-56.518,56.518c-31.212,0-56.518-25.305-56.518-56.518
+								H158.788z"
+							/>
+						</g>
+					</g>
+					<g>
+						<path
+							fill="#dbdbdb"
+							d="M269.358,56.412c-47.963,0-86.843,38.881-86.843,86.845c0,21.612,7.914,41.365,20.976,56.562
+							c-3.925,11.303-11.171,21.052-20.598,28.048c5.982,2.044,12.394,3.17,19.066,3.17c11.425,0,22.084-3.258,31.118-8.883
+							c11.044,5.087,23.325,7.945,36.282,7.945c47.966,0,86.847-38.88,86.847-86.842C356.205,95.293,317.324,56.412,269.358,56.412z"
+						/>
+						<g>
+							<path
+								fill="#545556"
+								d="M300.421,113.042h-62.127c-2.794,0-5.058-2.265-5.058-5.059s2.265-5.057,5.058-5.057h62.127
+								c2.794,0,5.06,2.263,5.06,5.057S303.215,113.042,300.421,113.042z"
+							/>
+							<path
+								fill="#545556"
+								d="M319.265,136.558h-99.814c-2.794,0-5.058-2.265-5.058-5.057c0-2.794,2.264-5.06,5.058-5.06h99.814
+								c2.794,0,5.059,2.266,5.059,5.06C324.324,134.293,322.06,136.558,319.265,136.558z"
+							/>
+							<path
+								fill="#545556"
+								d="M309.637,160.072h-80.554c-2.792,0-5.058-2.266-5.058-5.06c0-2.795,2.266-5.057,5.058-5.057
+								h80.554c2.793,0,5.059,2.263,5.059,5.057C314.696,157.805,312.431,160.072,309.637,160.072z"
+							/>
+							<path
+								fill="#545556"
+								d="M300.421,183.589h-62.127c-2.794,0-5.058-2.267-5.058-5.062c0-2.793,2.265-5.058,5.058-5.058
+								h62.127c2.794,0,5.06,2.265,5.06,5.058C305.481,181.322,303.215,183.589,300.421,183.589z"
+							/>
+						</g>
+					</g>
+				</g>
 			</svg>
 		);
 	}
@@ -258,10 +336,13 @@ export default class IconComponent extends Component {
 				return this.renderSearchIcon();
 
 			case 'arrow-left':
-				return this.renderArrowLeft();
+				return this.renderArrowLeftIcon();
 
 			case 'dots-vertical':
-				return this.renderDotsVertical();
+				return this.renderDotsVerticalIcon();
+
+			case 'chat-emoji':
+				return this.renderChatEmojiIcon();
 
 			default:
 				return this.renderCheckedIcon();

@@ -49,7 +49,9 @@ export default class ConversationsList extends Component {
 						return (
 							<ConversationCardComponent
 								key={key}
-								onClick={onClickItem}
+								onClick={() => {
+									onClickItem(item);
+								}}
 								profile={{
 									label: item.nickname,
 									width: 40,

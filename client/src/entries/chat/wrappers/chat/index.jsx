@@ -3,7 +3,8 @@ import React, {
 } from 'react';
 
 import {
-	ContentEditableComponent
+	ContentEditableComponent,
+	IconComponent
 } from 'shared/components';
 
 import {
@@ -14,10 +15,39 @@ import {
 	MessageListContainer
 } from 'entries/chat/containers';
 
-export default class ChatWrapper extends Component {
-	render () {
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import * as conversationActions from 'redux/actions/conversation';
+
+class ChatWrapper extends Component {
+	renderChatContainer = () => {
+		const {
+			conversationData
+		} = this.props;
+
+		const {
+			currentConversation
+		} = conversationData;
+
+		if (!currentConversation) {
+			return (
+				<div
+					className='empty-message-container'
+				>
+					<IconComponent
+						icon="chat-emoji"
+						width={200}
+						height={200}
+						margin='0px 0px 25px 20px'
+					/>
+				</div>
+			);
+		}
+
 		return (
-			<div className='chat-container'>
+			<div
+				className='chat-content'
+			>
 				<header className='header-container'>
 					<UserInfoComponent
 						isFetching={false}
@@ -43,7 +73,7 @@ export default class ChatWrapper extends Component {
 						}}
 					/>
 				</header>
-				<section className='chat-content'>
+				<section className='conversation-container'>
 					<MessageListContainer
 						isFetching={false}
 					/>
@@ -54,4 +84,31 @@ export default class ChatWrapper extends Component {
 			</div>
 		);
 	}
+
+	render () {
+		return (
+			<div className='chat-container'>
+				{
+					this.renderChatContainer()
+				}
+			</div>
+		);
+	}
 }
+
+const mapStateToProps = (state) => {
+	return {
+		conversationData: state.conversation
+	};
+};
+
+const mapDispatchToProps = (dispatch) => {
+	return {
+		conversationActions: bindActionCreators(conversationActions, dispatch)
+	};
+};
+
+export default connect(
+	mapStateToProps,
+	mapDispatchToProps
+)(ChatWrapper);

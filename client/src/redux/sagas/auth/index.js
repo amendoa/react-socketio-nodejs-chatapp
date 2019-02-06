@@ -3,7 +3,7 @@ import * as authActions from 'redux/actions/auth';
 import * as formActions from 'redux/actions/form';
 import constants from 'modules/constants';
 import { toast } from 'react-toastify';
-import history from 'redux/history';
+import history from 'react-router/history';
 import {
 	serverErrorsToFrontFormat,
 	setToken,

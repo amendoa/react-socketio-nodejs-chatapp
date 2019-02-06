@@ -11,27 +11,27 @@ exports[`<ConversationsList /> renders correctly 1`] = `
           "fontSize": 13,
           "margin": "0px 0px 0px 14px",
           "maxWidth": 100,
-          "text": "Hey there! how are you",
+          "text": undefined,
         }
       }
       key="0"
+      onClick={[Function]}
       profile={
         Object {
-          "backgroundColor": "red",
+          "backgroundColor": undefined,
           "color": "white",
           "height": 40,
-          "label": "AM",
+          "label": undefined,
           "labelFontSize": 12,
           "width": 40,
         }
       }
-      rightLabel="Yesterday"
       title={
         Object {
           "fontSize": 13,
           "margin": "0px 0px 0px 14px",
           "maxWidth": 100,
-          "text": "Amendowins",
+          "text": undefined,
         }
       }
     />

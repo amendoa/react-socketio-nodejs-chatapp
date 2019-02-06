@@ -2,7 +2,7 @@
 
 exports[`<FlashMessageComponent /> renders correctly 1`] = `
 <div
-  className="flash-message-wrapper"
+  className="flash-message-wrapper error"
   style={
     Object {
       "margin": undefined,

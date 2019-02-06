@@ -1,35 +1,53 @@
 .chat-container {
 	display: flex;
-	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	width: 70%;
 	height: 100%;
 	border-radius: 4px;
 	min-width: 285px;
+	background: $brand-secondary;
 
-	.header-container {
+	.empty-message-container {
 		display: flex;
 		align-items: center;
+		justify-content: center;
 		padding: 25px;
-		height: 65px;
-		width: 100%;
-		border-radius: 0px 4px 0px 0px;
-		background: $brand-tertiary;
 	}
 
 	.chat-content {
-		height: 100%;
-		background: $brand-secondary;
-		padding: 0px 25px 25px 25px;
-		overflow: auto;
-	}
-
-	.footer-container {
 		display: flex;
-		justify-content: center;
-		align-items: center;
+		flex-direction: column;
 		width: 100%;
-		border-radius: 0px 0px 4px 0px;
-		background: $brand-tertiary;
-		padding: 15px 25px 15px 25px;
+		height: 100%;
+		border-radius: 4px;
+		min-width: 285px;
+
+		.header-container {
+			display: flex;
+			align-items: center;
+			padding: 25px;
+			height: 65px;
+			width: 100%;
+			border-radius: 0px 4px 0px 0px;
+			background: $brand-tertiary;
+		}
+
+		.conversation-container {
+			height: 100%;
+			background: $brand-secondary;
+			padding: 0px 25px 25px 25px;
+			overflow: auto;
+		}
+
+		.footer-container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			border-radius: 0px 0px 4px 0px;
+			background: $brand-tertiary;
+			padding: 15px 25px 15px 25px;
+		}
 	}
 }
