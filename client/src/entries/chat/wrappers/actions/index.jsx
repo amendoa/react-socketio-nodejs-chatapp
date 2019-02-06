@@ -12,7 +12,7 @@ import {
 
 import {
 	ConversationsList,
-	AddFriendDrawer,
+	AddContactDrawer,
 	StartConversationDrawer
 } from 'entries/chat/containers';
 
@@ -22,7 +22,8 @@ import {
 
 import { push } from 'connected-react-router';
 import { connect } from 'react-redux';
-
+import { bindActionCreators } from 'redux';
+import * as contactActions from 'redux/actions/contact';
 import constants from 'modules/constants';
 
 import {
@@ -73,13 +74,27 @@ class ActionsWrapper extends Component {
 		super(props);
 
 		this.state = {
-			addFriendDrawer: {
+			addContactDrawer: {
 				isOpen: false
 			},
 			startConversationDrawer: {
 				isOpen: false
 			}
 		};
+	}
+
+	handleOpenAddContact = () => {
+		const {
+			contactActions
+		} = this.props;
+
+		contactActions.resetAddContact();
+
+		this.setState({
+			addContactDrawer: {
+				isOpen: true
+			}
+		});
 	}
 
 	handleLogout = () => {
@@ -92,7 +107,7 @@ class ActionsWrapper extends Component {
 
 	render () {
 		const {
-			addFriendDrawer,
+			addContactDrawer,
 			startConversationDrawer
 		} = this.state;
 
@@ -123,14 +138,7 @@ class ActionsWrapper extends Component {
 								width={26}
 								height={26}
 								link
-								onClick={() => {
-									console.log('teste');
-									this.setState({
-										addFriendDrawer: {
-											isOpen: true
-										}
-									});
-								}}
+								onClick={this.handleOpenAddContact}
 							>
 								<IconComponent
 									fill="#555657"
@@ -200,17 +208,17 @@ class ActionsWrapper extends Component {
 					onClickItem={() => { console.log('onClickItem'); }}
 				/>
 				<DrawerComponent
-					isOpen={addFriendDrawer.isOpen}
-					title={constants.LABELS.CHAT.ADD_FRIEND}
+					isOpen={addContactDrawer.isOpen}
+					title={constants.LABELS.CHAT.ADD_CONTACT}
 					handleGoBack={() => {
 						this.setState({
-							addFriendDrawer: {
+							addContactDrawer: {
 								isOpen: false
 							}
 						});
 					}}
 				>
-					<AddFriendDrawer />
+					<AddContactDrawer />
 				</DrawerComponent>
 				<DrawerComponent
 					isOpen={startConversationDrawer.isOpen}
@@ -232,12 +240,13 @@ class ActionsWrapper extends Component {
 
 const mapStateToProps = (state) => {
 	return {
-
+		contactData: state.contact
 	};
 };
 
 const mapDispatchToProps = (dispatch) => {
 	return {
+		contactActions: bindActionCreators(contactActions, dispatch),
 		dispatch
 	};
 };

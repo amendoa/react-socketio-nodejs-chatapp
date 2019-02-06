@@ -9,10 +9,17 @@
 	font-size: 16px;
 	padding: 20px;
 
-	background: $brand-danger;
-	color: $brand-text-default;
-
 	animation: fadeIn 1s;
+
+	&.error {
+		background: $brand-danger;
+		color: $brand-text-default;
+	}
+
+	&.success {
+		background: $brand-success;
+		color: $brand-text-default;
+	}
 
 	&.closed {
 		display: none;

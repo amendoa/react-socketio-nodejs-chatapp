@@ -73,6 +73,7 @@ class SignInFormContainer extends Component {
 										width={280}
 										message={errors.nickname}
 										onClose={this.onCloseFlashMessage}
+										error
 									/>
 								) : null
 							}

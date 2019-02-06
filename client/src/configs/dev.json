@@ -25,11 +25,14 @@
 		},
 		"CHAT": {
 			"NEW_CONVERSATION": "New conversation",
-			"ADD_FRIEND": "Add friend",
+			"ADD_CONTACT": "Add contact",
 			"NO_CONVERSATIONS_TO_SHOW": "No conversations to show",
 			"NO_CONTACTS_TO_SHOW": "No contacts to show",
 			"ADD": "Add",
 			"LOGOUT": "Logout"
+		},
+		"CONTACT": {
+			"CONTACT_SUCCESSFULLY_ADDED": "Contact successfully added"
 		}
 	},
 	"API": {
@@ -37,7 +40,8 @@
 		"ACTIONS": {
 			"AUTH_SIGNUP": "/auth/signup",
 			"AUTH_SIGNIN": "/auth/signin",
-			"VERIFY_NICKNAME": "/auth/verify-nickname"
+			"VERIFY_NICKNAME": "/auth/verify-nickname",
+			"CONTACT": "/secured/contact"
 		},
 		"METHODS": {
 			"GET": "GET",

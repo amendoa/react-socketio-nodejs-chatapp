@@ -7,7 +7,8 @@ import {
 
 describe('<FlashMessageComponent />', () => {
 	const modelI = {
-		message: 'teste message'
+		message: 'teste message',
+		error: true
 	};
 
 	const getWrapper = (model) => {

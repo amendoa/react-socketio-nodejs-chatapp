@@ -34,7 +34,9 @@ export default class FlashMessageComponent extends Component {
 		const {
 			width,
 			message,
-			margin
+			margin,
+			error,
+			success
 		} = this.props;
 
 		const {
@@ -43,6 +45,8 @@ export default class FlashMessageComponent extends Component {
 
 		const flashMessageStyles = classNames({
 			'flash-message-wrapper': true,
+			error,
+			success,
 			closed: !isActive
 		});
 

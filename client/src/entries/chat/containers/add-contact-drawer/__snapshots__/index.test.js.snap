@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<AddFriendDrawer /> renders correctly 1`] = `
+exports[`<AddContactDrawer /> renders correctly 1`] = `
 <div
-  className="add-friend-drawer-wrapper"
+  className="add-contact-drawer-wrapper"
 >
   <div
     className="form-container"
