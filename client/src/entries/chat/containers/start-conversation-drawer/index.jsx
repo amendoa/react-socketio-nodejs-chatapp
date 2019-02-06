@@ -7,55 +7,29 @@ import {
 } from 'entries/chat/containers';
 
 import {
-	InputComponent,
-	IconComponent
-} from 'shared/components';
+	InputSearchComponent
+} from 'entries/chat/components';
 
 import constants from 'modules/constants';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as contactActions from 'redux/actions/contact';
 
-const conversations = [
-	{
-		color: '#1461ff'
-	},
-	{
-		color: '#dbcc86'
-	},
-	{
-		color: '#d89389'
-	},
-	{
-		color: '#1461ff'
-	},
-	{
-		color: '#dbcc86'
-	},
-	{
-		color: '#d89389'
-	},
-	{
-		color: '#1461ff'
-	},
-	{
-		color: '#dbcc86'
-	},
-	{
-		color: '#d89389'
-	},
-	{
-		color: '#1461ff'
-	},
-	{
-		color: '#dbcc86'
-	},
-	{
-		color: '#d89389'
-	}
-];
+import {
+	searchParam
+} from 'modules/utils';
 
 class StartConversationDrawer extends Component {
+	constructor (props) {
+		super(props);
+
+		this.state = {
+			contactsSearch: {
+				nickname: ''
+			}
+		};
+	}
+
 	componentDidMount() {
 		const {
 			contactActions
@@ -65,43 +39,38 @@ class StartConversationDrawer extends Component {
 		contactActions.getContacts();
 	}
 
+	handleChangeSearch = (value) => {
+		this.setState({
+			contactsSearch: {
+				nickname: value
+			}
+		});
+	}
+
 	render () {
 		const {
 			contactData
 		} = this.props;
 
 		const {
+			contactsSearch
+		} = this.state;
+
+		const {
 			getContacts
 		} = contactData;
 
-		// getContacts.result
+		const items = searchParam(getContacts.result, contactsSearch);
 
 		return (
 			<div className='start-conversation-drawer-wrapper'>
 				<div>
-					<InputComponent
-						type='text'
-						autoComplete='off'
-						onChange={() => {}}
-						onFocus={() => {}}
-						onBlur={() => {}}
-						maxLength={15}
-						search
-						iconComponent={() => {
-							return (
-								<IconComponent
-									fill="#555657"
-									icon="search"
-									width={28}
-									height={28}
-									margin="0px 0px 0px 2px"
-								/>
-							);
-						}}
+					<InputSearchComponent
+						handleChange={this.handleChangeSearch}
 					/>
 				</div>
 				<ConversationsList
-					items={getContacts.result}
+					items={items}
 					isFetching={getContacts.isFetching}
 					emptyMessage={constants.LABELS.CHAT.NO_CONTACTS_TO_SHOW}
 					onClickItem={() => { console.log('onClickItem'); }}

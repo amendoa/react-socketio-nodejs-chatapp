@@ -9,6 +9,7 @@ import {
 	MessageSketch
 } from 'entries/chat/components/message';
 import TimeTagComponent from 'entries/chat/components/time-tag';
+import InputSearchComponent from 'entries/chat/components/input-search';
 
 export {
 	ConversationCardComponent,
@@ -16,5 +17,6 @@ export {
 	UserInfoComponent,
 	MessageComponent,
 	MessageSketch,
-	TimeTagComponent
+	TimeTagComponent,
+	InputSearchComponent
 };

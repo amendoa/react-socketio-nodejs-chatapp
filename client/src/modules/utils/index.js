@@ -4,6 +4,7 @@ import { fetch } from 'whatwg-fetch';
 import queryString from 'querystring';
 import { toast } from 'react-toastify';
 import history from 'redux/history';
+import _ from 'lodash';
 
 export function isDevelopmentEnv () {
 	return process.env.NODE_ENV.toLowerCase() === 'development';
@@ -91,4 +92,18 @@ export async function sendRequest ({
 	}
 
 	return result.json();
+}
+
+export function searchParam (array, params) {
+	let result = array;
+
+	_.mapKeys(params, (value, key) => {
+		if (value) {
+			result = _.filter(array, (model) => {
+				return _.includes(model[key], value.toLowerCase());
+			});
+		}
+	});
+
+	return result;
 }

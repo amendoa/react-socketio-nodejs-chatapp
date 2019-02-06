@@ -4,7 +4,6 @@ import React, {
 
 import {
 	IconComponent,
-	InputComponent,
 	ButtonComponent,
 	DrawerComponent,
 	DropDownMenuComponent
@@ -17,7 +16,8 @@ import {
 } from 'entries/chat/containers';
 
 import {
-	UserInfoComponent
+	UserInfoComponent,
+	InputSearchComponent
 } from 'entries/chat/components';
 
 import { connect } from 'react-redux';
@@ -27,7 +27,8 @@ import * as drawerActions from 'redux/actions/drawer';
 import constants from 'modules/constants';
 
 import {
-	logout
+	logout,
+	searchParam
 } from 'modules/utils';
 
 const conversations = [
@@ -106,6 +107,15 @@ const conversations = [
 ];
 
 class ActionsWrapper extends Component {
+	constructor (props) {
+		super(props);
+		this.state = {
+			conversationsSearch: {
+				nickname: ''
+			}
+		};
+	}
+
 	handleOpenAddContact = () => {
 		const {
 			contactActions
@@ -133,7 +143,21 @@ class ActionsWrapper extends Component {
 		logout();
 	}
 
+	handleChangeSearch = (value) => {
+		this.setState({
+			conversationsSearch: {
+				nickname: value
+			}
+		});
+	}
+
 	render () {
+		const {
+			conversationsSearch
+		} = this.state;
+
+		const items = searchParam(conversations, conversationsSearch);
+
 		return (
 			<div className='actions-wrapper'>
 				<header className='header-container'>
@@ -197,29 +221,12 @@ class ActionsWrapper extends Component {
 					</div>
 				</header>
 				<div>
-					<InputComponent
-						type='text'
-						autoComplete='off'
-						onChange={() => {}}
-						onFocus={() => {}}
-						onBlur={() => {}}
-						maxLength={15}
-						search
-						iconComponent={() => {
-							return (
-								<IconComponent
-									fill="#555657"
-									icon="search"
-									width={28}
-									height={28}
-									margin="0px 0px 0px 2px"
-								/>
-							);
-						}}
+					<InputSearchComponent
+						handleChange={this.handleChangeSearch}
 					/>
 				</div>
 				<ConversationsList
-					items={conversations}
+					items={items}
 					isFetching={false}
 					emptyMessage={constants.LABELS.CHAT.NO_CONVERSATIONS_TO_SHOW}
 					onClickItem={() => { console.log('onClickItem'); }}
