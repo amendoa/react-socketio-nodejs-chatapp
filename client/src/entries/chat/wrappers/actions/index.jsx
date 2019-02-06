@@ -24,6 +24,7 @@ import { push } from 'connected-react-router';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as contactActions from 'redux/actions/contact';
+import * as drawerActions from 'redux/actions/drawer';
 import constants from 'modules/constants';
 
 import {
@@ -70,31 +71,27 @@ const conversations = [
 ];
 
 class ActionsWrapper extends Component {
-	constructor (props) {
-		super(props);
-
-		this.state = {
-			addContactDrawer: {
-				isOpen: false
-			},
-			startConversationDrawer: {
-				isOpen: false
-			}
-		};
-	}
-
 	handleOpenAddContact = () => {
 		const {
 			contactActions
 		} = this.props;
 
 		contactActions.resetAddContact();
+		this.openDrawer('addContact');
+	}
 
-		this.setState({
-			addContactDrawer: {
-				isOpen: true
-			}
-		});
+	handleOpenNewConversation = () => {
+		this.openDrawer('newConversation');
+	}
+
+	openDrawer = (drawerName) => {
+		const {
+			contactActions,
+			drawerActions
+		} = this.props;
+
+		contactActions.resetAddContact();
+		drawerActions.openDrawer(drawerName);
 	}
 
 	handleLogout = () => {
@@ -106,11 +103,6 @@ class ActionsWrapper extends Component {
 	}
 
 	render () {
-		const {
-			addContactDrawer,
-			startConversationDrawer
-		} = this.state;
-
 		return (
 			<div className='actions-wrapper'>
 				<header className='header-container'>
@@ -153,13 +145,7 @@ class ActionsWrapper extends Component {
 								height={26}
 								margin="0px 0px 0px 20px"
 								link
-								onClick={() => {
-									this.setState({
-										startConversationDrawer: {
-											isOpen: true
-										}
-									});
-								}}
+								onClick={this.handleOpenNewConversation}
 							>
 								<IconComponent
 									fill="#555657"
@@ -208,28 +194,14 @@ class ActionsWrapper extends Component {
 					onClickItem={() => { console.log('onClickItem'); }}
 				/>
 				<DrawerComponent
-					isOpen={addContactDrawer.isOpen}
+					drawerName='addContact'
 					title={constants.LABELS.CHAT.ADD_CONTACT}
-					handleGoBack={() => {
-						this.setState({
-							addContactDrawer: {
-								isOpen: false
-							}
-						});
-					}}
 				>
 					<AddContactDrawer />
 				</DrawerComponent>
 				<DrawerComponent
-					isOpen={startConversationDrawer.isOpen}
+					drawerName='newConversation'
 					title={constants.LABELS.CHAT.NEW_CONVERSATION}
-					handleGoBack={() => {
-						this.setState({
-							startConversationDrawer: {
-								isOpen: false
-							}
-						});
-					}}
 				>
 					<StartConversationDrawer />
 				</DrawerComponent>
@@ -247,6 +219,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
 	return {
 		contactActions: bindActionCreators(contactActions, dispatch),
+		drawerActions: bindActionCreators(drawerActions, dispatch),
 		dispatch
 	};
 };

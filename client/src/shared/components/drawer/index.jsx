@@ -6,16 +6,42 @@ import {
 	LabelComponent,
 	ButtonComponent
 } from 'shared/components';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import * as drawerActions from 'redux/actions/drawer';
+
 import classNames from 'classnames';
 
-export default class DrawerComponent extends Component {
+class DrawerComponent extends Component {
+	componentDidMount() {
+		const {
+			drawerActions,
+			drawerName
+		} = this.props;
+
+		drawerActions.initDrawer(drawerName);
+	}
+
+	handleGoBack = () => {
+		const {
+			drawerActions,
+			drawerName
+		} = this.props;
+
+		drawerActions.closeDrawer(drawerName);
+	}
+
 	render () {
 		const {
-			isOpen,
 			children,
 			title,
-			handleGoBack
+			drawerData,
+			drawerName
 		} = this.props;
+
+		const {
+			isOpen
+		} = drawerData[drawerName] ? drawerData[drawerName] : { isOpen: false };
 
 		const drawerStyles = classNames({
 			drawer: true,
@@ -33,7 +59,7 @@ export default class DrawerComponent extends Component {
 									width={26}
 									height={26}
 									link
-									onClick={handleGoBack}
+									onClick={this.handleGoBack}
 								>
 									<IconComponent
 										fill="#ffffff"
@@ -60,3 +86,20 @@ export default class DrawerComponent extends Component {
 		);
 	}
 }
+
+const mapStateToProps = (state) => {
+	return {
+		drawerData: state.drawer
+	};
+};
+
+const mapDispatchToProps = (dispatch) => {
+	return {
+		drawerActions: bindActionCreators(drawerActions, dispatch)
+	};
+};
+
+export default connect(
+	mapStateToProps,
+	mapDispatchToProps
+)(DrawerComponent);

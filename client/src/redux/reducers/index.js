@@ -5,6 +5,7 @@ import {
 import authReducer from 'redux/reducers/auth';
 import formReducer from 'redux/reducers/form';
 import contactReducer from 'redux/reducers/contact';
+import drawerReducer from 'redux/reducers/drawer';
 import { connectRouter } from 'connected-react-router';
 
 export default (history) => {
@@ -12,6 +13,7 @@ export default (history) => {
 		auth: authReducer,
 		form: formReducer,
 		contact: contactReducer,
+		drawer: drawerReducer,
 		router: connectRouter(history)
 	});
 };
