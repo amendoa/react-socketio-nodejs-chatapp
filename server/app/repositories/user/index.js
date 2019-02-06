@@ -16,7 +16,7 @@ exports.addUser = (model) => {
 	return user.save();
 };
 
-exports.findUser = params => UserModel.find(params);
+exports.findUser = (query, params) => UserModel.find(query, params);
 exports.findOneUser = params => UserModel.findOne(params);
 exports.findOneUserByIdAndUpdate = (id, params) => UserModel.findOneAndUpdate({
 	_id: id

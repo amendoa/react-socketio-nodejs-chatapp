@@ -1,5 +1,6 @@
 const { validationResult } = require('express-validator/check');
 const {
+	findUser,
 	findOneUser,
 	findOneUserByIdAndUpdate
 } = absoluteRequire('repositories/user');
@@ -17,10 +18,19 @@ exports.getContact = async (req, res) => {
 		);
 
 		if (result) {
+			const users = await findUser({
+				nickname: {
+					$in: result.contacts.map(item => item.contactUserNickname)
+				}
+			}, {
+				password: false,
+				contacts: false
+			});
+
 			res.status(200)
 				.json({
 					success: true,
-					result: result.contacts
+					result: users
 				});
 		} else {
 			res.status(500)

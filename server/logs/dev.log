@@ -1903,3 +1903,247 @@
 [32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
 [32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
 [32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signin[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signin[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32m{ success: false,[39m
+[32m  errors:[39m
+[32m   [ { location: 'body',[39m
+[32m       param: 'nickname',[39m
+[32m       value: 'orelha',[39m
+[32m       msg: 'This Nickname is already added' } ] }[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32m{ success: true,[39m
+[32m  result:[39m
+[32m   [ { contactUserNickname: 'orelha',[39m
+[32m       _id: '5c5adc22c10fa431ce935536' },[39m
+[32m     { contactUserNickname: 'orelha2',[39m
+[32m       _id: '5c5adc2ec10fa431ce935537' },[39m
+[32m     { contactUserNickname: 'teste',[39m
+[32m       _id: '5c5adc32c10fa431ce935538' } ] }[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32m{ success: false,[39m
+[32m  errors:[39m
+[32m   [ { location: 'body',[39m
+[32m       param: 'nickname',[39m
+[32m       value: 'orelha',[39m
+[32m       msg: 'This Nickname is already added' } ] }[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32m{ success: true,[39m
+[32m  result:[39m
+[32m   [ { contactUserNickname: 'orelha',[39m
+[32m       _id: '5c5adc22c10fa431ce935536' },[39m
+[32m     { contactUserNickname: 'orelha2',[39m
+[32m       _id: '5c5adc2ec10fa431ce935537' },[39m
+[32m     { contactUserNickname: 'teste',[39m
+[32m       _id: '5c5adc32c10fa431ce935538' } ] }[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32m{ success: false,[39m
+[32m  errors:[39m
+[32m   [ { location: 'body',[39m
+[32m       param: 'nickname',[39m
+[32m       value: 'orelha',[39m
+[32m       msg: 'This Nickname is already added' } ] }[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32m{ success: true,[39m
+[32m  result:[39m
+[32m   [ { contactUserNickname: 'orelha',[39m
+[32m       _id: '5c5adc22c10fa431ce935536' },[39m
+[32m     { contactUserNickname: 'orelha2',[39m
+[32m       _id: '5c5adc2ec10fa431ce935537' },[39m
+[32m     { contactUserNickname: 'teste',[39m
+[32m       _id: '5c5adc32c10fa431ce935538' } ] }[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32m{ success: false,[39m
+[32m  errors:[39m
+[32m   [ { location: 'body',[39m
+[32m       param: 'nickname',[39m
+[32m       value: 'orelha',[39m
+[32m       msg: 'This Nickname is already added' } ] }[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32m{ success: true,[39m
+[32m  result:[39m
+[32m   [ { contactUserNickname: 'orelha',[39m
+[32m       _id: '5c5adc22c10fa431ce935536' },[39m
+[32m     { contactUserNickname: 'orelha2',[39m
+[32m       _id: '5c5adc2ec10fa431ce935537' },[39m
+[32m     { contactUserNickname: 'teste',[39m
+[32m       _id: '5c5adc32c10fa431ce935538' } ] }[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32m{ success: false,[39m
+[32m  errors:[39m
+[32m   [ { location: 'body',[39m
+[32m       param: 'nickname',[39m
+[32m       value: 'orelha',[39m
+[32m       msg: 'This Nickname is already added' } ] }[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32m{ success: true,[39m
+[32m  result:[39m
+[32m   [ { contactUserNickname: 'orelha',[39m
+[32m       _id: '5c5adc22c10fa431ce935536' },[39m
+[32m     { contactUserNickname: 'orelha2',[39m
+[32m       _id: '5c5adc2ec10fa431ce935537' },[39m
+[32m     { contactUserNickname: 'teste',[39m
+[32m       _id: '5c5adc32c10fa431ce935538' } ] }[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32m{ success: false,[39m
+[32m  errors:[39m
+[32m   [ { location: 'body',[39m
+[32m       param: 'nickname',[39m
+[32m       value: 'orelha',[39m
+[32m       msg: 'This Nickname is already added' } ] }[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32m{ success: true,[39m
+[32m  result:[39m
+[32m   [ { contactUserNickname: 'orelha',[39m
+[32m       _id: '5c5adc22c10fa431ce935536' },[39m
+[32m     { contactUserNickname: 'orelha2',[39m
+[32m       _id: '5c5adc2ec10fa431ce935537' },[39m
+[32m     { contactUserNickname: 'teste',[39m
+[32m       _id: '5c5adc32c10fa431ce935538' } ] }[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32m{ success: false,[39m
+[32m  errors:[39m
+[32m   [ { location: 'body',[39m
+[32m       param: 'nickname',[39m
+[32m       value: 'orelha',[39m
+[32m       msg: 'This Nickname is already added' } ] }[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32m{ success: true,[39m
+[32m  result:[39m
+[32m   [ { contactUserNickname: 'orelha',[39m
+[32m       _id: '5c5adc22c10fa431ce935536' },[39m
+[32m     { contactUserNickname: 'orelha2',[39m
+[32m       _id: '5c5adc2ec10fa431ce935537' },[39m
+[32m     { contactUserNickname: 'teste',[39m
+[32m       _id: '5c5adc32c10fa431ce935538' } ] }[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32m{ success: false,[39m
+[32m  errors:[39m
+[32m   [ { location: 'body',[39m
+[32m       param: 'nickname',[39m
+[32m       value: 'orelha',[39m
+[32m       msg: 'This Nickname is already added' } ] }[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32m{ success: true,[39m
+[32m  result:[39m
+[32m   [ { contactUserNickname: 'orelha',[39m
+[32m       _id: '5c5adc22c10fa431ce935536' },[39m
+[32m     { contactUserNickname: 'orelha2',[39m
+[32m       _id: '5c5adc2ec10fa431ce935537' },[39m
+[32m     { contactUserNickname: 'teste',[39m
+[32m       _id: '5c5adc32c10fa431ce935538' } ] }[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32m{ success: false,[39m
+[32m  errors:[39m
+[32m   [ { location: 'body',[39m
+[32m       param: 'nickname',[39m
+[32m       value: 'orelha',[39m
+[32m       msg: 'This Nickname is already added' } ] }[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32m{ success: true,[39m
+[32m  result:[39m
+[32m   [ { nickname: 'orelha',[39m
+[32m       profileColor: '#3abb8f',[39m
+[32m       _id: '5c5adb7dc10fa431ce935530',[39m
+[32m       contacts: [],[39m
+[32m       __v: 0 },[39m
+[32m     { nickname: 'orelha2',[39m
+[32m       profileColor: '#3abb8f',[39m
+[32m       _id: '5c5adb85c10fa431ce935531',[39m
+[32m       contacts: [Array],[39m
+[32m       __v: 0 },[39m
+[32m     { nickname: 'teste',[39m
+[32m       profileColor: '#0f5fff',[39m
+[32m       _id: '5c5adbc3c10fa431ce935534',[39m
+[32m       contacts: [],[39m
+[32m       __v: 0 } ] }[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32m{ success: false,[39m
+[32m  errors:[39m
+[32m   [ { location: 'body',[39m
+[32m       param: 'nickname',[39m
+[32m       value: 'orelha',[39m
+[32m       msg: 'This Nickname is already added' } ] }[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32m{ success: true,[39m
+[32m  result:[39m
+[32m   [ { nickname: 'orelha',[39m
+[32m       profileColor: '#3abb8f',[39m
+[32m       _id: '5c5adb7dc10fa431ce935530',[39m
+[32m       __v: 0 },[39m
+[32m     { nickname: 'orelha2',[39m
+[32m       profileColor: '#3abb8f',[39m
+[32m       _id: '5c5adb85c10fa431ce935531',[39m
+[32m       __v: 0 },[39m
+[32m     { nickname: 'teste',[39m
+[32m       profileColor: '#0f5fff',[39m
+[32m       _id: '5c5adbc3c10fa431ce935534',[39m
+[32m       __v: 0 } ] }[39m
