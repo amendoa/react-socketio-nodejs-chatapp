@@ -33,40 +33,76 @@ import {
 
 const conversations = [
 	{
-		color: '#1461ff'
+		profileColor: '#1461ff',
+		nickname: 'teste',
+		desc: 'Hey there! how are you?',
+		rightLabel: 'Yesterday'
 	},
 	{
-		color: '#dbcc86'
+		profileColor: '#dbcc86',
+		nickname: 'teste',
+		desc: 'Hey there! how are you?',
+		rightLabel: 'Yesterday'
 	},
 	{
-		color: '#d89389'
+		profileColor: '#d89389',
+		nickname: 'teste',
+		desc: 'Hey there! how are you?',
+		rightLabel: 'Yesterday'
 	},
 	{
-		color: '#1461ff'
+		profileColor: '#1461ff',
+		nickname: 'teste',
+		desc: 'Hey there! how are you?',
+		rightLabel: 'Yesterday'
 	},
 	{
-		color: '#dbcc86'
+		profileColor: '#dbcc86',
+		nickname: 'teste',
+		desc: 'Hey there! how are you?',
+		rightLabel: 'Yesterday'
 	},
 	{
-		color: '#d89389'
+		profileColor: '#d89389',
+		nickname: 'teste',
+		desc: 'Hey there! how are you?',
+		rightLabel: 'Yesterday'
 	},
 	{
-		color: '#1461ff'
+		profileColor: '#1461ff',
+		nickname: 'teste',
+		desc: 'Hey there! how are you?',
+		rightLabel: 'Yesterday'
 	},
 	{
-		color: '#dbcc86'
+		profileColor: '#dbcc86',
+		nickname: 'teste',
+		desc: 'Hey there! how are you?',
+		rightLabel: 'Yesterday'
 	},
 	{
-		color: '#d89389'
+		profileColor: '#d89389',
+		nickname: 'teste',
+		desc: 'Hey there! how are you?',
+		rightLabel: 'Yesterday'
 	},
 	{
-		color: '#1461ff'
+		profileColor: '#1461ff',
+		nickname: 'teste',
+		desc: 'Hey there! how are you?',
+		rightLabel: 'Yesterday'
 	},
 	{
-		color: '#dbcc86'
+		profileColor: '#dbcc86',
+		nickname: 'teste',
+		desc: 'Hey there! how are you?',
+		rightLabel: 'Yesterday'
 	},
 	{
-		color: '#d89389'
+		profileColor: '#d89389',
+		nickname: 'teste',
+		desc: 'Hey there! how are you?',
+		rightLabel: 'Yesterday'
 	}
 ];
 

@@ -51,26 +51,26 @@ export default class ConversationsList extends Component {
 								key={key}
 								onClick={onClickItem}
 								profile={{
-									label: 'AM',
+									label: item.nickname,
 									width: 40,
 									height: 40,
-									backgroundColor: item.color,
+									backgroundColor: item.profileColor,
 									color: 'white',
 									labelFontSize: 12
 								}}
 								title={{
-									text: 'Amendowins',
+									text: item.nickname,
 									fontSize: 13,
 									maxWidth: 100,
 									margin: '0px 0px 0px 14px'
 								}}
 								desc={{
-									text: 'Hey there! how are you',
+									text: item.desc,
 									fontSize: 13,
 									maxWidth: 100,
 									margin: '0px 0px 0px 14px'
 								}}
-								rightLabel='Yesterday'
+								rightLabel={item.rightLabel}
 							/>
 						);
 					})

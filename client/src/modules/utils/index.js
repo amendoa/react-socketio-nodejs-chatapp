@@ -42,3 +42,7 @@ export function getToken () {
 export function removeToken () {
 	return removeCookie(constants.GLOBAL.TOKEN_COOKIE_KEY);
 }
+
+export function createAcronym (param) {
+	return param.toUpperCase().slice(0, 2);
+}

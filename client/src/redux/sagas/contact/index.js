@@ -8,7 +8,8 @@ import {
 } from 'modules/utils';
 
 import {
-	POST_ADD_CONTACT
+	POST_ADD_CONTACT,
+	GET_CONTACTS
 } from 'redux/constants/contact';
 
 function* addContactPostFetch (props) {
@@ -43,13 +44,37 @@ function* addContactPostFetch (props) {
 			successMessages
 		}));
 	} catch (e) {
-		// yield put(contactActions.postAddContactReceived());
+		yield put(contactActions.postAddContactReceived());
+		toast.error(constants.LABELS.MAIN.GLOBAL_ERROR);
+	}
+}
+
+function* getContactsGetFetch () {
+	const token = getToken();
+
+	try {
+		const response = yield fetch(`${constants.API.ROOT}${constants.API.ACTIONS.CONTACT}`, {
+			method: constants.API.METHODS.GET,
+			headers: {
+				'Content-Type': 'application/x-www-form-urlencoded',
+				'x-access-token': token
+			}
+		})
+			.then(response => response.json());
+
+
+		yield put(contactActions.getContactsReceived({
+			result: response.result
+		}));
+	} catch (e) {
+		yield put(contactActions.getContactsReceived());
 		toast.error(constants.LABELS.MAIN.GLOBAL_ERROR);
 	}
 }
 
 const authSagas = [
 	takeLatest(POST_ADD_CONTACT, addContactPostFetch),
+	takeLatest(GET_CONTACTS, getContactsGetFetch)
 ];
 
 export default authSagas;

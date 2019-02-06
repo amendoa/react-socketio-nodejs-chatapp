@@ -6,6 +6,10 @@ import {
 	LabelComponent
 } from 'shared/components';
 
+import {
+	createAcronym
+} from 'modules/utils';
+
 export default class ProfilePictureComponent extends Component {
 	render () {
 		const {
@@ -34,7 +38,7 @@ export default class ProfilePictureComponent extends Component {
 			>
 				<LabelComponent
 					fontBold
-					text={label}
+					text={createAcronym(label)}
 					fontSize={labelFontSize}
 				/>
 			</div>

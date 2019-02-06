@@ -12,6 +12,9 @@ import {
 } from 'shared/components';
 
 import constants from 'modules/constants';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import * as contactActions from 'redux/actions/contact';
 
 const conversations = [
 	{
@@ -52,8 +55,27 @@ const conversations = [
 	}
 ];
 
-export default class StartConversationDrawer extends Component {
+class StartConversationDrawer extends Component {
+	componentDidMount() {
+		const {
+			contactActions
+		} = this.props;
+
+		contactActions.resetGetContacts();
+		contactActions.getContacts();
+	}
+
 	render () {
+		const {
+			contactData
+		} = this.props;
+
+		const {
+			getContacts
+		} = contactData;
+
+		// getContacts.result
+
 		return (
 			<div className='start-conversation-drawer-wrapper'>
 				<div>
@@ -79,8 +101,8 @@ export default class StartConversationDrawer extends Component {
 					/>
 				</div>
 				<ConversationsList
-					items={conversations}
-					isFetching={false}
+					items={getContacts.result}
+					isFetching={getContacts.isFetching}
 					emptyMessage={constants.LABELS.CHAT.NO_CONTACTS_TO_SHOW}
 					onClickItem={() => { console.log('onClickItem'); }}
 				/>
@@ -88,3 +110,20 @@ export default class StartConversationDrawer extends Component {
 		);
 	}
 }
+
+const mapStateToProps = (state) => {
+	return {
+		contactData: state.contact
+	};
+};
+
+const mapDispatchToProps = (dispatch) => {
+	return {
+		contactActions: bindActionCreators(contactActions, dispatch)
+	};
+};
+
+export default connect(
+	mapStateToProps,
+	mapDispatchToProps
+)(StartConversationDrawer);
