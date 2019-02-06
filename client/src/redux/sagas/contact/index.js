@@ -1,11 +1,9 @@
 import { put, takeLatest } from 'redux-saga/effects';
-import queryString from 'querystring';
 import * as contactActions from 'redux/actions/contact';
 import constants from 'modules/constants';
 import { toast } from 'react-toastify';
 import {
-	getToken,
-	removeToken
+	sendRequest
 } from 'modules/utils';
 
 import {
@@ -22,19 +20,14 @@ function* addContactPostFetch (props) {
 		body
 	} = params;
 
-	const token = getToken();
 	const successMessages = {};
 
 	try {
-		const response = yield fetch(`${constants.API.ROOT}${constants.API.ACTIONS.CONTACT}`, {
+		const response = yield sendRequest({
+			url: `${constants.API.ROOT}${constants.API.ACTIONS.CONTACT}`,
 			method: constants.API.METHODS.POST,
-			headers: {
-				'Content-Type': 'application/x-www-form-urlencoded',
-				'x-access-token': token
-			},
-			body: queryString.stringify(body)
-		})
-			.then(response => response.json());
+			body
+		});
 
 		if (response.success) {
 			successMessages.nickname = constants.LABELS.CONTACT.CONTACT_SUCCESSFULLY_ADDED;
@@ -51,18 +44,11 @@ function* addContactPostFetch (props) {
 }
 
 function* getContactsGetFetch () {
-	const token = getToken();
-
 	try {
-		const response = yield fetch(`${constants.API.ROOT}${constants.API.ACTIONS.CONTACT}`, {
-			method: constants.API.METHODS.GET,
-			headers: {
-				'Content-Type': 'application/x-www-form-urlencoded',
-				'x-access-token': token
-			}
-		})
-			.then(response => response.json());
-
+		const response = yield sendRequest({
+			url: `${constants.API.ROOT}${constants.API.ACTIONS.CONTACT}`,
+			method: constants.API.METHODS.GET
+		});
 
 		yield put(contactActions.getContactsReceived({
 			result: response.result

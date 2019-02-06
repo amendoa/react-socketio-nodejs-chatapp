@@ -4,7 +4,6 @@
 	"private": true,
 	"dependencies": {
 		"classnames": "^2.2.6",
-		"connected-react-router": "^6.2.2",
 		"js-cookie": "^2.2.0",
 		"lodash": "^4.17.11",
 		"node-sass": "^4.11.0",

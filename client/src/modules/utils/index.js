@@ -3,7 +3,7 @@ import constants from 'modules/constants';
 import { fetch } from 'whatwg-fetch';
 import queryString from 'querystring';
 import { toast } from 'react-toastify';
-import { push } from 'connected-react-router';
+import history from 'redux/history';
 
 export function isDevelopmentEnv () {
 	return process.env.NODE_ENV.toLowerCase() === 'development';
@@ -51,19 +51,23 @@ export function createAcronym (param) {
 	return param.toUpperCase().slice(0, 2);
 }
 
+export async function logout () {
+	removeToken();
+	history.push('/signin');
+}
+
 export async function sendRequest ({
 	url,
 	method,
 	body,
-	query,
-	onUnauthorized
+	query
 }) {
 	const token = getToken();
 	const fetchParams = {
 		method,
 		headers: {
 			'Content-Type': 'application/x-www-form-urlencoded',
-			token
+			'x-access-token': token
 		},
 	};
 
@@ -71,14 +75,11 @@ export async function sendRequest ({
 		fetchParams.body = queryString.stringify(body);
 	}
 
-	const result = await fetch(query ? url : `${url}?${queryString.stringify(query)}`, fetchParams);
-
-	console.log(onUnauthorized)
-	onUnauthorized();
+	const result = await fetch(query ? `${url}?${queryString.stringify(query)}` : url, fetchParams);
 
 	switch (result.status) {
 		case 401:
-			removeToken();
+			logout();
 			break;
 
 		case 500:

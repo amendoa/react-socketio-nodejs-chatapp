@@ -1,10 +1,9 @@
 import { put, takeLatest } from 'redux-saga/effects';
-import queryString from 'querystring';
 import * as authActions from 'redux/actions/auth';
 import * as formActions from 'redux/actions/form';
 import constants from 'modules/constants';
-import { push } from 'connected-react-router';
 import { toast } from 'react-toastify';
+import history from 'redux/history';
 import {
 	serverErrorsToFrontFormat,
 	setToken,
@@ -16,10 +15,6 @@ import {
 	POST_SIGNIN,
 	GET_VERIFY_NICKNAME
 } from 'redux/constants/auth';
-
-function* teste () {
-	yield put(push('/sadasdasd'));
-}
 
 function* signInPostFetch (props) {
 	const {
@@ -34,42 +29,17 @@ function* signInPostFetch (props) {
 		const response = yield sendRequest({
 			url: `${constants.API.ROOT}${constants.API.ACTIONS.AUTH_SIGNIN}`,
 			method: constants.API.METHODS.POST,
-			body,
-			onUnauthorized: teste
+			body
 		});
 
-		console.log(response);
+		if (response.success && response.token) {
+			setToken(response.token);
+			history.push('/');
+		}
 
-
-		// const response = yield fetch(`${constants.API.ROOT}${constants.API.ACTIONS.AUTH_SIGNIN}`, {
-		// 	method: constants.API.METHODS.POST,
-		// 	headers: {
-		// 		'Content-Type': 'application/x-www-form-urlencoded'
-		// 	},
-		// 	body: queryString.stringify(body)
-		// })
-		// 	.then(response => {
-		// 		switch (response.status) {
-		// 			case 401:
-		// 				// removeToken();
-		// 				// yield put(push('/'));
-		// 				break;
-		// 			default:
-		// 				break;
-		// 		}
-		//
-		// 		console.log(response.status);
-		// 		return response.json();
-		// 	});
-
-		// if (response.success && response.token) {
-		// 	setToken(response.token);
-		// 	yield put(push('/'));
-		// }
-		//
-		// yield put(authActions.postSignInReceived({
-		// 	errors: response.errors
-		// }));
+		yield put(authActions.postSignInReceived({
+			errors: response.errors
+		}));
 	} catch (e) {
 		yield put(authActions.postSignInReceived());
 		toast.error(constants.LABELS.MAIN.GLOBAL_ERROR);
@@ -87,18 +57,15 @@ function* signUpPostFetch (props) {
 	} = params;
 
 	try {
-		const response = yield fetch(`${constants.API.ROOT}${constants.API.ACTIONS.AUTH_SIGNUP}`, {
+		const response = yield sendRequest({
+			url: `${constants.API.ROOT}${constants.API.ACTIONS.AUTH_SIGNUP}`,
 			method: constants.API.METHODS.POST,
-			headers: {
-				'Content-Type': 'application/x-www-form-urlencoded'
-			},
-			body: queryString.stringify(body)
-		})
-			.then(response => response.json());
+			body
+		});
 
 		if (response.success && response.token) {
 			setToken(response.token);
-			yield put(push('/'));
+			history.push('/');
 		}
 
 		yield put(formActions.setFormError(formName, {
@@ -123,13 +90,11 @@ function* verifyNicknameGetFetch (props) {
 	} = params;
 
 	try {
-		const response = yield fetch(`${constants.API.ROOT}${constants.API.ACTIONS.VERIFY_NICKNAME}?${queryString.stringify(body)}`, {
+		const response = yield sendRequest({
+			url: `${constants.API.ROOT}${constants.API.ACTIONS.VERIFY_NICKNAME}`,
 			method: constants.API.METHODS.GET,
-			headers: {
-				'Content-Type': 'application/x-www-form-urlencoded'
-			}
-		})
-			.then(response => response.json());
+			query: body
+		});
 
 		yield put(formActions.setFormError(formName, {
 			errors: serverErrorsToFrontFormat(response.errors)

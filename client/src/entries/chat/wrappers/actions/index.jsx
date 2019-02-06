@@ -20,7 +20,6 @@ import {
 	UserInfoComponent
 } from 'entries/chat/components';
 
-import { push } from 'connected-react-router';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as contactActions from 'redux/actions/contact';
@@ -28,7 +27,7 @@ import * as drawerActions from 'redux/actions/drawer';
 import constants from 'modules/constants';
 
 import {
-	removeToken
+	logout
 } from 'modules/utils';
 
 const conversations = [
@@ -131,11 +130,7 @@ class ActionsWrapper extends Component {
 	}
 
 	handleLogout = () => {
-		const {
-			dispatch
-		} = this.props;
-		removeToken();
-		dispatch(push('signin'));
+		logout();
 	}
 
 	render () {
@@ -256,7 +251,6 @@ const mapDispatchToProps = (dispatch) => {
 	return {
 		contactActions: bindActionCreators(contactActions, dispatch),
 		drawerActions: bindActionCreators(drawerActions, dispatch),
-		dispatch
 	};
 };
 

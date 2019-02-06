@@ -3,9 +3,10 @@ import {
 	render
 } from 'react-dom';
 import { Provider } from 'react-redux';
-import { ConnectedRouter } from 'connected-react-router';
+import { Router } from 'react-router-dom';
 import RoutesContainer from 'react-router/routes';
-import configureStore, { history } from 'redux/store';
+import configureStore from 'redux/store';
+import history from 'redux/history';
 import 'styles/index.scss';
 // import 'react-toastify/dist/ReactToastify.css';
 import * as serviceWorker from 'serviceWorker';
@@ -14,13 +15,12 @@ import * as serviceWorker from 'serviceWorker';
 // import 'core-js/modules/es7.promise.finally';
 
 const store = configureStore();
-// store.runSaga(rootSaga);
 
 render(
 	<Provider store={store}>
-		<ConnectedRouter history={history}>
+		<Router history={history}>
 			<RoutesContainer />
-		</ConnectedRouter>
+		</Router>
 	</Provider>,
 	document.getElementById('app')
 );
