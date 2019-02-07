@@ -14,6 +14,8 @@ import constants from 'modules/constants';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as contactActions from 'redux/actions/contact';
+import * as drawerActions from 'redux/actions/drawer';
+import * as conversationActions from 'redux/actions/conversation';
 
 import {
 	searchParam
@@ -47,6 +49,19 @@ class StartConversationDrawer extends Component {
 		});
 	}
 
+	handleClickConversationItem = (item) => {
+		const {
+			drawerActions,
+			drawerName,
+			conversationActions
+		} = this.props;
+
+		conversationActions.setCurrentConversation({
+			user: item
+		});
+		drawerActions.closeDrawer(drawerName);
+	}
+
 	render () {
 		const {
 			contactData
@@ -73,10 +88,7 @@ class StartConversationDrawer extends Component {
 					items={items}
 					isFetching={getContacts.isFetching}
 					emptyMessage={constants.LABELS.CHAT.NO_CONTACTS_TO_SHOW}
-					onClickItem={(item) => {
-						console.log('onClickItemdddddddddddd');
-						console.log(item);
-					}}
+					onClickItem={this.handleClickConversationItem}
 				/>
 			</div>
 		);
@@ -91,7 +103,9 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
 	return {
-		contactActions: bindActionCreators(contactActions, dispatch)
+		contactActions: bindActionCreators(contactActions, dispatch),
+		drawerActions: bindActionCreators(drawerActions, dispatch),
+		conversationActions: bindActionCreators(conversationActions, dispatch)
 	};
 };
 

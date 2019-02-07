@@ -9,7 +9,12 @@ const initialState = {
 export default function conversationReducer (state = initialState, action) {
 	switch (action.type) {
 		case SET_CURRENT_CONVERSATION:
-			return state;
+			return Object.assign({}, state, {
+				currentConversation: Object.assign({}, state.currentConversation, {
+					...action.params
+				})
+			});
+
 		default:
 			return state;
 	}

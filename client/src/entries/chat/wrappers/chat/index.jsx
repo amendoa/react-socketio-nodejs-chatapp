@@ -44,6 +44,12 @@ class ChatWrapper extends Component {
 			);
 		}
 
+		const {
+			nickname,
+			profileColor,
+			_id
+		} = currentConversation.user;
+
 		return (
 			<div
 				className='chat-content'
@@ -53,15 +59,15 @@ class ChatWrapper extends Component {
 						isFetching={false}
 						sketchDark
 						profile={{
-							label: 'AM',
+							label: nickname,
 							width: 40,
 							height: 40,
-							backgroundColor: '#1863ff',
+							backgroundColor: profileColor,
 							color: 'white',
 							labelFontSize: 14
 						}}
 						title={{
-							text: 'Amendowins',
+							text: nickname,
 							fontSize: 13,
 							margin: '0px 0px 0px 14px'
 						}}

@@ -241,7 +241,9 @@ class ActionsWrapper extends Component {
 					drawerName='newConversation'
 					title={constants.LABELS.CHAT.NEW_CONVERSATION}
 				>
-					<StartConversationDrawer />
+					<StartConversationDrawer
+						drawerName='newConversation'
+					/>
 				</DrawerComponent>
 			</div>
 		);

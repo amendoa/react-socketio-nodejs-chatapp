@@ -2,9 +2,9 @@ import {
 	SET_CURRENT_CONVERSATION
 } from 'redux/constants/conversation';
 
-export function setCurrentConversation (user) {
+export function setCurrentConversation (params) {
 	return {
 		type: SET_CURRENT_CONVERSATION,
-		user
+		params
 	};
 }

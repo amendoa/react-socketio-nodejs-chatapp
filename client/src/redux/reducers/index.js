@@ -7,6 +7,7 @@ import formReducer from 'redux/reducers/form';
 import contactReducer from 'redux/reducers/contact';
 import drawerReducer from 'redux/reducers/drawer';
 import conversationReducer from 'redux/reducers/conversation';
+import socketReducer from 'redux/reducers/socket';
 
 export default () => {
 	return combineReducers({
@@ -14,6 +15,7 @@ export default () => {
 		form: formReducer,
 		contact: contactReducer,
 		drawer: drawerReducer,
-		conversation: conversationReducer
+		conversation: conversationReducer,
+		socket: socketReducer
 	});
 };

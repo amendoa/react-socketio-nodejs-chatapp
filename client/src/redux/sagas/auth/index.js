@@ -109,10 +109,10 @@ function* verifyNicknameGetFetch (props) {
 	}
 }
 
-const authSagas = [
+const sagas = [
 	takeLatest(POST_SIGNIN, signInPostFetch),
 	takeLatest(POST_SIGNUP, signUpPostFetch),
 	takeLatest(GET_VERIFY_NICKNAME, verifyNicknameGetFetch)
 ];
 
-export default authSagas;
+export default sagas;

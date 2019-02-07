@@ -4,7 +4,9 @@ import { fetch } from 'whatwg-fetch';
 import queryString from 'querystring';
 import { toast } from 'react-toastify';
 import history from 'react-router/history';
+import store from 'redux/store';
 import _ from 'lodash';
+import * as socketActions from 'redux/actions/socket';
 
 export function isDevelopmentEnv () {
 	return process.env.NODE_ENV.toLowerCase() === 'development';
@@ -53,6 +55,15 @@ export function createAcronym (param) {
 }
 
 export async function logout () {
+	const {
+		dispatch
+	} = store;
+
+	const {
+		stopChannel
+	} = socketActions;
+
+	dispatch(stopChannel());
 	removeToken();
 	history.push('/signin');
 }

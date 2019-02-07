@@ -59,9 +59,9 @@ function* getContactsGetFetch () {
 	}
 }
 
-const authSagas = [
+const sagas = [
 	takeLatest(POST_ADD_CONTACT, addContactPostFetch),
 	takeLatest(GET_CONTACTS, getContactsGetFetch)
 ];
 
-export default authSagas;
+export default sagas;
