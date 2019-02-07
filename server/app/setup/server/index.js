@@ -8,6 +8,8 @@ const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const constants = absoluteRequire('modules/constants');
 const expressRoutes = absoluteRequire('routes');
+const userRepository = absoluteRequire('repositories/user');
+const jwt = require('jsonwebtoken');
 
 module.exports = (app) => {
 	const server = http.createServer(app);
@@ -31,11 +33,53 @@ module.exports = (app) => {
 	// SOCKET.IO SERVER
 	global.io.httpServer.on('listening', () => {
 		logger.info(`SOCKET.IO Server: Listering on ${constants.GENERAL.SERVER_HTTP_IP}:${port}`);
+
+		setInterval(() => {
+			global.io.to('5c5afb03886be05a33d47059amendoa').emit('message.new', {
+				mensagem: 'mensagem só pro amendoa'
+			});
+		}, 3000);
 	});
 
-	// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-	global.io.on('connection', () => {
+	global.io.on('connection', (socket) => {
 		logger.info('SOCKET.IO Server: New client');
+
+		socket.on('login', (params) => {
+			const {
+				token
+			} = params;
+
+			jwt.verify(token, constants.GENERAL.JWT_SECRET, async (err, decodedData) => {
+				if (err) {
+					logger.error('SOCKET.IO Server: Invalid login token');
+					socket.emit('login-error');
+				} else {
+					const {
+						nickname,
+						_id
+					} = decodedData;
+
+					try {
+						const user = await userRepository.findOneUser({
+							nickname,
+							_id
+						});
+
+						if (user) {
+							socket.join(`${_id}${nickname}`);
+						} else {
+							socket.emit('login-error');
+						}
+					} catch (e) {
+						socket.emit('login-error');
+					}
+				}
+			});
+		});
+
+		socket.once('disconnect', () => {
+			logger.info('SOCKET.IO Server: Client disconnected');
+		});
 	});
 
 	return server;
