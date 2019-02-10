@@ -27,6 +27,10 @@ module.exports = (req, res, next) => {
 			try {
 				const user = await userRepository.findOneUser({
 					nickname
+				}, {
+					password: 0,
+					contacts: 0,
+					conversations: 0
 				});
 
 				if (user) {

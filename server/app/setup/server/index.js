@@ -33,12 +33,6 @@ module.exports = (app) => {
 	// SOCKET.IO SERVER
 	global.io.httpServer.on('listening', () => {
 		logger.info(`SOCKET.IO Server: Listering on ${constants.GENERAL.SERVER_HTTP_IP}:${port}`);
-
-		setInterval(() => {
-			global.io.to('5c5afb03886be05a33d47059amendoa').emit('message.new', {
-				mensagem: 'mensagem só pro amendoa'
-			});
-		}, 3000);
 	});
 
 	global.io.on('connection', (socket) => {
@@ -66,7 +60,7 @@ module.exports = (app) => {
 						});
 
 						if (user) {
-							socket.join(`${_id}${nickname}`);
+							socket.join(`${_id}`);
 						} else {
 							socket.emit('login-error');
 						}
