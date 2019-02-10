@@ -24,87 +24,13 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as contactActions from 'redux/actions/contact';
 import * as drawerActions from 'redux/actions/drawer';
+import * as conversationActions from 'redux/actions/conversation';
 import constants from 'modules/constants';
 
 import {
 	logout,
 	searchParam
 } from 'modules/utils';
-
-const conversations = [
-	{
-		profileColor: '#1461ff',
-		nickname: 'teste',
-		desc: 'Hey, how are you doing?',
-		rightLabel: 'Yesterday'
-	},
-	{
-		profileColor: '#dbcc86',
-		nickname: 'teste',
-		desc: 'Hey, how are you doing?',
-		rightLabel: 'Yesterday'
-	},
-	{
-		profileColor: '#d89389',
-		nickname: 'teste',
-		desc: 'Hey, how are you doing?',
-		rightLabel: 'Yesterday'
-	},
-	{
-		profileColor: '#1461ff',
-		nickname: 'teste',
-		desc: 'Hey, how are you doing?',
-		rightLabel: 'Yesterday'
-	},
-	{
-		profileColor: '#dbcc86',
-		nickname: 'teste',
-		desc: 'Hey, how are you doing?',
-		rightLabel: 'Yesterday'
-	},
-	{
-		profileColor: '#d89389',
-		nickname: 'teste',
-		desc: 'Hey, how are you doing?',
-		rightLabel: 'Yesterday'
-	},
-	{
-		profileColor: '#1461ff',
-		nickname: 'teste',
-		desc: 'Hey, how are you doing?',
-		rightLabel: 'Yesterday'
-	},
-	{
-		profileColor: '#dbcc86',
-		nickname: 'teste',
-		desc: 'Hey, how are you doing?',
-		rightLabel: 'Yesterday'
-	},
-	{
-		profileColor: '#d89389',
-		nickname: 'teste',
-		desc: 'Hey, how are you doing?',
-		rightLabel: 'Yesterday'
-	},
-	{
-		profileColor: '#1461ff',
-		nickname: 'teste',
-		desc: 'Hey, how are you doing?',
-		rightLabel: 'Yesterday'
-	},
-	{
-		profileColor: '#dbcc86',
-		nickname: 'teste',
-		desc: 'Hey, how are you doing?',
-		rightLabel: 'Yesterday'
-	},
-	{
-		profileColor: '#d89389',
-		nickname: 'teste',
-		desc: 'Hey, how are you doing?',
-		rightLabel: 'Yesterday'
-	}
-];
 
 class ActionsWrapper extends Component {
 	constructor (props) {
@@ -114,6 +40,14 @@ class ActionsWrapper extends Component {
 				nickname: ''
 			}
 		};
+	}
+
+	componentDidMount () {
+		const {
+			conversationActions
+		} = this.props;
+
+		conversationActions.getConversations();
 	}
 
 	handleOpenAddContact = () => {
@@ -151,11 +85,50 @@ class ActionsWrapper extends Component {
 		});
 	}
 
+	conversationListToComponentData = (conversations) => {
+		return conversations.map((item) => {
+			const {
+				nickname,
+				profileColor,
+				_id
+			} = item.userId;
+			const lastMessage = item.messages[0];
+
+			return {
+				nickname,
+				profileColor,
+				_id,
+				desc: lastMessage ? lastMessage.message : '',
+				rightLabel: 'TODOTODO'
+			};
+		});
+	}
+
+	handleClickConversationItem = (item) => {
+		const {
+			conversationActions
+		} = this.props;
+
+		conversationActions.setCurrentConversation({
+			user: item
+		});
+	}
+
 	render () {
 		const {
 			conversationsSearch
 		} = this.state;
 
+		const {
+			conversationData
+		} = this.props;
+
+		const {
+			isFetching,
+			result
+		} = conversationData;
+
+		const conversations = this.conversationListToComponentData(result);
 		const items = searchParam(conversations, conversationsSearch);
 
 		return (
@@ -227,9 +200,9 @@ class ActionsWrapper extends Component {
 				</div>
 				<ConversationsList
 					items={items}
-					isFetching={false}
+					isFetching={isFetching}
 					emptyMessage={constants.LABELS.CHAT.NO_CONVERSATIONS_TO_SHOW}
-					onClickItem={() => { console.log('onClickItem'); }}
+					onClickItem={this.handleClickConversationItem}
 				/>
 				<DrawerComponent
 					drawerName='addContact'
@@ -252,13 +225,15 @@ class ActionsWrapper extends Component {
 
 const mapStateToProps = (state) => {
 	return {
-		contactData: state.contact
+		contactData: state.contact,
+		conversationData: state.conversation
 	};
 };
 
 const mapDispatchToProps = (dispatch) => {
 	return {
 		contactActions: bindActionCreators(contactActions, dispatch),
+		conversationActions: bindActionCreators(conversationActions, dispatch),
 		drawerActions: bindActionCreators(drawerActions, dispatch),
 	};
 };
