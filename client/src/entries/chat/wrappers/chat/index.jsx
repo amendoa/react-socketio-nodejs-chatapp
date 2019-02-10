@@ -18,8 +18,43 @@ import {
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as conversationActions from 'redux/actions/conversation';
+import * as messageActions from 'redux/actions/message';
 
 class ChatWrapper extends Component {
+	constructor (props) {
+		super(props);
+		this.state = {
+			message: ''
+		};
+	}
+
+	handleSendMessage = (message) => {
+		if (message) {
+			const {
+				conversationData,
+				messageActions
+			} = this.props;
+
+			const {
+				currentConversation
+			} = conversationData;
+
+
+			const params = {
+				body: {
+					message,
+					receiverId: currentConversation.user._id
+				}
+			};
+
+			messageActions.postMessage(params);
+
+			this.setState({
+				message: ''
+			});
+		}
+	}
+
 	renderChatContainer = () => {
 		const {
 			conversationData
@@ -28,6 +63,10 @@ class ChatWrapper extends Component {
 		const {
 			currentConversation
 		} = conversationData;
+
+		const {
+			message
+		} = this.state;
 
 		if (!currentConversation) {
 			return (
@@ -85,7 +124,10 @@ class ChatWrapper extends Component {
 					/>
 				</section>
 				<footer className='footer-container'>
-					<ContentEditableComponent />
+					<ContentEditableComponent
+						onEnter={this.handleSendMessage}
+						value={message}
+					/>
 				</footer>
 			</div>
 		);
@@ -110,7 +152,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
 	return {
-		conversationActions: bindActionCreators(conversationActions, dispatch)
+		conversationActions: bindActionCreators(conversationActions, dispatch),
+		messageActions: bindActionCreators(messageActions, dispatch)
 	};
 };
 

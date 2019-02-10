@@ -41,7 +41,8 @@
 			"AUTH_SIGNUP": "/auth/signup",
 			"AUTH_SIGNIN": "/auth/signin",
 			"VERIFY_NICKNAME": "/auth/verify-nickname",
-			"CONTACT": "/secured/contact"
+			"CONTACT": "/secured/contact",
+			"MESSAGE": "/secured/message"
 		},
 		"METHODS": {
 			"GET": "GET",

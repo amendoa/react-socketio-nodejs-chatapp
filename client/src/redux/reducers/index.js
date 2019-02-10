@@ -8,6 +8,7 @@ import contactReducer from 'redux/reducers/contact';
 import drawerReducer from 'redux/reducers/drawer';
 import conversationReducer from 'redux/reducers/conversation';
 import socketReducer from 'redux/reducers/socket';
+import messageReducer from 'redux/reducers/message';
 
 export default () => {
 	return combineReducers({
@@ -16,6 +17,7 @@ export default () => {
 		contact: contactReducer,
 		drawer: drawerReducer,
 		conversation: conversationReducer,
-		socket: socketReducer
+		socket: socketReducer,
+		message: messageReducer
 	});
 };

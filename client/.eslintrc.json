@@ -73,7 +73,8 @@
 		"jsx-quotes": 0,
 		"react/no-array-index-key": 0,
 		"react/button-has-type": 0,
-		"jsx-ally/label-has-for": 0
+		"jsx-ally/label-has-for": 0,
+		"no-underscore-dangle": 0 
 	},
 	"globals": {
 		"describe": true,

@@ -1,5 +1,6 @@
 import {
-	getToken
+	getToken,
+	logout
 } from 'modules/utils';
 
 import {
@@ -52,7 +53,7 @@ function subscribe (socket) {
 		});
 
 		socket.on('login-error', () => {
-			emit(socketActions.startChannel());
+			logout();
 		});
 
 		return () => {};

@@ -35,73 +35,73 @@ const conversations = [
 	{
 		profileColor: '#1461ff',
 		nickname: 'teste',
-		desc: 'Hey there! how are you?',
+		desc: 'Hey, how are you doing?',
 		rightLabel: 'Yesterday'
 	},
 	{
 		profileColor: '#dbcc86',
 		nickname: 'teste',
-		desc: 'Hey there! how are you?',
+		desc: 'Hey, how are you doing?',
 		rightLabel: 'Yesterday'
 	},
 	{
 		profileColor: '#d89389',
 		nickname: 'teste',
-		desc: 'Hey there! how are you?',
+		desc: 'Hey, how are you doing?',
 		rightLabel: 'Yesterday'
 	},
 	{
 		profileColor: '#1461ff',
 		nickname: 'teste',
-		desc: 'Hey there! how are you?',
+		desc: 'Hey, how are you doing?',
 		rightLabel: 'Yesterday'
 	},
 	{
 		profileColor: '#dbcc86',
 		nickname: 'teste',
-		desc: 'Hey there! how are you?',
+		desc: 'Hey, how are you doing?',
 		rightLabel: 'Yesterday'
 	},
 	{
 		profileColor: '#d89389',
 		nickname: 'teste',
-		desc: 'Hey there! how are you?',
+		desc: 'Hey, how are you doing?',
 		rightLabel: 'Yesterday'
 	},
 	{
 		profileColor: '#1461ff',
 		nickname: 'teste',
-		desc: 'Hey there! how are you?',
+		desc: 'Hey, how are you doing?',
 		rightLabel: 'Yesterday'
 	},
 	{
 		profileColor: '#dbcc86',
 		nickname: 'teste',
-		desc: 'Hey there! how are you?',
+		desc: 'Hey, how are you doing?',
 		rightLabel: 'Yesterday'
 	},
 	{
 		profileColor: '#d89389',
 		nickname: 'teste',
-		desc: 'Hey there! how are you?',
+		desc: 'Hey, how are you doing?',
 		rightLabel: 'Yesterday'
 	},
 	{
 		profileColor: '#1461ff',
 		nickname: 'teste',
-		desc: 'Hey there! how are you?',
+		desc: 'Hey, how are you doing?',
 		rightLabel: 'Yesterday'
 	},
 	{
 		profileColor: '#dbcc86',
 		nickname: 'teste',
-		desc: 'Hey there! how are you?',
+		desc: 'Hey, how are you doing?',
 		rightLabel: 'Yesterday'
 	},
 	{
 		profileColor: '#d89389',
 		nickname: 'teste',
-		desc: 'Hey there! how are you?',
+		desc: 'Hey, how are you doing?',
 		rightLabel: 'Yesterday'
 	}
 ];
