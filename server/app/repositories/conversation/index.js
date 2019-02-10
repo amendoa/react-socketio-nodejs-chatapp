@@ -7,3 +7,17 @@ exports.findOneConversationAndUpdate = (query, model) => ConversationModel.findO
 		upsert: true
 	}
 );
+
+exports.getConversations = (query, options) => ConversationModel
+	.find(query, options)
+	.populate({
+		path: 'messages',
+		options: {
+			sort: {
+				dateTime: -1
+			},
+			limit: 1
+		}
+	})
+	.populate('ownerId', { password: 0, contacts: 0 })
+	.populate('userId', { password: 0, contacts: 0 });

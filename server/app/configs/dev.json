@@ -5,7 +5,7 @@
 		"JWT_SECRET": "j2onfullstackchallendsecret",
 		"JWTEXPIRES_IN": 86400,
 		"JWT_DEFAULT_USER": "amendoa",
-		"JWT_DEFAULT_ID": "5c5db4206121b36ad01551bf"
+		"JWT_DEFAULT_ID": "5c605097d740f02a820b9f29"
 	},
 	"ENDPOINTS": {
 		"AUTH": {
@@ -14,7 +14,8 @@
 			"VERIFY_NICKNAME": "/auth/verify-nickname"
 		},
 		"CONTACT": "/secured/contact",
-		"MESSAGE": "/secured/message"
+		"MESSAGE": "/secured/message",
+		"CONVERSATION": "/secured/conversation"
 	},
 	"EXPRESS_VALIDATION_MESSAGES": {
 		"NICKNAME_LENGHT_BETWEEN_2_AND_15": "The Nickname must have between 2 and 15 characters",

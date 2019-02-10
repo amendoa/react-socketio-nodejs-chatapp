@@ -42389,3 +42389,1077 @@
 [32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
 [32minfo[39m: [32mREQUESTING API: URL /secured/message[39m
 [32minfo[39m: [32mREQUESTING API: URL /secured/message[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message[39m
+[32minfo[39m: [32m-----------[39m
+[32minfo[39m: [32m{ success: false }[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message[39m
+[32minfo[39m: [32m-----------[39m
+[32minfo[39m: [32m{ success: false }[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message[39m
+[32minfo[39m: [32m-----------[39m
+[32minfo[39m: [32m{ success: false }[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32m{ success: true,[39m
+[32m  result: 'getConversationsgetConversationsgetConversations' }[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32m{ success: true,[39m
+[32m  result: 'getConversationsgetConversationsgetConversations' }[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32m{ success: true,[39m
+[32m  result: 'getConversationsgetConversationsgetConversations' }[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32m{ success: true,[39m
+[32m  result: 'getConversationsgetConversationsgetConversations' }[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32m{ success: true,[39m
+[32m  result:[39m
+[32m   [ { messages: [Array],[39m
+[32m       _id: '5c6050aa6dd19c36f063a8ee',[39m
+[32m       ownerId: '5c605097d740f02a820b9f29',[39m
+[32m       userId: '5c605090d740f02a820b9f28',[39m
+[32m       __v: 0 } ] }[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32m{ success: true,[39m
+[32m  result:[39m
+[32m   [ { messages: [Array],[39m
+[32m       _id: '5c6050aa6dd19c36f063a8ee',[39m
+[32m       ownerId: '5c605097d740f02a820b9f29',[39m
+[32m       userId: '5c605090d740f02a820b9f28',[39m
+[32m       __v: 0 } ] }[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=orelha[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=amenhdoa[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=amendoa[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32m{ success: true,[39m
+[32m  result:[39m
+[32m   [ { messages: [Array],[39m
+[32m       _id: '5c609a19057e06d30a7e8f3c',[39m
+[32m       ownerId: '5c609a0feb7e321accff223d',[39m
+[32m       userId: '5c609a07eb7e321accff223c',[39m
+[32m       __v: 0 } ] }[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32m{ success: true,[39m
+[32m  result:[39m
+[32m   [ { messages: [Array],[39m
+[32m       _id: '5c609a19057e06d30a7e8f3c',[39m
+[32m       ownerId: '5c609a0feb7e321accff223d',[39m
+[32m       userId: '5c609a07eb7e321accff223c',[39m
+[32m       __v: 0 } ] }[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32m{ success: true,[39m
+[32m  result:[39m
+[32m   [ { messages: [Array],[39m
+[32m       _id: '5c609a19057e06d30a7e8f3c',[39m
+[32m       ownerId: '5c609a0feb7e321accff223d',[39m
+[32m       userId: '5c609a07eb7e321accff223c',[39m
+[32m       __v: 0 } ] }[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32m{ success: true,[39m
+[32m  result:[39m
+[32m   [ { messages: [Array],[39m
+[32m       _id: '5c609a19057e06d30a7e8f3c',[39m
+[32m       ownerId: '5c609a0feb7e321accff223d',[39m
+[32m       userId: '5c609a07eb7e321accff223c',[39m
+[32m       __v: 0 } ] }[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32m{ success: true,[39m
+[32m  result:[39m
+[32m   [ { messages: [Array],[39m
+[32m       _id: '5c609a19057e06d30a7e8f3c',[39m
+[32m       ownerId: [Object],[39m
+[32m       userId: '5c609a07eb7e321accff223c',[39m
+[32m       __v: 0 } ] }[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32m{ success: true,[39m
+[32m  result:[39m
+[32m   [ { messages: [Array],[39m
+[32m       _id: '5c609a19057e06d30a7e8f3c',[39m
+[32m       ownerId: [Object],[39m
+[32m       userId: [Object],[39m
+[32m       __v: 0 } ] }[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32m{ success: true,[39m
+[32m  result:[39m
+[32m   [ { messages: [Array],[39m
+[32m       _id: '5c609a19057e06d30a7e8f3c',[39m
+[32m       ownerId: [Object],[39m
+[32m       userId: [Object],[39m
+[32m       __v: 0 } ] }[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32m{ success: false }[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32m{ success: false }[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32m{ success: false }[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32m{ success: false }[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32m{ success: false }[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32m{ success: true,[39m
+[32m  result:[39m
+[32m   [ { messages: [Array],[39m
+[32m       _id: '5c609a19057e06d30a7e8f3c',[39m
+[32m       ownerId: [Object],[39m
+[32m       userId: [Object],[39m
+[32m       __v: 0 } ] }[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32m{ success: false }[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32m{ success: false }[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32m{ success: false }[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32m{ success: false }[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32m{ success: false }[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32m{ success: false }[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32m{ success: true }[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32m{ success: true }[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32m{ success: true }[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m

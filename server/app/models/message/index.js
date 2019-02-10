@@ -12,11 +12,13 @@ const {
 const MessageSchema = new Schema({
 	senderId: {
 		type: ObjectId,
-		required: true
+		required: true,
+		ref: 'User'
 	},
 	receiverId: {
 		type: ObjectId,
-		required: true
+		required: true,
+		ref: 'User'
 	},
 	message: {
 		type: String,
@@ -30,7 +32,7 @@ const MessageSchema = new Schema({
 	}
 });
 
-const MessageModel = new Model('message', MessageSchema);
+const MessageModel = new Model('Message', MessageSchema);
 
 exports.MessageModel = MessageModel;
 exports.MessageSchema = MessageSchema;

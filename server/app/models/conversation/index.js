@@ -12,14 +12,19 @@ const {
 const ConversationSchema = new Schema({
 	ownerId: {
 		type: ObjectId,
-		unique: true
+		unique: true,
+		ref: 'User'
 	},
 	userId: {
 		type: ObjectId,
-		unique: true
+		unique: true,
+		ref: 'User'
 	},
 	messages: [
-		ObjectId
+		{
+			type: ObjectId,
+			ref: 'Message'
+		}
 	]
 });
 
