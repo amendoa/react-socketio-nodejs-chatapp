@@ -4,7 +4,8 @@ import {
 	RESET_ADD_CONTACT,
 	GET_CONTACTS,
 	GET_CONTACTS_RECEIVED,
-	RESET_GET_CONTACTS
+	RESET_GET_CONTACTS,
+	RESET_CONTACT
 } from 'redux/constants/contact';
 
 const initialState = {
@@ -67,6 +68,9 @@ export default function contactReducer (state = initialState, action) {
 					successMessages: []
 				})
 			});
+
+		case RESET_CONTACT:
+			return initialState;
 
 		default:
 			return state;

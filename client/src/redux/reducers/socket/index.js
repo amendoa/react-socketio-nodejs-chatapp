@@ -1,6 +1,7 @@
 import {
 	SERVER_ON,
-	SERVER_OFF
+	SERVER_OFF,
+	RESET_SOCKET
 } from 'redux/constants/socket';
 
 const initialState = {
@@ -18,6 +19,9 @@ export default function socketReducer (state = initialState, action) {
 			return Object.assign({}, state, {
 				serverIsOn: false
 			});
+
+		case RESET_SOCKET:
+			return initialState;
 
 		default:
 			return state;

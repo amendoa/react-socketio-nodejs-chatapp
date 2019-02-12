@@ -2,8 +2,15 @@ import {
 	START_CHANNEL,
 	STOP_CHANNEL,
 	SERVER_ON,
-	SERVER_OFF
+	SERVER_OFF,
+	RESET_SOCKET
 } from 'redux/constants/socket';
+
+export function reset () {
+	return {
+		type: RESET_SOCKET
+	};
+}
 
 export function startChannel () {
 	return {

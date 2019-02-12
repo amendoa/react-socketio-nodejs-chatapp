@@ -12,12 +12,13 @@ import {
 } from 'react-toastify';
 
 import {
-	GET_CONVERSATIONS
+	GET_CONVERSATIONS,
+	SET_CURRENT_CONVERSATION
 } from 'redux/constants/conversation';
 
 import * as conversationActions from 'redux/actions/conversation';
+import * as messageActions from 'redux/actions/message';
 import constants from 'modules/constants';
-
 
 function* getConversationsFetch () {
 	try {
@@ -37,8 +38,25 @@ function* getConversationsFetch () {
 	}
 }
 
+function* setCurrentConversationSaga(action) {
+	const {
+		user
+	} = action.params;
+
+	const {
+		_id: userId
+	} = user;
+
+	yield put(messageActions.getMessages({
+		query: {
+			userId
+		}
+	}));
+}
+
 const sagas = [
 	takeLatest(GET_CONVERSATIONS, getConversationsFetch),
+	takeLatest(SET_CURRENT_CONVERSATION, setCurrentConversationSaga)
 ];
 
 export default sagas;

@@ -18,7 +18,8 @@ export default class LabelComponent extends Component {
 			margin,
 			breakWord,
 			maxWidth,
-			alignCenter
+			alignCenter,
+			width
 		} = this.props;
 
 		const spanClassName = classNames({
@@ -35,14 +36,17 @@ export default class LabelComponent extends Component {
 			default: defaultLabel
 		});
 
+		const spanStyles = {
+			margin,
+			fontSize,
+			maxWidth,
+			width
+		};
+
 		return (
 			<span
 				className={spanClassName}
-				style={{
-					margin,
-					fontSize,
-					maxWidth
-				}}
+				style={spanStyles}
 			>
 				{
 					text

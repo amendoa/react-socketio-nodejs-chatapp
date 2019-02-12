@@ -79,7 +79,7 @@ class AddContactDrawer extends Component {
 									{
 										successMessages.nickname ? (
 											<FlashMessageComponent
-												width={280}
+												width='100%'
 												message={successMessages.nickname}
 												margin='0px 0px 15px 0px'
 												onClose={this.onCloseFlashMessage}
@@ -90,7 +90,7 @@ class AddContactDrawer extends Component {
 									{
 										errors.nickname ? (
 											<FlashMessageComponent
-												width={280}
+												width='100%'
 												message={errors.nickname}
 												margin='0px 0px 15px 0px'
 												onClose={this.onCloseFlashMessage}

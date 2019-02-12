@@ -1,5 +1,6 @@
 import constants from 'modules/constants';
 import * as messageActions from 'redux/actions/message';
+import * as conversationActions from 'redux/actions/conversation';
 
 import {
 	takeLatest,
@@ -11,7 +12,8 @@ import {
 } from 'modules/utils';
 
 import {
-	POST_MESSAGE
+	POST_MESSAGE,
+	GET_MESSAGES
 } from 'redux/constants/message';
 
 import {
@@ -24,21 +26,55 @@ function* sendMessagePostFetchSaga (action) {
 	} = action.params;
 
 	try {
-		yield sendRequest({
+		const response = yield sendRequest({
 			url: `${constants.API.ROOT}${constants.API.ACTIONS.MESSAGE}`,
 			method: constants.API.METHODS.POST,
 			body
 		});
 
 		yield put(messageActions.postMessageReceived());
+
+		yield put(conversationActions.addMessageToCurrentConversationMessages({
+			message: {
+				currentUserIsSender: true,
+				...response.result
+			},
+			user: {
+				_id: response.result.receiverId
+			}
+		}));
 	} catch (e) {
 		yield put(messageActions.postMessageReceived());
 		toast.error(constants.LABELS.MAIN.GLOBAL_ERROR);
 	}
 }
 
+function* getMessagesFetchSaga (action) {
+	const {
+		query
+	} = action.params;
+
+	try {
+		const response = yield sendRequest({
+			url: `${constants.API.ROOT}${constants.API.ACTIONS.MESSAGE}`,
+			method: constants.API.METHODS.GET,
+			query
+		});
+
+		yield put(messageActions.getMessagesReceived());
+		yield put(conversationActions.setCurrentConversationMessages({
+			result: response.result,
+			userId: query.userId
+		}));
+	} catch (e) {
+		yield put(messageActions.getMessagesReceived());
+		toast.error(constants.LABELS.MAIN.GLOBAL_ERROR);
+	}
+}
+
 const sagas = [
-	takeLatest(POST_MESSAGE, sendMessagePostFetchSaga)
+	takeLatest(POST_MESSAGE, sendMessagePostFetchSaga),
+	takeLatest(GET_MESSAGES, getMessagesFetchSaga)
 ];
 
 export default sagas;

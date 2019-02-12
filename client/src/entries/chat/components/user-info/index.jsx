@@ -100,12 +100,17 @@ export default class UserInfoComponent extends Component {
 					</div>
 				</div>
 				<div>
-					<LabelComponent
-						fontRegular
-						text={rightLabel}
-						fontSize={13}
-						margin="0px 0px 0px 0px"
-					/>
+					{
+						rightLabel ? (
+							<LabelComponent
+								fontRegular
+								text={rightLabel}
+								fontSize={13}
+								margin="0px 0px 0px 0px"
+								width={100}
+							/>
+						) : null
+					}
 				</div>
 			</div>
 		);

@@ -22,9 +22,7 @@ export default class ConversationCardComponent extends Component {
 				tabIndex='-1'
 				className='conversation-card'
 				onClick={onClick}
-				onKeyDown={onClick}
-				onKeyUp={onClick}
-				onKeyPress={onClick}
+				onKeyDown={() => {}}
 			>
 				<div className='conversation-card--container'>
 					<UserInfoComponent

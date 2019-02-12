@@ -20,17 +20,19 @@ import {
 	InputSearchComponent
 } from 'entries/chat/components';
 
+import {
+	logout,
+	searchParam,
+	getUser
+} from 'modules/utils';
+
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+import moment from 'moment';
 import * as contactActions from 'redux/actions/contact';
 import * as drawerActions from 'redux/actions/drawer';
 import * as conversationActions from 'redux/actions/conversation';
 import constants from 'modules/constants';
-
-import {
-	logout,
-	searchParam
-} from 'modules/utils';
 
 class ActionsWrapper extends Component {
 	constructor (props) {
@@ -92,14 +94,14 @@ class ActionsWrapper extends Component {
 				profileColor,
 				_id
 			} = item.userId;
-			const lastMessage = item.messages[0];
+			const lastMessage = item.messages[item.messages.length - 1];
 
 			return {
 				nickname,
 				profileColor,
 				_id,
 				desc: lastMessage ? lastMessage.message : '',
-				rightLabel: 'TODOTODO'
+				rightLabel: lastMessage ? moment(lastMessage.dateTime).fromNow(true) : ''
 			};
 		});
 	}
@@ -115,6 +117,8 @@ class ActionsWrapper extends Component {
 	}
 
 	render () {
+		const currentUser = getUser() || {};
+
 		const {
 			conversationsSearch
 		} = this.state;
@@ -128,6 +132,11 @@ class ActionsWrapper extends Component {
 			result
 		} = conversationData;
 
+		const {
+			profileColor,
+			nickname
+		} = currentUser;
+
 		const conversations = this.conversationListToComponentData(result);
 		const items = searchParam(conversations, conversationsSearch);
 
@@ -139,15 +148,15 @@ class ActionsWrapper extends Component {
 							isFetching={false}
 							column
 							profile={{
-								label: 'AM',
+								label: nickname,
 								width: 60,
 								height: 60,
-								backgroundColor: '#1863ff',
+								backgroundColor: profileColor,
 								color: 'white',
 								labelFontSize: 16
 							}}
 							title={{
-								text: 'Amendowins',
+								text: nickname,
 								fontSize: 16,
 								margin: '10px 0px 0px 0px'
 							}}

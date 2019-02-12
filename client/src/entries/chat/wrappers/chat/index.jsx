@@ -19,13 +19,26 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as conversationActions from 'redux/actions/conversation';
 import * as messageActions from 'redux/actions/message';
+import _ from 'lodash';
+import moment from 'moment';
 
 class ChatWrapper extends Component {
 	constructor (props) {
 		super(props);
+		this.conversationContainer = React.createRef();
+
 		this.state = {
 			message: ''
 		};
+	}
+
+	componentDidUpdate () {
+		const {
+			current
+		} = this.conversationContainer;
+		if (current) {
+			current.scrollTop = current.scrollHeight;
+		}
 	}
 
 	handleSendMessage = (message) => {
@@ -36,14 +49,13 @@ class ChatWrapper extends Component {
 			} = this.props;
 
 			const {
-				currentConversation
+				currentUserIdConversation
 			} = conversationData;
-
 
 			const params = {
 				body: {
 					message,
-					receiverId: currentConversation.user._id
+					receiverId: currentUserIdConversation
 				}
 			};
 
@@ -57,18 +69,24 @@ class ChatWrapper extends Component {
 
 	renderChatContainer = () => {
 		const {
-			conversationData
+			conversationData,
+			messageData
 		} = this.props;
 
 		const {
-			currentConversation
+			getMessages
+		} = messageData;
+
+		const {
+			currentUserIdConversation,
+			result: conversations
 		} = conversationData;
 
 		const {
 			message
 		} = this.state;
 
-		if (!currentConversation) {
+		if (!currentUserIdConversation) {
 			return (
 				<div
 					className='empty-message-container'
@@ -83,11 +101,12 @@ class ChatWrapper extends Component {
 			);
 		}
 
+		const currentConversation = conversations.find(item => String(item.userId._id) === String(currentUserIdConversation));
+
 		const {
 			nickname,
-			profileColor,
-			_id
-		} = currentConversation.user;
+			profileColor
+		} = currentConversation.userId;
 
 		return (
 			<div
@@ -111,16 +130,20 @@ class ChatWrapper extends Component {
 							margin: '0px 0px 0px 14px'
 						}}
 						desc={{
-							text: 'typing...',
+							text: '',
 							fontSize: 13,
 							maxWidth: 100,
 							margin: '0px 0px 0px 14px'
 						}}
 					/>
 				</header>
-				<section className='conversation-container'>
+				<section
+					ref={this.conversationContainer}
+					className='conversation-container'
+				>
 					<MessageListContainer
-						isFetching={false}
+						isFetching={getMessages.isFetching}
+						items={currentConversation.messages}
 					/>
 				</section>
 				<footer className='footer-container'>
@@ -146,7 +169,8 @@ class ChatWrapper extends Component {
 
 const mapStateToProps = (state) => {
 	return {
-		conversationData: state.conversation
+		conversationData: state.conversation,
+		messageData: state.message
 	};
 };
 

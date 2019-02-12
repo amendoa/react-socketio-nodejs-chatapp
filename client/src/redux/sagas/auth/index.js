@@ -7,7 +7,8 @@ import history from 'react-router/history';
 import {
 	serverErrorsToFrontFormat,
 	setToken,
-	sendRequest
+	sendRequest,
+	login
 } from 'modules/utils';
 
 import {
@@ -32,9 +33,8 @@ function* signInPostFetch (props) {
 			body
 		});
 
-		if (response.success && response.token) {
-			setToken(response.token);
-			history.push('/');
+		if (response.success && response.token && response.user) {
+			login(response.token, response.user);
 		}
 
 		yield put(authActions.postSignInReceived({

@@ -1,10 +1,16 @@
 import {
 	POST_MESSAGE,
-	POST_MESSAGE_RECEIVED
+	POST_MESSAGE_RECEIVED,
+	GET_MESSAGES,
+	GET_MESSAGES_RECEIVED,
+	RESET_MESSAGE
 } from 'redux/constants/message';
 
 const initialState = {
 	postMessage: {
+		isFetching: false
+	},
+	getMessages: {
 		isFetching: false
 	}
 };
@@ -24,6 +30,23 @@ export default function messageReducer (state = initialState, action) {
 					isFetching: false
 				})
 			});
+
+		case GET_MESSAGES:
+			return Object.assign({}, state, {
+				getMessages: Object.assign({}, state.getMessages, {
+					isFetching: true
+				})
+			});
+
+		case GET_MESSAGES_RECEIVED:
+			return Object.assign({}, state, {
+				getMessages: Object.assign({}, state.getMessages, {
+					isFetching: false
+				})
+			});
+
+		case RESET_MESSAGE:
+			return initialState;
 
 		default:
 			return state;

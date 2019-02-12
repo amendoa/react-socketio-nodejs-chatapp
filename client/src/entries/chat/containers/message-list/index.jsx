@@ -8,113 +8,14 @@ import {
 	TimeTagComponent
 } from 'entries/chat/components';
 
+import moment from 'moment';
+
 export default class MessageListContainer extends Component {
 	render () {
 		const {
-			isFetching
+			isFetching,
+			items
 		} = this.props;
-
-		const teste = [
-			{
-				type: 3
-			},
-			{
-				type: 1
-			},
-			{
-				type: 1
-			},
-			{
-				type: 1
-			},
-			{
-				type: 2
-			},
-			{
-				type: 2
-			},
-			{
-				type: 1
-			},
-			{
-				type: 1
-			},
-			{
-				type: 2
-			},
-			{
-				type: 2
-			},
-			{
-				type: 2
-			},
-			{
-				type: 2
-			},
-			{
-				type: 3
-			},
-			{
-				type: 1
-			},
-			{
-				type: 2
-			},
-			{
-				type: 1
-			},
-			{
-				type: 2
-			},
-			{
-				type: 1
-			},
-			{
-				type: 3
-			},
-			{
-				type: 2
-			},
-			{
-				type: 2
-			},
-			{
-				type: 2
-			},
-			{
-				type: 2
-			},
-			{
-				type: 2
-			},
-			{
-				type: 1
-			},
-			{
-				type: 2
-			},
-			{
-				type: 2
-			},
-			{
-				type: 1
-			},
-			{
-				type: 2
-			},
-			{
-				type: 1
-			},
-			{
-				type: 1
-			},
-			{
-				type: 1
-			},
-			{
-				type: 2
-			},
-		];
 
 		if (isFetching) {
 			return (
@@ -135,35 +36,41 @@ export default class MessageListContainer extends Component {
 			<div
 				className='message-list'
 			>
-
 				{
-					teste.map((item, key) => {
-						if (item.type === 1) {
-							return (
-								<MessageComponent
-									key={key}
-									left
-									text='Hey there! how are you?'
-									time='12:23'
-								/>
-							);
-						}
+					items.map((item, key) => {
+						const {
+							message,
+							dateTime,
+							currentUserIsSender
+						} = item;
 
-						if (item.type === 3) {
-							return (
-								<TimeTagComponent
-									key={key}
-									text='Today'
-								/>
-							);
-						}
+						// if (item.type === 1) {
+						// 	return (
+						// 		<MessageComponent
+						// 			key={key}
+						// 			left
+						// 			text='Hey there! how are you?'
+						// 			time='12:23'
+						// 		/>
+						// 	);
+						// }
+						//
+						// if (item.type === 3) {
+						// 	return (
+						// 		<TimeTagComponent
+						// 			key={key}
+						// 			text='Today'
+						// 		/>
+						// 	);
+						// }
 
 						return (
 							<MessageComponent
 								key={key}
-								right
-								text='Hey there! how are you you you you?'
-								time='12:23'
+								right={currentUserIsSender}
+								left={!currentUserIsSender}
+								text={message}
+								time={moment(dateTime).format('HH:mm')}
 							/>
 						);
 					})

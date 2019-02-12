@@ -23,6 +23,10 @@ import {
 import constants from 'modules/constants';
 import io from 'socket.io-client';
 import * as socketActions from 'redux/actions/socket';
+import * as conversationActions from 'redux/actions/conversation';
+import {
+	Howl
+} from 'howler';
 
 import {
 	START_CHANNEL,
@@ -43,9 +47,25 @@ function connectSocket () {
 
 function subscribe (socket) {
 	return eventChannel(emit => {
-		socket.on('message.new', (params) => {
-			console.log('message.new');
-			console.log(params);
+		socket.on('message.new', (response) => {
+			const sound = new Howl({
+				src: [
+					`${process.env.PUBLIC_URL}${constants.GLOBAL.MESSAGE_RECEIVED_MP3}`
+				]
+			});
+
+			sound.play();
+
+			const {
+				message,
+				sender
+			} = response;
+
+			emit(conversationActions.addMessageToCurrentConversationMessages({
+				message,
+				user: sender,
+				userId: message.senderId
+			}));
 		});
 
 		socket.on('disconnect', () => {
