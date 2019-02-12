@@ -21,3 +21,16 @@ exports.getConversations = (query, options) => ConversationModel
 	})
 	.populate('ownerId', { password: 0, contacts: 0 })
 	.populate('userId', { password: 0, contacts: 0 });
+
+exports.getConversation = (query, options) => ConversationModel
+	.findOne(query, options)
+	.populate({
+		path: 'messages',
+		options: {
+			sort: {
+				dateTime: 1
+			}
+		}
+	})
+	.populate('ownerId', { password: 0, contacts: 0 })
+	.populate('userId', { password: 0, contacts: 0 });

@@ -3,7 +3,8 @@ const {
 } = absoluteRequire('repositories/message');
 
 const {
-	findOneConversationAndUpdate
+	findOneConversationAndUpdate,
+	getConversation
 } = absoluteRequire('repositories/conversation');
 
 exports.postMessage = async (req, res) => {
@@ -48,13 +49,55 @@ exports.postMessage = async (req, res) => {
 			}
 		});
 
-		global.io.to(req.body.receiverId).emit('message.new', {
-			message: req.body.message
+		global.io.to(receiverId).emit('message.new', {
+			message: messageResult,
+			sender: req.currentUser
 		});
 
 		res.status(200)
 			.json({
-				success: true
+				success: true,
+				result: messageResult
+			});
+	} catch (e) {
+		res.status(500)
+			.json({
+				success: false
+			});
+	}
+};
+
+exports.getMessages = async (req, res) => {
+	const {
+		userId
+	} = req.query;
+
+	const {
+		_id: ownerId
+	} = req.currentUser;
+
+	try {
+		const result = await getConversation({
+			userId,
+			ownerId
+		});
+
+		res.status(200)
+			.json({
+				success: true,
+				result: result ? result.messages.map((item) => {
+					const {
+						dateTime,
+						message,
+						senderId
+					} = item;
+
+					return {
+						dateTime,
+						message,
+						currentUserIsSender: String(senderId) === String(ownerId)
+					};
+				}) : []
 			});
 	} catch (e) {
 		res.status(500)

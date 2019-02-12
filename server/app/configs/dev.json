@@ -5,7 +5,7 @@
 		"JWT_SECRET": "j2onfullstackchallendsecret",
 		"JWTEXPIRES_IN": 86400,
 		"JWT_DEFAULT_USER": "amendoa",
-		"JWT_DEFAULT_ID": "5c605097d740f02a820b9f29"
+		"JWT_DEFAULT_ID": "5c609a0feb7e321accff223d"
 	},
 	"ENDPOINTS": {
 		"AUTH": {

@@ -31,7 +31,6 @@ exports.postSignUp = async (req, res) => {
 			if (result) {
 				const token = createJwtToken({
 					nickname: result.nickname.toLowerCase(),
-					// eslint-disable-next-line
 					_id: result._id
 				});
 
@@ -75,12 +74,14 @@ exports.postSignIn = async (req, res) => {
 		const result = await userRepository.findOneUser({
 			password: encryptPassword(password),
 			nickname: nickname.toLowerCase()
+		}, {
+			password: 0,
+			contacts: 0
 		});
 
 		if (result) {
 			const token = createJwtToken({
 				nickname: result.nickname.toLowerCase(),
-				// eslint-disable-next-line
 				_id: result._id
 			});
 
@@ -89,6 +90,7 @@ exports.postSignIn = async (req, res) => {
 				.json({
 					success: true,
 					token,
+					user: result,
 					errors: []
 				});
 		} else {

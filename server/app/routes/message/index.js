@@ -1,5 +1,8 @@
 const express = require('express');
-const messageController = absoluteRequire('controllers/message');
+const {
+	getMessages,
+	postMessage
+} = absoluteRequire('controllers/message');
 // const {
 // 	addContactValidator
 // } = absoluteRequire('validators/contact');
@@ -10,6 +13,7 @@ const {
 
 const route = Router();
 
-route.post('/secured/message', messageController.postMessage);
+route.post('/secured/message', postMessage);
+route.get('/secured/message', getMessages);
 
 module.exports = route;
