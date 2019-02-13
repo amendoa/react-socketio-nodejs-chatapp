@@ -5,7 +5,9 @@
 		"JWT_SECRET": "j2onfullstackchallendsecret",
 		"JWTEXPIRES_IN": 86400,
 		"JWT_DEFAULT_USER": "amendoa",
-		"JWT_DEFAULT_ID": "5c609a0feb7e321accff223d"
+		"JWT_DEFAULT_USER_ID": "5c62f60d0086e9753ab883ff",
+		"JWT_DEFAULT_USER_FRIEND": "orelha1",
+		"JWT_DEFAULT_USER_FRIEND_ID": "5c62f5f80086e9753ab883fc"
 	},
 	"ENDPOINTS": {
 		"AUTH": {
@@ -18,8 +20,8 @@
 		"CONVERSATION": "/secured/conversation"
 	},
 	"EXPRESS_VALIDATION_MESSAGES": {
-		"NICKNAME_LENGHT_BETWEEN_2_AND_15": "The Nickname must have between 2 and 15 characters",
-		"PASSWORD_LENGHT_BETWEEN_5_AND_15": "The Password must have between 5 and 15 characters",
+		"NICKNAME_LENGHT_BETWEEN_2_AND_12": "The Nickname must have between 2 and 12 characters",
+		"PASSWORD_LENGHT_BETWEEN_5_AND_12": "The Password must have between 5 and 12 characters",
 		"THIS_NICKNAME_IS_ALREADY_TAKEN": "This Nickname is already taken",
 		"THIS_NICKNAME_IS_ALREADY_ADDED": "This Nickname is already added",
 		"THIS_NICKNAME_DO_NOT_EXISTS": "This Nickname doesn't exist",

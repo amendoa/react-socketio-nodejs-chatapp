@@ -20,6 +20,10 @@ const ConversationSchema = new Schema({
 		unique: true,
 		ref: 'User'
 	},
+	unreadMessages: {
+		type: Number,
+		default: 0
+	},
 	messages: [
 		{
 			type: ObjectId,

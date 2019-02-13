@@ -4,8 +4,8 @@ const userRepository = absoluteRequire('repositories/user');
 
 module.exports.signupValidator = () => [
 	check('nickname')
-		.isLength({ min: 2, max: 15 })
-		.withMessage(constants.EXPRESS_VALIDATION_MESSAGES.NICKNAME_LENGHT_BETWEEN_2_AND_15)
+		.isLength({ min: 2, max: 12 })
+		.withMessage(constants.EXPRESS_VALIDATION_MESSAGES.NICKNAME_LENGHT_BETWEEN_2_AND_12)
 		.custom(async (nickname) => {
 			try {
 				const user = await userRepository.findUser({
@@ -23,6 +23,6 @@ module.exports.signupValidator = () => [
 		})
 		.withMessage(constants.EXPRESS_VALIDATION_MESSAGES.THIS_NICKNAME_IS_ALREADY_TAKEN),
 	check('password')
-		.isLength({ min: 5, max: 15 })
-		.withMessage(constants.EXPRESS_VALIDATION_MESSAGES.PASSWORD_LENGHT_BETWEEN_5_AND_15)
+		.isLength({ min: 5, max: 12 })
+		.withMessage(constants.EXPRESS_VALIDATION_MESSAGES.PASSWORD_LENGHT_BETWEEN_5_AND_12)
 ];

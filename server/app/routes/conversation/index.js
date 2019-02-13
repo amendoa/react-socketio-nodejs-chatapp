@@ -1,7 +1,8 @@
 const express = require('express');
 
 const {
-	getConversations
+	getConversations,
+	updateConversation
 } = absoluteRequire('controllers/conversation');
 
 const {
@@ -11,5 +12,6 @@ const {
 const route = Router();
 
 route.get('/secured/conversation', getConversations);
+route.put('/secured/conversation', updateConversation);
 
 module.exports = route;

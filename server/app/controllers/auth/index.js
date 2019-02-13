@@ -34,12 +34,24 @@ exports.postSignUp = async (req, res) => {
 					_id: result._id
 				});
 
+				const user = await userRepository
+					.findOneUser(
+						{
+							_id: result._id
+						},
+						{
+							password: 0,
+							contacts: 0
+						}
+					);
+
 				res
 					.status(200)
 					.json({
 						success: true,
 						errors: [],
-						token
+						token,
+						user
 					});
 			} else {
 				res

@@ -1,3 +1,5 @@
+const moment = require('moment');
+
 const {
 	addMessage
 } = absoluteRequire('repositories/message');
@@ -21,7 +23,7 @@ exports.postMessage = async (req, res) => {
 		senderId,
 		receiverId,
 		message,
-		dateTime: new Date()
+		dateTime: moment.utc().toDate()
 	};
 
 	try {
@@ -44,6 +46,9 @@ exports.postMessage = async (req, res) => {
 		}, {
 			ownerId: receiverId,
 			userId: senderId,
+			$inc: {
+				unreadMessages: 1
+			},
 			$addToSet: {
 				messages: messageResult._id
 			}
