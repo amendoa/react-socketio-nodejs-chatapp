@@ -23,12 +23,12 @@ import {
 import {
 	logout,
 	searchParam,
-	getUser
+	getUser,
+	setConversationLastMessageDateTime
 } from 'modules/utils';
 
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import moment from 'moment';
 import * as contactActions from 'redux/actions/contact';
 import * as drawerActions from 'redux/actions/drawer';
 import * as conversationActions from 'redux/actions/conversation';
@@ -94,6 +94,13 @@ class ActionsWrapper extends Component {
 				profileColor,
 				_id
 			} = item.userId;
+
+			// const {
+			// 	unreadMessages
+			// } = item;
+
+			const unreadMessages = 10;
+
 			const lastMessage = item.messages[item.messages.length - 1];
 
 			return {
@@ -101,7 +108,8 @@ class ActionsWrapper extends Component {
 				profileColor,
 				_id,
 				desc: lastMessage ? lastMessage.message : '',
-				rightLabel: lastMessage ? moment(lastMessage.dateTime).fromNow(true) : ''
+				rightLabel: lastMessage ? setConversationLastMessageDateTime(lastMessage.dateTime) : '',
+				unreadMessages
 			};
 		});
 	}
@@ -198,6 +206,12 @@ class ActionsWrapper extends Component {
 										event: this.handleLogout
 									}
 								]}
+								icon={{
+									fill: '#555657',
+									icon: 'dots-vertical',
+									width: 26,
+									height: 26
+								}}
 							/>
 						</div>
 					</div>

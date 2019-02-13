@@ -74,8 +74,8 @@ class SignUpFormContainer extends Component {
 						}
 						if (!nickname) {
 							newErrors.nickname = constants.LABELS.AUTH.PLEASE_ENTER_YOUR_NICKNAME;
-						} else if (nickname.length < 2 || nickname.length > 15) {
-							newErrors.nickname = constants.LABELS.AUTH.NICKNAME_LENGHT_BETWEEN_2_AND_15;
+						} else if (nickname.length < 2 || nickname.length > 12) {
+							newErrors.nickname = constants.LABELS.AUTH.NICKNAME_LENGHT_BETWEEN_2_AND_12;
 						}
 					}
 
@@ -87,8 +87,8 @@ class SignUpFormContainer extends Component {
 
 						if (!password) {
 							newErrors.password = constants.LABELS.AUTH.PLEASE_ENTER_YOUR_PASSWORD;
-						} else if (password.length < 5 || password.length > 15) {
-							newErrors.password = constants.LABELS.AUTH.PASSWORD_LENGHT_BETWEEN_5_AND_15;
+						} else if (password.length < 5 || password.length > 12) {
+							newErrors.password = constants.LABELS.AUTH.PASSWORD_LENGHT_BETWEEN_5_AND_12;
 						} else if (!confirmPassword) {
 							newErrors.confirmPassword = constants.LABELS.AUTH.PLEASE_CONFIRM_PASSWORD;
 						} else if (confirmPassword !== password) {
@@ -141,7 +141,7 @@ class SignUpFormContainer extends Component {
 								onFocus={handleFocus}
 								onBlur={handleBlur}
 								margin="13px 0px 13px 0px"
-								maxLength={15}
+								maxLength={12}
 								width={280}
 								defaultButton
 								iconRight
@@ -193,7 +193,7 @@ class SignUpFormContainer extends Component {
 								onChange={handleChange}
 								onFocus={handleFocus}
 								onBlur={handleBlur}
-								maxLength={15}
+								maxLength={12}
 								margin="13px 0px 13px 0px"
 								width={280}
 								defaultButton
@@ -208,7 +208,7 @@ class SignUpFormContainer extends Component {
 								onChange={handleChange}
 								onFocus={handleFocus}
 								onBlur={handleBlur}
-								maxLength={15}
+								maxLength={12}
 								margin="13px 0px 13px 0px"
 								width={280}
 								defaultButton

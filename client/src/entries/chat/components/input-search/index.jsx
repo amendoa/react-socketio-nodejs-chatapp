@@ -17,6 +17,10 @@ export default class InputSearchComponent extends Component {
 		handleChange(value);
 	}, 300);
 
+	componentWillUnmount () {
+		this.debounceChange.cancel();
+	}
+
 	render () {
 		return (
 			<InputComponent
@@ -28,7 +32,7 @@ export default class InputSearchComponent extends Component {
 					} = event.target;
 					this.debounceChange(value);
 				}}
-				maxLength={15}
+				maxLength={12}
 				search
 				iconComponent={() => {
 					return (

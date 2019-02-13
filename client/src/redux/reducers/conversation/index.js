@@ -4,7 +4,9 @@ import {
 	GET_CONVERSATIONS_RECEIVED,
 	SET_CURRENT_CONVERSATION_MESSAGES,
 	ADD_MESSAGE_TO_CURRENT_CONVERSATION_MESSAGES,
-	RESET_CONVERSATION
+	RESET_CONVERSATION,
+	INCREMENT_CONVERSATION_UNREAD_MESSAGES,
+	RESET_CONVERSATION_UNREAD_MESSAGES
 } from 'redux/constants/conversation';
 
 const initialState = {
@@ -17,12 +19,11 @@ export default function conversationReducer (state = initialState, action) {
 	const setNewConversationToResult = () => {
 		return state.result.find(item => String(item.userId._id) === String(action.params.user._id))
 			? state.result
-			: [
-				{
-					userId: action.params.user,
-					messages: []
-				}
-			];
+			: state.result.concat([{
+				userId: action.params.user,
+				messages: [],
+				unreadMessages: 0
+			}]);
 	};
 
 	switch (action.type) {
@@ -92,6 +93,38 @@ export default function conversationReducer (state = initialState, action) {
 
 		case RESET_CONVERSATION:
 			return initialState;
+
+		case INCREMENT_CONVERSATION_UNREAD_MESSAGES:
+			return Object.assign({}, state, {
+				result: state.result.map((item) => {
+					const newItem = item;
+					const {
+						user
+					} = action.params;
+
+					if (newItem.userId._id === user._id) {
+						newItem.unreadMessages += 1;
+					}
+
+					return newItem;
+				})
+			});
+
+		case RESET_CONVERSATION_UNREAD_MESSAGES:
+			return Object.assign({}, state, {
+				result: state.result.map((item) => {
+					const newItem = item;
+					const {
+						user
+					} = action.params;
+
+					if (newItem.userId._id === user._id) {
+						newItem.unreadMessages = 0;
+					}
+
+					return newItem;
+				})
+			});
 
 		default:
 			return state;

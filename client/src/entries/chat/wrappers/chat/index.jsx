@@ -19,8 +19,6 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as conversationActions from 'redux/actions/conversation';
 import * as messageActions from 'redux/actions/message';
-import _ from 'lodash';
-import moment from 'moment';
 
 class ChatWrapper extends Component {
 	constructor (props) {
@@ -36,8 +34,39 @@ class ChatWrapper extends Component {
 		const {
 			current
 		} = this.conversationContainer;
+
+
 		if (current) {
 			current.scrollTop = current.scrollHeight;
+		}
+	}
+
+	setConversationIsRead = () => {
+		const {
+			conversationData,
+			conversationActions
+		} = this.props;
+
+		const {
+			resetConversationUnreadMessages
+		} = conversationActions;
+
+		const {
+			currentUserIdConversation,
+			result: conversations
+		} = conversationData;
+
+		const currentConversation = conversations.find(item => String(item.userId._id) === String(currentUserIdConversation));
+
+		const {
+			userId,
+			unreadMessages
+		} = currentConversation;
+
+		if (unreadMessages > 0) {
+			resetConversationUnreadMessages({
+				user: userId
+			});
 		}
 	}
 
@@ -144,11 +173,14 @@ class ChatWrapper extends Component {
 					<MessageListContainer
 						isFetching={getMessages.isFetching}
 						items={currentConversation.messages}
+						onMouseOver={this.setConversationIsRead}
+						onFocus={this.setConversationIsRead}
 					/>
 				</section>
 				<footer className='footer-container'>
 					<ContentEditableComponent
 						onEnter={this.handleSendMessage}
+						onFocus={this.setConversationIsRead}
 						value={message}
 					/>
 				</footer>

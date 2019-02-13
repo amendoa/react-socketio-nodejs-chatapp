@@ -13,7 +13,8 @@ export default class ConversationCardComponent extends Component {
 			title,
 			desc,
 			onClick,
-			rightLabel
+			rightLabel,
+			tagInfo
 		} = this.props;
 
 		return (
@@ -33,6 +34,10 @@ export default class ConversationCardComponent extends Component {
 						wrapperStyle={{
 							width: '100%',
 							justifyContent: 'space-between'
+						}}
+						tagInfo={tagInfo}
+						actions={{
+
 						}}
 					/>
 				</div>

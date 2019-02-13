@@ -48,6 +48,11 @@ function connectSocket () {
 function subscribe (socket) {
 	return eventChannel(emit => {
 		socket.on('message.new', (response) => {
+			const {
+				addMessageToCurrentConversationMessages,
+				incrementConversationUnreadMessages
+			} = conversationActions;
+
 			const sound = new Howl({
 				src: [
 					`${process.env.PUBLIC_URL}${constants.GLOBAL.MESSAGE_RECEIVED_MP3}`
@@ -61,10 +66,12 @@ function subscribe (socket) {
 				sender
 			} = response;
 
-			emit(conversationActions.addMessageToCurrentConversationMessages({
+			emit(addMessageToCurrentConversationMessages({
 				message,
-				user: sender,
-				userId: message.senderId
+				user: sender
+			}));
+			emit(incrementConversationUnreadMessages({
+				user: sender
 			}));
 		});
 

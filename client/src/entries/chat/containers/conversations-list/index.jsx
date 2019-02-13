@@ -46,6 +46,14 @@ export default class ConversationsList extends Component {
 			<div>
 				{
 					items.map((item, key) => {
+						const {
+							nickname,
+							unreadMessages,
+							profileColor,
+							desc,
+							rightLabel
+						} = item;
+
 						return (
 							<ConversationCardComponent
 								key={key}
@@ -53,26 +61,27 @@ export default class ConversationsList extends Component {
 									onClickItem(item);
 								}}
 								profile={{
-									label: item.nickname,
+									label: nickname,
 									width: 40,
 									height: 40,
-									backgroundColor: item.profileColor,
+									backgroundColor: profileColor,
 									color: 'white',
 									labelFontSize: 12
 								}}
 								title={{
-									text: item.nickname,
+									text: nickname,
 									fontSize: 13,
-									maxWidth: 100,
+									maxWidth: 76,
 									margin: '0px 0px 0px 14px'
 								}}
 								desc={{
-									text: item.desc,
+									text: desc,
 									fontSize: 13,
-									maxWidth: 100,
+									maxWidth: 76,
 									margin: '0px 0px 0px 14px'
 								}}
-								rightLabel={item.rightLabel}
+								rightLabel={rightLabel}
+								tagInfo={unreadMessages}
 							/>
 						);
 					})

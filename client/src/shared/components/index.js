@@ -10,6 +10,7 @@ import SketchComponent from './sketch';
 import DrawerComponent from './drawer';
 import DropDownMenuComponent from './drop-down-menu';
 import ContentEditableComponent from './content-editable';
+import TagComponent from './tag';
 
 export {
 	ButtonComponent,
@@ -23,5 +24,6 @@ export {
 	DrawerComponent,
 	SketchComponent,
 	DropDownMenuComponent,
-	ContentEditableComponent
+	ContentEditableComponent,
+	TagComponent
 };

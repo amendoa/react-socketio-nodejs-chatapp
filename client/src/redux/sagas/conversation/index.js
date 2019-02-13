@@ -13,7 +13,8 @@ import {
 
 import {
 	GET_CONVERSATIONS,
-	SET_CURRENT_CONVERSATION
+	SET_CURRENT_CONVERSATION,
+	RESET_CONVERSATION_UNREAD_MESSAGES
 } from 'redux/constants/conversation';
 
 import * as conversationActions from 'redux/actions/conversation';
@@ -38,6 +39,29 @@ function* getConversationsFetch () {
 	}
 }
 
+function* resetConversationUnreadtMessagesSaga (action) {
+	const {
+		user
+	} = action.params;
+
+	const body = {
+		userId: user._id,
+		conversation: {
+			unreadMessages: 0
+		}
+	};
+
+	try {
+		yield sendRequest({
+			url: `${constants.API.ROOT}${constants.API.ACTIONS.CONVERSATION}`,
+			method: constants.API.METHODS.PUT,
+			body
+		});
+	} catch (e) {
+		toast.error(constants.LABELS.MAIN.GLOBAL_ERROR);
+	}
+}
+
 function* setCurrentConversationSaga(action) {
 	const {
 		user
@@ -56,7 +80,8 @@ function* setCurrentConversationSaga(action) {
 
 const sagas = [
 	takeLatest(GET_CONVERSATIONS, getConversationsFetch),
-	takeLatest(SET_CURRENT_CONVERSATION, setCurrentConversationSaga)
+	takeLatest(SET_CURRENT_CONVERSATION, setCurrentConversationSaga),
+	takeLatest(RESET_CONVERSATION_UNREAD_MESSAGES, resetConversationUnreadtMessagesSaga)
 ];
 
 export default sagas;

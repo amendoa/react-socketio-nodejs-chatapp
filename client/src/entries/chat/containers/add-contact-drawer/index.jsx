@@ -104,7 +104,7 @@ class AddContactDrawer extends Component {
 										autoComplete='off'
 										placeholder={constants.LABELS.AUTH.NICKNAME}
 										onChange={handleChange}
-										maxLength={15}
+										maxLength={12}
 										defaultButton
 										margin='0px 0px 15px 0px'
 									/>

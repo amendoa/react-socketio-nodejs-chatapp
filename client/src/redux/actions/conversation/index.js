@@ -4,7 +4,9 @@ import {
 	GET_CONVERSATIONS_RECEIVED,
 	SET_CURRENT_CONVERSATION_MESSAGES,
 	ADD_MESSAGE_TO_CURRENT_CONVERSATION_MESSAGES,
-	RESET_CONVERSATION
+	RESET_CONVERSATION,
+	INCREMENT_CONVERSATION_UNREAD_MESSAGES,
+	RESET_CONVERSATION_UNREAD_MESSAGES
 } from 'redux/constants/conversation';
 
 export function reset () {
@@ -43,6 +45,20 @@ export function setCurrentConversationMessages (params) {
 export function addMessageToCurrentConversationMessages (params) {
 	return {
 		type: ADD_MESSAGE_TO_CURRENT_CONVERSATION_MESSAGES,
+		params
+	};
+}
+
+export function incrementConversationUnreadMessages (params) {
+	return {
+		type: INCREMENT_CONVERSATION_UNREAD_MESSAGES,
+		params
+	};
+}
+
+export function resetConversationUnreadMessages (params) {
+	return {
+		type: RESET_CONVERSATION_UNREAD_MESSAGES,
 		params
 	};
 }

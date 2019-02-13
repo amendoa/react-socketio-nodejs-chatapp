@@ -5,6 +5,10 @@
 		text-align: center;
 	}
 
+	&.align-right {
+		text-align: right;
+	}
+
 	&.danger {
 		color: $brand-danger;
 	}

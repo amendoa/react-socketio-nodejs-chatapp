@@ -16,4 +16,32 @@
 			justify-content: center;
 		}
 	}
+
+	.info-container {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+
+		&.invisible {
+			display: none;
+		}
+	}
+
+	.actions-container {
+		display: none;
+
+		&.visible {
+			display: block;
+		}
+	}
+
+	&:hover {
+		.info-container {
+			display: none;
+		}
+
+		.actions-container  {
+			display: block;
+		}
+	}
 }

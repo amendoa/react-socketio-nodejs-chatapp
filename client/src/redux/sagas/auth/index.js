@@ -3,10 +3,9 @@ import * as authActions from 'redux/actions/auth';
 import * as formActions from 'redux/actions/form';
 import constants from 'modules/constants';
 import { toast } from 'react-toastify';
-import history from 'react-router/history';
+
 import {
 	serverErrorsToFrontFormat,
-	setToken,
 	sendRequest,
 	login
 } from 'modules/utils';
@@ -33,13 +32,13 @@ function* signInPostFetch (props) {
 			body
 		});
 
-		if (response.success && response.token && response.user) {
-			login(response.token, response.user);
-		}
-
 		yield put(authActions.postSignInReceived({
 			errors: response.errors
 		}));
+
+		if (response.success && response.token && response.user) {
+			login(response.token, response.user);
+		}
 	} catch (e) {
 		yield put(authActions.postSignInReceived());
 		toast.error(constants.LABELS.MAIN.GLOBAL_ERROR);
@@ -63,17 +62,17 @@ function* signUpPostFetch (props) {
 			body
 		});
 
-		if (response.success && response.token) {
-			setToken(response.token);
-			history.push('/');
-		}
-
 		yield put(formActions.setFormError(formName, {
 			errors: serverErrorsToFrontFormat(response.errors)
 		}));
 
 		yield put(authActions.postSignUpReceived());
+
+		if (response.success && response.token && response.user) {
+			login(response.token, response.user);
+		}
 	} catch (e) {
+		console.log(e);
 		yield put(authActions.postSignUpReceived());
 		toast.error(constants.LABELS.MAIN.GLOBAL_ERROR);
 	}

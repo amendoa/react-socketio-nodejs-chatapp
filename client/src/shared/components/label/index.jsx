@@ -19,6 +19,7 @@ export default class LabelComponent extends Component {
 			breakWord,
 			maxWidth,
 			alignCenter,
+			alignRight,
 			width
 		} = this.props;
 
@@ -33,6 +34,7 @@ export default class LabelComponent extends Component {
 			'font-regular': fontRegular,
 			'break-word': breakWord,
 			'align-center': alignCenter,
+			'align-right': alignRight,
 			default: defaultLabel
 		});
 

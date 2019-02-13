@@ -8,6 +8,7 @@ exports[`<LabelComponent /> renders correctly 1`] = `
       "fontSize": undefined,
       "margin": undefined,
       "maxWidth": undefined,
+      "width": undefined,
     }
   }
 >

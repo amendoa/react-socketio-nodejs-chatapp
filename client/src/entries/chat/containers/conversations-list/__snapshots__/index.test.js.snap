@@ -10,7 +10,7 @@ exports[`<ConversationsList /> renders correctly 1`] = `
         Object {
           "fontSize": 13,
           "margin": "0px 0px 0px 14px",
-          "maxWidth": 100,
+          "maxWidth": 76,
           "text": undefined,
         }
       }
@@ -30,7 +30,7 @@ exports[`<ConversationsList /> renders correctly 1`] = `
         Object {
           "fontSize": 13,
           "margin": "0px 0px 0px 14px",
-          "maxWidth": 100,
+          "maxWidth": 76,
           "text": undefined,
         }
       }

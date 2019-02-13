@@ -9,13 +9,53 @@ import {
 } from 'entries/chat/components';
 
 import moment from 'moment';
+import _ from 'lodash';
 
 export default class MessageListContainer extends Component {
+	getItems = () => {
+		const {
+			items
+		} = this.props;
+
+		const messages = [];
+
+		const aggregatedItems = _.groupBy(items, (item) => {
+			return moment(item.dateTime).utc().startOf('day').format();
+		});
+
+		_.mapKeys(aggregatedItems, (value, key) => {
+			const item = {
+				items: value
+			};
+
+			const diff = moment(new Date()).diff(moment(key), 'days');
+
+			if (diff <= 6) {
+				if (diff === 0) {
+					item.timeTag = 'today';
+				} else if (diff === 1) {
+					item.timeTag = 'yesterday';
+				} else {
+					item.timeTag = moment(key).format('dddd');
+				}
+			} else {
+				item.timeTag = moment(key).format('DD/MM/YYYY');
+			}
+
+			messages.push(item);
+		});
+
+		return messages;
+	}
+
 	render () {
 		const {
 			isFetching,
-			items
+			onMouseOver,
+			onFocus
 		} = this.props;
+
+		const messages = this.getItems();
 
 		if (isFetching) {
 			return (
@@ -35,43 +75,45 @@ export default class MessageListContainer extends Component {
 		return (
 			<div
 				className='message-list'
+				onMouseOver={onMouseOver}
+				onFocus={onFocus}
 			>
 				{
-					items.map((item, key) => {
+					messages.map((message, key) => {
 						const {
-							message,
-							dateTime,
-							currentUserIsSender
-						} = item;
+							timeTag,
+							items
+						} = message;
 
-						// if (item.type === 1) {
-						// 	return (
-						// 		<MessageComponent
-						// 			key={key}
-						// 			left
-						// 			text='Hey there! how are you?'
-						// 			time='12:23'
-						// 		/>
-						// 	);
-						// }
-						//
-						// if (item.type === 3) {
-						// 	return (
-						// 		<TimeTagComponent
-						// 			key={key}
-						// 			text='Today'
-						// 		/>
-						// 	);
-						// }
+						const components = [];
+
+						components.push(
+							<TimeTagComponent
+								key={`time-tag${key}`}
+								text={timeTag}
+							/>
+						);
+
+						items.forEach((item, key) => {
+							const {
+								message,
+								dateTime,
+								currentUserIsSender
+							} = item;
+
+							components.push(
+								<MessageComponent
+									key={`message${key}`}
+									right={currentUserIsSender}
+									left={!currentUserIsSender}
+									text={message}
+									time={moment(dateTime).format('HH:mm')}
+								/>
+							);
+						});
 
 						return (
-							<MessageComponent
-								key={key}
-								right={currentUserIsSender}
-								left={!currentUserIsSender}
-								text={message}
-								time={moment(dateTime).format('HH:mm')}
-							/>
+							components
 						);
 					})
 				}

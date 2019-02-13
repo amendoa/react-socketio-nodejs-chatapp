@@ -31,9 +31,7 @@ export default class DropDownMenuComponent extends Component {
 		// eslint-disable-next-line
 		const domNode = ReactDOM.findDOMNode(this);
 		if (!domNode.contains(event.target)) {
-			this.setState({
-				isOpen: false
-			});
+			this.changeOpenState(false, false);
 		}
 	}
 
@@ -42,18 +40,29 @@ export default class DropDownMenuComponent extends Component {
 			isOpen
 		} = this.state;
 
+		const {
+			onChange
+		} = this.props;
+
+		const newIsOpenState = toggle ? (!isOpen) : newIsOpen;
+
+		if (onChange) {
+			onChange(newIsOpenState);
+		}
+
 		this.setState({
-			isOpen: toggle ? (!isOpen) : newIsOpen
+			isOpen: newIsOpenState
 		});
 	}
 
 	render () {
 		const {
-			isOpen
+			isOpen,
 		} = this.state;
 
 		const {
-			options
+			options,
+			icon
 		} = this.props;
 
 		const dropDownStyles = classNames({
@@ -75,10 +84,9 @@ export default class DropDownMenuComponent extends Component {
 					}}
 				>
 					<IconComponent
-						fill="#555657"
-						icon="dots-vertical"
-						width={26}
-						height={26}
+						{
+						...icon
+						}
 					/>
 				</ButtonComponent>
 				<div className={dropDownStyles}>

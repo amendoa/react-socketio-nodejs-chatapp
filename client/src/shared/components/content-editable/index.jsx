@@ -18,7 +18,8 @@ export default class ContentEditableComponent extends Component {
 
 	render () {
 		const {
-			onEnter
+			onEnter,
+			onFocus
 		} = this.props;
 
 		return (
@@ -34,6 +35,7 @@ export default class ContentEditableComponent extends Component {
 						onEnter(this.contentEditable.current.innerHTML);
 					}
 				}}
+				onFocus={onFocus}
 			>
 			</div>
 		);
