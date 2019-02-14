@@ -2,7 +2,8 @@ const express = require('express');
 
 const {
 	getConversations,
-	updateConversation
+	updateConversation,
+	deleteConversation
 } = absoluteRequire('controllers/conversation');
 
 const {
@@ -13,5 +14,6 @@ const route = Router();
 
 route.get('/secured/conversation', getConversations);
 route.put('/secured/conversation', updateConversation);
+route.delete('/secured/conversation', deleteConversation);
 
 module.exports = route;

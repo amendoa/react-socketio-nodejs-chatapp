@@ -34,3 +34,6 @@ exports.getConversation = (query, options) => ConversationModel
 	})
 	.populate('ownerId', { password: 0, contacts: 0 })
 	.populate('userId', { password: 0, contacts: 0 });
+
+exports.deleteOneConversation = query => ConversationModel
+	.deleteOne(query);

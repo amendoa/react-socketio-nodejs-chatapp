@@ -32,15 +32,32 @@ describe('CONVERSATION \n', () => {
 	// 		});
 	// });
 
-	it('UPDATE CONVERSATION - Should return STATUS 200 | SUCCESS FIELD TRUE', (done) => {
+	// it('UPDATE CONVERSATION - Should return STATUS 200 | SUCCESS FIELD TRUE', (done) => {
+	// 	request(`http://${constants.GENERAL.SERVER_HTTP_IP}:${constants.GENERAL.SERVER_HTTP_PORT}`)
+	// 		.put(constants.ENDPOINTS.CONVERSATION)
+	// 		.set('x-access-token', token)
+	// 		.send({
+	// 			conversation: {
+	// 				unreadMessages: 0
+	// 			},
+	// 			userId: constants.GENERAL.JWT_DEFAULT_USER_FRIEND_ID
+	// 		})
+	// 		.end((err, res) => {
+	// 			logger.info('-----------');
+	// 			logger.info(res.body);
+	// 			res.should.have.status(200);
+	// 			res.body.should.have.property('success').eql(true);
+	// 			done();
+	// 		});
+	// });
+
+	it('DELETE CONVERSATION - Should return STATUS 200 | SUCCESS FIELD TRUE', (done) => {
 		request(`http://${constants.GENERAL.SERVER_HTTP_IP}:${constants.GENERAL.SERVER_HTTP_PORT}`)
-			.put(constants.ENDPOINTS.CONVERSATION)
+			.delete(constants.ENDPOINTS.CONVERSATION)
 			.set('x-access-token', token)
 			.send({
-				conversation: {
-					unreadMessages: 0
-				},
-				userId: constants.GENERAL.JWT_DEFAULT_USER_FRIEND_ID
+				// conversationId: '5c649ef87d1d3aae777e4b20'
+				conversationId: 'cc1bb350-305d-11e9-ac7f-d7bbdf274820'
 			})
 			.end((err, res) => {
 				logger.info('-----------');

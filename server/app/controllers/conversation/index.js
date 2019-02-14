@@ -1,6 +1,8 @@
+const mongoose = require('mongoose');
 const {
 	getConversations,
-	findOneConversationAndUpdate
+	findOneConversationAndUpdate,
+	deleteOneConversation
 } = absoluteRequire('repositories/conversation');
 
 exports.getConversations = async (req, res) => {
@@ -33,8 +35,6 @@ exports.updateConversation = async (req, res) => {
 			conversation
 		} = req.body;
 
-		console.log(req.body)
-
 		const {
 			_id: ownerId
 		} = req.currentUser;
@@ -43,6 +43,32 @@ exports.updateConversation = async (req, res) => {
 			ownerId,
 			userId
 		}, conversation);
+
+		res.status(200)
+			.json({
+				success: true
+			});
+	} catch (e) {
+		res.status(500)
+			.json({
+				success: false
+			});
+	}
+};
+
+exports.deleteConversation = async (req, res) => {
+	try {
+		const {
+			conversationId
+		} = req.body;
+
+		const conversationIdIsValid = mongoose.Types.ObjectId.isValid(conversationId);
+
+		if (conversationIdIsValid) {
+			await deleteOneConversation({
+				_id: conversationId
+			});
+		}
 
 		res.status(200)
 			.json({
