@@ -54,11 +54,6 @@ export default class UserInfoComponent extends Component {
 			visible: actionDropdownIsOpen
 		});
 
-		const infoContainerStyles = classNames({
-			'info-container': true,
-			invisible: actionDropdownIsOpen
-		});
-
 		if (isFetching) {
 			return (
 				<div
@@ -130,31 +125,8 @@ export default class UserInfoComponent extends Component {
 						/>
 					</div>
 				</div>
-				{
-					actions ? (
-						<div
-							className={actionsContainerStyles}
-						>
-							<DropDownMenuComponent
-								options={[
-									{
-										text: 'teste',
-										event: () => {}
-									}
-								]}
-								icon={{
-									fill: '#555657',
-									icon: 'arrow-down',
-									width: 26,
-									height: 26
-								}}
-								onChange={this.onChangeDropDownActions}
-							/>
-						</div>
-					) : null
-				}
 				<div
-					className={infoContainerStyles}
+					className='info-container'
 				>
 					{
 						rightLabel ? (
@@ -168,14 +140,37 @@ export default class UserInfoComponent extends Component {
 							/>
 						) : null
 					}
-					{
-						tagInfo ? (
-							<TagComponent
-								success
-								text={tagInfo}
-							/>
-						) : null
-					}
+					<div
+						className='footer-container'
+					>
+						{
+							tagInfo ? (
+								<TagComponent
+									success
+									text={tagInfo}
+								/>
+							) : null
+						}
+						{
+							actions ? (
+								<div
+									className={actionsContainerStyles}
+								>
+									<DropDownMenuComponent
+										options={actions.options}
+										icon={{
+											fill: '#555657',
+											icon: 'arrow-down',
+											width: '100%',
+											height: '100%'
+										}}
+										onChange={this.onChangeDropDownActions}
+										marginButton='0px 0px 0px 8px'
+									/>
+								</div>
+							) : null
+						}
+					</div>
 				</div>
 			</div>
 		);

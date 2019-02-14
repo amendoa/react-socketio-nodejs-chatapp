@@ -14,7 +14,8 @@ import {
 import {
 	GET_CONVERSATIONS,
 	SET_CURRENT_CONVERSATION,
-	RESET_CONVERSATION_UNREAD_MESSAGES
+	RESET_CONVERSATION_UNREAD_MESSAGES,
+	DELETE_CONVERSATION
 } from 'redux/constants/conversation';
 
 import * as conversationActions from 'redux/actions/conversation';
@@ -78,10 +79,40 @@ function* setCurrentConversationSaga(action) {
 	}));
 }
 
+function* deleteConversationFetchSaga(action) {
+	const {
+		params
+	} = action;
+
+	const {
+		conversationId
+	} = params;
+
+	const body = {
+		conversationId
+	};
+
+	try {
+		// yield sendRequest({
+		// 	url: `${constants.API.ROOT}${constants.API.ACTIONS.CONVERSATION}`,
+		// 	method: constants.API.METHODS.DELETE,
+		// 	body
+		// });
+
+		yield put(conversationActions.deleteConversationReceived({
+			conversationId
+		}));
+	} catch (e) {
+		yield put(conversationActions.deleteConversationReceived());
+		toast.error(constants.LABELS.MAIN.GLOBAL_ERROR);
+	}
+}
+
 const sagas = [
 	takeLatest(GET_CONVERSATIONS, getConversationsFetch),
 	takeLatest(SET_CURRENT_CONVERSATION, setCurrentConversationSaga),
-	takeLatest(RESET_CONVERSATION_UNREAD_MESSAGES, resetConversationUnreadtMessagesSaga)
+	takeLatest(RESET_CONVERSATION_UNREAD_MESSAGES, resetConversationUnreadtMessagesSaga),
+	takeLatest(DELETE_CONVERSATION, deleteConversationFetchSaga)
 ];
 
 export default sagas;

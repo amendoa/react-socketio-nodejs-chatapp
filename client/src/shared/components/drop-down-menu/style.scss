@@ -4,11 +4,9 @@
 	.drop-down-menu {
 		display: flex;
 		position: absolute;
-		// height: 100px;
-		width: 100px;
 		right: 0;
-		margin: 25px;
-		padding: 10px;
+		margin: 5px 25px 25px 25px;
+		padding: 10px 20px 10px 20px;
 		transform-origin: right top 0px;
 		transform: scale(0);
 		transition: all 0.3s ease;

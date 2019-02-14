@@ -88,6 +88,14 @@ class ActionsWrapper extends Component {
 	}
 
 	conversationListToComponentData = (conversations) => {
+		const {
+			conversationData
+		} = this.props;
+
+		const {
+			currentUserIdConversation
+		} = conversationData;
+
 		return conversations.map((item) => {
 			const {
 				nickname,
@@ -95,11 +103,10 @@ class ActionsWrapper extends Component {
 				_id
 			} = item.userId;
 
-			// const {
-			// 	unreadMessages
-			// } = item;
-
-			const unreadMessages = 10;
+			const {
+				unreadMessages,
+				_id: conversationId
+			} = item;
 
 			const lastMessage = item.messages[item.messages.length - 1];
 
@@ -107,9 +114,11 @@ class ActionsWrapper extends Component {
 				nickname,
 				profileColor,
 				_id,
+				conversationId,
 				desc: lastMessage ? lastMessage.message : '',
 				rightLabel: lastMessage ? setConversationLastMessageDateTime(lastMessage.dateTime) : '',
-				unreadMessages
+				unreadMessages,
+				active: String(item.userId._id) === String(currentUserIdConversation)
 			};
 		});
 	}
@@ -121,6 +130,20 @@ class ActionsWrapper extends Component {
 
 		conversationActions.setCurrentConversation({
 			user: item
+		});
+	}
+
+	handleDeleteConversation = (item) => {
+		const {
+			conversationActions
+		} = this.props;
+
+		const {
+			conversationId
+		} = item;
+
+		conversationActions.deleteConversation({
+			conversationId
 		});
 	}
 
@@ -212,6 +235,7 @@ class ActionsWrapper extends Component {
 									width: 26,
 									height: 26
 								}}
+								marginButton='0px 0px 0px 20px'
 							/>
 						</div>
 					</div>
@@ -226,6 +250,8 @@ class ActionsWrapper extends Component {
 					isFetching={isFetching}
 					emptyMessage={constants.LABELS.CHAT.NO_CONVERSATIONS_TO_SHOW}
 					onClickItem={this.handleClickConversationItem}
+					onDeleteItem={this.handleDeleteConversation}
+					deleteDropDownMessage={constants.LABELS.CHAT.DELETE_CHAT}
 				/>
 				<DrawerComponent
 					drawerName='addContact'

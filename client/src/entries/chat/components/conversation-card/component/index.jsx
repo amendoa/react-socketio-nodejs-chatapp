@@ -6,6 +6,8 @@ import {
 	UserInfoComponent
 } from 'entries/chat/components';
 
+import classNames from 'classnames';
+
 export default class ConversationCardComponent extends Component {
 	render () {
 		const {
@@ -14,15 +16,26 @@ export default class ConversationCardComponent extends Component {
 			desc,
 			onClick,
 			rightLabel,
-			tagInfo
+			tagInfo,
+			active,
+			actions
 		} = this.props;
+
+		const conversationCardStyles = classNames({
+			'conversation-card': true,
+			active
+		});
 
 		return (
 			<div
 				role='button'
 				tabIndex='-1'
-				className='conversation-card'
-				onClick={onClick}
+				className={conversationCardStyles}
+				onClick={(event) => {
+					event.preventDefault();
+					event.stopPropagation();
+					onClick(event);
+				}}
 				onKeyDown={() => {}}
 			>
 				<div className='conversation-card--container'>
@@ -36,9 +49,7 @@ export default class ConversationCardComponent extends Component {
 							justifyContent: 'space-between'
 						}}
 						tagInfo={tagInfo}
-						actions={{
-
-						}}
+						actions={actions}
 					/>
 				</div>
 			</div>

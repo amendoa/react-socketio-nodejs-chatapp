@@ -15,6 +15,7 @@ export default class TagComponent extends Component {
 
 		const tagStyles = classNames({
 			tag: true,
+			fadeIn: true,
 			success
 		});
 

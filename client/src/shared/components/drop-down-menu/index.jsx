@@ -62,7 +62,8 @@ export default class DropDownMenuComponent extends Component {
 
 		const {
 			options,
-			icon
+			icon,
+			marginButton
 		} = this.props;
 
 		const dropDownStyles = classNames({
@@ -74,12 +75,11 @@ export default class DropDownMenuComponent extends Component {
 			<div className='drop-down-menu-wrapper'>
 				<ButtonComponent
 					type='button'
-					width={26}
-					height={26}
-					margin="0px 0px 0px 20px"
+					width={icon.width}
+					height={icon.height}
+					margin={marginButton}
 					link
-					onClick={(event) => {
-						event.preventDefault();
+					onClick={() => {
 						this.changeOpenState(true);
 					}}
 				>
@@ -96,7 +96,6 @@ export default class DropDownMenuComponent extends Component {
 								<li key={index}>
 									<ButtonComponent
 										link
-										width={80}
 										onClick={() => {
 											this.changeOpenState(false, false);
 											item.event();
@@ -106,6 +105,7 @@ export default class DropDownMenuComponent extends Component {
 											regular
 											dark
 											breakWord
+											alignCenter
 											text={item.text}
 											fontSize={14}
 										/>

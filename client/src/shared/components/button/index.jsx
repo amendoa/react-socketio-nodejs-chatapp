@@ -31,7 +31,12 @@ export default class ButtonComponent extends Component {
 
 		return (
 			<button
-				onClick={onClick}
+				onClick={(event) => {
+					event.stopPropagation();
+					if (onClick) {
+						onClick(event);
+					}
+				}}
 				className={buttonStyles}
 				style={{
 					width,

@@ -17,7 +17,9 @@ export default class ConversationsList extends Component {
 			isFetching,
 			items,
 			emptyMessage,
-			onClickItem
+			onClickItem,
+			onDeleteItem,
+			deleteDropDownMessage
 		} = this.props;
 
 		if (isFetching) {
@@ -51,7 +53,8 @@ export default class ConversationsList extends Component {
 							unreadMessages,
 							profileColor,
 							desc,
-							rightLabel
+							rightLabel,
+							active
 						} = item;
 
 						return (
@@ -82,6 +85,17 @@ export default class ConversationsList extends Component {
 								}}
 								rightLabel={rightLabel}
 								tagInfo={unreadMessages}
+								active={active}
+								actions={{
+									options: [
+										{
+											text: deleteDropDownMessage,
+											event: () => {
+												onDeleteItem(item);
+											}
+										}
+									]
+								}}
 							/>
 						);
 					})

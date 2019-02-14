@@ -276,6 +276,7 @@ export default class IconComponent extends Component {
 				height={height}
 				viewBox='0 0 356.206 356.206'
 				margin={margin}
+				className='fadeIn'
 			>
 				<g>
 					<g>

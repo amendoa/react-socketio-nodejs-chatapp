@@ -32,7 +32,8 @@
 			"NO_CONVERSATIONS_TO_SHOW": "No conversations to show",
 			"NO_CONTACTS_TO_SHOW": "No contacts to show",
 			"ADD": "Add",
-			"LOGOUT": "Logout"
+			"LOGOUT": "Logout",
+			"DELETE_CHAT": "delete chat"
 		},
 		"CONTACT": {
 			"CONTACT_SUCCESSFULLY_ADDED": "Contact successfully added"
