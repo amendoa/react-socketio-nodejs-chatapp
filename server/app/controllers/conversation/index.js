@@ -1,9 +1,15 @@
-const mongoose = require('mongoose');
+const _ = require('lodash');
+
 const {
 	getConversations,
 	findOneConversationAndUpdate,
-	deleteOneConversation
+	findOneConversationAndDelete,
+	getConversation
 } = absoluteRequire('repositories/conversation');
+
+const {
+	deleteMessages
+} = absoluteRequire('repositories/message');
 
 exports.getConversations = async (req, res) => {
 	try {
@@ -31,7 +37,7 @@ exports.getConversations = async (req, res) => {
 exports.updateConversation = async (req, res) => {
 	try {
 		const {
-			userId,
+			partnerId,
 			conversation
 		} = req.body;
 
@@ -41,7 +47,7 @@ exports.updateConversation = async (req, res) => {
 
 		await findOneConversationAndUpdate({
 			ownerId,
-			userId
+			partnerId
 		}, conversation);
 
 		res.status(200)
@@ -59,16 +65,36 @@ exports.updateConversation = async (req, res) => {
 exports.deleteConversation = async (req, res) => {
 	try {
 		const {
-			conversationId
+			partnerId
 		} = req.body;
 
-		const conversationIdIsValid = mongoose.Types.ObjectId.isValid(conversationId);
+		const {
+			_id: ownerId
+		} = req.currentUser;
 
-		if (conversationIdIsValid) {
-			await deleteOneConversation({
-				_id: conversationId
-			});
-		}
+		const ownerConversation = await findOneConversationAndDelete({
+			partnerId,
+			ownerId
+		});
+
+		const partnerConversation = await getConversation({
+			partnerId: ownerId,
+			ownerId: partnerId
+		});
+
+		const ownerMessages = ownerConversation ? ownerConversation.messages.map(
+			item => String(item._id)
+		) : [];
+
+		const partnerMessages = partnerConversation ? partnerConversation.messages.map(
+			item => String(item._id)
+		) : [];
+
+		await deleteMessages({
+			_id: {
+				$in: _.difference(ownerMessages, partnerMessages)
+			}
+		});
 
 		res.status(200)
 			.json({

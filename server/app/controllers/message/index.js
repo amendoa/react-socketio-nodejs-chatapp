@@ -31,10 +31,10 @@ exports.postMessage = async (req, res) => {
 
 		await findOneConversationAndUpdate({
 			ownerId: senderId,
-			userId: receiverId
+			partnerId: receiverId
 		}, {
 			ownerId: senderId,
-			userId: receiverId,
+			partnerId: receiverId,
 			$addToSet: {
 				messages: messageResult._id
 			}
@@ -42,10 +42,10 @@ exports.postMessage = async (req, res) => {
 
 		await findOneConversationAndUpdate({
 			ownerId: receiverId,
-			userId: senderId
+			partnerId: senderId
 		}, {
 			ownerId: receiverId,
-			userId: senderId,
+			partnerId: senderId,
 			$inc: {
 				unreadMessages: 1
 			},
@@ -65,6 +65,7 @@ exports.postMessage = async (req, res) => {
 				result: messageResult
 			});
 	} catch (e) {
+		console.log(e)
 		res.status(500)
 			.json({
 				success: false
@@ -74,7 +75,7 @@ exports.postMessage = async (req, res) => {
 
 exports.getMessages = async (req, res) => {
 	const {
-		userId
+		partnerId
 	} = req.query;
 
 	const {
@@ -83,7 +84,7 @@ exports.getMessages = async (req, res) => {
 
 	try {
 		const result = await getConversation({
-			userId,
+			partnerId,
 			ownerId
 		});
 

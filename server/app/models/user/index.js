@@ -30,7 +30,9 @@ const UserSchema = new Schema({
 		required: true
 	},
 	contacts: [
-		ContactSchema
+		{
+			type: ContactSchema
+		}
 	]
 });
 

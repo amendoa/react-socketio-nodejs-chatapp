@@ -15,7 +15,7 @@ const ConversationSchema = new Schema({
 		unique: true,
 		ref: 'User'
 	},
-	userId: {
+	partnerId: {
 		type: ObjectId,
 		unique: true,
 		ref: 'User'
