@@ -8,36 +8,35 @@ import {
 	INCREMENT_CONVERSATION_UNREAD_MESSAGES,
 	RESET_CONVERSATION_UNREAD_MESSAGES,
 	DELETE_CONVERSATION_RECEIVED,
-	DELETE_CONVERSATION
+	DELETE_CONVERSATION,
+	REMOVE_CONVERSATION
 } from 'redux/constants/conversation';
-
-import uuidv1 from 'uuid/v1';
 
 const initialState = {
 	isFetching: false,
-	currentUserIdConversation: null,
+	currentPartnerIdConversation: null,
 	result: [],
 	deleteConversation: {
-		isFetching: false
+		isFetching: false,
+		currentPartnerIdIsDeleting: null
 	}
 };
 
 export default function conversationReducer (state = initialState, action) {
 	const setNewConversationToResult = () => {
-		return state.result.find(item => String(item.userId._id) === String(action.params.user._id))
+		return state.result.find(item => String(item.partnerId._id) === String(action.params.partner._id))
 			? state.result
 			: state.result.concat([{
-				userId: action.params.user,
+				partnerId: action.params.partner,
 				messages: [],
-				unreadMessages: 0,
-				_id: uuidv1()
+				unreadMessages: 0
 			}]);
 	};
 
 	switch (action.type) {
 		case SET_CURRENT_CONVERSATION:
 			return Object.assign({}, state, {
-				currentUserIdConversation: action.params.user._id,
+				currentPartnerIdConversation: action.params.partner._id,
 				result: setNewConversationToResult()
 			});
 
@@ -58,14 +57,14 @@ export default function conversationReducer (state = initialState, action) {
 					const newItem = item;
 
 					const {
-						userId
+						partnerId
 					} = newItem;
 
 					const {
 						params
 					} = action;
 
-					if (String(userId._id) === String(params.userId)) {
+					if (String(partnerId._id) === String(params.partnerId)) {
 						newItem.messages = params.result;
 					}
 
@@ -79,7 +78,7 @@ export default function conversationReducer (state = initialState, action) {
 					const newItem = item;
 
 					const {
-						userId
+						partnerId
 					} = newItem;
 
 					const {
@@ -88,10 +87,10 @@ export default function conversationReducer (state = initialState, action) {
 
 					const {
 						message,
-						user
+						partner
 					} = params;
 
-					if (String(userId._id) === String(user._id)) {
+					if (String(partnerId._id) === String(partner._id)) {
 						newItem.messages = newItem.messages.concat(message);
 					}
 
@@ -99,18 +98,15 @@ export default function conversationReducer (state = initialState, action) {
 				})
 			});
 
-		case RESET_CONVERSATION:
-			return initialState;
-
 		case INCREMENT_CONVERSATION_UNREAD_MESSAGES:
 			return Object.assign({}, state, {
 				result: state.result.map((item) => {
 					const newItem = item;
 					const {
-						user
+						partner
 					} = action.params;
 
-					if (newItem.userId._id === user._id) {
+					if (newItem.partnerId._id === partner._id) {
 						newItem.unreadMessages += 1;
 					}
 
@@ -123,10 +119,10 @@ export default function conversationReducer (state = initialState, action) {
 				result: state.result.map((item) => {
 					const newItem = item;
 					const {
-						user
+						partner
 					} = action.params;
 
-					if (newItem.userId._id === user._id) {
+					if (newItem.partnerId._id === partner._id) {
 						newItem.unreadMessages = 0;
 					}
 
@@ -137,26 +133,31 @@ export default function conversationReducer (state = initialState, action) {
 		case DELETE_CONVERSATION:
 			return Object.assign({}, state, {
 				deleteConversation: Object.assign({}, state.deleteConversation, {
-					isFetching: true
+					isFetching: true,
+					currentPartnerIdIsDeleting: action.params.partnerId
 				})
 			});
 
 		case DELETE_CONVERSATION_RECEIVED:
-			console.log(action.params.conversationId);
-
 			return Object.assign({}, state, {
-				result: state.result.filter(item => item._id !== action.params.conversationId),
 				deleteConversation: Object.assign({}, state.deleteConversation, {
-					isFetching: false
-				}),
-				currentUserIdConversation: null
+					isFetching: false,
+					currentPartnerIdIsDeleting: null
+				})
 			});
 
-			// return Object.assign({}, state, {
-			// 	deleteConversation: Object.assign({}, state.deleteConversation, {
-			// 		isFetching: false
-			// 	})
-			// });
+		case REMOVE_CONVERSATION:
+			return Object.assign({}, state, {
+				result: state.result.filter(item => String(item.partnerId._id) !== String(action.params.partnerId)),
+				currentPartnerIdConversation: (
+					String(state.currentPartnerIdConversation) === String(action.params.partnerId)
+						? null
+						: state.currentPartnerIdConversation
+				)
+			});
+
+		case RESET_CONVERSATION:
+			return initialState;
 
 		default:
 			return state;

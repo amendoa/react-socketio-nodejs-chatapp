@@ -39,7 +39,7 @@ function* sendMessagePostFetchSaga (action) {
 				currentUserIsSender: true,
 				...response.result
 			},
-			user: {
+			partner: {
 				_id: response.result.receiverId
 			}
 		}));
@@ -51,8 +51,12 @@ function* sendMessagePostFetchSaga (action) {
 
 function* getMessagesFetchSaga (action) {
 	const {
-		query
+		partnerId
 	} = action.params;
+
+	const query = {
+		partnerId
+	};
 
 	try {
 		const response = yield sendRequest({
@@ -64,7 +68,7 @@ function* getMessagesFetchSaga (action) {
 		yield put(messageActions.getMessagesReceived());
 		yield put(conversationActions.setCurrentConversationMessages({
 			result: response.result,
-			userId: query.userId
+			partnerId
 		}));
 	} catch (e) {
 		yield put(messageActions.getMessagesReceived());

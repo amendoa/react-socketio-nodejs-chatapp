@@ -9,7 +9,9 @@
 	"LABELS": {
 		"MAIN": {
 			"APP_NAME": "ChatApp",
-			"GLOBAL_ERROR": "Sorry, we've run into a problem :( try again later"
+			"GLOBAL_ERROR": "Sorry, we've run into a problem :( try again later",
+			"NO": "no",
+			"YES": "yes"
 		},
 		"AUTH": {
 			"NICKNAME": "Nickname",
@@ -33,7 +35,8 @@
 			"NO_CONTACTS_TO_SHOW": "No contacts to show",
 			"ADD": "Add",
 			"LOGOUT": "Logout",
-			"DELETE_CHAT": "delete chat"
+			"DELETE_CHAT": "delete chat",
+			"DELETE_CHAT_CONFIRM": "Delete chat?"
 		},
 		"CONTACT": {
 			"CONTACT_SUCCESSFULLY_ADDED": "Contact successfully added"

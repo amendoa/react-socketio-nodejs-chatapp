@@ -54,7 +54,8 @@ export default class ConversationsList extends Component {
 							profileColor,
 							desc,
 							rightLabel,
-							active
+							active,
+							isFetchingAction
 						} = item;
 
 						return (
@@ -96,6 +97,7 @@ export default class ConversationsList extends Component {
 										}
 									]
 								}}
+								isFetchingAction={isFetchingAction}
 							/>
 						);
 					})

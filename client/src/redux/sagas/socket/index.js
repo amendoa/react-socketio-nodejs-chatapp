@@ -68,10 +68,10 @@ function subscribe (socket) {
 
 			emit(addMessageToCurrentConversationMessages({
 				message,
-				user: sender
+				partner: sender
 			}));
 			emit(incrementConversationUnreadMessages({
-				user: sender
+				partner: sender
 			}));
 		});
 
@@ -89,7 +89,7 @@ function subscribe (socket) {
 
 function* login (socket) {
 	const token = getToken();
-	socket.emit('login', {
+	yield socket.emit('login', {
 		token
 	});
 }

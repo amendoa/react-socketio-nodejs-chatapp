@@ -7,7 +7,8 @@ import {
 	ProfilePictureComponent,
 	LabelComponent,
 	TagComponent,
-	DropDownMenuComponent
+	DropDownMenuComponent,
+	LoadingComponent
 } from 'shared/components';
 
 import classNames from 'classnames';
@@ -33,6 +34,7 @@ export default class UserInfoComponent extends Component {
 
 		const {
 			isFetching,
+			isFetchingAction,
 			profile,
 			title,
 			desc,
@@ -67,7 +69,9 @@ export default class UserInfoComponent extends Component {
 							circle
 							dark={sketchDark}
 						/>
-						<div className='labels-container'>
+						<div
+							className='labels-container'
+						>
 							{
 								title ? (
 									<SketchComponent
@@ -125,53 +129,71 @@ export default class UserInfoComponent extends Component {
 						/>
 					</div>
 				</div>
-				<div
-					className='info-container'
-				>
-					{
-						rightLabel ? (
-							<LabelComponent
-								fontRegular
-								text={rightLabel}
-								fontSize={13}
-								alignRight
-								width={100}
-								margin="0px 0px 5px 0px"
-							/>
-						) : null
-					}
-					<div
-						className='footer-container'
-					>
-						{
-							tagInfo ? (
-								<TagComponent
-									success
-									text={tagInfo}
+
+				{
+					isFetchingAction ? (
+						<div
+							className='info-container'
+						>
+							<div
+								className='loading-container'
+							>
+								<LoadingComponent
+									type='donut'
 								/>
-							) : null
-						}
-						{
-							actions ? (
+							</div>
+						</div>
+					)
+						: (
+							<div
+								className='info-container'
+							>
+								{
+									rightLabel ? (
+										<LabelComponent
+											fontRegular
+											text={rightLabel}
+											fontSize={13}
+											alignRight
+											width={100}
+											margin="0px 0px 5px 0px"
+										/>
+									) : null
+								}
 								<div
-									className={actionsContainerStyles}
+									className='footer-container'
 								>
-									<DropDownMenuComponent
-										options={actions.options}
-										icon={{
-											fill: '#555657',
-											icon: 'arrow-down',
-											width: '100%',
-											height: '100%'
-										}}
-										onChange={this.onChangeDropDownActions}
-										marginButton='0px 0px 0px 8px'
-									/>
+									{
+										tagInfo ? (
+											<TagComponent
+												success
+												text={tagInfo}
+											/>
+										) : null
+									}
+									{
+										actions ? (
+											<div
+												className={actionsContainerStyles}
+											>
+												<DropDownMenuComponent
+													options={actions.options}
+													icon={{
+														fill: '#555657',
+														icon: 'arrow-down',
+														width: '100%',
+														height: '100%'
+													}}
+													onChange={this.onChangeDropDownActions}
+													marginButton='0px 0px 0px 8px'
+												/>
+											</div>
+										) : null
+									}
 								</div>
-							) : null
-						}
-					</div>
-				</div>
+							</div>
+						)
+				}
 			</div>
 		);
 	}

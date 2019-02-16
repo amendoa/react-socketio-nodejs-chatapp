@@ -19,14 +19,20 @@ export default class ButtonComponent extends Component {
 			isFetching,
 			disabled,
 			children,
-			margin
+			margin,
+			defaultButton,
+			outline,
+			small
 		} = this.props;
 
 		const buttonStyles = classNames({
 			button: true,
 			'button--primary': primary && !disabled,
 			'button--disabled': disabled,
-			'button--link': link
+			'button--link': link,
+			'button--default': defaultButton && !disabled,
+			outline,
+			small
 		});
 
 		return (

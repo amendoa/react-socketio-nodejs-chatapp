@@ -6,7 +6,8 @@ import {
 	IconComponent,
 	ButtonComponent,
 	DrawerComponent,
-	DropDownMenuComponent
+	DropDownMenuComponent,
+	LabelComponent
 } from 'shared/components';
 
 import {
@@ -29,6 +30,7 @@ import {
 
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+import { confirmAlert } from 'react-confirm-alert';
 import * as contactActions from 'redux/actions/contact';
 import * as drawerActions from 'redux/actions/drawer';
 import * as conversationActions from 'redux/actions/conversation';
@@ -93,7 +95,11 @@ class ActionsWrapper extends Component {
 		} = this.props;
 
 		const {
-			currentUserIdConversation
+			currentPartnerIdConversation
+		} = conversationData;
+
+		const {
+			deleteConversation
 		} = conversationData;
 
 		return conversations.map((item) => {
@@ -101,7 +107,7 @@ class ActionsWrapper extends Component {
 				nickname,
 				profileColor,
 				_id
-			} = item.userId;
+			} = item.partnerId;
 
 			const {
 				unreadMessages,
@@ -118,7 +124,11 @@ class ActionsWrapper extends Component {
 				desc: lastMessage ? lastMessage.message : '',
 				rightLabel: lastMessage ? setConversationLastMessageDateTime(lastMessage.dateTime) : '',
 				unreadMessages,
-				active: String(item.userId._id) === String(currentUserIdConversation)
+				active: String(item.partnerId._id) === String(currentPartnerIdConversation),
+				isFetchingAction: (
+					deleteConversation.isFetching
+					&& String(deleteConversation.currentPartnerIdIsDeleting) === _id
+				)
 			};
 		});
 	}
@@ -129,7 +139,7 @@ class ActionsWrapper extends Component {
 		} = this.props;
 
 		conversationActions.setCurrentConversation({
-			user: item
+			partner: item
 		});
 	}
 
@@ -139,11 +149,50 @@ class ActionsWrapper extends Component {
 		} = this.props;
 
 		const {
-			conversationId
+			_id
 		} = item;
 
-		conversationActions.deleteConversation({
-			conversationId
+		confirmAlert({
+			customUI: ({ onClose }) => {
+				return (
+					<div className='confirm-popup'>
+						<LabelComponent
+							fontSemiBold
+							text={constants.LABELS.CHAT.DELETE_CHAT_CONFIRM}
+							fontSize={30}
+							alignCenter
+							margin="0px 0px 25px 0px"
+						/>
+						<div className='buttons-container'>
+							<ButtonComponent
+								type="button"
+								defaultButton
+								small
+								outline
+								text={constants.LABELS.MAIN.NO}
+								margin="10px"
+								width={100}
+								onClick={onClose}
+							/>
+							<ButtonComponent
+								type="button"
+								defaultButton
+								small
+								outline
+								text={constants.LABELS.MAIN.YES}
+								margin="10px"
+								width={100}
+								onClick={() => {
+									conversationActions.deleteConversation({
+										partnerId: _id
+									});
+									onClose();
+								}}
+							/>
+						</div>
+					</div>
+				);
+			}
 		});
 	}
 

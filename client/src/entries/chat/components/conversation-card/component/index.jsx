@@ -18,7 +18,9 @@ export default class ConversationCardComponent extends Component {
 			rightLabel,
 			tagInfo,
 			active,
-			actions
+			actions,
+			isFetching,
+			isFetchingAction
 		} = this.props;
 
 		const conversationCardStyles = classNames({
@@ -50,6 +52,8 @@ export default class ConversationCardComponent extends Component {
 						}}
 						tagInfo={tagInfo}
 						actions={actions}
+						isFetching={isFetching}
+						isFetchingAction={isFetchingAction}
 					/>
 				</div>
 			</div>

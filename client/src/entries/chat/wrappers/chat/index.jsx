@@ -52,20 +52,20 @@ class ChatWrapper extends Component {
 		} = conversationActions;
 
 		const {
-			currentUserIdConversation,
+			currentPartnerIdConversation,
 			result: conversations
 		} = conversationData;
 
-		const currentConversation = conversations.find(item => String(item.userId._id) === String(currentUserIdConversation));
+		const currentConversation = conversations.find(item => String(item.partnerId._id) === String(currentPartnerIdConversation));
 
 		const {
-			userId,
+			partnerId,
 			unreadMessages
 		} = currentConversation;
 
 		if (unreadMessages > 0) {
 			resetConversationUnreadMessages({
-				user: userId
+				partner: partnerId
 			});
 		}
 	}
@@ -78,13 +78,13 @@ class ChatWrapper extends Component {
 			} = this.props;
 
 			const {
-				currentUserIdConversation
+				currentPartnerIdConversation
 			} = conversationData;
 
 			const params = {
 				body: {
 					message,
-					receiverId: currentUserIdConversation
+					receiverId: currentPartnerIdConversation
 				}
 			};
 
@@ -107,7 +107,7 @@ class ChatWrapper extends Component {
 		} = messageData;
 
 		const {
-			currentUserIdConversation,
+			currentPartnerIdConversation,
 			result: conversations
 		} = conversationData;
 
@@ -115,7 +115,7 @@ class ChatWrapper extends Component {
 			message
 		} = this.state;
 
-		if (!currentUserIdConversation) {
+		if (!currentPartnerIdConversation) {
 			return (
 				<div
 					className='empty-message-container'
@@ -130,12 +130,12 @@ class ChatWrapper extends Component {
 			);
 		}
 
-		const currentConversation = conversations.find(item => String(item.userId._id) === String(currentUserIdConversation));
+		const currentConversation = conversations.find(item => String(item.partnerId._id) === String(currentPartnerIdConversation));
 
 		const {
 			nickname,
 			profileColor
-		} = currentConversation.userId;
+		} = currentConversation.partnerId;
 
 		return (
 			<div

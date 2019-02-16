@@ -42,11 +42,11 @@ function* getConversationsFetch () {
 
 function* resetConversationUnreadtMessagesSaga (action) {
 	const {
-		user
+		partner
 	} = action.params;
 
 	const body = {
-		userId: user._id,
+		partnerId: partner._id,
 		conversation: {
 			unreadMessages: 0
 		}
@@ -65,17 +65,15 @@ function* resetConversationUnreadtMessagesSaga (action) {
 
 function* setCurrentConversationSaga(action) {
 	const {
-		user
+		partner
 	} = action.params;
 
 	const {
-		_id: userId
-	} = user;
+		_id: partnerId
+	} = partner;
 
 	yield put(messageActions.getMessages({
-		query: {
-			userId
-		}
+		partnerId
 	}));
 }
 
@@ -85,22 +83,23 @@ function* deleteConversationFetchSaga(action) {
 	} = action;
 
 	const {
-		conversationId
+		partnerId
 	} = params;
 
 	const body = {
-		conversationId
+		partnerId
 	};
 
 	try {
-		// yield sendRequest({
-		// 	url: `${constants.API.ROOT}${constants.API.ACTIONS.CONVERSATION}`,
-		// 	method: constants.API.METHODS.DELETE,
-		// 	body
-		// });
+		yield sendRequest({
+			url: `${constants.API.ROOT}${constants.API.ACTIONS.CONVERSATION}`,
+			method: constants.API.METHODS.DELETE,
+			body
+		});
 
-		yield put(conversationActions.deleteConversationReceived({
-			conversationId
+		yield put(conversationActions.deleteConversationReceived());
+		yield put(conversationActions.removeConversation({
+			partnerId
 		}));
 	} catch (e) {
 		yield put(conversationActions.deleteConversationReceived());

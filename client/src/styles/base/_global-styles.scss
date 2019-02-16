@@ -39,3 +39,19 @@
 .fadeIn {
 	animation: fadeIn .5s;
 }
+
+.confirm-popup {
+	text-align: center;
+	width: 360px;
+	padding: 40px;
+	background: $brand-primary;
+	box-shadow: 0 20px 75px rgba(0, 0, 0, 0.23);
+	color: $brand-default;
+	border-radius: 4px;
+
+	.buttons-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}

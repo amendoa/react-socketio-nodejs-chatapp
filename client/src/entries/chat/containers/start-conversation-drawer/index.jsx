@@ -57,7 +57,7 @@ class StartConversationDrawer extends Component {
 		} = this.props;
 
 		conversationActions.setCurrentConversation({
-			user: item
+			partner: item
 		});
 
 		drawerActions.closeDrawer(drawerName);

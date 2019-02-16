@@ -8,7 +8,8 @@ import {
 	INCREMENT_CONVERSATION_UNREAD_MESSAGES,
 	RESET_CONVERSATION_UNREAD_MESSAGES,
 	DELETE_CONVERSATION_RECEIVED,
-	DELETE_CONVERSATION
+	DELETE_CONVERSATION,
+	REMOVE_CONVERSATION
 } from 'redux/constants/conversation';
 
 export function reset () {
@@ -75,6 +76,13 @@ export function deleteConversation (params) {
 export function deleteConversationReceived (params) {
 	return {
 		type: DELETE_CONVERSATION_RECEIVED,
+		params
+	};
+}
+
+export function removeConversation (params) {
+	return {
+		type: REMOVE_CONVERSATION,
 		params
 	};
 }
