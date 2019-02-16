@@ -10,8 +10,14 @@ import {
 	InputSearchComponent
 } from 'entries/chat/components';
 
+import {
+	LabelComponent,
+	ButtonComponent
+} from 'shared/components';
+
 import constants from 'modules/constants';
 import { connect } from 'react-redux';
+import { confirmAlert } from 'react-confirm-alert';
 import { bindActionCreators } from 'redux';
 import * as contactActions from 'redux/actions/contact';
 import * as drawerActions from 'redux/actions/drawer';
@@ -63,6 +69,87 @@ class StartConversationDrawer extends Component {
 		drawerActions.closeDrawer(drawerName);
 	}
 
+	handleDeleteContact = (item) => {
+		const {
+			contactActions
+		} = this.props;
+
+		const {
+			_id
+		} = item;
+
+		confirmAlert({
+			customUI: ({ onClose }) => {
+				return (
+					<div className='confirm-popup'>
+						<LabelComponent
+							fontSemiBold
+							text={constants.LABELS.CONTACT.DELETE_CONTACT_CONFIRM}
+							fontSize={30}
+							alignCenter
+							margin="0px 0px 25px 0px"
+						/>
+						<div className='buttons-container'>
+							<ButtonComponent
+								type="button"
+								defaultButton
+								small
+								outline
+								text={constants.LABELS.MAIN.NO}
+								margin="10px"
+								width={100}
+								onClick={onClose}
+							/>
+							<ButtonComponent
+								type="button"
+								defaultButton
+								small
+								outline
+								text={constants.LABELS.MAIN.YES}
+								margin="10px"
+								width={100}
+								onClick={() => {
+									onClose();
+									contactActions.deleteContact({
+										contactId: _id
+									});
+								}}
+							/>
+						</div>
+					</div>
+				);
+			}
+		});
+	}
+
+	getContactsData = (contacts) => {
+		const {
+			contactData
+		} = this.props;
+
+		const {
+			deleteContact
+		} = contactData;
+
+		return contacts.map(item => {
+			const {
+				nickname,
+				profileColor,
+				_id
+			} = item;
+
+			return {
+				nickname,
+				profileColor,
+				_id,
+				isFetchingAction: (
+					deleteContact.isFetching
+					&& String(deleteContact.currentContactIdIsDeleting) === String(_id)
+				)
+			};
+		});
+	}
+
 	render () {
 		const {
 			contactData
@@ -76,7 +163,7 @@ class StartConversationDrawer extends Component {
 			getContacts
 		} = contactData;
 
-		const items = searchParam(getContacts.result, contactsSearch);
+		const items = searchParam(this.getContactsData(getContacts.result), contactsSearch);
 
 		return (
 			<div className='start-conversation-drawer-wrapper'>
@@ -90,6 +177,8 @@ class StartConversationDrawer extends Component {
 					isFetching={getContacts.isFetching}
 					emptyMessage={constants.LABELS.CHAT.NO_CONTACTS_TO_SHOW}
 					onClickItem={this.handleClickConversationItem}
+					onDeleteItem={this.handleDeleteContact}
+					deleteDropDownMessage={constants.LABELS.CONTACT.DELETE_CONTACT}
 				/>
 			</div>
 		);

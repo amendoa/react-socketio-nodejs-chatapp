@@ -5,7 +5,10 @@ import {
 	GET_CONTACTS,
 	GET_CONTACTS_RECEIVED,
 	RESET_GET_CONTACTS,
-	RESET_CONTACT
+	RESET_CONTACT,
+	DELETE_CONTACT,
+	DELETE_CONTACT_RECEIVED,
+	REMOVE_CONTACT
 } from 'redux/constants/contact';
 
 const initialState = {
@@ -17,6 +20,10 @@ const initialState = {
 	getContacts: {
 		isFetching: false,
 		result: []
+	},
+	deleteContact: {
+		isFetching: false,
+		currentContactIdIsDeleting: null
 	}
 };
 
@@ -60,12 +67,35 @@ export default function contactReducer (state = initialState, action) {
 				})
 			});
 
+		case DELETE_CONTACT:
+			return Object.assign({}, state, {
+				deleteContact: Object.assign({}, state.deleteContact, {
+					isFetching: true,
+					currentContactIdIsDeleting: action.params.contactId
+				})
+			});
+
+		case DELETE_CONTACT_RECEIVED:
+			return Object.assign({}, state, {
+				deleteContact: Object.assign({}, state.deleteContact, {
+					isFetching: false,
+					currentContactIdIsDeleting: null
+				})
+			});
+
 		case RESET_ADD_CONTACT:
 			return Object.assign({}, state, {
 				addContact: Object.assign({}, state.addContact, {
 					isFetching: false,
 					errors: [],
 					successMessages: []
+				})
+			});
+
+		case REMOVE_CONTACT:
+			return Object.assign({}, state, {
+				getContacts: Object.assign({}, state.getContacts, {
+					result: state.getContacts.result.filter(item => item._id !== action.params.contactId)
 				})
 			});
 

@@ -8,7 +8,8 @@ import {
 
 import {
 	POST_ADD_CONTACT,
-	GET_CONTACTS
+	GET_CONTACTS,
+	DELETE_CONTACT
 } from 'redux/constants/contact';
 
 function* addContactPostFetch (props) {
@@ -59,9 +60,36 @@ function* getContactsGetFetch () {
 	}
 }
 
+function* deleteContactFetchSaga (action) {
+	const {
+		contactId
+	} = action.params;
+
+	const query = {
+		contactId
+	};
+
+	try {
+		yield sendRequest({
+			url: `${constants.API.ROOT}${constants.API.ACTIONS.CONTACT}`,
+			method: constants.API.METHODS.DELETE,
+			query
+		});
+
+		yield put(contactActions.removeContact({
+			contactId
+		}));
+		yield put(contactActions.deleteContactReceived());
+	} catch (e) {
+		yield put(contactActions.deleteContactReceived());
+		toast.error(constants.LABELS.MAIN.GLOBAL_ERROR);
+	}
+}
+
 const sagas = [
 	takeLatest(POST_ADD_CONTACT, addContactPostFetch),
-	takeLatest(GET_CONTACTS, getContactsGetFetch)
+	takeLatest(GET_CONTACTS, getContactsGetFetch),
+	takeLatest(DELETE_CONTACT, deleteContactFetchSaga)
 ];
 
 export default sagas;

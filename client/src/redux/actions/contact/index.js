@@ -5,7 +5,10 @@ import {
 	GET_CONTACTS,
 	GET_CONTACTS_RECEIVED,
 	RESET_GET_CONTACTS,
-	RESET_CONTACT
+	RESET_CONTACT,
+	DELETE_CONTACT,
+	DELETE_CONTACT_RECEIVED,
+	REMOVE_CONTACT
 } from 'redux/constants/contact';
 
 export function reset () {
@@ -50,5 +53,25 @@ export function postAddContactReceived (params) {
 export function resetAddContact () {
 	return {
 		type: RESET_ADD_CONTACT
+	};
+}
+
+export function deleteContact (params) {
+	return {
+		type: DELETE_CONTACT,
+		params
+	};
+}
+
+export function deleteContactReceived () {
+	return {
+		type: DELETE_CONTACT_RECEIVED
+	};
+}
+
+export function removeContact (params) {
+	return {
+		type: REMOVE_CONTACT,
+		params
 	};
 }

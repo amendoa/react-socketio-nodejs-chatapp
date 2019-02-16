@@ -39,7 +39,9 @@
 			"DELETE_CHAT_CONFIRM": "Delete chat?"
 		},
 		"CONTACT": {
-			"CONTACT_SUCCESSFULLY_ADDED": "Contact successfully added"
+			"CONTACT_SUCCESSFULLY_ADDED": "Contact successfully added",
+			"DELETE_CONTACT": "delete contact",
+			"DELETE_CONTACT_CONFIRM": "Delete contact?"
 		}
 	},
 	"API": {
