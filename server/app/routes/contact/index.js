@@ -1,5 +1,9 @@
 const express = require('express');
-const contactController = absoluteRequire('controllers/contact');
+const {
+	postAddContact,
+	getContact,
+	deleteContact
+} = absoluteRequire('controllers/contact');
 const {
 	addContactValidator
 } = absoluteRequire('validators/contact');
@@ -10,7 +14,8 @@ const {
 
 const route = Router();
 
-route.post('/secured/contact', addContactValidator(), contactController.postAddContact);
-route.get('/secured/contact', contactController.getContact);
+route.post('/secured/contact', addContactValidator(), postAddContact);
+route.get('/secured/contact', getContact);
+route.delete('/secured/contact', deleteContact);
 
 module.exports = route;

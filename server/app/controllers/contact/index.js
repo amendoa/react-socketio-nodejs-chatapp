@@ -19,8 +19,8 @@ exports.getContact = async (req, res) => {
 
 		if (result) {
 			const users = await findUser({
-				nickname: {
-					$in: result.contacts.map(item => item.contactUserNickname)
+				_id: {
+					$in: result.contacts.map(item => item.contactUserId)
 				}
 			}, {
 				password: false,
@@ -68,27 +68,28 @@ exports.postAddContact = async (req, res) => {
 			});
 	} else {
 		try {
-			const result = await findOneUserByIdAndUpdate(contactOwnerId, {
-				$addToSet: {
-					contacts: {
-						contactUserNickname
-					}
-				}
+			const contactUser = await findOneUser({
+				nickname: contactUserNickname
+			}, {
+				password: 0,
+				contacts: 0
 			});
 
-			if (result) {
-				res.status(200)
-					.json({
-						success: true,
-						errors: []
-					});
-			} else {
-				res.status(500)
-					.json({
-						success: false,
-						errors: []
-					});
+			if (contactUser) {
+				await findOneUserByIdAndUpdate(contactOwnerId, {
+					$addToSet: {
+						contacts: {
+							contactUserId: contactUser._id
+						}
+					}
+				});
 			}
+
+			res.status(200)
+				.json({
+					success: true,
+					errors: []
+				});
 		} catch (e) {
 			res.status(500)
 				.json({
@@ -96,5 +97,36 @@ exports.postAddContact = async (req, res) => {
 					errors: []
 				});
 		}
+	}
+};
+
+exports.deleteContact = async (req, res) => {
+	const {
+		contactId
+	} = req.query;
+
+	const {
+		_id
+	} = req.currentUser;
+
+	try {
+		await findOneUserByIdAndUpdate(_id, {
+			$pull: {
+				contacts: {
+					contactUserId: contactId
+				}
+			}
+		});
+
+		res.status(200)
+			.json({
+				success: true
+			});
+	} catch (e) {
+		res.status(500)
+			.json({
+				success: false,
+				errors: []
+			});
 	}
 };

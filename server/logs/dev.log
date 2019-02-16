@@ -57220,3 +57220,499 @@
 [32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
 [32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
 [32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact?contactId=5c6815a6d4fc021e357f8164[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact?contactId=5c6815a6d4fc021e357f8164[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact?contactId=5c6815a6d4fc021e357f8164[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c6815a6d4fc021e357f8164[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact?contactId=5c6815a6d4fc021e357f8164[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact?contactId=5c6815a6d4fc021e357f8164[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=orelha[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste1[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste1[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste12[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste2[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste3[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste4[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=teste5[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/verify-nickname?nickname=amendoa[39m
+[32minfo[39m: [32mREQUESTING API: URL /auth/signup[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682ec8c533313e55d17bac[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682ecec533313e55d17bad[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682ed2c533313e55d17bae[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682ed8c533313e55d17baf[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682eddc533313e55d17bb0[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact?contactId=5c682ec8c533313e55d17bac[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact?contactId=5c682ecec533313e55d17bad[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact?contactId=5c682ed2c533313e55d17bae[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact?contactId=5c682ed8c533313e55d17baf[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682eddc533313e55d17bb0[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682ecec533313e55d17bad[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682ec8c533313e55d17bac[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682ecec533313e55d17bad[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682ed8c533313e55d17baf[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682eddc533313e55d17bb0[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682ed8c533313e55d17baf[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682ec8c533313e55d17bac[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682ec8c533313e55d17bac[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682ecec533313e55d17bad[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682ed8c533313e55d17baf[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682eddc533313e55d17bb0[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682ed8c533313e55d17baf[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682ecec533313e55d17bad[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682ecec533313e55d17bad[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682ec8c533313e55d17bac[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682ed8c533313e55d17baf[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682eddc533313e55d17bb0[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682ecec533313e55d17bad[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682ed8c533313e55d17baf[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682eddc533313e55d17bb0[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682ecec533313e55d17bad[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682ec8c533313e55d17bac[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682ecec533313e55d17bad[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682ed8c533313e55d17baf[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682eddc533313e55d17bb0[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682ed8c533313e55d17baf[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682ecec533313e55d17bad[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682ec8c533313e55d17bac[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682ecec533313e55d17bad[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682ecec533313e55d17bad[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682ed8c533313e55d17baf[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682eddc533313e55d17bb0[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682ed8c533313e55d17baf[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682ecec533313e55d17bad[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682ec8c533313e55d17bac[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682ec8c533313e55d17bac[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682ecec533313e55d17bad[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682ed8c533313e55d17baf[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682eddc533313e55d17bb0[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682ed8c533313e55d17baf[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682ec8c533313e55d17bac[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682ecec533313e55d17bad[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682ed8c533313e55d17baf[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682eddc533313e55d17bb0[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682ed8c533313e55d17baf[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682ecec533313e55d17bad[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682ec8c533313e55d17bac[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682ecec533313e55d17bad[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682ed8c533313e55d17baf[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682eddc533313e55d17bb0[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682ed8c533313e55d17baf[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682ecec533313e55d17bad[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682ec8c533313e55d17bac[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682ecec533313e55d17bad[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682ed8c533313e55d17baf[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682eddc533313e55d17bb0[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682ecec533313e55d17bad[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682ec8c533313e55d17bac[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/message?partnerId=5c682ec8c533313e55d17bac[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact?contactId=5c682ec8c533313e55d17bac[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact?contactId=5c682ed2c533313e55d17bae[39m
+[32minfo[39m: [32mSOCKET.IO Server: Client disconnected[39m
+[32minfo[39m: [32mSOCKET.IO Server: New client[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/conversation[39m
+[32minfo[39m: [32mREQUESTING API: URL /secured/contact[39m

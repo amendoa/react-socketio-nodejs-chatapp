@@ -4,11 +4,13 @@ const {
 	Schema
 } = mongoose;
 
+const {
+	ObjectId
+} = Schema.Types;
+
 const ContactSchema = new Schema({
-	contactUserNickname: {
-		type: String,
-		default: '',
-		trim: true,
+	contactUserId: {
+		type: ObjectId,
 		unique: true,
 		required: true
 	}
