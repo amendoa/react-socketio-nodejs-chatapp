@@ -1,9 +1,14 @@
-const { validationResult } = require('express-validator/check');
+const _ = require('lodash');
+
 const {
 	findUser,
 	findOneUser,
 	findOneUserByIdAndUpdate
 } = absoluteRequire('repositories/user');
+
+const {
+	convertErrorToFrontFormat
+} = absoluteRequire('modules/utils');
 
 exports.getContact = async (req, res) => {
 	try {
@@ -36,20 +41,21 @@ exports.getContact = async (req, res) => {
 			res.status(500)
 				.json({
 					success: false,
-					errors: []
+					errors: {}
 				});
 		}
 	} catch (e) {
 		res.status(500)
 			.json({
 				success: false,
-				errors: []
+				errors: {}
 			});
 	}
 };
 
 exports.postAddContact = async (req, res) => {
-	const errors = validationResult(req).array();
+	const validationResult = await req.getValidationResult();
+	const errors = convertErrorToFrontFormat(validationResult.mapped());
 
 	const {
 		nickname: contactUserNickname
@@ -59,7 +65,7 @@ exports.postAddContact = async (req, res) => {
 		_id: contactOwnerId
 	} = req.currentUser;
 
-	if (errors.length > 0) {
+	if (!_.isEmpty(errors)) {
 		res
 			.status(400)
 			.json({
@@ -88,13 +94,13 @@ exports.postAddContact = async (req, res) => {
 			res.status(200)
 				.json({
 					success: true,
-					errors: []
+					errors: {}
 				});
 		} catch (e) {
 			res.status(500)
 				.json({
 					success: false,
-					errors: []
+					errors: {}
 				});
 		}
 	}
@@ -103,7 +109,7 @@ exports.postAddContact = async (req, res) => {
 exports.deleteContact = async (req, res) => {
 	const {
 		contactId
-	} = req.query;
+	} = req.body;
 
 	const {
 		_id
@@ -126,7 +132,7 @@ exports.deleteContact = async (req, res) => {
 		res.status(500)
 			.json({
 				success: false,
-				errors: []
+				errors: {}
 			});
 	}
 };

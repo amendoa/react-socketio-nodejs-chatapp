@@ -1,4 +1,3 @@
-const logger = absoluteRequire('modules/winston');
 const http = require('http');
 const helmet = require('helmet');
 const compression = require('compression');
@@ -6,22 +5,28 @@ const cors = require('cors');
 const socketIO = require('socket.io');
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
+const jwt = require('jsonwebtoken');
+const expressValidator = require('express-validator');
+const logger = absoluteRequire('modules/winston');
 const constants = absoluteRequire('modules/constants');
 const expressRoutes = absoluteRequire('routes');
 const userRepository = absoluteRequire('repositories/user');
-const jwt = require('jsonwebtoken');
 
 module.exports = (app) => {
 	const server = http.createServer(app);
 	const port = process.env.PORT || constants.GENERAL.SERVER_HTTP_PORT;
 	global.io = socketIO.listen(server);
 
+	app.use(expressValidator());
 	app.use(compression());
 	app.use(helmet());
 	app.use(cors());
 	app.use(morgan('dev'));
 	app.use(bodyParser.urlencoded({ extended: false }));
 	app.use(bodyParser.json());
+
+	// TODO REMOVE
+	// app.use(function(req,res,next){setTimeout(next,1000)});
 
 	expressRoutes(app);
 

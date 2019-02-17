@@ -12,12 +12,10 @@ const {
 const ConversationSchema = new Schema({
 	ownerId: {
 		type: ObjectId,
-		unique: true,
 		ref: 'User'
 	},
 	partnerId: {
 		type: ObjectId,
-		unique: true,
 		ref: 'User'
 	},
 	unreadMessages: {

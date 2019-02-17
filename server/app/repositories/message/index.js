@@ -8,3 +8,4 @@ exports.addMessage = (model) => {
 };
 
 exports.deleteMessages = query => MessageModel.deleteMany(query);
+exports.deleteMessageById = _id => MessageModel.findByIdAndRemove(_id);

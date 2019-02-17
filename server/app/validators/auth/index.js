@@ -6,21 +6,21 @@ module.exports.signupValidator = () => [
 	check('nickname')
 		.isLength({ min: 2, max: 12 })
 		.withMessage(constants.EXPRESS_VALIDATION_MESSAGES.NICKNAME_LENGHT_BETWEEN_2_AND_12)
-		.custom(async (nickname) => {
+		.custom(nickname => new Promise(async (resolve, reject) => {
 			try {
 				const user = await userRepository.findUser({
 					nickname: nickname.toLowerCase()
 				});
 
 				if (user.length > 0) {
-					return false;
+					reject();
 				}
 
-				return true;
+				resolve();
 			} catch (e) {
-				return false;
+				reject();
 			}
-		})
+		}))
 		.withMessage(constants.EXPRESS_VALIDATION_MESSAGES.THIS_NICKNAME_IS_ALREADY_TAKEN),
 	check('password')
 		.isLength({ min: 5, max: 12 })

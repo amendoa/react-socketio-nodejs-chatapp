@@ -1,7 +1,8 @@
 const moment = require('moment');
 
 const {
-	addMessage
+	addMessage,
+	deleteMessageById
 } = absoluteRequire('repositories/message');
 
 const {
@@ -65,7 +66,6 @@ exports.postMessage = async (req, res) => {
 				result: messageResult
 			});
 	} catch (e) {
-		console.log(e)
 		res.status(500)
 			.json({
 				success: false
@@ -95,15 +95,64 @@ exports.getMessages = async (req, res) => {
 					const {
 						dateTime,
 						message,
-						senderId
+						senderId,
+						_id
 					} = item;
 
 					return {
 						dateTime,
 						message,
-						currentUserIsSender: String(senderId) === String(ownerId)
+						currentUserIsSender: String(senderId) === String(ownerId),
+						_id
 					};
 				}) : []
+			});
+	} catch (e) {
+		res.status(500)
+			.json({
+				success: false
+			});
+	}
+};
+
+exports.deleteMessage = async (req, res) => {
+	const {
+		messageId,
+		partnerId
+	} = req.body;
+
+	try {
+		const {
+			_id: ownerId
+		} = req.currentUser;
+
+		await findOneConversationAndUpdate({
+			partnerId,
+			ownerId
+		}, {
+			$pull: {
+				messages: messageId
+			}
+		});
+
+		const partnerConversation = await getConversation({
+			partnerId: ownerId,
+			ownerId: partnerId
+		});
+
+		if (partnerConversation) {
+			const message = partnerConversation.messages.find(
+				item => String(item._id) === String(messageId)
+			);
+
+			if (!message) {
+				await deleteMessageById(messageId);
+			}
+		}
+
+		res.status(200)
+			.json({
+				success: true
 			});
 	} catch (e) {
 		res.status(500)

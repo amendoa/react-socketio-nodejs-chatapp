@@ -1,10 +1,11 @@
+const _ = require('lodash');
 const userRepository = absoluteRequire('repositories/user');
 const randomColor = absoluteRequire('modules/random-color');
-const { validationResult } = require('express-validator/check');
 const constants = absoluteRequire('modules/constants');
 const {
 	encryptPassword,
-	createJwtToken
+	createJwtToken,
+	convertErrorToFrontFormat
 } = absoluteRequire('modules/utils');
 
 exports.postSignUp = async (req, res) => {
@@ -12,9 +13,10 @@ exports.postSignUp = async (req, res) => {
 		body
 	} = req;
 
-	const errors = validationResult(req).array();
+	const validationResult = await req.getValidationResult();
+	const errors = convertErrorToFrontFormat(validationResult.mapped());
 
-	if (errors.length > 0) {
+	if (!_.isEmpty(errors)) {
 		res
 			.status(400)
 			.json({
@@ -49,7 +51,7 @@ exports.postSignUp = async (req, res) => {
 					.status(200)
 					.json({
 						success: true,
-						errors: [],
+						errors: {},
 						token,
 						user
 					});
@@ -58,17 +60,15 @@ exports.postSignUp = async (req, res) => {
 					.status(500)
 					.json({
 						success: false,
-						errors: []
+						errors: {}
 					});
 			}
 		} catch (e) {
-			console.log('------------------')
-			console.log(e);
 			res
 				.status(500)
 				.json({
 					success: false,
-					errors: []
+					errors: {}
 				});
 		}
 	}
@@ -105,21 +105,16 @@ exports.postSignIn = async (req, res) => {
 					success: true,
 					token,
 					user: result,
-					errors: []
+					errors: {}
 				});
 		} else {
 			res
 				.status(400)
 				.json({
 					success: false,
-					errors: [
-						{
-							location: 'body',
-							param: 'nickname',
-							value: nickname.toLowerCase(),
-							msg: constants.EXPRESS_VALIDATION_MESSAGES.INCORRECT_PASSWORD_OR_USERNAME
-						}
-					]
+					errors: {
+						nickname: constants.EXPRESS_VALIDATION_MESSAGES.INCORRECT_PASSWORD_OR_USERNAME
+					}
 				});
 		}
 	} catch (e) {
@@ -127,7 +122,7 @@ exports.postSignIn = async (req, res) => {
 			.status(500)
 			.json({
 				success: false,
-				errors: []
+				errors: {}
 			});
 	}
 };
@@ -142,15 +137,10 @@ exports.getVerifyNickname = async (req, res) => {
 			nickname: nickname.toLowerCase()
 		});
 
-		const errors = [];
+		const errors = {};
 
 		if (result.length > 0) {
-			errors.push({
-				location: 'body',
-				param: 'nickname',
-				value: nickname.toLowerCase(),
-				msg: constants.EXPRESS_VALIDATION_MESSAGES.THIS_NICKNAME_IS_ALREADY_TAKEN
-			});
+			errors.nickname = constants.EXPRESS_VALIDATION_MESSAGES.THIS_NICKNAME_IS_ALREADY_TAKEN;
 		}
 
 		res.status(200)

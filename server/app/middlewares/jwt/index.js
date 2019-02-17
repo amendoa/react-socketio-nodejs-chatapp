@@ -16,7 +16,7 @@ module.exports = (req, res, next) => {
 			res.status(401)
 				.json({
 					success: false,
-					errors: [],
+					errors: {},
 					result: []
 				});
 		} else {
@@ -39,7 +39,7 @@ module.exports = (req, res, next) => {
 				} else {
 					res.status(401).json({
 						success: false,
-						errors: [],
+						errors: {},
 						result: []
 					});
 				}
@@ -47,7 +47,7 @@ module.exports = (req, res, next) => {
 				res.status(500)
 					.json({
 						success: false,
-						errors: [],
+						errors: {},
 						result: []
 					});
 			}
