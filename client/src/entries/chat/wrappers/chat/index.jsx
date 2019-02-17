@@ -4,7 +4,9 @@ import React, {
 
 import {
 	ContentEditableComponent,
-	IconComponent
+	IconComponent,
+	LabelComponent,
+	ButtonComponent
 } from 'shared/components';
 
 import {
@@ -15,7 +17,9 @@ import {
 	MessageListContainer
 } from 'entries/chat/containers';
 
+import constants from 'modules/constants';
 import { connect } from 'react-redux';
+import { confirmAlert } from 'react-confirm-alert';
 import { bindActionCreators } from 'redux';
 import * as conversationActions from 'redux/actions/conversation';
 import * as messageActions from 'redux/actions/message';
@@ -96,6 +100,81 @@ class ChatWrapper extends Component {
 		}
 	}
 
+	handleDeleteMessage = (messageId) => {
+		const {
+			messageActions,
+			conversationData
+		} = this.props;
+
+		const {
+			currentPartnerIdConversation: partnerId
+		} = conversationData;
+
+
+		confirmAlert({
+			customUI: ({ onClose }) => {
+				return (
+					<div className='confirm-popup'>
+						<LabelComponent
+							fontSemiBold
+							text={constants.LABELS.CHAT.DELETE_MESSAGE_CONFIRM}
+							fontSize={30}
+							alignCenter
+							margin="0px 0px 25px 0px"
+						/>
+						<div className='buttons-container'>
+							<ButtonComponent
+								type="button"
+								defaultButton
+								small
+								outline
+								text={constants.LABELS.MAIN.NO}
+								margin="10px"
+								width={100}
+								onClick={onClose}
+							/>
+							<ButtonComponent
+								type="button"
+								defaultButton
+								small
+								outline
+								text={constants.LABELS.MAIN.YES}
+								margin="10px"
+								width={100}
+								onClick={() => {
+									messageActions.deleteMessage({
+										messageId,
+										partnerId
+									});
+									onClose();
+								}}
+							/>
+						</div>
+					</div>
+				);
+			}
+		});
+	}
+
+	getCurrentConversationMessages = (messages) => {
+		const {
+			messageData
+		} = this.props;
+
+		const {
+			deleteMessage
+		} = messageData;
+
+		return messages.map(message => {
+			const newItem = message;
+			newItem.isFetchingAction = (
+				deleteMessage.isFetching
+				&& String(deleteMessage.currentMessageIdIsDeleting) === String(message._id)
+			);
+			return message;
+		});
+	}
+
 	renderChatContainer = () => {
 		const {
 			conversationData,
@@ -172,9 +251,10 @@ class ChatWrapper extends Component {
 				>
 					<MessageListContainer
 						isFetching={getMessages.isFetching}
-						items={currentConversation.messages}
+						items={this.getCurrentConversationMessages(currentConversation.messages)}
 						onMouseOver={this.setConversationIsRead}
 						onFocus={this.setConversationIsRead}
+						handleDeleteMessage={this.handleDeleteMessage}
 					/>
 				</section>
 				<footer className='footer-container'>

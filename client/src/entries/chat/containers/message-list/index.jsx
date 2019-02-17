@@ -52,7 +52,8 @@ export default class MessageListContainer extends Component {
 		const {
 			isFetching,
 			onMouseOver,
-			onFocus
+			onFocus,
+			handleDeleteMessage
 		} = this.props;
 
 		const messages = this.getItems();
@@ -98,7 +99,9 @@ export default class MessageListContainer extends Component {
 							const {
 								message,
 								dateTime,
-								currentUserIsSender
+								currentUserIsSender,
+								_id,
+								isFetchingAction
 							} = item;
 
 							components.push(
@@ -108,6 +111,10 @@ export default class MessageListContainer extends Component {
 									left={!currentUserIsSender}
 									text={message}
 									time={moment(dateTime).format('HH:mm')}
+									handleDelete={() => {
+										handleDeleteMessage(_id);
+									}}
+									isFetchingAction={isFetchingAction}
 								/>
 							);
 						});

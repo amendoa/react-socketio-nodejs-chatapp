@@ -9,7 +9,8 @@ import {
 	RESET_CONVERSATION_UNREAD_MESSAGES,
 	DELETE_CONVERSATION_RECEIVED,
 	DELETE_CONVERSATION,
-	REMOVE_CONVERSATION
+	REMOVE_CONVERSATION,
+	REMOVE_MESSAGE_FROM_CONVERSATION
 } from 'redux/constants/conversation';
 
 const initialState = {
@@ -154,6 +155,18 @@ export default function conversationReducer (state = initialState, action) {
 						? null
 						: state.currentPartnerIdConversation
 				)
+			});
+
+		case REMOVE_MESSAGE_FROM_CONVERSATION:
+			return Object.assign({}, state, {
+				result: state.result.map(item => {
+					const newItem = item;
+					if (String(item.partnerId._id) === String(action.params.partnerId)) {
+						newItem.messages = item.messages.filter(message => message._id !== action.params.messageId);
+					}
+
+					return item;
+				})
 			});
 
 		case RESET_CONVERSATION:

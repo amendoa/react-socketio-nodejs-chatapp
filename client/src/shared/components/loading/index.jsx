@@ -2,6 +2,8 @@ import React, {
 	Component
 } from 'react';
 
+import classNames from 'classnames';
+
 export default class LoadingComponent extends Component {
 	renderSpinner = () => {
 		return (
@@ -14,9 +16,21 @@ export default class LoadingComponent extends Component {
 		);
 	}
 
-	renderDunet = () => {
+	renderDotnut = () => {
+		const {
+			defaultLoading
+		} = this.props;
+
+		const dotnutStyles = classNames({
+			donut: true,
+			default: defaultLoading
+		});
+
 		return (
-			<div className="donut"></div>
+			<div
+				className={dotnutStyles}
+			>
+			</div>
 		);
 	}
 
@@ -27,7 +41,7 @@ export default class LoadingComponent extends Component {
 
 		switch (type) {
 			case 'donut':
-				return this.renderDunet();
+				return this.renderDotnut();
 
 			case 'spinner':
 				return this.renderSpinner();

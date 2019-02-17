@@ -13,15 +13,15 @@ import {
 const initialState = {
 	signIn: {
 		isFetching: false,
-		errors: []
+		errors: {}
 	},
 	signUp: {
 		isFetching: false,
-		errors: []
+		errors: {}
 	},
 	verifyNickname: {
 		isFetching: false,
-		errors: []
+		errors: {}
 	}
 };
 
@@ -46,7 +46,7 @@ function authReducer (state = initialState, action) {
 			return Object.assign({}, state, {
 				signIn: Object.assign({}, state.signIn, {
 					isFetching: false,
-					errors: []
+					errors: {}
 				})
 			});
 
@@ -85,7 +85,7 @@ function authReducer (state = initialState, action) {
 			return Object.assign({}, state, {
 				verifyNickname: {
 					isFetching: false,
-					errors: []
+					errors: {}
 				}
 			});
 

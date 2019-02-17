@@ -14,7 +14,7 @@ import {
 const initialState = {
 	addContact: {
 		isFetching: false,
-		errors: [],
+		errors: {},
 		successMessages: []
 	},
 	getContacts: {
@@ -87,7 +87,7 @@ export default function contactReducer (state = initialState, action) {
 			return Object.assign({}, state, {
 				addContact: Object.assign({}, state.addContact, {
 					isFetching: false,
-					errors: [],
+					errors: {},
 					successMessages: []
 				})
 			});

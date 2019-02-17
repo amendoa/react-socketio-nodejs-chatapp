@@ -9,6 +9,7 @@
 		"lodash": "^4.17.11",
 		"moment": "^2.24.0",
 		"node-sass": "^4.11.0",
+		"rc-dropdown": "^2.4.1",
 		"react": "^16.7.0",
 		"react-confirm-alert": "^2.1.0",
 		"react-dom": "^16.7.0",

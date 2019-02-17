@@ -40,24 +40,13 @@ class SignUpFormContainer extends Component {
 					confirmPassword: ''
 				}}
 				handleSubmit={(values, formName) => {
-					const params = {
-						body: values
-					};
+					if (!signUp.isFetching) {
+						const params = {
+							body: values
+						};
 
-					postSignUp(params, formName);
-				}}
-				customErrors={() => {
-					const {
-						errors
-					} = verifyNickname;
-					const customErrors = _.uniqBy(errors, model => model.param);
-					const formErrors = {};
-
-					customErrors.forEach(item => {
-						formErrors[item.param] = item.msg;
-					});
-
-					return formErrors;
+						postSignUp(params, formName);
+					}
 				}}
 				validate={(values, errors, resetErrors, keys) => {
 					const {
@@ -156,7 +145,7 @@ class SignUpFormContainer extends Component {
 												);
 											}
 
-											if (verifyNickname.errors.length > 0) {
+											if (!_.isEmpty(verifyNickname.errors)) {
 												return (
 													<IconComponent
 														fill="#da7079"

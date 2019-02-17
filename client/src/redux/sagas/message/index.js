@@ -13,7 +13,8 @@ import {
 
 import {
 	POST_MESSAGE,
-	GET_MESSAGES
+	GET_MESSAGES,
+	DELETE_MESSAGE
 } from 'redux/constants/message';
 
 import {
@@ -76,9 +77,39 @@ function* getMessagesFetchSaga (action) {
 	}
 }
 
+function* deleteMessageFetchSaga (action) {
+	const {
+		messageId,
+		partnerId
+	} = action.params;
+
+	const body = {
+		messageId,
+		partnerId
+	};
+
+	try {
+		yield sendRequest({
+			url: `${constants.API.ROOT}${constants.API.ACTIONS.MESSAGE}`,
+			method: constants.API.METHODS.DELETE,
+			body
+		});
+
+		yield put(messageActions.deleteMessageReceived());
+		yield put(conversationActions.removeMessageFromConversation({
+			messageId,
+			partnerId
+		}));
+	} catch (e) {
+		yield put(messageActions.deleteMessageReceived());
+		toast.error(constants.LABELS.MAIN.GLOBAL_ERROR);
+	}
+}
+
 const sagas = [
 	takeLatest(POST_MESSAGE, sendMessagePostFetchSaga),
-	takeLatest(GET_MESSAGES, getMessagesFetchSaga)
+	takeLatest(GET_MESSAGES, getMessagesFetchSaga),
+	takeLatest(DELETE_MESSAGE, deleteMessageFetchSaga)
 ];
 
 export default sagas;

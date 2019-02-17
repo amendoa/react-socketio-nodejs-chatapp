@@ -5,7 +5,6 @@ import constants from 'modules/constants';
 import { toast } from 'react-toastify';
 
 import {
-	serverErrorsToFrontFormat,
 	sendRequest,
 	login
 } from 'modules/utils';
@@ -63,7 +62,7 @@ function* signUpPostFetch (props) {
 		});
 
 		yield put(formActions.setFormError(formName, {
-			errors: serverErrorsToFrontFormat(response.errors)
+			errors: response.errors
 		}));
 
 		yield put(authActions.postSignUpReceived());
@@ -96,7 +95,7 @@ function* verifyNicknameGetFetch (props) {
 		});
 
 		yield put(formActions.setFormError(formName, {
-			errors: serverErrorsToFrontFormat(response.errors)
+			errors: response.errors
 		}));
 
 		yield put(authActions.getVerifyNicknameReceived({

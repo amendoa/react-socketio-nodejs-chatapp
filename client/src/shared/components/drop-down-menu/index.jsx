@@ -1,4 +1,3 @@
-import ReactDOM from 'react-dom';
 import React, {
 	Component
 } from 'react';
@@ -7,7 +6,7 @@ import {
 	IconComponent,
 	LabelComponent
 } from 'shared/components';
-
+import Dropdown from 'rc-dropdown';
 import classNames from 'classnames';
 
 export default class DropDownMenuComponent extends Component {
@@ -15,49 +14,27 @@ export default class DropDownMenuComponent extends Component {
 		super(props);
 
 		this.state = {
-			isOpen: false
+			visible: false
 		};
 	}
 
-	componentDidMount () {
-		document.addEventListener('click', this.handleClickOutside);
-	}
-
-	componentWillUnmount () {
-		document.removeEventListener('click', this.handleClickOutside);
-	}
-
-	handleClickOutside = (event) => {
-		// eslint-disable-next-line
-		const domNode = ReactDOM.findDOMNode(this);
-		if (!domNode.contains(event.target)) {
-			this.changeOpenState(false, false);
-		}
-	}
-
-	changeOpenState = (toggle, newIsOpen) => {
-		const {
-			isOpen
-		} = this.state;
-
+	onVisibleChange = (visible) => {
 		const {
 			onChange
 		} = this.props;
 
-		const newIsOpenState = toggle ? (!isOpen) : newIsOpen;
-
 		if (onChange) {
-			onChange(newIsOpenState);
+			onChange(visible);
 		}
 
 		this.setState({
-			isOpen: newIsOpenState
+			visible
 		});
 	}
 
 	render () {
 		const {
-			isOpen,
+			visible,
 		} = this.state;
 
 		const {
@@ -68,20 +45,54 @@ export default class DropDownMenuComponent extends Component {
 
 		const dropDownStyles = classNames({
 			'drop-down-menu': true,
-			open: isOpen
+			visible
 		});
 
 		return (
-			<div className='drop-down-menu-wrapper'>
+			<Dropdown
+				trigger={['click']}
+				visible={visible}
+				overlay={() => {
+					return (
+						<div className='drop-down-menu-wrapper'>
+							<div className={dropDownStyles}>
+								<ul>
+									{
+										options.map((item, index) => (
+											<li key={index}>
+												<ButtonComponent
+													link
+													onClick={() => {
+														this.onVisibleChange(false);
+														item.event();
+													}}
+												>
+													<LabelComponent
+														regular
+														dark
+														breakWord
+														alignCenter
+														text={item.text}
+														fontSize={14}
+													/>
+												</ButtonComponent>
+											</li>
+										))
+									}
+								</ul>
+							</div>
+						</div>
+					);
+				}}
+				animation="slide-up"
+				onVisibleChange={this.onVisibleChange}
+			>
 				<ButtonComponent
 					type='button'
 					width={icon.width}
 					height={icon.height}
 					margin={marginButton}
 					link
-					onClick={() => {
-						this.changeOpenState(true);
-					}}
 				>
 					<IconComponent
 						{
@@ -89,33 +100,7 @@ export default class DropDownMenuComponent extends Component {
 						}
 					/>
 				</ButtonComponent>
-				<div className={dropDownStyles}>
-					<ul>
-						{
-							options.map((item, index) => (
-								<li key={index}>
-									<ButtonComponent
-										link
-										onClick={() => {
-											this.changeOpenState(false, false);
-											item.event();
-										}}
-									>
-										<LabelComponent
-											regular
-											dark
-											breakWord
-											alignCenter
-											text={item.text}
-											fontSize={14}
-										/>
-									</ButtonComponent>
-								</li>
-							))
-						}
-					</ul>
-				</div>
-			</div>
+			</Dropdown>
 		);
 	}
 }

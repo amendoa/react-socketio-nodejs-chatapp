@@ -9,18 +9,56 @@
 	margin: 10px 0px 10px 0px;
 	padding: 10px;
 
-	.time-container {
+	.message-footer-container {
+		display: flex;
 		align-self: flex-end;
+		align-items: center;
+		flex-direction: row;
 		margin-top: 15px;
+		position: relative;
+
+		.actions-container {
+			position: absolute;
+			right: 0;
+			transition: all 0.1s ease;
+			width: 0px;
+			height: 0px;
+
+			&.active {
+				width: 28px;
+				height: 28px;
+			}
+		}
 	}
 
 	&.left {
 		align-self: flex-start;
 		background: $brand-default;
+
+		.message-footer-container {
+			.actions-container {
+				background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, $brand-default 50%);
+			}
+		}
 	}
 
 	&.right {
 		align-self: flex-end;
 		background: $brand-primary;
+
+		.message-footer-container {
+			.actions-container {
+				background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, $brand-primary 50%);
+			}
+		}
+	}
+
+	&:hover {
+		.message-footer-container  {
+			.actions-container  {
+				width: 28px;
+				height: 28px;
+			}
+		}
 	}
 }

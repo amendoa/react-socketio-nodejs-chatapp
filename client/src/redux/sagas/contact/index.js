@@ -65,7 +65,7 @@ function* deleteContactFetchSaga (action) {
 		contactId
 	} = action.params;
 
-	const query = {
+	const body = {
 		contactId
 	};
 
@@ -73,7 +73,7 @@ function* deleteContactFetchSaga (action) {
 		yield sendRequest({
 			url: `${constants.API.ROOT}${constants.API.ACTIONS.CONTACT}`,
 			method: constants.API.METHODS.DELETE,
-			query
+			body
 		});
 
 		yield put(contactActions.removeContact({

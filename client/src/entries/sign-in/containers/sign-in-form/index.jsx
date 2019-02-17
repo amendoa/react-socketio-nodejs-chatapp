@@ -11,9 +11,6 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import constants from 'modules/constants';
 import * as authActions from 'redux/actions/auth';
-import {
-	serverErrorsToFrontFormat
-} from 'modules/utils';
 
 class SignInFormContainer extends Component {
 	onCloseFlashMessage = () => {
@@ -42,7 +39,9 @@ class SignInFormContainer extends Component {
 			signIn
 		} = authData;
 
-		const errors = serverErrorsToFrontFormat(signIn.errors);
+		const {
+			errors
+		} = signIn;
 
 		return (
 			<FormComponent
@@ -52,11 +51,11 @@ class SignInFormContainer extends Component {
 					password: ''
 				}}
 				handleSubmit={(values) => {
-					const params = {
-						body: values
-					};
-
 					if (!signIn.isFetching) {
+						const params = {
+							body: values
+						};
+
 						postSignIn(params);
 					}
 				}}
@@ -106,6 +105,10 @@ class SignInFormContainer extends Component {
 								isFetching={signIn.isFetching}
 								margin="24px 0px 0px 0px"
 								width={280}
+								disabled={
+									!form.values.password
+									|| !form.values.nickname
+								}
 							/>
 						</form>
 					);

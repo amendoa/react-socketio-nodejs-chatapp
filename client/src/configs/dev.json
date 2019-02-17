@@ -36,7 +36,9 @@
 			"ADD": "Add",
 			"LOGOUT": "Logout",
 			"DELETE_CHAT": "delete chat",
-			"DELETE_CHAT_CONFIRM": "Delete chat?"
+			"DELETE_CHAT_CONFIRM": "Delete chat?",
+			"DELETE_MESSAGE": "delete message",
+			"DELETE_MESSAGE_CONFIRM": "Delete message?"
 		},
 		"CONTACT": {
 			"CONTACT_SUCCESSFULLY_ADDED": "Contact successfully added",

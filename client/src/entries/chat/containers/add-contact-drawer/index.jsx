@@ -13,9 +13,6 @@ import constants from 'modules/constants';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as contactActions from 'redux/actions/contact';
-import {
-	serverErrorsToFrontFormat
-} from 'modules/utils';
 
 class AddContactDrawer extends Component {
 	onCloseFlashMessage = () => {
@@ -44,7 +41,9 @@ class AddContactDrawer extends Component {
 			successMessages
 		} = addContact;
 
-		const errors = serverErrorsToFrontFormat(addContact.errors);
+		const {
+			errors
+		} = addContact;
 
 		return (
 			<div className='add-contact-drawer-wrapper'>
@@ -57,11 +56,11 @@ class AddContactDrawer extends Component {
 							nickname: ''
 						}}
 						handleSubmit={(values) => {
-							const params = {
-								body: values
-							};
-
 							if (!addContact.isFetching) {
+								const params = {
+									body: values
+								};
+
 								contactActions.postAddContact(params);
 							}
 						}}

@@ -5,6 +5,11 @@
 	border: 3px solid rgba($brand-primary, 0.3);
 	border-top-color: $brand-primary;
 	animation: 1s spin infinite linear;
+
+	&.default {
+		border: 3px solid rgba($brand-default, 0.3);
+		border-top-color: $brand-default;
+	}
 }
 
 .spinner {
