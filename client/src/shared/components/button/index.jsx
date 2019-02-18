@@ -22,7 +22,8 @@ export default class ButtonComponent extends Component {
 			margin,
 			defaultButton,
 			outline,
-			small
+			small,
+			setRef
 		} = this.props;
 
 		const buttonStyles = classNames({
@@ -50,6 +51,7 @@ export default class ButtonComponent extends Component {
 				}}
 				type={type}
 				disabled={disabled}
+				ref={setRef}
 			>
 				{
 					isFetching && !disabled ? (

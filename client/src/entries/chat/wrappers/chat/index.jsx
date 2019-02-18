@@ -28,10 +28,6 @@ class ChatWrapper extends Component {
 	constructor (props) {
 		super(props);
 		this.conversationContainer = React.createRef();
-
-		this.state = {
-			message: ''
-		};
 	}
 
 	componentDidUpdate () {
@@ -93,10 +89,6 @@ class ChatWrapper extends Component {
 			};
 
 			messageActions.postMessage(params);
-
-			this.setState({
-				message: ''
-			});
 		}
 	}
 
@@ -190,10 +182,6 @@ class ChatWrapper extends Component {
 			result: conversations
 		} = conversationData;
 
-		const {
-			message
-		} = this.state;
-
 		if (!currentPartnerIdConversation) {
 			return (
 				<div
@@ -261,7 +249,6 @@ class ChatWrapper extends Component {
 					<ContentEditableComponent
 						onEnter={this.handleSendMessage}
 						onFocus={this.setConversationIsRead}
-						value={message}
 					/>
 				</footer>
 			</div>

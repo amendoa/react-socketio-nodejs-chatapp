@@ -116,10 +116,10 @@ export async function logout () {
 }
 
 export async function login (token, user) {
-	resetRedux();
-	setToken(token);
-	setUser(user);
-	history.push('/');
+	await resetRedux();
+	await setToken(token);
+	await setUser(user);
+	await history.push('/');
 }
 
 export async function sendRequest ({

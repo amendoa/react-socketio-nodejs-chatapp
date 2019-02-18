@@ -6,7 +6,12 @@ import {
 	IconComponent,
 	LabelComponent
 } from 'shared/components';
-import Dropdown from 'rc-dropdown';
+import {
+	Manager,
+	Reference,
+	Popper
+} from 'react-popper';
+import { findDOMNode, createPortal } from "react-dom";
 import classNames from 'classnames';
 
 export default class DropDownMenuComponent extends Component {
@@ -14,27 +19,49 @@ export default class DropDownMenuComponent extends Component {
 		super(props);
 
 		this.state = {
-			visible: false
+			isOpen: false
 		};
 	}
 
-	onVisibleChange = (visible) => {
+	componentDidMount () {
+		document.addEventListener('click', this.handleClickOutside);
+	}
+
+	componentWillUnmount () {
+		document.removeEventListener('click', this.handleClickOutside);
+	}
+
+	handleClickOutside = (event) => {
+		// eslint-disable-next-line
+		const domNode = findDOMNode(this);
+		if (!domNode.contains(event.target)) {
+			this.changeDropDownStatus(false, false);
+		}
+	}
+
+	changeDropDownStatus = (toggle, newIsOpen) => {
 		const {
 			onChange
 		} = this.props;
 
+		const {
+			isOpen
+		} = this.state;
+
+		const isOpenState = toggle ? (!isOpen) : (newIsOpen);
+
 		if (onChange) {
-			onChange(visible);
+			onChange(isOpenState);
 		}
 
 		this.setState({
-			visible
+			isOpen: isOpenState
 		});
 	}
 
 	render () {
 		const {
-			visible,
+			isOpen,
 		} = this.state;
 
 		const {
@@ -43,64 +70,79 @@ export default class DropDownMenuComponent extends Component {
 			marginButton
 		} = this.props;
 
-		const dropDownStyles = classNames({
-			'drop-down-menu': true,
-			visible
-		});
-
 		return (
-			<Dropdown
-				trigger={['click']}
-				visible={visible}
-				overlay={() => {
-					return (
-						<div className='drop-down-menu-wrapper'>
-							<div className={dropDownStyles}>
-								<ul>
-									{
-										options.map((item, index) => (
-											<li key={index}>
-												<ButtonComponent
-													link
-													onClick={() => {
-														this.onVisibleChange(false);
-														item.event();
-													}}
-												>
-													<LabelComponent
-														regular
-														dark
-														breakWord
-														alignCenter
-														text={item.text}
-														fontSize={14}
-													/>
-												</ButtonComponent>
-											</li>
-										))
-									}
-								</ul>
-							</div>
-						</div>
-					);
-				}}
-				animation="slide-up"
-				onVisibleChange={this.onVisibleChange}
-			>
-				<ButtonComponent
-					type='button'
-					width={icon.width}
-					height={icon.height}
-					margin={marginButton}
-					link
-				>
-					<IconComponent
-						{
-						...icon
-						}
-					/>
-				</ButtonComponent>
-			</Dropdown>
+			<Manager>
+				<Reference>
+					{({ ref }) => (
+						<ButtonComponent
+							type='button'
+							width={icon.width}
+							height={icon.height}
+							margin={marginButton}
+							link
+							setRef={ref}
+							onClick={() => {
+								this.changeDropDownStatus(true);
+							}}
+						>
+							<IconComponent
+								{
+								...icon
+								}
+							/>
+						</ButtonComponent>
+					)}
+				</Reference>
+				{
+					isOpen && (
+						<Popper
+							placement="bottom-end"
+						>
+							{({
+								ref,
+								style,
+								placement
+							}) => (
+								<div
+									className='drop-down-menu-wrapper fadeIn'
+									style={style}
+									ref={ref}
+								>
+									<div
+										className='drop-down-menu'
+										data-placement={placement}
+									>
+										<ul>
+											{
+												options.map((item, index) => (
+													<li key={index}>
+														<ButtonComponent
+															link
+															onClick={() => {
+																this.changeDropDownStatus(false, false);
+																item.event();
+															}}
+														>
+															<LabelComponent
+																regular
+																dark
+																breakWord
+																alignCenter
+																text={item.text}
+																fontSize={14}
+															/>
+														</ButtonComponent>
+													</li>
+												))
+											}
+										</ul>
+									</div>
+								</div>
+							)}
+						</Popper>
+					)
+				}
+			</Manager>
 		);
 	}
 }
