@@ -47,7 +47,7 @@
 		}
 	},
 	"API": {
-		"ROOT": "http://0.0.0.0:7070",
+		"ROOT": "http://192.168.0.100:7070",
 		"ACTIONS": {
 			"AUTH_SIGNUP": "/auth/signup",
 			"AUTH_SIGNIN": "/auth/signin",

@@ -1,15 +1,8 @@
 import {
 	OPEN_DRAWER,
 	CLOSE_DRAWER,
-	INIT_DRAWER,
-	RESET_DRAWER
+	INIT_DRAWER
 } from 'redux/constants/drawer';
-
-export function reset () {
-	return {
-		type: RESET_DRAWER
-	};
-}
 
 export function initDrawer (drawerName) {
 	return {

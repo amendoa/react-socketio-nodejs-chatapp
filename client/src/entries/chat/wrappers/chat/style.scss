@@ -37,7 +37,9 @@
 			height: 100%;
 			background: $brand-secondary;
 			padding: 0px 25px 25px 25px;
-			overflow: auto;
+			overflow-x: hidden;
+			overflow-y: none;
+			// position: relative;
 		}
 
 		.footer-container {

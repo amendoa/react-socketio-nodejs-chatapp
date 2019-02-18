@@ -5,17 +5,10 @@ import {
 	GET_CONTACTS,
 	GET_CONTACTS_RECEIVED,
 	RESET_GET_CONTACTS,
-	RESET_CONTACT,
 	DELETE_CONTACT,
 	DELETE_CONTACT_RECEIVED,
 	REMOVE_CONTACT
 } from 'redux/constants/contact';
-
-export function reset () {
-	return {
-		type: RESET_CONTACT
-	};
-}
 
 export function resetGetContacts () {
 	return {

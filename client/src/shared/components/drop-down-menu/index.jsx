@@ -11,33 +11,32 @@ import {
 	Reference,
 	Popper
 } from 'react-popper';
-import { findDOMNode, createPortal } from "react-dom";
-import classNames from 'classnames';
 
-export default class DropDownMenuComponent extends Component {
+import onClickOutside from 'react-onclickoutside';
+
+class DropDownMenuComponent extends Component {
 	constructor (props) {
 		super(props);
 
+		this.dropDownWrapper = React.createRef();
 		this.state = {
 			isOpen: false
 		};
 	}
 
-	componentDidMount () {
-		document.addEventListener('click', this.handleClickOutside);
-	}
-
-	componentWillUnmount () {
-		document.removeEventListener('click', this.handleClickOutside);
-	}
-
 	handleClickOutside = (event) => {
-		// eslint-disable-next-line
-		const domNode = findDOMNode(this);
-		if (!domNode.contains(event.target)) {
-			this.changeDropDownStatus(false, false);
+		const {
+			isOpen
+		} = this.state;
+
+		if (this.dropDownWrapper.current) {
+			if (!this.dropDownWrapper.current.contains(event.target)) {
+				if (isOpen) {
+					this.changeDropDownStatus(false, false);
+				}
+			}
 		}
-	}
+	};
 
 	changeDropDownStatus = (toggle, newIsOpen) => {
 		const {
@@ -71,78 +70,85 @@ export default class DropDownMenuComponent extends Component {
 		} = this.props;
 
 		return (
-			<Manager>
-				<Reference>
-					{({ ref }) => (
-						<ButtonComponent
-							type='button'
-							width={icon.width}
-							height={icon.height}
-							margin={marginButton}
-							link
-							setRef={ref}
-							onClick={() => {
-								this.changeDropDownStatus(true);
-							}}
-						>
-							<IconComponent
-								{
-								...icon
-								}
-							/>
-						</ButtonComponent>
-					)}
-				</Reference>
-				{
-					isOpen && (
-						<Popper
-							placement="bottom-end"
-						>
-							{({
-								ref,
-								style,
-								placement
-							}) => (
-								<div
-									className='drop-down-menu-wrapper fadeIn'
-									style={style}
-									ref={ref}
-								>
+			<div
+				ref={this.dropDownWrapper}
+				className='drop-down-menu-wrapper'
+			>
+				<Manager>
+					<Reference>
+						{({ ref }) => (
+							<ButtonComponent
+								type='button'
+								width={icon.width}
+								height={icon.height}
+								margin={marginButton}
+								link
+								setRef={ref}
+								onClick={() => {
+									this.changeDropDownStatus(true);
+								}}
+							>
+								<IconComponent
+									{
+									...icon
+									}
+								/>
+							</ButtonComponent>
+						)}
+					</Reference>
+					{
+						isOpen && (
+							<Popper
+								placement="bottom-end"
+							>
+								{({
+									ref,
+									style,
+									placement
+								}) => (
 									<div
-										className='drop-down-menu'
-										data-placement={placement}
+										className='drop-down-menu fadeIn'
+										style={style}
+										ref={ref}
 									>
-										<ul>
-											{
-												options.map((item, index) => (
-													<li key={index}>
-														<ButtonComponent
-															link
-															onClick={() => {
-																this.changeDropDownStatus(false, false);
-																item.event();
-															}}
-														>
-															<LabelComponent
-																regular
-																dark
-																breakWord
-																alignCenter
-																text={item.text}
-																fontSize={14}
-															/>
-														</ButtonComponent>
-													</li>
-												))
-											}
-										</ul>
+										<div
+											className='drop-down-container'
+											data-placement={placement}
+										>
+											<ul>
+												{
+													options.map((item, index) => (
+														<li key={index}>
+															<ButtonComponent
+																link
+																onClick={() => {
+																	this.changeDropDownStatus(false, false);
+																	item.event();
+																}}
+															>
+																<LabelComponent
+																	regular
+																	dark
+																	breakWord
+																	alignCenter
+																	text={item.text}
+																	fontSize={14}
+																/>
+															</ButtonComponent>
+														</li>
+													))
+												}
+											</ul>
+										</div>
 									</div>
-								</div>
-							)}
-						</Popper>
-					)
-				}
-			</Manager>
+								)}
+							</Popper>
+						)
+					}
+				</Manager>
+			</div>
 		);
 	}
 }
+
+export default onClickOutside(DropDownMenuComponent);

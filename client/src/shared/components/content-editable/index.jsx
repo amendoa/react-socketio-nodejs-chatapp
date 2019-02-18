@@ -2,64 +2,48 @@ import React, {
 	Component
 } from 'react';
 
-import ContentEditable from 'react-contenteditable';
-
 export default class ContentEditableComponent extends Component {
 	constructor(props) {
 		super(props);
 		this.contentEditable = React.createRef();
-		this.state = {
-			html: ''
-		};
 	}
 
-	handleChange = evt => {
-		this.setState({
-			html: evt.target.value
-		});
+	handleKeyDown = (event) => {
+		if (event.which === 13 && event.shiftKey === false) {
+			event.preventDefault();
+			this.handleEnter();
+			return false;
+		}
+
+		return true;
 	};
 
 	handleEnter = () => {
 		const {
-			html
-		} = this.state;
-
-		const {
 			onEnter
 		} = this.props;
 
-		onEnter(html);
-
-		this.setState({
-			html: ''
-		});
+		onEnter(this.contentEditable.current.textContent);
+		this.contentEditable.current.textContent = '';
 	}
 
 	render () {
-		const {
-			html
-		} = this.state;
-
 		const {
 			onFocus
 		} = this.props;
 
 		return (
-			<ContentEditable
+			<div
+				contentEditable
 				className='content-editable'
-				innerRef={this.contentEditable}
-				html={html}
-				disabled={false}
-				onChange={this.handleChange}
-				tagName='article'
-				onKeyDown={(event) => {
-					if (event.which === 13 && event.shiftKey === false) {
-						event.preventDefault();
-						this.handleEnter();
-					}
-				}}
+				role='button'
+				spellCheck
+				ref={this.contentEditable}
+				onKeyDown={this.handleKeyDown}
 				onFocus={onFocus}
-			/>
+				tabIndex='-1'
+			>
+			</div>
 		);
 	}
 }

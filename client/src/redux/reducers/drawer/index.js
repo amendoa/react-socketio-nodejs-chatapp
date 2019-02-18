@@ -1,9 +1,12 @@
 import {
 	OPEN_DRAWER,
 	CLOSE_DRAWER,
-	INIT_DRAWER,
-	RESET_DRAWER
+	INIT_DRAWER
 } from 'redux/constants/drawer';
+
+import {
+	RESET
+} from 'redux/constants/main';
 
 const initialState = {};
 
@@ -30,7 +33,7 @@ export default function drawerReducer (state = initialState, action) {
 				}
 			});
 
-		case RESET_DRAWER:
+		case RESET:
 			return initialState;
 
 		default:

@@ -8,11 +8,9 @@ import RoutesContainer from 'react-router/routes';
 import store from 'redux/store';
 import history from 'react-router/history';
 import 'styles/index.scss';
-// import 'react-toastify/dist/ReactToastify.css';
 import * as serviceWorker from 'serviceWorker';
-// import 'react-app-polyfill/ie9';
-// import 'core-js/es6/number';
-// import 'core-js/modules/es7.promise.finally';
+import 'react-app-polyfill/ie9';
+import 'core-js/fn/array/find';
 
 render(
 	<Provider store={store}>

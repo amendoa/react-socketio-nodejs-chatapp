@@ -4,7 +4,6 @@ import {
 	GET_CONVERSATIONS_RECEIVED,
 	SET_CURRENT_CONVERSATION_MESSAGES,
 	ADD_MESSAGE_TO_CURRENT_CONVERSATION_MESSAGES,
-	RESET_CONVERSATION,
 	INCREMENT_CONVERSATION_UNREAD_MESSAGES,
 	RESET_CONVERSATION_UNREAD_MESSAGES,
 	DELETE_CONVERSATION_RECEIVED,
@@ -12,6 +11,10 @@ import {
 	REMOVE_CONVERSATION,
 	REMOVE_MESSAGE_FROM_CONVERSATION
 } from 'redux/constants/conversation';
+
+import {
+	RESET
+} from 'redux/constants/main';
 
 const initialState = {
 	isFetching: false,
@@ -169,7 +172,7 @@ export default function conversationReducer (state = initialState, action) {
 				})
 			});
 
-		case RESET_CONVERSATION:
+		case RESET:
 			return initialState;
 
 		default:

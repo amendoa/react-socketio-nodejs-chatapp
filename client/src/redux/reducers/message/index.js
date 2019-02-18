@@ -3,10 +3,13 @@ import {
 	POST_MESSAGE_RECEIVED,
 	GET_MESSAGES,
 	GET_MESSAGES_RECEIVED,
-	RESET_MESSAGE,
 	DELETE_MESSAGE,
 	DELETE_MESSAGE_RECEIVED
 } from 'redux/constants/message';
+
+import {
+	RESET
+} from 'redux/constants/main';
 
 const initialState = {
 	postMessage: {
@@ -67,7 +70,7 @@ export default function messageReducer (state = initialState, action) {
 				})
 			});
 
-		case RESET_MESSAGE:
+		case RESET:
 			return initialState;
 
 		default:

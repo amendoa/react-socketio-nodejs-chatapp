@@ -6,9 +6,12 @@ import {
 	GET_VERIFY_NICKNAME,
 	GET_VERIFY_NICKNAME_RECEIVED,
 	RESET_VERIFY_NICKNAME,
-	RESET_SIGNIN,
-	RESET_AUTH
+	RESET_SIGNIN
 } from 'redux/constants/auth';
+
+import {
+	RESET
+} from 'redux/constants/main';
 
 const initialState = {
 	signIn: {
@@ -89,7 +92,7 @@ function authReducer (state = initialState, action) {
 				}
 			});
 
-		case RESET_AUTH:
+		case RESET:
 			return initialState;
 
 		default:

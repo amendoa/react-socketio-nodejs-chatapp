@@ -1,9 +1,12 @@
 import {
 	INIT_FORM,
 	UPDATE_FORM,
-	SET_FORM_ERROR,
-	RESET_FORM
+	SET_FORM_ERROR
 } from 'redux/constants/form';
+
+import {
+	RESET
+} from 'redux/constants/main';
 
 const initialState = {};
 
@@ -33,7 +36,7 @@ export default function formReducer (state = initialState, action) {
 				})
 			});
 
-		case RESET_FORM:
+		case RESET:
 			return initialState;
 
 		default:

@@ -6,15 +6,8 @@ import {
 	GET_VERIFY_NICKNAME,
 	GET_VERIFY_NICKNAME_RECEIVED,
 	RESET_VERIFY_NICKNAME,
-	RESET_SIGNIN,
-	RESET_AUTH
+	RESET_SIGNIN
 } from 'redux/constants/auth';
-
-export function reset () {
-	return {
-		type: RESET_AUTH
-	};
-}
 
 export function postSignIn (params) {
 	return {

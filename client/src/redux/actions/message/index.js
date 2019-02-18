@@ -3,16 +3,9 @@ import {
 	POST_MESSAGE_RECEIVED,
 	GET_MESSAGES,
 	GET_MESSAGES_RECEIVED,
-	RESET_MESSAGE,
 	DELETE_MESSAGE,
 	DELETE_MESSAGE_RECEIVED,
 } from 'redux/constants/message';
-
-export function reset () {
-	return {
-		type: RESET_MESSAGE
-	};
-}
 
 export function postMessage (params) {
 	return {

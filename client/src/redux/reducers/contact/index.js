@@ -5,11 +5,14 @@ import {
 	GET_CONTACTS,
 	GET_CONTACTS_RECEIVED,
 	RESET_GET_CONTACTS,
-	RESET_CONTACT,
 	DELETE_CONTACT,
 	DELETE_CONTACT_RECEIVED,
 	REMOVE_CONTACT
 } from 'redux/constants/contact';
+
+import {
+	RESET
+} from 'redux/constants/main';
 
 const initialState = {
 	addContact: {
@@ -99,7 +102,7 @@ export default function contactReducer (state = initialState, action) {
 				})
 			});
 
-		case RESET_CONTACT:
+		case RESET:
 			return initialState;
 
 		default:

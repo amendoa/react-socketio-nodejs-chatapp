@@ -7,13 +7,8 @@ import history from 'react-router/history';
 import store from 'redux/store';
 import _ from 'lodash';
 import moment from 'moment';
-import * as authActions from 'redux/actions/auth';
-import * as contactActions from 'redux/actions/contact';
-import * as conversationActions from 'redux/actions/conversation';
-import * as drawerActions from 'redux/actions/drawer';
-import * as formActions from 'redux/actions/form';
-import * as messageActions from 'redux/actions/message';
 import * as socketActions from 'redux/actions/socket';
+import * as mainActions from 'redux/actions/main';
 
 export function isDevelopmentEnv () {
 	return process.env.NODE_ENV.toLowerCase() === 'development';
@@ -68,35 +63,7 @@ export function resetRedux () {
 		dispatch
 	} = store;
 
-	const {
-		reset: resetAuth
-	} = authActions;
-	const {
-		reset: resetContact
-	} = contactActions;
-	const {
-		reset: resetConversation
-	} = conversationActions;
-	const {
-		reset: resetDrawer
-	} = drawerActions;
-	const {
-		reset: resetForm
-	} = formActions;
-	const {
-		reset: resetMessages
-	} = messageActions;
-	const {
-		reset: resetSocket
-	} = socketActions;
-
-	dispatch(resetAuth());
-	dispatch(resetContact());
-	dispatch(resetConversation());
-	dispatch(resetDrawer());
-	dispatch(resetForm());
-	dispatch(resetMessages());
-	dispatch(resetSocket());
+	dispatch(mainActions.reset());
 }
 
 export async function logout () {
@@ -116,9 +83,9 @@ export async function logout () {
 }
 
 export async function login (token, user) {
-	await resetRedux();
 	await setToken(token);
 	await setUser(user);
+	await resetRedux();
 	await history.push('/');
 }
 

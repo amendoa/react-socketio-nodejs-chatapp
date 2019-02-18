@@ -19,6 +19,10 @@
 			font-weight: 600;
 			width: 100%;
 
+			&::-ms-clear {
+				display: none;
+			}
+
 			&.default {
 				background: $brand-secondary;
 				border-radius: 4px;
