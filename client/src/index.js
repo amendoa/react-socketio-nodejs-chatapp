@@ -1,3 +1,9 @@
+import 'core-js/es6/map';
+import 'core-js/es6/set';
+import 'raf/polyfill';
+import 'core-js/fn/array/find';
+import 'react-app-polyfill/ie9';
+
 import React from 'react';
 import {
 	render
@@ -9,8 +15,6 @@ import store from 'redux/store';
 import history from 'react-router/history';
 import 'styles/index.scss';
 import * as serviceWorker from 'serviceWorker';
-import 'react-app-polyfill/ie9';
-import 'core-js/fn/array/find';
 
 render(
 	<Provider store={store}>

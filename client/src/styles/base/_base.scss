@@ -64,3 +64,7 @@ button {
 	padding: 0;
 	outline: none;
 }
+
+[contenteditable] {
+	user-select: text;
+}
