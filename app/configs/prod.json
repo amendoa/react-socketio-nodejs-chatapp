@@ -23,7 +23,7 @@
 	"MONGOOSE": {
 		"HOST": "127.0.0.1",
 		"PORT": "27017",
-		"DB": "simplenodechatapp"
+		"DB": "chatappprod"
 	},
 	"CRYPTO": {
 		"SECRET": "cryptos3cretpr0ddch4tapp",
