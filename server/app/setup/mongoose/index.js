@@ -4,7 +4,18 @@ const constants = absoluteRequire('modules/constants');
 const logger = absoluteRequire('modules/winston');
 
 module.exports = () => {
-	const URI = constants.MONGOOSE.URI + constants.MONGOOSE.DB;
+	const URI = (
+		process.env.OPENSHIFT_MONGODB_DB_URL
+			|| process.env.MONGO_URL
+			|| constants.MONGOOSE.URI
+	)
+	+ constants.MONGOOSE.DB;
+
+	console.log('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>');
+	console.log(process.env.OPENSHIFT_MONGODB_DB_URL
+		|| process.env.MONGO_URL
+		|| constants.MONGOOSE.URI);
+
 	const MONGOOSE_OPTIONS = {
 		useNewUrlParser: true,
 		auto_reconnect: true
