@@ -47,7 +47,7 @@
 		}
 	},
 	"API": {
-		"ROOT": "http://nodejs-mongo-persistent-mychatrealtimenodereact.1d35.starter-us-east-1.openshiftapps.com",
+		"ROOT": "http://nodejs-mongo-persistent-chatnotereactrealtime.1d35.starter-us-east-1.openshiftapps.com",
 		"ACTIONS": {
 			"AUTH_SIGNUP": "/auth/signup",
 			"AUTH_SIGNIN": "/auth/signin",
