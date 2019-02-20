@@ -2,7 +2,7 @@
 	"GENERAL": {
 		"SERVER_HTTP_PORT": 7070,
 		"SERVER_HTTP_IP": "0.0.0.0",
-		"JWT_SECRET": "j2onfullstackchallendsecret",
+		"JWT_SECRET": "js2onsecrete@dsd1$$$@Dsda1dD3Vsaso###",
 		"JWTEXPIRES_IN": 86400,
 		"JWT_DEFAULT_USER": "amendoa",
 		"JWT_DEFAULT_USER_ID": "5c62f60d0086e9753ab883ff",
@@ -36,10 +36,10 @@
 	},
 	"MONGOOSE": {
 		"URI": "mongodb://127.0.0.1:27017/",
-		"DB": "chatapp"
+		"DB": "chatappdev"
 	},
 	"CRYPTO": {
-		"SECRET": "j2onfullstackchallendsecret",
+		"SECRET": "cryptos3cretd3vvch4tapp",
 		"HASH": "sha256",
 		"DIGEST": "hex"
 	}
