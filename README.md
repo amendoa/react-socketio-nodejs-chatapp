@@ -2,11 +2,11 @@
 
 ##### Simple Demo
 
-  http://dasdsa.surge.sh/
+  http://react-socketio-nodejs-test-chatapp.surge.sh/signin
 
 
-![Demo](https://raw.githubusercontent.com/almeida-matheus/myrepo/master/demo.gif)
+![Demo](https://raw.githubusercontent.com/almeida-matheus/react-socketio-nodejs-chatapp/develop/layout/demo.gif)
 
 
 ##### XD Layout
-![Demo](https://raw.githubusercontent.com/almeida-matheus/myrepo/master/layout xd.gif)
+![XdLayout](https://raw.githubusercontent.com/almeida-matheus/react-socketio-nodejs-chatapp/develop/layout/xd.PNG)
