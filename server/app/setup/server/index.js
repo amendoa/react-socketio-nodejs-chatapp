@@ -18,12 +18,22 @@ const expressRoutes = absoluteRequire('routes');
 module.exports = (app) => {
 	const server = http.createServer(app);
 	const port = process.env.PORT || constants.GENERAL.SERVER_HTTP_PORT;
+	const corsOptions = {
+		origin: (origin, callback) => {
+			if (constants.GENERAL.WHITELIST.indexOf(origin) !== -1) {
+				callback(null, true);
+			} else {
+				callback(new Error('Not allowed by CORS'));
+			}
+		}
+	};
+
 	global.io = socketIO.listen(server);
 
 	app.use(expressValidator());
 	app.use(compression());
 	app.use(helmet());
-	app.use(cors());
+	app.use(cors(corsOptions));
 	app.use(morgan('dev'));
 	app.use(bodyParser.urlencoded({ extended: false }));
 	app.use(bodyParser.json());

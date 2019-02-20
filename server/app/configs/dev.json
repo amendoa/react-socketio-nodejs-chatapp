@@ -7,7 +7,10 @@
 		"JWT_DEFAULT_USER": "amendoa",
 		"JWT_DEFAULT_USER_ID": "5c62f60d0086e9753ab883ff",
 		"JWT_DEFAULT_USER_FRIEND": "orelha1",
-		"JWT_DEFAULT_USER_FRIEND_ID": "5c62f5f80086e9753ab883fc"
+		"JWT_DEFAULT_USER_FRIEND_ID": "5c62f5f80086e9753ab883fc",
+		"WHITELIST": [
+			"http://localhost:3000"
+		]
 	},
 	"ENDPOINTS": {
 		"AUTH": {
