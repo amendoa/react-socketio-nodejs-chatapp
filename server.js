@@ -7,9 +7,4 @@ const app = express();
 
 setupApp(app);
 
-console.log('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>')
-console.log(process.env.OPENSHIFT_MONGODB_DB_URL);
-console.log(process.env.OPENSHIFT_APP_NAME);
-console.log('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>')
-
 module.exports = app;
