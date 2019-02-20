@@ -68,6 +68,8 @@ exports.postSignUp = async (req, res) => {
 					});
 			}
 		} catch (e) {
+			console.log('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>');
+			console.log(e);
 			res
 				.status(500)
 				.json({
@@ -122,6 +124,8 @@ exports.postSignIn = async (req, res) => {
 				});
 		}
 	} catch (e) {
+		console.log('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>');
+		console.log(e);
 		res
 			.status(500)
 			.json({

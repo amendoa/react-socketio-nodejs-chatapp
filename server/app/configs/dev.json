@@ -36,7 +36,7 @@
 	},
 	"MONGOOSE": {
 		"URL": "mongodb://127.0.0.1:27017/",
-		"DB": "chatappdev"
+		"DB": "chatappdevd"
 	},
 	"CRYPTO": {
 		"SECRET": "cryptos3cretd3vvch4tapp",
