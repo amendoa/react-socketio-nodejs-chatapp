@@ -21,7 +21,7 @@
 		"LOGFILE": "./logs/prod.log"
 	},
 	"MONGOOSE": {
-		"URL": "mongodb://mongodb/",
+		"URL": "mongodb://admin:sRx#<F5f@mongodb/",
 		"DB": "chatappprod"
 	},
 	"CRYPTO": {
