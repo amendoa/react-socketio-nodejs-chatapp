@@ -62637,3 +62637,101 @@
 [32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
 [32minfo[39m: [32mMongoose: Started[39m
 [32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[33mwarn[39m: [33mMongoose: Disconnected[39m
+[31merror[39m: [31mMongoose: Erro. MongoNetworkError: failed to connect to server [undefined:27017] on first connect [MongoNetworkError: getaddrinfo ENOTFOUND undefined undefined:27017][39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[33mwarn[39m: [33mMongoose: Disconnected[39m
+[31merror[39m: [31mMongoose: Erro. MongoNetworkError: failed to connect to server [undefined:27017] on first connect [MongoNetworkError: getaddrinfo ENOTFOUND undefined undefined:27017][39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[33mwarn[39m: [33mMongoose: Disconnected[39m
+[31merror[39m: [31mMongoose: Erro. MongoNetworkError: failed to connect to server [undefined:27017] on first connect [MongoNetworkError: getaddrinfo ENOTFOUND undefined undefined:27017][39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[33mwarn[39m: [33mMongoose: Disconnected[39m
+[31merror[39m: [31mMongoose: Erro. MongoNetworkError: failed to connect to server [undefined:27017] on first connect [MongoNetworkError: getaddrinfo ENOTFOUND undefined undefined:27017][39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[33mwarn[39m: [33mMongoose: Disconnected[39m
+[31merror[39m: [31mMongoose: Erro. MongoNetworkError: failed to connect to server [undefined:27017] on first connect [MongoNetworkError: getaddrinfo ENOTFOUND undefined undefined:27017][39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[33mwarn[39m: [33mMongoose: Disconnected[39m
+[31merror[39m: [31mMongoose: Erro. MongoNetworkError: failed to connect to server [undefined:27017] on first connect [MongoNetworkError: getaddrinfo ENOTFOUND undefined undefined:27017][39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m
+[32minfo[39m: [32mHTTP Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mSOCKET.IO Server: Listering on 0.0.0.0:7070[39m
+[32minfo[39m: [32mMongoose: Started[39m
+[32minfo[39m: [32mMongoose: Connection is open[39m

@@ -21,7 +21,8 @@
 		"LOGFILE": "./logs/prod.log"
 	},
 	"MONGOOSE": {
-		"URI": "mongodb://127.0.0.1:27017/",
+		"HOST": "127.0.0.1",
+		"PORT": "27017",
 		"DB": "chatappprod"
 	},
 	"CRYPTO": {
