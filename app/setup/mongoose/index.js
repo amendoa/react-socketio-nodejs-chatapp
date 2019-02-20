@@ -11,6 +11,12 @@ module.exports = () => {
 		auto_reconnect: true
 	};
 
+	console.log('process.env.OPENSHIFT_APP_NAME')
+	console.log(process.env.OPENSHIFT_APP_NAME)
+
+	console.log('process.env.OPENSHIFT_MONGODB_DB_URL')
+	console.log(process.env.OPENSHIFT_MONGODB_DB_URL)
+
 	console.log('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>')
 	console.log(URI)
 	console.log('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>')
