@@ -1,7 +1,7 @@
 {
 	"GENERAL": {
 		"SERVER_HTTP_PORT": 7070,
-		"SERVER_HTTP_IP": "127.0.0.1",
+		"SERVER_HTTP_IP": "0.0.0.0",
 		"JWT_SECRET": "js2onsecrete@dsd1$$$@Dsda1dD3Vsaso###",
 		"JWTEXPIRES_IN": 86400,
 		"JWT_DEFAULT_USER": "amendoa",
