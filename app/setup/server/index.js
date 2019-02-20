@@ -16,7 +16,7 @@ const constants = absoluteRequire('modules/constants');
 const expressRoutes = absoluteRequire('routes');
 
 module.exports = (app) => {
-	const server = http.createServer(app);
+	const server = http.Server(app);
 	const port = process.env.PORT
 		|| process.env.OPENSHIFT_NODEJS_PORT
 		|| constants.GENERAL.SERVER_HTTP_PORT;
