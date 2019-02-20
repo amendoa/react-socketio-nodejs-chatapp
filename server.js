@@ -1,15 +1,10 @@
-var express = require('express');
-var app = express();
+// eslint-disable-next-line
+global.absoluteRequire = name => require(`${__dirname}/app/${name}`);
 
-var server_port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080;
-var server_ip_address = process.env.IP   || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0';
- 
+const express = require('express');
+const setupApp = absoluteRequire('setup');
+const app = express();
 
-
-app.use('/', (req, res) => {
-  res.status(200).json({success: true});
-});
-
-app.listen(server_port, server_ip_address);
+setupApp(app);
 
 module.exports = app;
