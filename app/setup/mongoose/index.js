@@ -4,22 +4,12 @@ const constants = absoluteRequire('modules/constants');
 const logger = absoluteRequire('modules/winston');
 
 module.exports = () => {
-	const URI = `mongodb://${constants.MONGOOSE.HOST}:${constants.MONGOOSE.PORT}/${constants.MONGOOSE.DB}`;
+	const URI = constants.MONGOOSE.URL + constants.MONGOOSE.DB;
 
 	const MONGOOSE_OPTIONS = {
 		useNewUrlParser: true,
 		auto_reconnect: true
 	};
-
-	console.log('process.env.OPENSHIFT_APP_NAME')
-	console.log(process.env.OPENSHIFT_APP_NAME)
-
-	console.log('process.env.OPENSHIFT_MONGODB_DB_URL')
-	console.log(process.env.OPENSHIFT_MONGODB_DB_URL)
-
-	console.log('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>')
-	console.log(URI)
-	console.log('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>')
 
 	mongoose.Promise = bluebird;
 	mongoose.connect(URI, MONGOOSE_OPTIONS);
