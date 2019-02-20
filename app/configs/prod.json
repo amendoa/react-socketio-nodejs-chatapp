@@ -1,0 +1,32 @@
+{
+	"GENERAL": {
+		"SERVER_HTTP_PORT": 8080,
+		"SERVER_HTTP_IP": "0.0.0.0",
+		"JWT_SECRET": "js2onsecrete@dsd1$$$@Dsda1dPR0Dsaso###",
+		"JWTEXPIRES_IN": 86400,
+		"WHITELIST": [
+			"http://react-socketio-nodejs-test-chatapp.surge.sh"
+		]
+	},
+	"EXPRESS_VALIDATION_MESSAGES": {
+		"NICKNAME_LENGHT_BETWEEN_2_AND_12": "The Nickname must have between 2 and 12 characters",
+		"PASSWORD_LENGHT_BETWEEN_5_AND_12": "The Password must have between 5 and 12 characters",
+		"THIS_NICKNAME_IS_ALREADY_TAKEN": "This Nickname is already taken",
+		"THIS_NICKNAME_IS_ALREADY_ADDED": "This Nickname is already added",
+		"THIS_NICKNAME_DO_NOT_EXISTS": "This Nickname doesn't exist",
+		"INCORRECT_PASSWORD_OR_USERNAME": "Incorrect nickname or password",
+		"YOU_CANT_ADD_YOURSELF": "You can't add yourself"
+	},
+	"WINSTON": {
+		"LOGFILE": "./logs/prod.log"
+	},
+	"MONGOOSE": {
+		"URI": "mongodb://127.0.0.1:27017/",
+		"DB": "chatappprod"
+	},
+	"CRYPTO": {
+		"SECRET": "cryptos3cretpr0ddch4tapp",
+		"HASH": "sha256",
+		"DIGEST": "hex"
+	}
+}
