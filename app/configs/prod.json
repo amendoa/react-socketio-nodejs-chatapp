@@ -1,7 +1,7 @@
 {
 	"GENERAL": {
 		"SERVER_HTTP_PORT": 8080,
-		"SERVER_HTTP_IP": "127.0.0.1",
+		"SERVER_HTTP_IP": "0.0.0.0",
 		"JWT_SECRET": "js2onsecrete@dsd1$$$@Dsda1dPR0Dsaso###",
 		"JWTEXPIRES_IN": 86400,
 		"WHITELIST": [
@@ -21,7 +21,7 @@
 		"LOGFILE": "./logs/prod.log"
 	},
 	"MONGOOSE": {
-		"URI": "mongodb://127.0.0.1:27017/",
+		"URI": "mongodb://0.0.0.0:27017/",
 		"DB": "chatappprod"
 	},
 	"CRYPTO": {

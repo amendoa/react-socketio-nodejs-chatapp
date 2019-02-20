@@ -4,11 +4,7 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"start": "node server.js"
-	},
-	"engine": {
-		"node": "*",
-		"npm": "*"
+		"start": "forever server.js"
 	},
 	"author": "",
 	"license": "ISC",
