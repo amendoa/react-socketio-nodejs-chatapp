@@ -1,7 +1,12 @@
-import { put, takeLatest } from 'redux-saga/effects';
-import * as contactActions from 'redux/actions/contact';
-import constants from 'modules/constants';
-import { toast } from 'react-toastify';
+import {
+	put,
+	takeLatest
+} from 'redux-saga/effects';
+
+import {
+	toast
+} from 'react-toastify';
+
 import {
 	sendRequest
 } from 'modules/utils';
@@ -11,6 +16,9 @@ import {
 	GET_CONTACTS,
 	DELETE_CONTACT
 } from 'redux/constants/contact';
+
+import * as contactActions from 'redux/actions/contact';
+import constants from 'modules/constants';
 
 function* addContactPostFetch (props) {
 	const {

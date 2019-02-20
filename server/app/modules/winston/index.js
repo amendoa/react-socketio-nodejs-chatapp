@@ -1,7 +1,6 @@
 const winston = require('winston');
 const constants = absoluteRequire('modules/constants');
 
-
 module.exports = winston.createLogger({
 	transports: [
 		new winston.transports.Console(),

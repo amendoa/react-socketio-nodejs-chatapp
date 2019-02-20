@@ -53,6 +53,10 @@ exports[`<UserInfoComponent /> renders correctly 1`] = `
       fontSize={13}
       margin="0px 0px 5px 0px"
       text="right label"
+      width={100}
+    />
+    <div
+      className="footer-container"
     />
   </div>
 </div>

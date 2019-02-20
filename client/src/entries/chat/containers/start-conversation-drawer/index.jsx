@@ -15,10 +15,19 @@ import {
 	ButtonComponent
 } from 'shared/components';
 
+import {
+	connect
+} from 'react-redux';
+
+import {
+	confirmAlert
+} from 'react-confirm-alert';
+
+import {
+	bindActionCreators
+} from 'redux';
+
 import constants from 'modules/constants';
-import { connect } from 'react-redux';
-import { confirmAlert } from 'react-confirm-alert';
-import { bindActionCreators } from 'redux';
 import * as contactActions from 'redux/actions/contact';
 import * as drawerActions from 'redux/actions/drawer';
 import * as conversationActions from 'redux/actions/conversation';

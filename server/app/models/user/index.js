@@ -1,12 +1,14 @@
-const mongoose = require('mongoose');
 const {
 	ContactSchema
 } = absoluteRequire('models/contact');
+
+const mongoose = require('mongoose');
 
 const {
 	Schema,
 	model: Model
 } = mongoose;
+
 
 const UserSchema = new Schema({
 	nickname: {

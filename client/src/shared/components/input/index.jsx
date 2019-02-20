@@ -5,6 +5,7 @@ import React, {
 import {
 	LabelComponent
 } from 'shared/components';
+
 import classNames from 'classnames';
 
 export default class InputComponent extends Component {

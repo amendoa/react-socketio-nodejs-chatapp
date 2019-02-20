@@ -51,7 +51,7 @@ describe('<ButtonComponent />', () => {
 
 	it('onclick button is working', () => {
 		const wrapper = getWrapper(modelI);
-		wrapper.simulate('click');
+		wrapper.simulate('click', { stopPropagation() { } });
 		expect(onButtonClick.called).toBe(true);
 	});
 });

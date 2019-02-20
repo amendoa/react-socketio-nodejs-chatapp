@@ -1,5 +1,5 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { render } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import {
 	DropDownMenuComponent
@@ -9,13 +9,16 @@ describe('<DropDownMenuComponent />', () => {
 	const modelI = {
 		options: [
 			{
-				text: 'teste'
+				text: 'teste',
+				event: null
 			}
-		]
+		],
+		icon: {},
+		marginButton: ''
 	};
 
 	const getWrapper = (model) => {
-		return shallow((
+		return render((
 			<DropDownMenuComponent {...model} />
 		));
 	};

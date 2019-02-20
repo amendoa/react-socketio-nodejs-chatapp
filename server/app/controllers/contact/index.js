@@ -1,5 +1,3 @@
-const _ = require('lodash');
-
 const {
 	findUser,
 	findOneUser,
@@ -9,6 +7,8 @@ const {
 const {
 	convertErrorToFrontFormat
 } = absoluteRequire('modules/utils');
+
+const _ = require('lodash');
 
 exports.getContact = async (req, res) => {
 	try {

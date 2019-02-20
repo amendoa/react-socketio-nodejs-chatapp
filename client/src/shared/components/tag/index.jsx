@@ -1,10 +1,12 @@
 import React, {
 	Component
 } from 'react';
-import classNames from 'classnames';
+
 import {
 	LabelComponent
 } from 'shared/components';
+
+import classNames from 'classnames';
 
 export default class TagComponent extends Component {
 	render () {

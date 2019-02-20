@@ -1,11 +1,13 @@
 import React, {
 	Component
 } from 'react';
+
 import {
 	ButtonComponent,
 	IconComponent,
 	LabelComponent
 } from 'shared/components';
+
 import {
 	Manager,
 	Reference,

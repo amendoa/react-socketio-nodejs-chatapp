@@ -1,9 +1,10 @@
-const express = require('express');
 const {
 	getMessages,
 	postMessage,
 	deleteMessage
 } = absoluteRequire('controllers/message');
+
+const express = require('express');
 
 const {
 	Router

@@ -17,10 +17,19 @@ import {
 	MessageListContainer
 } from 'entries/chat/containers';
 
+import {
+	connect
+} from 'react-redux';
+
+import {
+	confirmAlert
+} from 'react-confirm-alert';
+
+import {
+	bindActionCreators
+} from 'redux';
+
 import constants from 'modules/constants';
-import { connect } from 'react-redux';
-import { confirmAlert } from 'react-confirm-alert';
-import { bindActionCreators } from 'redux';
 import * as conversationActions from 'redux/actions/conversation';
 import * as messageActions from 'redux/actions/message';
 

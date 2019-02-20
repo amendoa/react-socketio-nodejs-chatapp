@@ -18,38 +18,38 @@ const generateToken = () => {
 
 describe('CONVERSATION \n', () => {
 	const token = generateToken();
-	//
-	// it('GET CONVERSATIONS - Should return STATUS 200 | RESULT FIELD []', (done) => {
-	// 	request(`http://${constants.GENERAL.SERVER_HTTP_IP}:${constants.GENERAL.SERVER_HTTP_PORT}`)
-	// 		.get(constants.ENDPOINTS.CONVERSATION)
-	// 		.set('x-access-token', token)
-	// 		.end((err, res) => {
-	// 			logger.info(res.body);
-	// 			res.should.have.status(200);
-	// 			res.body.should.have.property('success').eql(true);
-	//
-	// 			done();
-	// 		});
-	// });
 
-	// it('UPDATE CONVERSATION - Should return STATUS 200 | SUCCESS FIELD TRUE', (done) => {
-	// 	request(`http://${constants.GENERAL.SERVER_HTTP_IP}:${constants.GENERAL.SERVER_HTTP_PORT}`)
-	// 		.put(constants.ENDPOINTS.CONVERSATION)
-	// 		.set('x-access-token', token)
-	// 		.send({
-	// 			conversation: {
-	// 				unreadMessages: 0
-	// 			},
-	// 			userId: constants.GENERAL.JWT_DEFAULT_USER_FRIEND_ID
-	// 		})
-	// 		.end((err, res) => {
-	// 			logger.info('-----------');
-	// 			logger.info(res.body);
-	// 			res.should.have.status(200);
-	// 			res.body.should.have.property('success').eql(true);
-	// 			done();
-	// 		});
-	// });
+	it('GET CONVERSATIONS - Should return STATUS 200 | RESULT FIELD []', (done) => {
+		request(`http://${constants.GENERAL.SERVER_HTTP_IP}:${constants.GENERAL.SERVER_HTTP_PORT}`)
+			.get(constants.ENDPOINTS.CONVERSATION)
+			.set('x-access-token', token)
+			.end((err, res) => {
+				logger.info(res.body);
+				res.should.have.status(200);
+				res.body.should.have.property('success').eql(true);
+
+				done();
+			});
+	});
+
+	it('UPDATE CONVERSATION - Should return STATUS 200 | SUCCESS FIELD TRUE', (done) => {
+		request(`http://${constants.GENERAL.SERVER_HTTP_IP}:${constants.GENERAL.SERVER_HTTP_PORT}`)
+			.put(constants.ENDPOINTS.CONVERSATION)
+			.set('x-access-token', token)
+			.send({
+				conversation: {
+					unreadMessages: 0
+				},
+				userId: constants.GENERAL.JWT_DEFAULT_USER_FRIEND_ID
+			})
+			.end((err, res) => {
+				logger.info('-----------');
+				logger.info(res.body);
+				res.should.have.status(200);
+				res.body.should.have.property('success').eql(true);
+				done();
+			});
+	});
 
 	it('DELETE CONVERSATION - Should return STATUS 200 | SUCCESS FIELD TRUE', (done) => {
 		request(`http://${constants.GENERAL.SERVER_HTTP_IP}:${constants.GENERAL.SERVER_HTTP_PORT}`)

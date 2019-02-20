@@ -1,12 +1,14 @@
-const express = require('express');
 const {
 	postAddContact,
 	getContact,
 	deleteContact
 } = absoluteRequire('controllers/contact');
+
 const {
 	addContactValidator
 } = absoluteRequire('validators/contact');
+
+const express = require('express');
 
 const {
 	Router

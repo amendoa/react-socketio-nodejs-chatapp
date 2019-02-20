@@ -1,5 +1,3 @@
-const _ = require('lodash');
-
 const {
 	getConversations,
 	findOneConversationAndUpdate,
@@ -10,6 +8,8 @@ const {
 const {
 	deleteMessages
 } = absoluteRequire('repositories/message');
+
+const _ = require('lodash');
 
 exports.getConversations = async (req, res) => {
 	try {

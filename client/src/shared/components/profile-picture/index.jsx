@@ -1,7 +1,7 @@
 import React, {
 	Component
 } from 'react';
-import classNames from 'classnames';
+
 import {
 	LabelComponent
 } from 'shared/components';
@@ -9,6 +9,8 @@ import {
 import {
 	createAcronym
 } from 'modules/utils';
+
+import classNames from 'classnames';
 
 export default class ProfilePictureComponent extends Component {
 	render () {

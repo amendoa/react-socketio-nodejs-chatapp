@@ -1,5 +1,3 @@
-const moment = require('moment');
-
 const {
 	addMessage,
 	deleteMessageById
@@ -9,6 +7,8 @@ const {
 	findOneConversationAndUpdate,
 	getConversation
 } = absoluteRequire('repositories/conversation');
+
+const moment = require('moment');
 
 exports.postMessage = async (req, res) => {
 	const {

@@ -1,8 +1,14 @@
+import {
+	fetch
+} from 'whatwg-fetch';
+
+import {
+	toast
+} from 'react-toastify';
+
 import Cookies from 'js-cookie';
 import constants from 'modules/constants';
-import { fetch } from 'whatwg-fetch';
 import queryString from 'querystring';
-import { toast } from 'react-toastify';
 import history from 'react-router/history';
 import store from 'redux/store';
 import _ from 'lodash';

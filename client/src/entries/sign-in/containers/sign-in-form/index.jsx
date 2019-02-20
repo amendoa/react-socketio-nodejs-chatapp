@@ -1,14 +1,22 @@
 import React, {
 	Component
 } from 'react';
+
 import {
 	ButtonComponent,
 	InputComponent,
 	FormComponent,
 	FlashMessageComponent
 } from 'shared/components';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
+
+import {
+	connect
+} from 'react-redux';
+
+import {
+	bindActionCreators
+} from 'redux';
+
 import constants from 'modules/constants';
 import * as authActions from 'redux/actions/auth';
 

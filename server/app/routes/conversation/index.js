@@ -1,10 +1,10 @@
-const express = require('express');
-
 const {
 	getConversations,
 	updateConversation,
 	deleteConversation
 } = absoluteRequire('controllers/conversation');
+
+const express = require('express');
 
 const {
 	Router

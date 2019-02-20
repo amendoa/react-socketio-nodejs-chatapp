@@ -1,3 +1,7 @@
+const {
+	findOneUser
+} = absoluteRequire('repositories/user');
+
 const http = require('http');
 const helmet = require('helmet');
 const compression = require('compression');
@@ -10,7 +14,6 @@ const expressValidator = require('express-validator');
 const logger = absoluteRequire('modules/winston');
 const constants = absoluteRequire('modules/constants');
 const expressRoutes = absoluteRequire('routes');
-const userRepository = absoluteRequire('repositories/user');
 
 module.exports = (app) => {
 	const server = http.createServer(app);
@@ -24,9 +27,6 @@ module.exports = (app) => {
 	app.use(morgan('dev'));
 	app.use(bodyParser.urlencoded({ extended: false }));
 	app.use(bodyParser.json());
-
-	// TODO REMOVE
-	// app.use(function(req,res,next){setTimeout(next,1000)});
 
 	expressRoutes(app);
 
@@ -59,7 +59,7 @@ module.exports = (app) => {
 					} = decodedData;
 
 					try {
-						const user = await userRepository.findOneUser({
+						const user = await findOneUser({
 							nickname,
 							_id
 						});

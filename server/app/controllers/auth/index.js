@@ -1,12 +1,18 @@
-const _ = require('lodash');
-const userRepository = absoluteRequire('repositories/user');
-const randomColor = absoluteRequire('modules/random-color');
-const constants = absoluteRequire('modules/constants');
+const {
+	addUser,
+	findOneUser,
+	findUser
+} = absoluteRequire('repositories/user');
+
 const {
 	encryptPassword,
 	createJwtToken,
 	convertErrorToFrontFormat
 } = absoluteRequire('modules/utils');
+
+const _ = require('lodash');
+const randomColor = absoluteRequire('modules/random-color');
+const constants = absoluteRequire('modules/constants');
 
 exports.postSignUp = async (req, res) => {
 	const {
@@ -25,10 +31,9 @@ exports.postSignUp = async (req, res) => {
 			});
 	} else {
 		try {
-			const result = await userRepository
-				.addUser(Object.assign({}, body, {
-					profileColor: randomColor()
-				}));
+			const result = await addUser(Object.assign({}, body, {
+				profileColor: randomColor()
+			}));
 
 			if (result) {
 				const token = createJwtToken({
@@ -36,16 +41,15 @@ exports.postSignUp = async (req, res) => {
 					_id: result._id
 				});
 
-				const user = await userRepository
-					.findOneUser(
-						{
-							_id: result._id
-						},
-						{
-							password: 0,
-							contacts: 0
-						}
-					);
+				const user = await findOneUser(
+					{
+						_id: result._id
+					},
+					{
+						password: 0,
+						contacts: 0
+					}
+				);
 
 				res
 					.status(200)
@@ -85,7 +89,7 @@ exports.postSignIn = async (req, res) => {
 	} = body;
 
 	try {
-		const result = await userRepository.findOneUser({
+		const result = await findOneUser({
 			password: encryptPassword(password),
 			nickname: nickname.toLowerCase()
 		}, {
@@ -133,7 +137,7 @@ exports.getVerifyNickname = async (req, res) => {
 	} = req.query;
 
 	try {
-		const result = await userRepository.findUser({
+		const result = await findUser({
 			nickname: nickname.toLowerCase()
 		});
 

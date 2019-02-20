@@ -1,5 +1,5 @@
 {
-	"name": "ChatApp",
+	"name": "chatapp",
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {

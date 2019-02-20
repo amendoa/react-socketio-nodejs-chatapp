@@ -1,15 +1,22 @@
 import React, {
 	Component
 } from 'react';
+
 import {
 	IconComponent,
 	LabelComponent,
 	ButtonComponent
 } from 'shared/components';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-import * as drawerActions from 'redux/actions/drawer';
 
+import {
+	connect
+} from 'react-redux';
+
+import {
+	bindActionCreators
+} from 'redux';
+
+import * as drawerActions from 'redux/actions/drawer';
 import classNames from 'classnames';
 
 class DrawerComponent extends Component {

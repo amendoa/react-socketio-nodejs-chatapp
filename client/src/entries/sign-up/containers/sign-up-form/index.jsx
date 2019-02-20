@@ -1,6 +1,7 @@
 import React, {
 	Component
 } from 'react';
+
 import {
 	ButtonComponent,
 	InputComponent,
@@ -8,8 +9,15 @@ import {
 	LoadingComponent,
 	IconComponent
 } from 'shared/components';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
+
+import {
+	connect
+} from 'react-redux';
+
+import {
+	bindActionCreators
+} from 'redux';
+
 import constants from 'modules/constants';
 import _ from 'lodash';
 import * as authActions from 'redux/actions/auth';

@@ -1,8 +1,11 @@
-import { put, takeLatest } from 'redux-saga/effects';
-import * as authActions from 'redux/actions/auth';
-import * as formActions from 'redux/actions/form';
-import constants from 'modules/constants';
-import { toast } from 'react-toastify';
+import {
+	put,
+	takeLatest
+} from 'redux-saga/effects';
+
+import {
+	toast
+} from 'react-toastify';
 
 import {
 	sendRequest,
@@ -14,6 +17,10 @@ import {
 	POST_SIGNIN,
 	GET_VERIFY_NICKNAME
 } from 'redux/constants/auth';
+
+import * as authActions from 'redux/actions/auth';
+import * as formActions from 'redux/actions/form';
+import constants from 'modules/constants';
 
 function* signInPostFetch (props) {
 	const {

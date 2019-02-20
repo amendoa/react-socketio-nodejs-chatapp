@@ -6,6 +6,16 @@ exports[`<ConversationsList /> renders correctly 1`] = `
 >
   <div>
     <ConversationCardComponent
+      actions={
+        Object {
+          "options": Array [
+            Object {
+              "event": [Function],
+              "text": undefined,
+            },
+          ],
+        }
+      }
       desc={
         Object {
           "fontSize": 13,

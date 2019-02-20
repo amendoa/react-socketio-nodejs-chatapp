@@ -2,45 +2,27 @@
 
 exports[`<DropDownMenuComponent /> renders correctly 1`] = `
 <div
-  className="drop-down-menu-wrapper"
+  class="drop-down-menu-wrapper"
 >
-  <ButtonComponent
-    height={26}
-    link={true}
-    margin="0px 0px 0px 20px"
-    onClick={[Function]}
+  <button
+    class="button button--link"
+    style="margin:"
     type="button"
-    width={26}
   >
-    <IconComponent
-      fill="#555657"
-      height={26}
-      icon="dots-vertical"
-      width={26}
-    />
-  </ButtonComponent>
-  <div
-    className="drop-down-menu"
-  >
-    <ul>
-      <li
-        key="0"
-      >
-        <ButtonComponent
-          link={true}
-          onClick={[Function]}
-          width={80}
-        >
-          <LabelComponent
-            breakWord={true}
-            dark={true}
-            fontSize={14}
-            regular={true}
-            text="teste"
-          />
-        </ButtonComponent>
-      </li>
-    </ul>
-  </div>
+    <svg
+      class="fadeIn"
+      version="1.1"
+      viewBox="0 0 78.369 78.369"
+      x="0px"
+      xmlns="http://www.w3.org/2000/svg"
+      y="0px"
+    >
+      <g>
+        <path
+          d="M78.049,19.015L29.458,67.606c-0.428,0.428-1.121,0.428-1.548,0L0.32,40.015c-0.427-0.426-0.427-1.119,0-1.547l6.704-6.704 c0.428-0.427,1.121-0.427,1.548,0l20.113,20.112l41.113-41.113c0.429-0.427,1.12-0.427,1.548,0l6.703,6.704 C78.477,17.894,78.477,18.586,78.049,19.015z"
+        />
+      </g>
+    </svg>
+  </button>
 </div>
 `;

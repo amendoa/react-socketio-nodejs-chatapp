@@ -1,4 +1,5 @@
 import React from 'react';
+
 import {
 	Route,
 	Switch,
@@ -24,6 +25,7 @@ import {
 import {
 	getToken
 } from 'modules/utils';
+
 
 function RoutesContainer ({ location }) {
 	const Workaround = ({ action, children }) => (

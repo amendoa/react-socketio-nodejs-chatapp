@@ -7,8 +7,14 @@ import {
 	ChatWrapper
 } from 'entries/chat/wrappers';
 
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
+import {
+	connect
+} from 'react-redux';
+
+import {
+	bindActionCreators
+} from 'redux';
+
 import * as socketActions from 'redux/actions/socket';
 
 class HomeEntry extends Component {

@@ -1,7 +1,3 @@
-import constants from 'modules/constants';
-import * as messageActions from 'redux/actions/message';
-import * as conversationActions from 'redux/actions/conversation';
-
 import {
 	takeLatest,
 	put
@@ -20,6 +16,10 @@ import {
 import {
 	toast
 } from 'react-toastify';
+
+import constants from 'modules/constants';
+import * as messageActions from 'redux/actions/message';
+import * as conversationActions from 'redux/actions/conversation';
 
 function* sendMessagePostFetchSaga (action) {
 	const {

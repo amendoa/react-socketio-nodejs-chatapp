@@ -1,6 +1,9 @@
+const {
+	findOneUser
+} = absoluteRequire('repositories/user');
+
 const jwt = require('jsonwebtoken');
 const constants = absoluteRequire('modules/constants');
-const userRepository = absoluteRequire('repositories/user');
 
 module.exports = (req, res, next) => {
 	const token = (
@@ -25,7 +28,7 @@ module.exports = (req, res, next) => {
 			} = decodedData;
 
 			try {
-				const user = await userRepository.findOneUser({
+				const user = await findOneUser({
 					nickname
 				}, {
 					password: 0,

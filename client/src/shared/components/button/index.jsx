@@ -1,11 +1,12 @@
 import React, {
 	Component
 } from 'react';
-import classNames from 'classnames';
 
 import {
 	LoadingComponent
 } from 'shared/components';
+
+import classNames from 'classnames';
 
 export default class ButtonComponent extends Component {
 	render () {

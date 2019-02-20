@@ -1,8 +1,12 @@
-const { check } = require('express-validator/check');
-const constants = absoluteRequire('modules/constants');
+const {
+	check
+} = require('express-validator/check');
+
 const {
 	findOneUser
 } = absoluteRequire('repositories/user');
+
+const constants = absoluteRequire('modules/constants');
 
 module.exports.addContactValidator = () => [
 	check('nickname')

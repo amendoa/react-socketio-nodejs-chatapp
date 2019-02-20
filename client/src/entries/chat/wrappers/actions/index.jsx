@@ -28,9 +28,18 @@ import {
 	setConversationLastMessageDateTime
 } from 'modules/utils';
 
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-import { confirmAlert } from 'react-confirm-alert';
+import {
+	connect
+} from 'react-redux';
+
+import {
+	bindActionCreators
+} from 'redux';
+
+import {
+	confirmAlert
+} from 'react-confirm-alert';
+
 import * as contactActions from 'redux/actions/contact';
 import * as drawerActions from 'redux/actions/drawer';
 import * as conversationActions from 'redux/actions/conversation';

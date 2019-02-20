@@ -1,4 +1,8 @@
-import { createStore, applyMiddleware, compose } from 'redux';
+import {
+	createStore,
+	applyMiddleware,
+	compose
+} from 'redux';
 import createSagaMiddleware from 'redux-saga';
 import createRootReducer from 'redux/reducers';
 import * as utils from 'modules/utils';
@@ -12,9 +16,7 @@ const middlewares = [
 let composeEnhancer = compose;
 
 if (utils.isDevelopmentEnv()) {
-	/* eslint-disable-next-line */
 	if (window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) {
-		/* eslint-disable-next-line */
 		composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__;
 	}
 }

@@ -20,10 +20,6 @@ import {
 	takeLatest
 } from 'redux-saga/effects';
 
-import constants from 'modules/constants';
-import io from 'socket.io-client';
-import * as socketActions from 'redux/actions/socket';
-import * as conversationActions from 'redux/actions/conversation';
 import {
 	Howl
 } from 'howler';
@@ -32,6 +28,11 @@ import {
 	START_CHANNEL,
 	STOP_CHANNEL
 } from 'redux/constants/socket';
+
+import constants from 'modules/constants';
+import io from 'socket.io-client';
+import * as socketActions from 'redux/actions/socket';
+import * as conversationActions from 'redux/actions/conversation';
 
 let socket;
 let socketTask;

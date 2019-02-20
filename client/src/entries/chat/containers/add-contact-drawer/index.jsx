@@ -9,9 +9,15 @@ import {
 	FlashMessageComponent
 } from 'shared/components';
 
+import {
+	connect
+} from 'react-redux';
+
+import {
+	bindActionCreators
+} from 'redux';
+
 import constants from 'modules/constants';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
 import * as contactActions from 'redux/actions/contact';
 
 class AddContactDrawer extends Component {

@@ -1,6 +1,12 @@
-const { check } = require('express-validator/check');
+const {
+	check
+} = require('express-validator/check');
+
+const {
+	findUser
+} = absoluteRequire('repositories/user');
+
 const constants = absoluteRequire('modules/constants');
-const userRepository = absoluteRequire('repositories/user');
 
 module.exports.signupValidator = () => [
 	check('nickname')
@@ -8,7 +14,7 @@ module.exports.signupValidator = () => [
 		.withMessage(constants.EXPRESS_VALIDATION_MESSAGES.NICKNAME_LENGHT_BETWEEN_2_AND_12)
 		.custom(nickname => new Promise(async (resolve, reject) => {
 			try {
-				const user = await userRepository.findUser({
+				const user = await findUser({
 					nickname: nickname.toLowerCase()
 				});
 
