@@ -4,9 +4,7 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"dev": "nodemon server.js",
-		"start": "forever server.js",
-		"test": "mocha --timeout 10000"
+		"start": "forever server.js"
 	},
 	"author": "",
 	"license": "ISC",
