@@ -17,7 +17,14 @@ const expressRoutes = absoluteRequire('routes');
 
 module.exports = (app) => {
 	const server = http.createServer(app);
-	const port = process.env.PORT || constants.GENERAL.SERVER_HTTP_PORT;
+	const port = process.env.PORT
+		|| process.env.OPENSHIFT_NODEJS_PORT
+		|| constants.GENERAL.SERVER_HTTP_PORT;
+
+	const httpId = process.env.IP
+		|| process.env.OPENSHIFT_NODEJS_IP
+		|| constants.GENERAL.SERVER_HTTP_IP;
+
 	const corsOptions = {
 		origin: (origin, callback) => {
 			if (constants.GENERAL.WHITELIST.indexOf(origin) !== -1) {
@@ -41,13 +48,13 @@ module.exports = (app) => {
 	expressRoutes(app);
 
 	// HTTP SERVER
-	server.listen(port, constants.GENERAL.SERVER_HTTP_IP, () => {
-		logger.info(`HTTP Server: Listering on ${constants.GENERAL.SERVER_HTTP_IP}:${port}`);
+	server.listen(port, httpId, () => {
+		logger.info(`HTTP Server: Listering on ${httpId}:${port}`);
 	});
 
 	// SOCKET.IO SERVER
 	global.io.httpServer.on('listening', () => {
-		logger.info(`SOCKET.IO Server: Listering on ${constants.GENERAL.SERVER_HTTP_IP}:${port}`);
+		logger.info(`SOCKET.IO Server: Listering on ${httpId}:${port}`);
 	});
 
 	global.io.on('connection', (socket) => {
