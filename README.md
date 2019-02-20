@@ -2,7 +2,7 @@
 
 ##### Simple Demo
 
-  http://react-socketio-nodejs-test-chatapp.surge.sh/signin
+  http://react-socketio-nodejs-test-chatapp.surge.sh
 
 
 ![Demo](https://raw.githubusercontent.com/almeida-matheus/react-socketio-nodejs-chatapp/develop/layout/demo.gif)
