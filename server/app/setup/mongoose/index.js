@@ -11,11 +11,6 @@ module.exports = () => {
 	)
 	+ constants.MONGOOSE.DB;
 
-	console.log('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>');
-	console.log(process.env.OPENSHIFT_MONGODB_DB_URL
-		|| process.env.MONGO_URL
-		|| constants.MONGOOSE.URI);
-
 	const MONGOOSE_OPTIONS = {
 		useNewUrlParser: true,
 		auto_reconnect: true
