@@ -35,8 +35,7 @@
 		"LOGFILE": "./logs/dev.log"
 	},
 	"MONGOOSE": {
-		"HOST": "127.0.0.1",
-		"PORT": "27017",
+		"URL": "mongodb://127.0.0.1:27017/",
 		"DB": "chatappdev"
 	},
 	"CRYPTO": {
