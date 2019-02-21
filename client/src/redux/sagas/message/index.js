@@ -1,5 +1,6 @@
 import {
 	takeLatest,
+	takeEvery,
 	put
 } from 'redux-saga/effects';
 
@@ -107,9 +108,9 @@ function* deleteMessageFetchSaga (action) {
 }
 
 const sagas = [
-	takeLatest(POST_MESSAGE, sendMessagePostFetchSaga),
+	takeEvery(POST_MESSAGE, sendMessagePostFetchSaga),
 	takeLatest(GET_MESSAGES, getMessagesFetchSaga),
-	takeLatest(DELETE_MESSAGE, deleteMessageFetchSaga)
+	takeEvery(DELETE_MESSAGE, deleteMessageFetchSaga)
 ];
 
 export default sagas;

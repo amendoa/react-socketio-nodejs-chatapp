@@ -30,8 +30,6 @@ const ConversationSchema = new Schema({
 	]
 });
 
-// ConversationSchema.index({ ownerId: 1, userId: 1 }, { unique: true });
-
 const ConversationModel = new Model('Conversation', ConversationSchema);
 
 exports.ConversationModel = ConversationModel;

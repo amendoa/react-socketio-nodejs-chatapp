@@ -1,5 +1,6 @@
 import {
 	takeLatest,
+	takeEvery,
 	put
 } from 'redux-saga/effects';
 
@@ -110,8 +111,8 @@ function* deleteConversationFetchSaga(action) {
 const sagas = [
 	takeLatest(GET_CONVERSATIONS, getConversationsFetch),
 	takeLatest(SET_CURRENT_CONVERSATION, setCurrentConversationSaga),
-	takeLatest(RESET_CONVERSATION_UNREAD_MESSAGES, resetConversationUnreadtMessagesSaga),
-	takeLatest(DELETE_CONVERSATION, deleteConversationFetchSaga)
+	takeEvery(RESET_CONVERSATION_UNREAD_MESSAGES, resetConversationUnreadtMessagesSaga),
+	takeEvery(DELETE_CONVERSATION, deleteConversationFetchSaga)
 ];
 
 export default sagas;
