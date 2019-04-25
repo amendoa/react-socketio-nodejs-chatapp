@@ -5,6 +5,7 @@
 		"JWT_SECRET": "js2onsecrete@dsd1$$$@Dsda1dPR0Dsaso###",
 		"JWTEXPIRES_IN": 86400,
 		"WHITELIST": [
+			"https://react-socketio-nodejs-test-chatapp.surge.sh",
 			"http://react-socketio-nodejs-test-chatapp.surge.sh"
 		]
 	},
